@@ -20,7 +20,7 @@ class InventoryItem_Base_F;
 
 	// Primaris Power Armor
 
-	class Primaris_SM_SR_1_W: Primaris_Dos_Base
+	class SR_MK10_Armor_Blackshield: Primaris_Dos_Base
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -32,14 +32,14 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SM_SR_1";
 		};
 	};
-		class Primaris_SM_Lysander_1_W: Primaris_SM_SR_1_W
-	{
-		displayName="Primaris MK.10 (TSR Lysander)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass="Primaris_SM_Lysander";
-		};
-	};
+	// 	class SR_MK10_Armor_Lysander: SR_MK10_Armor_Blackshield
+	// {
+	// 	displayName="Primaris MK.10 (TSR Lysander)";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass="Primaris_SM_Lysander";
+	// 	};
+	// };
 
 	// Primaris Helmets 
 
@@ -51,13 +51,15 @@ class InventoryItem_Base_F;
 		scopeArsenal=1;
 		class ItemInfo;
 	};
-	class Primaris_Helm_Main_SR_1: Primaris_Dos_Helm_Base
+	class SR_MK10_Helmet_Blackshield: Primaris_Dos_Helm_Base
 	{
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
 		author="Strixus";
 		displayName="Primaris Mk.10 (TSR Blackshield)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=
@@ -93,7 +95,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-	class Primaris_Helm_Main_SR_LT: Primaris_Helm_Main_SR_1
+	class SR_MK10_Helmet_BlackshieldLT: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Blackshield LT)";
 	hiddenSelections[]=
@@ -105,7 +107,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_LT.paa"
 		};
 	}
-		class Primaris_Helm_Main_SR_Ser: Primaris_Helm_Main_SR_1
+		class SR_MK10_Helmet_BlackshieldSer: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Blackshield Ser)";
 	hiddenSelections[]=
@@ -117,7 +119,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_Ser.paa"
 		};
 	}
-		class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+		class SR_MK10_Helmet_BlackshieldVet: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Blackshield Vet)";
 	hiddenSelections[]=
@@ -129,7 +131,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_Vet.paa"
 		};
 	}
-		class Primaris_Helm_Main_SR_VetSer: Primaris_Helm_Main_SR_1
+		class SR_MK10_Helmet_BlackshieldVetSer: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Blackshield Vet Ser)";
 	hiddenSelections[]=
@@ -141,7 +143,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_VetSer.paa"
 		};
 	}
-			class Primaris_Helm_Main_SR_MR: Primaris_Helm_Main_SR_1
+			class SR_MK10_Helmet_Marauder: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Marauder)";
 	hiddenSelections[]=
@@ -153,7 +155,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_MR_Chief: Primaris_Helm_Main_SR_1
+				class SR_MK10_Helmet_MarauderChief: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Marauder Chief)";
 	hiddenSelections[]=
@@ -165,7 +167,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_Chief.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_MR_Vet: Primaris_Helm_Main_SR_1
+				class SR_MK10_Helmet_MarauderVet: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Marauder Vet)";
 	hiddenSelections[]=
@@ -177,7 +179,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_Vet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_MR_VetChief: Primaris_Helm_Main_SR_1
+				class SR_MK10_Helmet_MarauderVetChief: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Marauder Chief Vet)";
 	hiddenSelections[]=
@@ -199,7 +201,7 @@ class InventoryItem_Base_F;
 		scopeArsenal=1;
 		class ItemInfo;
 	};	
-	class Primaris_Vest_40K_SR_1: DOS_Primaris_40k_Vest_Base 
+	class SR_MK10_Shoulders_Conscript: DOS_Primaris_40k_Vest_Base 
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -227,7 +229,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-		class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+		class SR_MK10_Shoulders_Blackshield: DOS_Primaris_40k_Vest_Base 
 	{
 		scope=2;
 		scopeArsenal=2;

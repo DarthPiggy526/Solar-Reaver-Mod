@@ -18,239 +18,241 @@ class Cfgweapons
 	class TIOW_MK7Helmet_UM;
 	class TIOW_MK7KnightHelmet_UM;
 	
-	class TIOW_MK2Helmet_SR_Apoth : TIOW_MK2Helmet_UM
+	class SR_MK2_Helmet_Apothecary : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 		};
 	};
-	class TIOW_MK2Helmet_SR_Apoth_dp : TIOW_MK2Helmet_SR_Apoth
+	class TIOW_MK2Helmet_SR_Apoth_dp : SR_MK2_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_SR_Apoth : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_Apothecary : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_SR_Apoth_dp : TIOW_MK3Helmet_SR_Apoth
+	class TIOW_MK3Helmet_SR_Apoth_dp : SR_MK3_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_SR_Apoth : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_Apothecary : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_SR_Apoth_dp : TIOW_MK4Helmet_SR_Apoth
+	class TIOW_MK4Helmet_SR_Apoth_dp : SR_MK4_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_SR_Apoth : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_Apothecary : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_SR_Apoth_dp : TIOW_MK5Helmet_SR_Apoth
+	class TIOW_MK5Helmet_SR_Apoth_dp : SR_MK5_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_SR_Apoth : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_Apothecary : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 		};
 	};
-	class TIOW_MK6Helmet_SR_Apoth_dp : TIOW_MK6Helmet_SR_Apoth
+	class TIOW_MK6Helmet_SR_Apoth_dp : SR_MK6_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_SR_Apoth : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_Apothecary : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_Apoth_dp : TIOW_MK7KnightHelmet_SR_Apoth
+	class TIOW_MK7KnightHelmet_SR_Apoth_dp : SR_MK7K_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_SR_Apoth : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_Apothecary : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_Apoth_dp : TIOW_MK7Helmet_SR_Apoth
+	  class TIOW_MK7Helmet_SR_Apoth_dp : SR_MK7_Helmet_Apothecary
 	  {
 		scopeArsenal = 1
 	  };
 
 	  // techmarine helm
-	  class TIOW_MK2Helmet_SR_Tech : TIOW_MK2Helmet_UM
+	  class SR_MK2_Helmet_Techmarine : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa",
 		};
 	};
-	class TIOW_MK2Helmet_SR_Tech_dp : TIOW_MK2Helmet_SR_Tech
+	class TIOW_MK2Helmet_SR_Tech_dp : SR_MK2_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_SR_Tech : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_Techmarine : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Specialists\Textures\SR_Helmet_Tech.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_SR_Tech_dp : TIOW_MK3Helmet_SR_Tech
+	class TIOW_MK3Helmet_SR_Tech_dp : SR_MK3_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_SR_Tech : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_Techmarine : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_SR_Tech_dp : TIOW_MK4Helmet_SR_Tech
+	class TIOW_MK4Helmet_SR_Tech_dp : SR_MK4_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_SR_Tech : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_Techmarine : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_SR_Tech_dp : TIOW_MK5Helmet_SR_Tech
+	class TIOW_MK5Helmet_SR_Tech_dp : SR_MK5_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_SR_Tech : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_Techmarine : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa",
 		};
 	};
-	class TIOW_MK6Helmet_SR_Tech_dp : TIOW_MK6Helmet_SR_Tech
+	class TIOW_MK6Helmet_SR_Tech_dp : SR_MK6_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_SR_Tech : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_Techmarine : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_Tech_dp : TIOW_MK7KnightHelmet_SR_Tech
+	class TIOW_MK7KnightHelmet_SR_Tech_dp : SR_MK7K_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_SR_Tech : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_Techmarine : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Techmarine)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Specialists\Textures\SR_Helmet_Tech.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_Tech_dp : TIOW_MK7Helmet_SR_Tech
+	  class TIOW_MK7Helmet_SR_Tech_dp : SR_MK7_Helmet_Techmarine
 	  {
 		scopeArsenal = 1
 	  };
 
 	  // Primaris Helms
 	  class Primaris_Dos_Helm_Base;
-	  class Primaris_Helm_Main_TSR_Techmarine: Primaris_Dos_Helm_Base
+	  class SR_MK10_Helmet_Techmarine: Primaris_Dos_Helm_Base
 	{
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="Primaris Mk.10 (TSR Techmarine)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=
@@ -290,12 +292,14 @@ class Cfgweapons
 			};
 		};
 	};
-	class Primaris_Helm_Main_SR_Apoth: Primaris_Dos_Helm_Base
+	class SR_MK10_Helmet_Apothecary: Primaris_Dos_Helm_Base
 	{
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="Primaris Mk.10 (TSR Apothecary)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=
@@ -345,7 +349,7 @@ class Cfgweapons
 	class TIOW_Mk7PowerArmorImperialis_1_WS;
 	class TIOW_MK8PowerArmor_1_WS;
 
-	class TIOW_MK2PowerArmor_SR_Apoth: TIOW_MK2PowerArmor_1_WS
+	class SR_MK2_Armor_Apothecary: TIOW_MK2PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 2 Power Armor (TSR Apothecary)";
@@ -360,7 +364,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK3PowerArmor_SR_Apoth: TIOW_MK3PowerArmor_1_WS
+	class SR_MK3_Armor_Apothecary: TIOW_MK3PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 3 Power Armor (TSR Apothecary)";
@@ -375,7 +379,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK4PowerArmor_SR_Apoth: TIOW_MK4PowerArmor_1_WS
+	class SR_MK4_Armor_Apothecary: TIOW_MK4PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 4 Power Armor (TSR Apothecary)";
@@ -390,7 +394,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK5PowerArmor_SR_Apoth: TIOW_MK5PowerArmor_1_WS
+	class SR_MK5_Armor_Apothecary: TIOW_MK5PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 5 Power Armor (TSR Apothecary)";
@@ -405,7 +409,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK6PowerArmor_SR_Apoth: TIOW_MK6PowerArmor_1_WS
+	class SR_MK6_Armor_Apothecary: TIOW_MK6PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 6 Power Armor (TSR Apothecary)";
@@ -420,7 +424,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK7PowerArmor_SR_Apoth: TIOW_MK7PowerArmor_1_WS
+	class SR_MK7_Armor_Apothecary: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 7 Power Armor (TSR Apothecary)";
@@ -434,7 +438,7 @@ class Cfgweapons
 			uniformClass="TIOW_MK7_Tact_SR_Apoth"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-	class TIOW_MK8PowerArmor_SR_Apoth: TIOW_MK8PowerArmor_1_WS
+	class SR_MK8_Armor_Apothecary: TIOW_MK8PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 8 Power Armor (TSR Apothecary)";
@@ -448,7 +452,7 @@ class Cfgweapons
 			uniformClass="TIOW_MK8_Tact_SR_Apoth"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-	class TIOW_MKMK7ImpPowerArmor_SR_Apoth: TIOW_Mk7PowerArmorImperialis_1_WS
+	class SR_MK7Imperialis_Armor_Apothecary: TIOW_Mk7PowerArmorImperialis_1_WS
 	{
 		author="Strixus";
 		displayName="MK 7 Imperialis Power Armor (TSR Apothecary)";
@@ -465,7 +469,7 @@ class Cfgweapons
 
 	// techmarine
 
-		class TIOW_MK2PowerArmor_SR_Tech: TIOW_MK2PowerArmor_1_WS
+		class SR_MK2_Armor_Techmarine: TIOW_MK2PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 2 Power Armor (TSR Techmarine)";
@@ -480,7 +484,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK3PowerArmor_SR_Tech: TIOW_MK3PowerArmor_1_WS
+	class SR_MK3_Armor_Techmarine: TIOW_MK3PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 3 Power Armor (TSR Techmarine)";
@@ -495,7 +499,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK4PowerArmor_SR_Tech: TIOW_MK4PowerArmor_1_WS
+	class SR_MK4_Armor_Techmarine: TIOW_MK4PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 4 Power Armor (TSR Techmarine)";
@@ -510,7 +514,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK5PowerArmor_SR_Tech: TIOW_MK5PowerArmor_1_WS
+	class SR_MK5_Armor_Techmarine: TIOW_MK5PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 5 Power Armor (TSR Techmarine)";
@@ -525,7 +529,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK6PowerArmor_SR_Tech: TIOW_MK6PowerArmor_1_WS
+	class SR_MK6_Armor_Techmarine: TIOW_MK6PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 6 Power Armor (TSR Techmarine)";
@@ -540,7 +544,7 @@ class Cfgweapons
 		};
 	};
 
-	class TIOW_MK7PowerArmor_SR_Tech: TIOW_MK7PowerArmor_1_WS
+	class SR_MK7_Armor_Techmarine: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 7 Power Armor (TSR Techmarine)";
@@ -554,7 +558,7 @@ class Cfgweapons
 			uniformClass="TIOW_MK7_Tact_SR_Tech"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-	class TIOW_MK8PowerArmor_SR_Tech: TIOW_MK8PowerArmor_1_WS
+	class SR_MK8_Armor_Techmarine: TIOW_MK8PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="MK 8 Power Armor (TSR Techmarine)";
@@ -568,7 +572,7 @@ class Cfgweapons
 			uniformClass="TIOW_MK8_Tact_SR_Tech"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-	class TIOW_MKMK7ImpPowerArmor_SR_Tech: TIOW_Mk7PowerArmorImperialis_1_WS
+	class SR_MK7Imperialis_Armor_Techmarine: TIOW_Mk7PowerArmorImperialis_1_WS
 	{
 		author="Strixus";
 		displayName="MK 7 Imperialis Power Armor (TSR Techmarine)";
@@ -586,7 +590,7 @@ class Cfgweapons
 	// Primaris Power Armor
 	class Primaris_Dos_Base;
 
-		class Primaris_SM_SR_Tech_W: Primaris_Dos_Base
+		class SR_MK10_Armor_Techmarine: Primaris_Dos_Base
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -599,7 +603,7 @@ class Cfgweapons
 			uniformClass="Primaris_SM_SR_Tech";
 		};
 	}
-		class Primaris_SM_SR_Apoth_W: Primaris_SM_SR_Tech_W
+		class SR_MK10_Armor_Apothecary: SR_MK10_Armor_Techmarine
 	{
 		displayName="Primaris Mk.10 (TSR Apothecary)";
 		class ItemInfo: ItemInfo
@@ -611,7 +615,7 @@ class Cfgweapons
 	class TIOW_MK7Limbs_UM;
 	
 	
-	class TIOW_MK2Limbs_SR_Apoth : TIOW_MK2Limbs_UM
+	class SR_MK2_Shoulders_Apothecary : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="MK 2 Pauldrons (TSR Apothecary)";
@@ -621,7 +625,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Apoth_Armour2.paa"
 		};
 	};
-		class TIOW_MK2Limbs_SR_ApothAsp : TIOW_MK2Limbs_UM
+		class SR_MK2_Shoulders_ApothecaryAspirant : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="MK 2 Pauldrons (TSR Apothecary Aspirant)";
@@ -631,7 +635,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Apoth_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_ApothVet : TIOW_MK2Limbs_UM
+			class SR_MK2_Shoulders_ApothecaryVeteran : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="MK 2 Pauldrons (TSR Veteran Apothecary)";
@@ -641,7 +645,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Apoth_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_PrimeMedicae : TIOW_MK2Limbs_UM
+			class SR_MK2_Shoulders_PrimeMedicae : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="MK 2 Pauldrons (TSR Prime Medicae)";
@@ -651,7 +655,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Apoth_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_ChiefApoth : TIOW_MK2Limbs_UM
+			class SR_MK2_Shoulders_ChiefApothecary : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="MK 2 Pauldrons (TSR Chief Apothecary)";
@@ -661,7 +665,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Apoth_Armour2.paa"
 		};
 	};
-		class TIOW_MK2Limbs_SR_Tech : TIOW_MK2Limbs_SR_Apoth
+		class SR_MK2_Shoulders_Techmarine : SR_MK2_Shoulders_Apothecary
 	{
 		displayName="MK 2 Pauldrons (TSR Techmarine)";
 		hiddenSelectionsTextures[] =
@@ -670,16 +674,16 @@ class Cfgweapons
 			"SR_Specialists\Textures\Tech_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_TechAdept : TIOW_MK2Limbs_SR_Apoth
+			class SR_MK2_Shoulders_TechAdept : SR_MK2_Shoulders_Apothecary
 	{
-		displayName="MK 2 Pauldrons (TSR Techmarine)";
+		displayName="MK 2 Pauldrons (TSR Tech Adept)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\TechAdept_Armour1.paa",
 			"SR_Specialists\Textures\Tech_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_ForgeSteward : TIOW_MK2Limbs_SR_Apoth
+			class SR_MK2_Shoulders_ForgeSteward : SR_MK2_Shoulders_Apothecary
 	{
 		displayName="MK 2 Pauldrons (TSR Forge Steward)";
 		hiddenSelectionsTextures[] =
@@ -688,7 +692,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Tech_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_ForgeWright : TIOW_MK2Limbs_SR_Apoth
+			class SR_MK2_Shoulders_ForgeWright : SR_MK2_Shoulders_Apothecary
 	{
 		displayName="MK 2 Pauldrons (TSR Forge Wright)";
 		hiddenSelectionsTextures[] =
@@ -697,7 +701,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\Tech_Armour2.paa"
 		};
 	};
-			class TIOW_MK2Limbs_SR_ForgeLord : TIOW_MK2Limbs_SR_Apoth
+			class SR_MK2_Shoulders_ForgeLord : SR_MK2_Shoulders_Apothecary
 	{
 		displayName="MK 2 Pauldrons (TSR Forge Lord)";
 		hiddenSelectionsTextures[] =
@@ -715,7 +719,7 @@ class Cfgweapons
 		scopeArsenal=1;
 		class ItemInfo;
 	};	
-	class Primaris_Vest_40K_SR_Apoth: DOS_Primaris_40k_Vest_Base 
+	class SR_MK10_Shoulders_Apothecary: DOS_Primaris_40k_Vest_Base 
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -743,7 +747,7 @@ class Cfgweapons
 			};
 		};
 	};
-	class Primaris_Vest_40k_SR_ApothAdept: Primaris_Vest_40K_SR_Apoth
+	class SR_MK10_Shoulders_ApothecaryAspirant: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Apothecary Aspirant)";
 		hiddenSelections[]=
@@ -755,7 +759,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\ApothAsp_PrimArmour.paa"
 		};
 	}
-		class Primaris_Vest_40k_SR_VetApoth: Primaris_Vest_40K_SR_Apoth
+		class SR_MK10_Shoulders_VeteranApothecary: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Veteran Apothecary)";
 		hiddenSelections[]=
@@ -767,7 +771,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\VetApoth_PrimArmour.paa"
 		};
 	}
-		class Primaris_Vest_40k_SR_PMedicae: Primaris_Vest_40K_SR_Apoth
+		class SR_MK10_Shoulders_PrimeMedicae: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Prime Medicae)";
 		hiddenSelections[]=
@@ -779,7 +783,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\PrimeMedicae_PrimArmour.paa"
 		};
 	}
-		class Primaris_Vest_40k_SR_ApothChief: Primaris_Vest_40K_SR_Apoth
+		class SR_MK10_Shoulders_ApothecaryChief: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Chief Apothecary)";
 		hiddenSelections[]=
@@ -791,7 +795,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\ChiefApoth_PrimArmour.paa"
 		};
 	}
-		class Primaris_Vest_40k_SR_TechAdept: Primaris_Vest_40K_SR_Apoth
+		class SR_MK10_Shoulders_TechAdept: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Tech Adept)";
 		hiddenSelections[]=
@@ -803,7 +807,7 @@ class Cfgweapons
 			"SR_Specialists\Textures\TechAdept_PrimArmour.paa"
 		};
 	}
-		class Primaris_Vest_40k_SR_Tech: Primaris_Vest_40K_SR_Apoth
+		class SR_MK10_Shoulders_Techmarine: SR_MK10_Shoulders_Apothecary
 	{
 		displayName="Primaris Mk.10 (TSR Techmarine)";
 		hiddenSelections[]=
