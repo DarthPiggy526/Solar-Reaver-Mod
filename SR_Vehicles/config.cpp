@@ -26,6 +26,7 @@ class CfgVehicles
 	class HitHull;
 	class HitLAileron;
 	class HitRAileron;
+	class TIOW_Drop_Pod_UM;
 	class SR_StormEagle: VTOL_SE_1
 	{
 		armor=100;
@@ -171,6 +172,20 @@ class CfgVehicles
 			};
 		};
 	};
+	class SR_DropPod: TIOW_Drop_Pod_UM
+	{
+		editorSubcategory="EdSubcat_Planes";
+		crew="TIOW_Tactical_IF_1";
+		displayName="[SR] Drop Pod";
+		hiddenSelections[]=
+		{
+			"Pod_Camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SR_Vehicles\textures\SR_Drop_Pod.paa"
+		};
+	}
 };
 class cfgMods
 {

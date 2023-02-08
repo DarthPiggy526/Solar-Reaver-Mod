@@ -18,1281 +18,1293 @@ class Cfgweapons
 	class TIOW_MK7Helmet_UM;
 	class TIOW_MK7KnightHelmet_UM;
 	
-	class TIOW_MK2Helmet_SR_BS : TIOW_MK2Helmet_UM
+	class SR_MK2_Helmet_Black : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet.paa",
 		};
 	};
-	class TIOW_MK2Helmet_SR_BS_dp : TIOW_MK2Helmet_SR_BS
+	class TIOW_MK2Helmet_SR_BS_dp : SR_MK2_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_SR_BS : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_Black : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Blackshield_Helmet.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_SR_BS_dp : TIOW_MK3Helmet_SR_BS
+	class TIOW_MK3Helmet_SR_BS_dp : SR_MK3_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_SR_BS : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_Black : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_SR_BS_dp : TIOW_MK4Helmet_SR_BS
+	class TIOW_MK4Helmet_SR_BS_dp : SR_MK4_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_SR_BS : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_Black : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_SR_BS_dp : TIOW_MK5Helmet_SR_BS
+	class TIOW_MK5Helmet_SR_BS_dp : SR_MK5_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_SR_BS : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_Black : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet.paa",
 		};
 	};
-	class TIOW_MK6Helmet_SR_BS_dp : TIOW_MK6Helmet_SR_BS
+	class TIOW_MK6Helmet_SR_BS_dp : SR_MK6_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_SR_BS : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_Black : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_BS_dp : TIOW_MK7KnightHelmet_SR_BS
+	class TIOW_MK7KnightHelmet_SR_BS_dp : SR_MK7K_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_SR_BS : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_Black : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Black)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Blackshield_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_BS_dp : TIOW_MK7Helmet_SR_BS
+	  class TIOW_MK7Helmet_SR_BS_dp : SR_MK7_Helmet_Black
 	  {
 		scopeArsenal = 1
 	  };
 
 // LT Helm
 
-	  	class TIOW_MK2Helmet_BS_LT : TIOW_MK2Helmet_UM
+	  	class SR_MK2_Helmet_BlackLT : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 		};
 	};
-	class TIOW_MK2Helmet_BS_LT_dp : TIOW_MK2Helmet_BS_LT
+	class TIOW_MK2Helmet_BS_LT_dp : SR_MK2_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_BS_LT : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackLT : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_BS_LT_dp : TIOW_MK3Helmet_BS_LT
+	class TIOW_MK3Helmet_BS_LT_dp : SR_MK3_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_BS_LT : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackLT : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_BS_LT_dp : TIOW_MK4Helmet_BS_LT
+	class TIOW_MK4Helmet_BS_LT_dp : SR_MK4_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_BS_LT : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackLT : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_BS_LT_dp : TIOW_MK5Helmet_BS_LT
+	class TIOW_MK5Helmet_BS_LT_dp : SR_MK5_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_BS_LT : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackLT : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 		};
 	};
-	class TIOW_MK6Helmet_BS_LT_dp : TIOW_MK6Helmet_BS_LT
+	class TIOW_MK6Helmet_BS_LT_dp : SR_MK6_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_BS_LT : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackLT : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_BS_LT_dp : TIOW_MK7KnightHelmet_BS_LT
+	class TIOW_MK7KnightHelmet_BS_LT_dp : SR_MK7K_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_BS_LT : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackLT : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Blackshield LT)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_BS_LT_dp : TIOW_MK7Helmet_BS_LT
+	  class TIOW_MK7Helmet_BS_LT_dp : SR_MK7_Helmet_BlackLT
 	  {
 		scopeArsenal = 1
 	  };
 
 	  // Blackshield Sergeant
 
-	  	class TIOW_MK2Helmet_BS_Ser : TIOW_MK2Helmet_UM
+	  	class SR_MK2_Helmet_BlackSer : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 		};
 	};
-	class TIOW_MK2Helmet_BS_Ser_dp : TIOW_MK2Helmet_BS_Ser
+	class TIOW_MK2Helmet_BS_Ser_dp : SR_MK2_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_BS_Ser : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackSer : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_BS_Ser_dp : TIOW_MK3Helmet_BS_Ser
+	class TIOW_MK3Helmet_BS_Ser_dp : SR_MK3_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_BS_Ser : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackSer : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_BS_Ser_dp : TIOW_MK4Helmet_BS_Ser
+	class TIOW_MK4Helmet_BS_Ser_dp : SR_MK4_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_BS_Ser : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackSer : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_BS_Ser_dp : TIOW_MK5Helmet_BS_Ser
+	class TIOW_MK5Helmet_BS_Ser_dp : SR_MK5_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_BS_Ser : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackSer : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 		};
 	};
-	class TIOW_MK6Helmet_BS_Ser_dp : TIOW_MK6Helmet_BS_Ser
+	class TIOW_MK6Helmet_BS_Ser_dp : SR_MK6_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_BS_Ser : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackSer : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_BS_Ser_dp : TIOW_MK7KnightHelmet_BS_Ser
+	class TIOW_MK7KnightHelmet_BS_Ser_dp : SR_MK7K_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_BS_Ser : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackSer : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Blackshield Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_BS_Ser_dp : TIOW_MK7Helmet_BS_Ser
+	  class TIOW_MK7Helmet_BS_Ser_dp : SR_MK7_Helmet_BlackSer
 	  {
 		scopeArsenal = 1
 	  };
 
 	  // Blackshield Vet
 
-	  class TIOW_MK2Helmet_BS_Vet : TIOW_MK2Helmet_UM
+	  class SR_MK2_Helmet_BlackVet : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 		};
 	};
-	class TIOW_MK2Helmet_BS_Vet_dp : TIOW_MK2Helmet_BS_Vet
+	class TIOW_MK2Helmet_BS_Vet_dp : SR_MK2_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_BS_Vet : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackVet : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_BS_Vet_dp : TIOW_MK3Helmet_BS_Vet
+	class TIOW_MK3Helmet_BS_Vet_dp : SR_MK3_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_BS_Vet : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackVet : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_BS_Vet_dp : TIOW_MK4Helmet_BS_Vet
+	class TIOW_MK4Helmet_BS_Vet_dp : SR_MK4_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_BS_Vet : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackVet : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_BS_Vet_dp : TIOW_MK5Helmet_BS_Vet
+	class TIOW_MK5Helmet_BS_Vet_dp : SR_MK5_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_BS_Vet : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackVet : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 		};
 	};
-	class TIOW_MK6Helmet_BS_Vet_dp : TIOW_MK6Helmet_BS_Vet
+	class TIOW_MK6Helmet_BS_Vet_dp : SR_MK6_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_BS_Vet : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackVet : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_BS_Vet_dp : TIOW_MK7KnightHelmet_BS_Vet
+	class TIOW_MK7KnightHelmet_BS_Vet_dp : SR_MK7K_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_BS_Vet : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackVet : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Blackshield Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_BS_Vet_dp : TIOW_MK7Helmet_BS_Vet
+	  class TIOW_MK7Helmet_BS_Vet_dp : SR_MK7_Helmet_BlackVet
 	  {
 		scopeArsenal = 1
 	  };
 
 // Blackshield Vet Sergeant
-class TIOW_MK2Helmet_BS_VetSer : TIOW_MK2Helmet_UM
+class SR_MK2_Helmet_BlackVetSer : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 		};
 	};
-	class TIOW_MK2Helmet_BS_VetSer_dp : TIOW_MK2Helmet_BS_VetSer
+	class TIOW_MK2Helmet_BS_VetSer_dp : SR_MK2_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_BS_VetSer : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackVetSer : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_BS_VetSer_dp : TIOW_MK3Helmet_BS_VetSer
+	class TIOW_MK3Helmet_BS_VetSer_dp : SR_MK3_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_BS_VetSer : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackVetSer : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_BS_VetSer_dp : TIOW_MK4Helmet_BS_VetSer
+	class TIOW_MK4Helmet_BS_VetSer_dp : SR_MK4_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_BS_VetSer : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackVetSer : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_BS_VetSer_dp : TIOW_MK5Helmet_BS_VetSer
+	class TIOW_MK5Helmet_BS_VetSer_dp : SR_MK5_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_BS_VetSer : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackVetSer : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 		};
 	};
-	class TIOW_MK6Helmet_BS_VetSer_dp : TIOW_MK6Helmet_BS_VetSer
+	class TIOW_MK6Helmet_BS_VetSer_dp : SR_MK6_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_BS_VetSer : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackVetSer : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_BS_VetSer_dp : TIOW_MK7KnightHelmet_BS_VetSer
+	class TIOW_MK7KnightHelmet_BS_VetSer_dp : SR_MK7K_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_BS_VetSer : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackVetSer : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Blackshield Vet Ser)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Blackshield_Helmet_VetSer.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_BS_VetSer_dp : TIOW_MK7Helmet_BS_VetSer
+	  class TIOW_MK7Helmet_BS_VetSer_dp : SR_MK7_Helmet_BlackVetSer
 	  {
 		scopeArsenal = 1
 	  };
 
 // Marauder Helmet
-class TIOW_MK2Helmet_MR : TIOW_MK2Helmet_UM
+class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet.paa",
 		};
 	};
-	class TIOW_MK2Helmet_MR_dp : TIOW_MK2Helmet_MR
+	class TIOW_MK2Helmet_MR_dp : SR_MK2_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_MR : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_Marauder : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Marauder_Helmet.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_MR_dp : TIOW_MK3Helmet_MR
+	class TIOW_MK3Helmet_MR_dp : SR_MK3_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_MR : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_Marauder : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_MR_dp : TIOW_MK4Helmet_MR
+	class TIOW_MK4Helmet_MR_dp : SR_MK4_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_MR : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_Marauder : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_MR_dp : TIOW_MK5Helmet_MR
+	class TIOW_MK5Helmet_MR_dp : SR_MK5_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_MR : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_Marauder : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet.paa",
 		};
 	};
-	class TIOW_MK6Helmet_MR_dp : TIOW_MK6Helmet_MR
+	class TIOW_MK6Helmet_MR_dp : SR_MK6_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_MR : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_Marauder : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_MR_dp : TIOW_MK7KnightHelmet_MR
+	class TIOW_MK7KnightHelmet_MR_dp : SR_MK7K_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_MR : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_Marauder : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Marauder)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Marauder_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_MR_dp : TIOW_MK7Helmet_MR
+	  class TIOW_MK7Helmet_MR_dp : SR_MK7_Helmet_Marauder
 	  {
 		scopeArsenal = 1
 	  };
 
 // Chief Marauder
-class TIOW_MK2Helmet_MR_Chief : TIOW_MK2Helmet_UM
+class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 		};
 	};
-	class TIOW_MK2Helmet_MR_Chief_dp : TIOW_MK2Helmet_MR_Chief
+	class TIOW_MK2Helmet_MR_Chief_dp : SR_MK2_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_MR_Chief : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_ChiefMarauder : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_MR_Chief_dp : TIOW_MK3Helmet_MR_Chief
+	class TIOW_MK3Helmet_MR_Chief_dp : SR_MK3_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_MR_Chief : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_ChiefMarauder : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_MR_Chief_dp : TIOW_MK4Helmet_MR_Chief
+	class TIOW_MK4Helmet_MR_Chief_dp : SR_MK4_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_MR_Chief : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_ChiefMarauder : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_MR_Chief_dp : TIOW_MK5Helmet_MR_Chief
+	class TIOW_MK5Helmet_MR_Chief_dp : SR_MK5_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_MR_Chief : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_ChiefMarauder : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 		};
 	};
-	class TIOW_MK6Helmet_MR_Chief_dp : TIOW_MK6Helmet_MR_Chief
+	class TIOW_MK6Helmet_MR_Chief_dp : SR_MK6_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_MR_Chief : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_ChiefMarauder : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_MR_Chief_dp : TIOW_MK7KnightHelmet_MR_Chief
+	class TIOW_MK7KnightHelmet_MR_Chief_dp : SR_MK7K_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_MR_Chief : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_ChiefMarauder : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Marauder Chief)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_MR_Chief_dp : TIOW_MK7Helmet_MR_Chief
+	  class TIOW_MK7Helmet_MR_Chief_dp : SR_MK7_Helmet_ChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
 // Veteran Marauder
-class TIOW_MK2Helmet_MR_Vet : TIOW_MK2Helmet_UM
+class SR_MK2_Helmet_VeteranMarauder : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 		};
 	};
-	class TIOW_MK2Helmet_MR_Vet_dp : TIOW_MK2Helmet_MR_Vet
+	class TIOW_MK2Helmet_MR_Vet_dp : SR_MK2_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_MR_Vet : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_VeteranMarauder : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_MR_Vet_dp : TIOW_MK3Helmet_MR_Vet
+	class TIOW_MK3Helmet_MR_Vet_dp : SR_MK3_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_MR_Vet : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_VeteranMarauder : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_MR_Vet_dp : TIOW_MK4Helmet_MR_Vet
+	class TIOW_MK4Helmet_MR_Vet_dp : SR_MK4_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_MR_Vet : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_VeteranMarauder : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_MR_Vet_dp : TIOW_MK5Helmet_MR_Vet
+	class TIOW_MK5Helmet_MR_Vet_dp : SR_MK5_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_MR_Vet : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_VeteranMarauder : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 		};
 	};
-	class TIOW_MK6Helmet_MR_Vet_dp : TIOW_MK6Helmet_MR_Vet
+	class TIOW_MK6Helmet_MR_Vet_dp : SR_MK6_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_MR_Vet : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_VeteranMarauder : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_MR_Vet_dp : TIOW_MK7KnightHelmet_MR_Vet
+	class TIOW_MK7KnightHelmet_MR_Vet_dp : SR_MK7K_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_MR_Vet : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_VeteranMarauder : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Marauder Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Marauder_Helmet_Vet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_MR_Vet_dp : TIOW_MK7Helmet_MR_Vet
+	  class TIOW_MK7Helmet_MR_Vet_dp : SR_MK7_Helmet_VeteranMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
 // Chief Marauder Vet
-class TIOW_MK2Helmet_MR_VetChief : TIOW_MK2Helmet_UM
+class SR_MK2_Helmet_VeteranChiefMarauder : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 2 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 		};
 	};
-	class TIOW_MK2Helmet_MR_VetChief_dp : TIOW_MK2Helmet_MR_VetChief
+	class TIOW_MK2Helmet_MR_VetChief_dp : SR_MK2_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK3Helmet_MR_VetChief : TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_VeteranChiefMarauder : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 3 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_MR_VetChief_dp : TIOW_MK3Helmet_MR_VetChief
+	class TIOW_MK3Helmet_MR_VetChief_dp : SR_MK3_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK4Helmet_MR_VetChief : TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_VeteranChiefMarauder : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 4 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 	    };
 	};
-	class TIOW_MK4Helmet_MR_VetChief_dp : TIOW_MK4Helmet_MR_VetChief
+	class TIOW_MK4Helmet_MR_VetChief_dp : SR_MK4_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK5Helmet_MR_VetChief : TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_VeteranChiefMarauder : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 5 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 	    };
 	};
-	class TIOW_MK5Helmet_MR_VetChief_dp : TIOW_MK5Helmet_MR_VetChief
+	class TIOW_MK5Helmet_MR_VetChief_dp : SR_MK5_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK6Helmet_MR_VetChief : TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_VeteranChiefMarauder : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 6 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 		};
 	};
-	class TIOW_MK6Helmet_MR_VetChief_dp : TIOW_MK6Helmet_MR_VetChief
+	class TIOW_MK6Helmet_MR_VetChief_dp : SR_MK6_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
-	class TIOW_MK7KnightHelmet_MR_VetChief : TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_VeteranChiefMarauder : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
 		displayName = "MK 7K Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 	    };
 	};
-	class TIOW_MK7KnightHelmet_MR_VetChief_dp : TIOW_MK7KnightHelmet_MR_VetChief
+	class TIOW_MK7KnightHelmet_MR_VetChief_dp : SR_MK7K_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 	  
-	class TIOW_MK7Helmet_MR_VetChief : TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_VeteranChiefMarauder : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR Marauder Chief Vet)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\Marauder_Helmet_VetChief.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_MR_VetChief_dp : TIOW_MK7Helmet_MR_VetChief
+	  class TIOW_MK7Helmet_MR_VetChief_dp : SR_MK7_Helmet_VeteranChiefMarauder
 	  {
 		scopeArsenal = 1
 	  };
 
 	  // Chapter Helms
 
-	  	class TIOW_MK7Helmet_SR_AL : TIOW_MK7Helmet_UM
+	  	class SR_MK7_Helmet_AlphaLegion : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR AL)";
+		displayName = "MK 7 Helmet (TSR Alpha Legion)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\AL_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_AL_dp : TIOW_MK7Helmet_SR_AL
+	  class TIOW_MK7Helmet_SR_AL_dp : SR_MK7_Helmet_AlphaLegion
 	  {
 		scopeArsenal = 1
 	  };
 
 	  
-	  	class TIOW_MK7Helmet_SR_BA : TIOW_MK7Helmet_UM
+	  	class SR_MK7_Helmet_BloodAngels : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR BA)";
+		displayName = "MK 7 Helmet (TSR Blood Angels)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\BA_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_BA_dp : TIOW_MK7Helmet_SR_BA
+	  class TIOW_MK7Helmet_SR_BA_dp : SR_MK7_Helmet_BloodAngels
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	class TIOW_MK7Helmet_SR_DA : TIOW_MK7Helmet_UM
+	  	  	class SR_MK7_Helmet_DarkAngels : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR DA)";
+		displayName = "MK 7 Helmet (TSR Dark Angels)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\DA_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_DA_dp : TIOW_MK7Helmet_SR_DA
+	  class TIOW_MK7Helmet_SR_DA_dp : SR_MK7_Helmet_DarkAngels
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	class TIOW_MK7Helmet_SR_DG : TIOW_MK7Helmet_UM
+	  	class SR_MK7_Helmet_DeathGuard : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR DG)";
+		displayName = "MK 7 Helmet (TSR Death Guard)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\DG_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_DG_dp : TIOW_MK7Helmet_SR_DG
+	  class TIOW_MK7Helmet_SR_DG_dp : SR_MK7_Helmet_DeathGuard
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_EC : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_EmperorsChildren : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR EC)";
+		displayName = "MK 7 Helmet (TSR Emperor's Children)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\EC_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_EC_dp : TIOW_MK7Helmet_SR_EC
+	  class TIOW_MK7Helmet_SR_EC_dp : SR_MK7_Helmet_EmperorsChildren
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_IF : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_ImperialFists : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR IF)";
+		displayName = "MK 7 Helmet (TSR Imperial Fists)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\IF_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_IF_dp : TIOW_MK7Helmet_SR_IF
+	  class TIOW_MK7Helmet_SR_IF_dp : SR_MK7_Helmet_ImperialFists
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_IW : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_IronWarriors : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR IW)";
+		displayName = "MK 7 Helmet (TSR Iron Warriors)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\IW_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_IW_dp : TIOW_MK7Helmet_SR_IW
+	  class TIOW_MK7Helmet_SR_IW_dp : SR_MK7_Helmet_IronWarriors
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_LW : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_LunaWolves : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR LW)";
+		displayName = "MK 7 Helmet (TSR Luna Wolves)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\LW_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_LW_dp : TIOW_MK7Helmet_SR_LW
+	  class TIOW_MK7Helmet_SR_LW_dp : SR_MK7_Helmet_LunaWolves
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_NL : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_NightLords : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR NL)";
+		displayName = "MK 7 Helmet (TSR Night Lords)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\NL_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_NL_dp : TIOW_MK7Helmet_SR_NL
+	  class TIOW_MK7Helmet_SR_NL_dp : SR_MK7_Helmet_NightLords
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_SAL : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_Salamanders : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR SAL)";
+		displayName = "MK 7 Helmet (TSR Salamanders)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\SAL_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_SAL_dp : TIOW_MK7Helmet_SR_SAL
+	  class TIOW_MK7Helmet_SR_SAL_dp : SR_MK7_Helmet_Salamanders
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_SW : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_SpaceWolves : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR SW)";
+		displayName = "MK 7 Helmet (TSR Space Wolves)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\SW_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_SW_dp : TIOW_MK7Helmet_SR_SW
+	  class TIOW_MK7Helmet_SR_SW_dp : SR_MK7_Helmet_SpaceWolves
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_TSons : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_ThousandSons : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR TSons)";
+		displayName = "MK 7 Helmet (TSR Thousand Sons)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\TSons_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_TSons_dp : TIOW_MK7Helmet_SR_TSons
+	  class TIOW_MK7Helmet_SR_TSons_dp : SR_MK7_Helmet_ThousandSons
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_UM : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_Ultramarines : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR UM)";
+		displayName = "MK 7 Helmet (TSR Ultramarines)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\UM_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_UM_dp : TIOW_MK7Helmet_SR_UM
+	  class TIOW_MK7Helmet_SR_UM_dp : SR_MK7_Helmet_Ultramarines
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_WB : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_WordBearers : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR WB)";
+		displayName = "MK 7 Helmet (TSR Word Bearers)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\WB_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_WB_dp : TIOW_MK7Helmet_SR_WB
+	  class TIOW_MK7Helmet_SR_WB_dp : SR_MK7_Helmet_WordBearers
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_WE : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_WorldEaters : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
-		displayName = "MK 7 Helmet (TSR WE)";
+		displayName = "MK 7 Helmet (TSR World Eaters)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\WE_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_WE_dp : TIOW_MK7Helmet_SR_WE
+	  class TIOW_MK7Helmet_SR_WE_dp : SR_MK7_Helmet_WorldEaters
 	  {
 		scopeArsenal = 1
 	  };
 
-	  	  	  	class TIOW_MK7Helmet_SR_WS : TIOW_MK7Helmet_UM
+	  	  	  	class SR_MK7_Helmet_WhiteScars : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
 		displayName = "MK 7 Helmet (TSR White)";
 		optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
+		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\WS_Helmet.paa",
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_WS_dp : TIOW_MK7Helmet_SR_WS
+	  class TIOW_MK7Helmet_SR_WS_dp : SR_MK7_Helmet_WhiteScars
 	  {
 		scopeArsenal = 1
+	  };
+	  
+	  	  	  	class SR_MK7_Helmet_DeathStrike : TIOW_MK7Helmet_UM
+	  {
+		author="Strixus";
+		displayName = "MK 7 Helmet (TSR Blue)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		   {
+		     "SR_Helm\Textures\DS_Helmet.paa",
+		   };
 	  };
 }; // End of CfgWeapons

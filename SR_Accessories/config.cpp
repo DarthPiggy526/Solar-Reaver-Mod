@@ -32,8 +32,8 @@ class CfgPatches
 			"ChestRig1Face",
 			"PrimarisChest",
 			"PrimarisChestFace",
-			"",
-			"",
+			"NL_Batwings_Face",
+			"SR_Techmarine_Eye_Piece",
 			"",
 			"",
 			"",
@@ -124,6 +124,45 @@ class CfgWeapons
 			};
 		};
 	};
+	class SR_Techmarine_Eye_Piece: Integrated_NVG_TI_1_F
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="[TSR] Techmarine Eye Piece";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={1};
+		modelOptics="\A3\Weapons_F\empty.p3d";
+		hiddenSelections[]=
+		{
+			"ap_head_camo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Accessories\textures\TSR_eye_red.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			type=616;
+			hmdType=0;
+			uniformModel="Dos_Cosmetics\models\Apoth_Head.p3d";
+			modelOff="Dos_Cosmetics\models\Apoth_Head.p3d"
+			hiddenSelections[]=
+			{
+				"ap_head_camo"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"SR_Accessories\textures\TSR_eye_red.paa"
+			};
+		};
+	};
+	
 };
 class CfgGlasses
 {
@@ -166,4 +205,15 @@ class CfgGlasses
 		};
 		identityTypes[]={};
 	};
+	class NL_Batwings_Face: None
+	{
+		author="TIOW";
+		displayname="[Night Lords] Bat Wings";
+		model="TIOW_SM\Marine\Model\NL_Helmet_Wings.p3d";
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+		identityTypes[]={};	
+		mass=0;
+	}
+
 };
