@@ -311,15 +311,25 @@ class Cfgweapons
 			uniformClass="TIOW_MK7_Tact_SR_DeathStrike"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-					class SR_MK7_Armor_CelestialLions: TIOW_MK7PowerArmor_1_WS
+	// 				class SR_MK7_Armor_CelestialLions: TIOW_MK7PowerArmor_1_WS
+	// {
+	// 	author="Strixus";
+	// 	displayName="MK 7 Power Armor (TSR Celestial Lions)";
+	// 	class ItemInfo: ItemInfo
+	// 	{
+	// 		uniformClass="TIOW_MK7_Tact_SR_CelestialLions"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+	// 	};
+	// };
+						class SR_MK7_Armor_NightLords2: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="MK 7 Power Armor (TSR Celestial Lions)";
+		displayName="Sevatar";
 		class ItemInfo: ItemInfo
 		{
-			uniformClass="TIOW_MK7_Tact_SR_CelestialLions"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+			uniformClass="TIOW_MK7_Tact_SR_NightLords2"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
+	
 	class TIOW_MK2Limbs_UM;
 	
 	class SR_MK2_Shoulders_Conscript : TIOW_MK2Limbs_UM
@@ -532,13 +542,23 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-				class SR_MK2_Shoulders_CelestialLions : TIOW_MK2Limbs_UM
+	// 			class SR_MK2_Shoulders_CelestialLions : TIOW_MK2Limbs_UM
+	// {
+	// 	author="Strixus";
+	// 	displayName="MK 2 Pauldrons (TSR Celestial Lions)";
+	// 	hiddenSelectionsTextures[] =
+	// 	{
+	// 		"SR_Uniforms\Textures\CL_Armour1.paa",
+	// 		"SR_Uniforms\Textures\SR_Armour2.paa"
+	// 	};
+	// };
+					class SR_MK2_Shoulders_NightLords2 : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
-		displayName="MK 2 Pauldrons (TSR Celestial Lions)";
+		displayName="Sevatar";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Uniforms\Textures\CL_Armour1.paa",
+			"SR_Uniforms\Textures\NL2_Armour1.paa",
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};

@@ -1307,4 +1307,16 @@ class SR_MK2_Helmet_VeteranChiefMarauder : TIOW_MK2Helmet_UM
 		     "SR_Helm\Textures\DS_Helmet.paa",
 		   };
 	  };
+	  	  	  	  	class SR_MK7_Helmet_NightLord2 : TIOW_MK7Helmet_UM
+	  {
+		author="Strixus";
+		displayName = "Sevatar";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		   {
+		     "SR_Helm\Textures\NLB_Helmet.paa",
+		   };
+	  };
+
 }; // End of CfgWeapons

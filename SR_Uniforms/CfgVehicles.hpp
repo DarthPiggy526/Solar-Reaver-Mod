@@ -400,6 +400,25 @@ class CfgVehicles
       linkedItems[]={};
       RespawnlinkedItems[]={};
     };
+                   class TIOW_MK7_Tact_SR_NightLords2: TIOW_MK7_Tact_SR_AL
+    {
+      author="Strixus";
+      displayName="Tactical Marine (MK. VII)";
+	  scope=1;
+      editorCategory= "EdCategory_TheAdeptusAstartes";
+      editorSubcategory="EdSubCat_SR";
+      backpack="TIOW_MK5Powerpack_SR_BS";
+      uniformClass="TIOW_MK7_Tact_SR_WS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+      hiddenSelectionsTextures[]=
+      {
+        "SR_Uniforms\Textures\NL2_Armour1.paa",
+        "SR_Uniforms\Textures\SR_Armour2.paa"
+      };
+      Items[]={};
+	  RespawnItems[]={};
+      linkedItems[]={};
+      RespawnlinkedItems[]={};
+    };
 
     // Solar Reavers Armor
 
