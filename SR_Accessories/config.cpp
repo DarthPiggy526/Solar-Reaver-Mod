@@ -50,7 +50,7 @@ class CfgWeapons
     
     class ChestRig1: Integrated_NVG_TI_1_F
 	{
-		scope=2;
+		scope=2;//test at 752PM
 		scopeCurator=2;
 		scopeArsenal=2;
 		displayName="[TSR] 1st Born Chest Pouches";
