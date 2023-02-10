@@ -40,6 +40,79 @@ class InventoryItem_Base_F;
 	// 		uniformClass="Primaris_SM_Lysander";
 	// 	};
 	// };
+			class Primaris_SM_BloodAngels_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Blood Angels)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_BloodAngels";
+		};
+	};
+				class Primaris_SM_DarkAngels_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Dark Angels)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_DarkAngels";
+		};
+	};
+					class Primaris_SM_ImperialFists_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Imperial Fists)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_ImperialFists";
+		};
+	};
+				class Primaris_SM_IronHands_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Iron Hands)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_IronHands";
+		};
+	};
+					class Primaris_SM_RavenGuard_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Raven Guard)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_RavenGuard";
+		};
+	};
+		class Primaris_SM_Salamanders_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Salamanders)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_Salamanders";
+		};
+	};
+		class Primaris_SM_SpaceWolves_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Space Wolves)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_SpaceWolves";
+		};
+	};
+			class Primaris_SM_Ultramarines_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR Ultramarines)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_Ultramarines";
+		};
+	};
+			class Primaris_SM_WhiteScars_W: Primaris_SM_SR_1_W
+	{
+		displayName="Primaris MK.10 (TSR White Scars)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_WhiteScars";
+		};
+	};
+
 
 	// Primaris Helmets 
 
@@ -191,6 +264,123 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_VetChief.paa"
 		};
 	}
+			class Primaris_Helm_Main_SR_BloodAngels: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Blood Angels)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\BA_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_DarkAngels: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Dark Angels)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\DA_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_ImperialFists: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Imperial Fists)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IF_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_IronHands: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Iron Hands)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IH_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_RavenGuard: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Raven Guard)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\RG_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Salamanders: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Salamanders)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SAL_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_SpaceWolves: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Space Wolves)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SW_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Ultramarines: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Ultramarines)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\UM_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_WhiteScars: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR White Scars)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\WS_PrimHelmet.paa"
+		};
+	}
 	// Shoulder Pads
 
 	class TIOW_Mk7Limbs_UM;
@@ -254,6 +444,267 @@ class InventoryItem_Base_F;
 			hiddenSelectionsTextures[]=
 			{
 				"SR_Primaris\Textures\SRBS_PrimArmour.paa"
+			};
+		};
+	};
+		class Primaris_Vest_40K_SR_BloodAngels: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Blood Angels)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\BA_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\BA_PrimArmour.paa"
+			};
+		};
+	};
+		class Primaris_Vest_40K_SR_DarkAngels: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Dark Angels)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\DA_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\DA_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_ImperialFists: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Imperial Fists)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IF_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\IF_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_IronHands: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Iron Hands)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IH_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\IH_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_RavenGuard: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Raven Guard)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\RG_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\RG_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_Salamanders: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Salamanders)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SAL_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\SAL_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_Furries: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Space Wolves)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SW_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\SW_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_Ultramarines: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Ultramarines)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\UM_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\UM_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SR_WhiteScars: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR White Scars)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\WS_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\WS_PrimArmour.paa"
 			};
 		};
 	};
