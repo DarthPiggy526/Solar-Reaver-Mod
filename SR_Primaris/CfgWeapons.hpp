@@ -189,6 +189,123 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_VetChief.paa"
 		};
 	}
+			class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR BA)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\BA_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR DA)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\DA_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR IF)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IF_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR IH)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IH_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR RG)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\RG_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR SAL)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SAL_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR SW)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SW_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR UM)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\UM_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR WS)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\WS_PrimHelmet.paa"
+		};
+	}
 	// Shoulder Pads
 
 	class TIOW_Mk7Limbs_UM;
@@ -252,6 +369,267 @@ class InventoryItem_Base_F;
 			hiddenSelectionsTextures[]=
 			{
 				"SR_Primaris\Textures\SRBS_PrimArmour.paa"
+			};
+		};
+	};
+		class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR BA)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\BA_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\BA_PrimArmour.paa"
+			};
+		};
+	};
+		class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR DA)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\DA_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\DA_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR IF)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IF_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\IF_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR IH)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IH_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\IH_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR RG)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\RG_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\RG_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR SAL)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SAL_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\SAL_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR SW)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SW_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\SW_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR UM)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\UM_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\UM_PrimArmour.paa"
+			};
+		};
+	};
+			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR WS)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\WS_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\WS_PrimArmour.paa"
 			};
 		};
 	};

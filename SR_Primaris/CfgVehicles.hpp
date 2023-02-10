@@ -446,4 +446,94 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris BA (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\BA_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris DA (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\DA_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris IF (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IF_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris IH (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\IH_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris RG (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\RG_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris SAL (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SAL_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris SW (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\SW_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris UM (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\UM_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+	class Primaris_SM: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris WS (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\WS_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
 }; // End of CfgVechicle
