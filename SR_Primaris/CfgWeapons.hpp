@@ -455,7 +455,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-		class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+		class Primaris_Vest_40K_BA_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -484,7 +484,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-		class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+		class Primaris_Vest_40K_DA_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -513,7 +513,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_IF_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -542,7 +542,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_IH_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -571,7 +571,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_RG_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -600,7 +600,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_SAL_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -629,7 +629,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_SW_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -658,7 +658,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_UM_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
@@ -687,7 +687,7 @@ class InventoryItem_Base_F;
 			};
 		};
 	};
-			class Primaris_Vest_40K_SRBS_1: DOS_Primaris_40k_Vest_Base 
+			class Primaris_Vest_40K_WS_1: DOS_Primaris_40k_Vest_Base 
 	{
 		author="Hummus, Barbon";
 		scope=2;
