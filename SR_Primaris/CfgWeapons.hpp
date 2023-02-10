@@ -34,12 +34,95 @@ class InventoryItem_Base_F;
 	};
 		class Primaris_SM_Lysander_1_W: Primaris_SM_SR_1_W
 	{
+		author="Hummus, Barbon";
 		displayName="Primaris MK.10 (TSR Lysander)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SM_Lysander";
 		};
 	};
+		class Primaris_SM_BA_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Blood Angels)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_BA";
+		};
+	};
+		class Primaris_SM_DA_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Dark Angels)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_DA";
+		};
+	};
+		class Primaris_SM_IF_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Imperial Fists)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_IF";
+		};
+	};
+		class Primaris_SM_IH_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Iron Hands)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_IH";
+		};
+	};
+		class Primaris_SM_RG_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Raven Guard)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_RG";
+		};
+	};
+		class Primaris_SM_SAL_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Salamanders)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_SAL";
+		};
+	};
+		class Primaris_SM_SW_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Space Wolves)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_SW";
+		};
+	};
+		class Primaris_SM_UM_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR Ultramarines)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_UM";
+		};
+	};
+		class Primaris_SM_WS_W: Primaris_SM_SR_1_W
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris MK.10 (TSR White Scars)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_WS";
+		};
+	};
+	
 
 	// Primaris Helmets 
 
@@ -189,7 +272,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_VetChief.paa"
 		};
 	}
-			class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+			class Primaris_Helm_Main_SR_BA: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR BA)";
@@ -202,7 +285,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\BA_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_DA: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR DA)";
@@ -215,7 +298,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\DA_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_IF: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR IF)";
@@ -228,7 +311,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\IF_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_IH: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR IH)";
@@ -241,7 +324,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\IH_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_RG: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR RG)";
@@ -254,7 +337,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\RG_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_SAL: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR SAL)";
@@ -267,7 +350,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SAL_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_SW: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR SW)";
@@ -280,7 +363,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SW_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_UM: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR UM)";
@@ -293,7 +376,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\UM_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Vet: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_WS: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR WS)";

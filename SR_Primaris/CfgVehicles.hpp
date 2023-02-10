@@ -446,7 +446,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_BA: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris BA (Mk.10)";
@@ -456,7 +456,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_DA: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris DA (Mk.10)";
@@ -466,7 +466,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_IF: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris IF (Mk.10)";
@@ -476,7 +476,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_IH: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris IH (Mk.10)";
@@ -486,7 +486,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_RG: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris RG (Mk.10)";
@@ -496,7 +496,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_SAL: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris SAL (Mk.10)";
@@ -506,7 +506,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_SW: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris SW (Mk.10)";
@@ -516,7 +516,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_UM: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris UM (Mk.10)";
@@ -526,7 +526,7 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
-	class Primaris_SM: Primaris_SM_SR_1
+	class Primaris_SM_WS: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris WS (Mk.10)";
