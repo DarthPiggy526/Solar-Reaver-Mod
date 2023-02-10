@@ -275,7 +275,7 @@ class InventoryItem_Base_F;
 			class Primaris_Helm_Main_SR_BA: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR BA)";
+		displayName="Primaris Mk.10 (TSR Blood Angels)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -288,7 +288,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_DA: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR DA)";
+		displayName="Primaris Mk.10 (TSR Dark Angels)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -301,7 +301,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_IF: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR IF)";
+		displayName="Primaris Mk.10 (TSR Imperial Fists)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -314,7 +314,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_IH: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR IH)";
+		displayName="Primaris Mk.10 (TSR Iron Hands)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -327,7 +327,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_RG: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR RG)";
+		displayName="Primaris Mk.10 (TSR Raven Guard)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -340,7 +340,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_SAL: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR SAL)";
+		displayName="Primaris Mk.10 (TSR Salamanders)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -353,7 +353,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_SW: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR SW)";
+		displayName="Primaris Mk.10 (TSR Space Wolves)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -366,7 +366,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_UM: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR UM)";
+		displayName="Primaris Mk.10 (TSR Ultramarines)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -379,7 +379,7 @@ class InventoryItem_Base_F;
 				class Primaris_Helm_Main_SR_WS: Primaris_Helm_Main_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris Mk.10 (TSR WS)";
+		displayName="Primaris Mk.10 (TSR White Scars)";
 	hiddenSelections[]=
 		{
 			"Camo1"
@@ -461,7 +461,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR BA)";
+		displayName="Primaris Mk.10 (TSR Blood Angels)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -490,7 +490,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR DA)";
+		displayName="Primaris Mk.10 (TSR Dark Angels)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -519,7 +519,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR IF)";
+		displayName="Primaris Mk.10 (TSR Imperial Fists)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -548,7 +548,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR IH)";
+		displayName="Primaris Mk.10 (TSR Iron Hands)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -577,7 +577,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR RG)";
+		displayName="Primaris Mk.10 (TSR Raven Guard)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -606,7 +606,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR SAL)";
+		displayName="Primaris Mk.10 (TSR Salamanders)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -635,7 +635,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR SW)";
+		displayName="Primaris Mk.10 (TSR Space Wolves)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -664,7 +664,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR UM)";
+		displayName="Primaris Mk.10 (TSR Ultramarines)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -693,7 +693,7 @@ class InventoryItem_Base_F;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR WS)";
+		displayName="Primaris Mk.10 (TSR White Scars)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
