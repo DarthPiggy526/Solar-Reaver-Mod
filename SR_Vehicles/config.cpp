@@ -15,7 +15,11 @@ class CfgPatches
 		ammo[]={};
 		units[]=
 		{
-			"SR_StormEagle"
+			"SR_StormEagle",
+			"SR_DropPod",
+			"TSR_StormSpeeder",
+			"SR_Rhino",
+			"SR_Razorback",
 		};
 	};
 };
@@ -37,7 +41,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[SR] Storm Eagle";
+		displayName="[TSR] Storm Eagle";
 		crew="TIOW_Tactical_IF_5";
 		hiddenSelections[]=
 		{
@@ -174,9 +178,10 @@ class CfgVehicles
 	};
 	class SR_DropPod: TIOW_Drop_Pod_UM
 	{
+		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
 		crew="TIOW_Tactical_IF_1";
-		displayName="[SR] Drop Pod";
+		displayName="[TSR] Drop Pod";
 		hiddenSelections[]=
 		{
 			"Pod_Camo"
@@ -186,7 +191,79 @@ class CfgVehicles
 			"\SR_Vehicles\textures\SR_Drop_Pod.paa"
 		};
 	}
-};
+class TIOW_UM_Storm;
+	class TSR_StormSpeeder: TIOW_UM_Storm
+	{
+		side=1;
+		scope=2;
+		scopeCurator=2;
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Planes";
+		displayName="[TSR] Land Speeder";
+		crew="TIOW_Tactical_IF_1";
+		hiddenSelections[]=
+		{
+			"LS_Hull"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SR_Vehicles\textures\SR_Speeder_Hull.paa"
+		};
+	};
+
+	// Land Vehicles
+		class TIOW_SM_Rhino_UM;
+	
+	class SR_Rhino: TIOW_SM_Rhino_UM
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		side=1;
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Planes";
+		displayName="[TSR] Rhino"
+		crew="";
+		hiddenSelections[]=
+		{
+			"CamoColor",
+			"CamoParts",
+			"CamoTracks"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Vehicles\textures\SR_Rhino.paa",
+			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhino_Int_co.paa",
+			"\TIOW_SM_Vehs\Data\Textures\TIOW_rhinotracks_co.paa"
+		};
+	};
+
+	class TIOW_SM_Razorback_UM;
+
+	class SR_Razorback: TIOW_SM_Razorback_UM
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		side=1;
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Planes";
+		displayName="[TSR] Razorback"
+		crew="";
+		hiddenSelections[]=
+		{
+			"CamoColor",
+			"CamoParts",
+			"CamoTracks"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Vehicles\textures\SR_Rhino.paa",
+			"\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa",
+			"\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa"
+		};
+	};
+}
 class cfgMods
 {
 	author="Tengu";
