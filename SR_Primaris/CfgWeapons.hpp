@@ -40,7 +40,7 @@ class InventoryItem_Base_F;
 	// 		uniformClass="Primaris_SM_Lysander";
 	// 	};
 	// };
-			class Primaris_SM_BloodAngels_W: Primaris_SM_SR_1_W
+			class Primaris_SM_BloodAngels_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Blood Angels)";
 		class ItemInfo: ItemInfo
@@ -48,7 +48,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_BloodAngels";
 		};
 	};
-				class Primaris_SM_DarkAngels_W: Primaris_SM_SR_1_W
+				class Primaris_SM_DarkAngels_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Dark Angels)";
 		class ItemInfo: ItemInfo
@@ -56,7 +56,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_DarkAngels";
 		};
 	};
-					class Primaris_SM_ImperialFists_W: Primaris_SM_SR_1_W
+					class Primaris_SM_ImperialFists_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Imperial Fists)";
 		class ItemInfo: ItemInfo
@@ -64,7 +64,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_ImperialFists";
 		};
 	};
-				class Primaris_SM_IronHands_W: Primaris_SM_SR_1_W
+				class Primaris_SM_IronHands_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Iron Hands)";
 		class ItemInfo: ItemInfo
@@ -72,7 +72,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_IronHands";
 		};
 	};
-					class Primaris_SM_RavenGuard_W: Primaris_SM_SR_1_W
+					class Primaris_SM_RavenGuard_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Raven Guard)";
 		class ItemInfo: ItemInfo
@@ -80,7 +80,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_RavenGuard";
 		};
 	};
-		class Primaris_SM_Salamanders_W: Primaris_SM_SR_1_W
+		class Primaris_SM_Salamanders_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Salamanders)";
 		class ItemInfo: ItemInfo
@@ -88,7 +88,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_Salamanders";
 		};
 	};
-		class Primaris_SM_SpaceWolves_W: Primaris_SM_SR_1_W
+		class Primaris_SM_SpaceWolves_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Space Wolves)";
 		class ItemInfo: ItemInfo
@@ -96,7 +96,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_SpaceWolves";
 		};
 	};
-			class Primaris_SM_Ultramarines_W: Primaris_SM_SR_1_W
+			class Primaris_SM_Ultramarines_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Ultramarines)";
 		class ItemInfo: ItemInfo
@@ -104,7 +104,7 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_Ultramarines";
 		};
 	};
-			class Primaris_SM_WhiteScars_W: Primaris_SM_SR_1_W
+			class Primaris_SM_WhiteScars_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR White Scars)";
 		class ItemInfo: ItemInfo
@@ -264,7 +264,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_VetChief.paa"
 		};
 	}
-			class Primaris_Helm_Main_SR_BloodAngels: Primaris_Helm_Main_SR_1
+			class Primaris_Helm_Main_SR_BloodAngels: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Blood Angels)";
@@ -277,7 +277,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\BA_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_DarkAngels: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_DarkAngels: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Dark Angels)";
@@ -290,7 +290,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\DA_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_ImperialFists: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_ImperialFists: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Imperial Fists)";
@@ -303,7 +303,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\IF_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_IronHands: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_IronHands: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Iron Hands)";
@@ -316,7 +316,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\IH_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_RavenGuard: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_RavenGuard: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Raven Guard)";
@@ -329,7 +329,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\RG_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Salamanders: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_Salamanders: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Salamanders)";
@@ -342,7 +342,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SAL_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_SpaceWolves: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_SpaceWolves: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Space Wolves)";
@@ -355,7 +355,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SW_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_Ultramarines: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_Ultramarines: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR Ultramarines)";
@@ -368,7 +368,7 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\UM_PrimHelmet.paa"
 		};
 	}
-				class Primaris_Helm_Main_SR_WhiteScars: Primaris_Helm_Main_SR_1
+				class Primaris_Helm_Main_SR_WhiteScars: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
 		displayName="Primaris Mk.10 (TSR White Scars)";
