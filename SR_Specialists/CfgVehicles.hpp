@@ -128,7 +128,7 @@ class CfgVehicles
       editorCategory= "EdCategory_TheAdeptusAstartes";
       editorSubcategory="EdSubCat_SR";
       backpack="";
-      uniformClass="TIOW_MK7PowerArmor_ELWP"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+      uniformClass="TIOW_MK7PowerArmor_SR"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
         "SR_Specialists\Textures\Apoth_Armour1.paa",
@@ -288,7 +288,7 @@ class CfgVehicles
       editorCategory= "EdCategory_TheAdeptusAstartes";
       editorSubcategory="EdSubCat_SR";
       backpack="";
-      uniformClass="TIOW_MK7PowerArmor_ELWP"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+      uniformClass="TIOW_MK7PowerArmor_SR"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
         "SR_Specialists\Textures\Tech_Armour1.paa",
@@ -337,9 +337,29 @@ class CfgVehicles
       linkedItems[]={};
       RespawnlinkedItems[]={};
     };
+        class TIOW_MK7_Tact_SR_Recon: TIOW_Tactical_SL_1
+    {
+      author="Strixus";
+      displayName="Tactical Marine (MK. VII)";
+	  scope=1;
+      editorCategory= "EdCategory_TheAdeptusAstartes";
+      editorSubcategory="EdSubCat_SR";
+      backpack="";
+      uniformClass="TIOW_MK7PowerArmor_SR"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+      hiddenSelectionsTextures[]=
+      {
+        "SR_Specialists\Textures\Recon_Armour1.paa",
+        "SR_Uniforms\Textures\SR_Armour2.paa"
+      };
+      Items[]={};
+	  RespawnItems[]={};
+      linkedItems[]={};
+      RespawnlinkedItems[]={};
+    };
 // Primaris Specialists
 	class TIOWSpaceMarine1;
 	class TIOW_Tactical_BT_3;
+  class Primaris_SM_SAL_6;
 	class Primaris_SM_SR_1: TIOW_Tactical_BT_3
 	{
 		scope=2;
@@ -430,6 +450,16 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Specialists\Textures\Apoth_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
+        class Primaris_SM_SR_Recon: Primaris_SM_SAL_6
+	{
+    model="Project_Primaris_D_Main\Models\Phobos_Reiver.p3d";
+		displayName="Primaris Reiver (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Specialists\Textures\Recon_PrimArmour.paa",
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
