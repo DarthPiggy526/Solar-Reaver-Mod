@@ -243,6 +243,119 @@ class Cfgweapons
 		scopeArsenal = 1
 	  };
 
+	  // Recon helm
+	  class SR_MK2_Helmet_Recon : TIOW_MK2Helmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 2 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Specialists\Textures\SR_Helmet_Recon.paa",
+		};
+	};
+	class TIOW_MK2Helmet_SR_Recon_dp : SR_MK2_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
+	class SR_MK3_Helmet_Recon : TIOW_MK3Helmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 3 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+	  {
+	    "SR_Specialists\Textures\SR_Helmet_Recon.paa",
+	  };
+	};
+	class TIOW_MK3Helmet_SR_Recon_dp : SR_MK3_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
+	class SR_MK4_Helmet_Recon : TIOW_MK4Helmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 4 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+	    {
+	      "SR_Specialists\Textures\SR_Helmet_Recon.paa",
+	    };
+	};
+	class TIOW_MK4Helmet_SR_Recon_dp : SR_MK4_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
+	class SR_MK5_Helmet_Recon : TIOW_MK5Helmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 5 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+	    {
+	      "SR_Specialists\Textures\SR_Helmet_Recon.paa",
+	    };
+	};
+	class TIOW_MK5Helmet_SR_Recon_dp : SR_MK5_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
+	class SR_MK6_Helmet_Recon : TIOW_MK6Helmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 6 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Specialists\Textures\SR_Helmet_Recon.paa",
+		};
+	};
+	class TIOW_MK6Helmet_SR_Recon_dp : SR_MK6_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
+	class SR_MK7K_Helmet_Recon : TIOW_MK7KnightHelmet_UM
+	{
+		author="Strixus";
+		displayName = "MK 7K Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+	    {
+	      "SR_Specialists\Textures\SR_Helmet_Recon.paa",
+	    };
+	};
+	class TIOW_MK7KnightHelmet_SR_Recon_dp : SR_MK7K_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+	  
+	class SR_MK7_Helmet_Recon : TIOW_MK7Helmet_UM
+	  {
+		author="Strixus";
+		displayName = "MK 7 Helmet (TSR Recon)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		   {
+		     "SR_Specialists\Textures\SR_Helmet_Recon.paa",
+		   };
+	  };
+	  class TIOW_MK7Helmet_SR_Recon_dp : SR_MK7_Helmet_Recon
+	  {
+		scopeArsenal = 1
+	  };
+
 	  // Primaris Helms
 	  class Primaris_Dos_Helm_Base;
 	  class SR_MK10_Helmet_Techmarine: Primaris_Dos_Helm_Base
@@ -333,6 +446,23 @@ class Cfgweapons
 			{
 				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
 			};
+		};
+	};
+		class SR_Infiltrator_Helmet_Recon: SR_MK10_Helmet_Apothecary
+	{
+		displayName="Primaris Infiltrator (TSR Recon)";
+		model="Project_Primaris_D_Main\Models\Helmet_Infil.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Specialists\Textures\Recon_PrimHelmet.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Helmet_Infil.p3d";
 		};
 	};
 //
@@ -586,6 +716,15 @@ class Cfgweapons
 			uniformClass="TIOW_MK7Imp_Tact_SR_Tech"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
+		class SR_MK7_Armor_Recon: TIOW_MK7PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="MK 7 Power Armor (TSR Recon)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK7_Tact_SR_Recon"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
 
 	// Primaris Power Armor
 	class Primaris_Dos_Base;
@@ -609,6 +748,14 @@ class Cfgweapons
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SM_SR_Apoth";
+		};
+	}
+			class SR_Reiver_Armor_Recon: SR_MK10_Armor_Techmarine
+	{
+		displayName="Primaris Reiver (TSR Recon)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SM_SR_Recon";
 		};
 	}
 	class TIOW_MK2Limbs_UM;
@@ -819,4 +966,34 @@ class Cfgweapons
 			"SR_Specialists\Textures\Tech_PrimArmour.paa"
 		};
 	}
+
+	// recon
+class Primaris_Vest_40k_SW_1;
+			class SR_MK10_Shoulders_Recon: Primaris_Vest_40k_SW_1
+	{
+		displayName="Primaris Phobos (TSR Recon)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Phobos.p3d";
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Phobos.p3d";
+		};
+				hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Specialists\Textures\Recon_PrimArmour.paa"
+		};
+	};
+	class SR_MK2_Shoulders_Recon : SR_MK2_Shoulders_Apothecary
+	{
+		displayName="MK 2 Pauldrons (TSR Recon)";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Specialists\Textures\Recon_Armour1.paa",
+			"SR_Uniforms\Textures\SR_Armour2.paa"
+		};
+	};
+
 }; // End of CfgWeapons
