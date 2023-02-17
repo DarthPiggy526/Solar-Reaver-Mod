@@ -651,11 +651,6 @@ class box_NATO_Equip_F;
 			class xx_Steve_30k_Tig_Combi_Mag
 			{
 				magazine = "Steve_30k_Tig_Combi_Mag";
-				count = 60;
-			};
-			class xx_Steve_30k_Tig_Combi_Mag
-			{
-				magazine = "Steve_30k_Tig_Combi_Mag";
 				count = 40;
 			};
 			class xx_Steve_30k_CombiMelta_Mag
