@@ -286,7 +286,7 @@ class box_NATO_Equip_F;
 				weapon = "TIOW_SM_Rocket_1";
 				count = 1;
 			};
-			class xx_TIOW_SM_Rocket_1
+			class xx_TIOW_Mars_HeavyBolter
 			{
 				weapon = "TIOW_Mars_HeavyBolter";
 				count = 1;
