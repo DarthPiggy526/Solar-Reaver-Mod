@@ -204,18 +204,6 @@ class InventoryItem_Base_F;
 			"SR_Primaris\Textures\SR_PrimHelmet_Vet.paa"
 		};
 	}
-		class SR_MK10_Helmet_BlackshieldVetSer: SR_MK10_Helmet_Blackshield
-	{
-		displayName="Primaris Mk.10 (TSR Blackshield Vet Ser)";
-	hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Primaris\Textures\SR_PrimHelmet_VetSer.paa"
-		};
-	}
 			class SR_MK10_Helmet_Marauder: SR_MK10_Helmet_Blackshield
 	{
 		displayName="Primaris Mk.10 (TSR Marauder)";
@@ -238,30 +226,6 @@ class InventoryItem_Base_F;
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\SR_PrimHelmet_MR_Chief.paa"
-		};
-	}
-				class SR_MK10_Helmet_MarauderVet: SR_MK10_Helmet_Blackshield
-	{
-		displayName="Primaris Mk.10 (TSR Marauder Vet)";
-	hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Primaris\Textures\SR_PrimHelmet_MR_Vet.paa"
-		};
-	}
-				class SR_MK10_Helmet_MarauderVetChief: SR_MK10_Helmet_Blackshield
-	{
-		displayName="Primaris Mk.10 (TSR Marauder Chief Vet)";
-	hiddenSelections[]=
-		{
-			"Camo1"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Primaris\Textures\SR_PrimHelmet_MR_VetChief.paa"
 		};
 	}
 			class Primaris_Helm_Main_SR_BloodAngels: SR_MK10_Helmet_Blackshield

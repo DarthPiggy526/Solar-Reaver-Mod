@@ -433,7 +433,7 @@ class CfgVehicles
       uniformClass="TIOW_MK2PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -453,7 +453,7 @@ class CfgVehicles
       uniformClass="TIOW_MK3PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -473,7 +473,7 @@ class CfgVehicles
       uniformClass="TIOW_MK4PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -493,7 +493,7 @@ class CfgVehicles
       uniformClass="TIOW_MK5PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -513,7 +513,7 @@ class CfgVehicles
       uniformClass="TIOW_MK6PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -533,7 +533,7 @@ class CfgVehicles
       uniformClass="TIOW_MK7PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -552,7 +552,7 @@ class CfgVehicles
       uniformClass="TIOW_MK8PowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
@@ -571,7 +571,7 @@ class CfgVehicles
       uniformClass="TIOW_MK7ImpPowerArmor_SR_BS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
       hiddenSelectionsTextures[]=
       {
-        "SR_Uniforms\Textures\SR_Armour1.paa",
+        "SR_Uniforms\Textures\SRBS_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};
