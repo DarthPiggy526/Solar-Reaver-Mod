@@ -286,7 +286,7 @@ class box_NATO_Equip_F;
 				weapon = "TIOW_SM_Rocket_1";
 				count = 1;
 			};
-			class xx_TIOW_SM_Rocket_1
+			class xx_TIOW_Mars_HeavyBolter
 			{
 				weapon = "TIOW_Mars_HeavyBolter";
 				count = 1;
@@ -646,11 +646,6 @@ class box_NATO_Equip_F;
 			class xx_Steve_Trig_BoltgunMag
 			{
 				magazine = "Steve_Trig_BoltgunMag";
-				count = 60;
-			};
-			class xx_Steve_30k_Tig_Combi_Mag
-			{
-				magazine = "Steve_30k_Tig_Combi_Mag";
 				count = 60;
 			};
 			class xx_Steve_30k_Tig_Combi_Mag
