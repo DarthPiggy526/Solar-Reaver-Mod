@@ -24,7 +24,7 @@ class Cfgweapons
 		displayName = "MK 2 Helmet (TSR Apothecary)";
 		optreVarietys[] = {"","_dp","_broken"};
 		optreHUDStyle = "ODST_1";
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] =;
 		{
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 		};

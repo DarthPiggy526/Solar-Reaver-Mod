@@ -222,7 +222,7 @@ class TIOW_UM_Storm;
 		side=1;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Rhino"
+		displayName="[TSR] Rhino";
 		crew="";
 		hiddenSelections[]=
 		{
@@ -248,7 +248,7 @@ class TIOW_UM_Storm;
 		side=1;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Razorback"
+		displayName="[TSR] Razorback";
 		crew="";
 		hiddenSelections[]=
 		{
