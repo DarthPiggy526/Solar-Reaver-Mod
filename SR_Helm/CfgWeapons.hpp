@@ -26,7 +26,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet.paa",
+			"SR_Helm\Textures\Blackshield_Helmet.paa"
 		};
 	};
 	class TIOW_MK2Helmet_SR_BS_dp : SR_MK2_Helmet_Black
@@ -42,7 +42,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Blackshield_Helmet.paa",
+	    "SR_Helm\Textures\Blackshield_Helmet.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_SR_BS_dp : SR_MK3_Helmet_Black
@@ -58,7 +58,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_SR_BS_dp : SR_MK4_Helmet_Black
@@ -74,7 +74,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_SR_BS_dp : SR_MK5_Helmet_Black
@@ -90,7 +90,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet.paa",
+			"SR_Helm\Textures\Blackshield_Helmet.paa"
 		};
 	};
 	class TIOW_MK6Helmet_SR_BS_dp : SR_MK6_Helmet_Black
@@ -106,7 +106,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_SR_BS_dp : SR_MK7K_Helmet_Black
@@ -122,7 +122,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Blackshield_Helmet.paa",
+		     "SR_Helm\Textures\Blackshield_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_BS_dp : SR_MK7_Helmet_Black
@@ -140,7 +140,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 		};
 	};
 	class TIOW_MK2Helmet_BS_LT_dp : SR_MK2_Helmet_BlackLT
@@ -156,7 +156,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+	    "SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_BS_LT_dp : SR_MK3_Helmet_BlackLT
@@ -172,7 +172,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_BS_LT_dp : SR_MK4_Helmet_BlackLT
@@ -188,7 +188,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_BS_LT_dp : SR_MK5_Helmet_BlackLT
@@ -204,7 +204,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 		};
 	};
 	class TIOW_MK6Helmet_BS_LT_dp : SR_MK6_Helmet_BlackLT
@@ -220,7 +220,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_BS_LT_dp : SR_MK7K_Helmet_BlackLT
@@ -236,7 +236,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Blackshield_Helmet_LT.paa",
+		     "SR_Helm\Textures\Blackshield_Helmet_LT.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_BS_LT_dp : SR_MK7_Helmet_BlackLT
@@ -254,7 +254,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 		};
 	};
 	class TIOW_MK2Helmet_BS_Ser_dp : SR_MK2_Helmet_BlackSer
@@ -270,7 +270,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+	    "SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_BS_Ser_dp : SR_MK3_Helmet_BlackSer
@@ -286,7 +286,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_BS_Ser_dp : SR_MK4_Helmet_BlackSer
@@ -302,7 +302,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_BS_Ser_dp : SR_MK5_Helmet_BlackSer
@@ -318,7 +318,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 		};
 	};
 	class TIOW_MK6Helmet_BS_Ser_dp : SR_MK6_Helmet_BlackSer
@@ -334,7 +334,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_BS_Ser_dp : SR_MK7K_Helmet_BlackSer
@@ -350,7 +350,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Blackshield_Helmet_Ser.paa",
+		     "SR_Helm\Textures\Blackshield_Helmet_Ser.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_BS_Ser_dp : SR_MK7_Helmet_BlackSer
@@ -368,7 +368,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 		};
 	};
 	class TIOW_MK2Helmet_BS_Vet_dp : SR_MK2_Helmet_BlackVet
@@ -384,7 +384,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+	    "SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_BS_Vet_dp : SR_MK3_Helmet_BlackVet
@@ -400,7 +400,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_BS_Vet_dp : SR_MK4_Helmet_BlackVet
@@ -416,7 +416,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_BS_Vet_dp : SR_MK5_Helmet_BlackVet
@@ -432,7 +432,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+			"SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 		};
 	};
 	class TIOW_MK6Helmet_BS_Vet_dp : SR_MK6_Helmet_BlackVet
@@ -448,7 +448,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+	      "SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_BS_Vet_dp : SR_MK7K_Helmet_BlackVet
@@ -464,7 +464,7 @@ class Cfgweapons
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Blackshield_Helmet_Vet.paa",
+		     "SR_Helm\Textures\Blackshield_Helmet_Vet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_BS_Vet_dp : SR_MK7_Helmet_BlackVet
@@ -482,7 +482,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Marauder_Helmet.paa",
+			"SR_Helm\Textures\Marauder_Helmet.paa"
 		};
 	};
 	class TIOW_MK2Helmet_MR_dp : SR_MK2_Helmet_Marauder
@@ -498,7 +498,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Marauder_Helmet.paa",
+	    "SR_Helm\Textures\Marauder_Helmet.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_MR_dp : SR_MK3_Helmet_Marauder
@@ -514,7 +514,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet.paa",
+	      "SR_Helm\Textures\Marauder_Helmet.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_MR_dp : SR_MK4_Helmet_Marauder
@@ -530,7 +530,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet.paa",
+	      "SR_Helm\Textures\Marauder_Helmet.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_MR_dp : SR_MK5_Helmet_Marauder
@@ -546,7 +546,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Marauder_Helmet.paa",
+			"SR_Helm\Textures\Marauder_Helmet.paa"
 		};
 	};
 	class TIOW_MK6Helmet_MR_dp : SR_MK6_Helmet_Marauder
@@ -562,7 +562,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet.paa",
+	      "SR_Helm\Textures\Marauder_Helmet.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_MR_dp : SR_MK7K_Helmet_Marauder
@@ -578,7 +578,7 @@ class SR_MK2_Helmet_Marauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Marauder_Helmet.paa",
+		     "SR_Helm\Textures\Marauder_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_MR_dp : SR_MK7_Helmet_Marauder
@@ -595,7 +595,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+			"SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 		};
 	};
 	class TIOW_MK2Helmet_MR_Chief_dp : SR_MK2_Helmet_ChiefMarauder
@@ -611,7 +611,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	  {
-	    "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+	    "SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 	  };
 	};
 	class TIOW_MK3Helmet_MR_Chief_dp : SR_MK3_Helmet_ChiefMarauder
@@ -627,7 +627,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 	    };
 	};
 	class TIOW_MK4Helmet_MR_Chief_dp : SR_MK4_Helmet_ChiefMarauder
@@ -643,7 +643,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 	    };
 	};
 	class TIOW_MK5Helmet_MR_Chief_dp : SR_MK5_Helmet_ChiefMarauder
@@ -659,7 +659,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		{
-			"SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+			"SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 		};
 	};
 	class TIOW_MK6Helmet_MR_Chief_dp : SR_MK6_Helmet_ChiefMarauder
@@ -675,7 +675,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 	    {
-	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+	      "SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 	    };
 	};
 	class TIOW_MK7KnightHelmet_MR_Chief_dp : SR_MK7K_Helmet_ChiefMarauder
@@ -691,7 +691,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\Marauder_Helmet_Chief.paa",
+		     "SR_Helm\Textures\Marauder_Helmet_Chief.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_MR_Chief_dp : SR_MK7_Helmet_ChiefMarauder
@@ -709,7 +709,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\AL_Helmet.paa",
+		     "SR_Helm\Textures\AL_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_AL_dp : SR_MK7_Helmet_AlphaLegion
@@ -726,7 +726,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\BA_Helmet.paa",
+		     "SR_Helm\Textures\BA_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_BA_dp : SR_MK7_Helmet_BloodAngels
@@ -742,7 +742,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\DA_Helmet.paa",
+		     "SR_Helm\Textures\DA_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_DA_dp : SR_MK7_Helmet_DarkAngels
@@ -758,7 +758,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\DG_Helmet.paa",
+		     "SR_Helm\Textures\DG_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_DG_dp : SR_MK7_Helmet_DeathGuard
@@ -774,7 +774,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\EC_Helmet.paa",
+		     "SR_Helm\Textures\EC_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_EC_dp : SR_MK7_Helmet_EmperorsChildren
@@ -790,7 +790,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\IF_Helmet.paa",
+		     "SR_Helm\Textures\IF_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_IF_dp : SR_MK7_Helmet_ImperialFists
@@ -806,7 +806,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\IW_Helmet.paa",
+		     "SR_Helm\Textures\IW_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_IW_dp : SR_MK7_Helmet_IronWarriors
@@ -822,7 +822,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\LW_Helmet.paa",
+		     "SR_Helm\Textures\LW_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_LW_dp : SR_MK7_Helmet_LunaWolves
@@ -838,7 +838,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\NL_Helmet.paa",
+		     "SR_Helm\Textures\NL_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_NL_dp : SR_MK7_Helmet_NightLords
@@ -854,7 +854,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\SAL_Helmet.paa",
+		     "SR_Helm\Textures\SAL_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_SAL_dp : SR_MK7_Helmet_Salamanders
@@ -870,7 +870,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\SW_Helmet.paa",
+		     "SR_Helm\Textures\SW_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_SW_dp : SR_MK7_Helmet_SpaceWolves
@@ -886,7 +886,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\TSons_Helmet.paa",
+		     "SR_Helm\Textures\TSons_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_TSons_dp : SR_MK7_Helmet_ThousandSons
@@ -902,7 +902,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\UM_Helmet.paa",
+		     "SR_Helm\Textures\UM_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_UM_dp : SR_MK7_Helmet_Ultramarines
@@ -918,7 +918,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\WB_Helmet.paa",
+		     "SR_Helm\Textures\WB_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_WB_dp : SR_MK7_Helmet_WordBearers
@@ -934,7 +934,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\WE_Helmet.paa",
+		     "SR_Helm\Textures\WE_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_WE_dp : SR_MK7_Helmet_WorldEaters
@@ -950,7 +950,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\WS_Helmet.paa",
+		     "SR_Helm\Textures\WS_Helmet.paa"
 		   };
 	  };
 	  class TIOW_MK7Helmet_SR_WS_dp : SR_MK7_Helmet_WhiteScars
@@ -966,7 +966,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\DS_Helmet.paa",
+		     "SR_Helm\Textures\DS_Helmet.paa"
 		   };
 	  };
 	  	  	  	  	class SR_MK7_Helmet_NightLord2 : TIOW_MK7Helmet_UM
@@ -977,7 +977,7 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		optreHUDStyle = "ODST_1";
 		hiddenSelectionsTextures[] =
 		   {
-		     "SR_Helm\Textures\NLB_Helmet.paa",
+		     "SR_Helm\Textures\NLB_Helmet.paa"
 		   };
 	  };
 

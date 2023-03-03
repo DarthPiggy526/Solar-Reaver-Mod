@@ -32,14 +32,14 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SM_SR_1";
 		};
 	};
-	// 	class SR_MK10_Armor_Lysander: SR_MK10_Armor_Blackshield
-	// {
-	// 	displayName="Primaris MK.10 (TSR Lysander)";
-	// 	class ItemInfo: ItemInfo
-	// 	{
-	// 		uniformClass="Primaris_SM_Lysander";
-	// 	};
-	// };
+	 	class SR_MK10_Armor_Lysander: SR_MK10_Armor_Blackshield
+	 {
+	 	displayName="Primaris MK.10 (TSR Lysander)";
+	 	class ItemInfo: ItemInfo
+	 	{
+	 		uniformClass="Primaris_SM_Lysander";
+	 	};
+	 };
 			class Primaris_SM_BloodAngels_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Blood Angels)";

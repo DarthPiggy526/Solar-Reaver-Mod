@@ -75,7 +75,7 @@ class CfgWeapons
 			type=616;
 			hmdType=0;
 			uniformModel="SR_Accessories\models\ChestRig1.p3d";
-			modelOff="SR_Accessories\models\ChestRig1.p3d"
+			modelOff="SR_Accessories\models\ChestRig1.p3d";
 			hiddenSelections[]=
 			{
 				"camo"
@@ -113,7 +113,7 @@ class CfgWeapons
 			type=616;
 			hmdType=0;
 			uniformModel="SR_Accessories\models\PrimarisChestRig.p3d";
-			modelOff="SR_Accessories\models\PrimarisChestRig.p3d"
+			modelOff="SR_Accessories\models\PrimarisChestRig.p3d";
 			hiddenSelections[]=
 			{
 				"camo"
@@ -151,7 +151,7 @@ class CfgWeapons
 			type=616;
 			hmdType=0;
 			uniformModel="Dos_Cosmetics\models\Apoth_Head.p3d";
-			modelOff="Dos_Cosmetics\models\Apoth_Head.p3d"
+			modelOff="Dos_Cosmetics\models\Apoth_Head.p3d";
 			hiddenSelections[]=
 			{
 				"ap_head_camo"
