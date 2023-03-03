@@ -222,8 +222,8 @@ class TIOW_UM_Storm;
 		side=1;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Rhino"
-		crew="";
+		displayName="[TSR] Rhino";
+		crew="TIOW_Tactical_IF_1";
 		hiddenSelections[]=
 		{
 			"CamoColor",
@@ -248,8 +248,8 @@ class TIOW_UM_Storm;
 		side=1;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Razorback"
-		crew="";
+		displayName="[TSR] Razorback";
+		crew="TIOW_Tactical_IF_1";
 		hiddenSelections[]=
 		{
 			"CamoColor",
