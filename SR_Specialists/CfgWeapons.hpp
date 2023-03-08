@@ -29,11 +29,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 		};
 	};
-	class TIOW_MK2Helmet_SR_Apoth_dp : SR_MK2_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK3_Helmet_Apothecary : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
@@ -45,11 +40,6 @@ class Cfgweapons
 	    "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
 	  };
 	};
-	class TIOW_MK3Helmet_SR_Apoth_dp : SR_MK3_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK4_Helmet_Apothecary : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
@@ -61,11 +51,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 	    };
 	};
-	class TIOW_MK4Helmet_SR_Apoth_dp : SR_MK4_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK5_Helmet_Apothecary : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
@@ -77,11 +62,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 	    };
 	};
-	class TIOW_MK5Helmet_SR_Apoth_dp : SR_MK5_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK6_Helmet_Apothecary : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
@@ -93,11 +73,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 		};
 	};
-	class TIOW_MK6Helmet_SR_Apoth_dp : SR_MK6_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK7K_Helmet_Apothecary : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
@@ -109,11 +84,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_Apoth_dp : SR_MK7K_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-	  
 	class SR_MK7_Helmet_Apothecary : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
@@ -125,11 +95,6 @@ class Cfgweapons
 		     "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_Apoth_dp : SR_MK7_Helmet_Apothecary
-	  {
-		scopeArsenal = 1
-	  };
-
 	  // techmarine helm
 	  class SR_MK2_Helmet_Techmarine : TIOW_MK2Helmet_UM
 	{
@@ -142,11 +107,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa"
 		};
 	};
-	class TIOW_MK2Helmet_SR_Tech_dp : SR_MK2_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK3_Helmet_Techmarine : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
@@ -158,11 +118,6 @@ class Cfgweapons
 	    "SR_Specialists\Textures\SR_Helmet_Tech.paa"
 	  };
 	};
-	class TIOW_MK3Helmet_SR_Tech_dp : SR_MK3_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK4_Helmet_Techmarine : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
@@ -174,11 +129,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
 	    };
 	};
-	class TIOW_MK4Helmet_SR_Tech_dp : SR_MK4_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK5_Helmet_Techmarine : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
@@ -190,11 +140,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
 	    };
 	};
-	class TIOW_MK5Helmet_SR_Tech_dp : SR_MK5_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK6_Helmet_Techmarine : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
@@ -206,11 +151,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa"
 		};
 	};
-	class TIOW_MK6Helmet_SR_Tech_dp : SR_MK6_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK7K_Helmet_Techmarine : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
@@ -222,11 +162,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_Tech_dp : SR_MK7K_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-	  
 	class SR_MK7_Helmet_Techmarine : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
@@ -238,11 +173,6 @@ class Cfgweapons
 		     "SR_Specialists\Textures\SR_Helmet_Tech.paa"
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_Tech_dp : SR_MK7_Helmet_Techmarine
-	  {
-		scopeArsenal = 1
-	  };
-
 	  // Recon helm
 	  class SR_MK2_Helmet_Recon : TIOW_MK2Helmet_UM
 	{
@@ -255,11 +185,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Recon.paa"
 		};
 	};
-	class TIOW_MK2Helmet_SR_Recon_dp : SR_MK2_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK3_Helmet_Recon : TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
@@ -271,11 +196,6 @@ class Cfgweapons
 	    "SR_Specialists\Textures\SR_Helmet_Recon.paa"
 	  };
 	};
-	class TIOW_MK3Helmet_SR_Recon_dp : SR_MK3_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK4_Helmet_Recon : TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
@@ -287,11 +207,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
 	    };
 	};
-	class TIOW_MK4Helmet_SR_Recon_dp : SR_MK4_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK5_Helmet_Recon : TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
@@ -303,11 +218,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
 	    };
 	};
-	class TIOW_MK5Helmet_SR_Recon_dp : SR_MK5_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK6_Helmet_Recon : TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
@@ -319,11 +229,6 @@ class Cfgweapons
 			"SR_Specialists\Textures\SR_Helmet_Recon.paa"
 		};
 	};
-	class TIOW_MK6Helmet_SR_Recon_dp : SR_MK6_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	class SR_MK7K_Helmet_Recon : TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
@@ -335,11 +240,6 @@ class Cfgweapons
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
 	    };
 	};
-	class TIOW_MK7KnightHelmet_SR_Recon_dp : SR_MK7K_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-	  
 	class SR_MK7_Helmet_Recon : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
@@ -351,11 +251,6 @@ class Cfgweapons
 		     "SR_Specialists\Textures\SR_Helmet_Recon.paa"
 		   };
 	  };
-	  class TIOW_MK7Helmet_SR_Recon_dp : SR_MK7_Helmet_Recon
-	  {
-		scopeArsenal = 1
-	  };
-
 	  // Primaris Helms
 	  class Primaris_Dos_Helm_Base;
 	  class SR_MK10_Helmet_Techmarine: Primaris_Dos_Helm_Base
@@ -386,24 +281,6 @@ class Cfgweapons
 		{
 			""
 		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"eyecamo"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"SR_Specialists\Textures\Tech_PrimHelmet.paa",
-				"SR_Specialists\Textures\Techmarine_Eyes_CO.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
-			};
-		};
 	};
 	class SR_MK10_Helmet_Apothecary: Primaris_Dos_Helm_Base
 	{
@@ -430,22 +307,6 @@ class Cfgweapons
 		subItems[]=
 		{
 			""
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
-			hiddenSelections[]=
-			{
-				"Camo1"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"SR_Specialists\Textures\Apoth_PrimHelmet.paa"
-			};
-			hiddenSelectionsMaterials[]=
-			{
-				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
-			};
 		};
 	};
 		class SR_Infiltrator_Helmet_Recon: SR_MK10_Helmet_Apothecary
