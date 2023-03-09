@@ -562,4 +562,24 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
+						class SR_MK2_Shoulders_Barbon : TIOW_MK2Limbs_UM
+	{
+		author="Barbon";
+		displayName="Barbon";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Uniforms\Textures\Barbon_Armour1.paa",
+			"SR_Uniforms\Textures\SR_Armour2.paa"
+		};
+	};
+							class SR_MK2_Shoulders_Silver : TIOW_MK2Limbs_UM
+	{
+		author="Silver";
+		displayName="Silver";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Uniforms\Textures\Silver_Armour1.paa",
+			"SR_Uniforms\Textures\SR_Armour2.paa"
+		};
+	};
 }; // End of CfgWeapons
