@@ -281,6 +281,24 @@ class Cfgweapons
 		{
 			""
 		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"eyecamo"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Specialists\Textures\Tech_PrimHelmet.paa",
+				"SR_Specialists\Textures\Techmarine_Eyes_CO.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
+			};
+		};
 	};
 	class SR_MK10_Helmet_Apothecary: Primaris_Dos_Helm_Base
 	{
@@ -307,6 +325,22 @@ class Cfgweapons
 		subItems[]=
 		{
 			""
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Specialists\Textures\Apoth_PrimHelmet.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
+			};
 		};
 	};
 		class SR_Infiltrator_Helmet_Recon: SR_MK10_Helmet_Apothecary
