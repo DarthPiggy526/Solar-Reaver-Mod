@@ -186,6 +186,32 @@ class CfgWeapons
 			};
 		};
 	};
+	class TIOW_BLKD_Horn_4_Narth: NVGoggles
+	{
+		author="TIOW";
+		IMS_isNarthecium="true";
+		displayName="Black Dragon Horns";
+		model="\TIOW_SM\Marine\Model\TIOW_Helmet_Horn4.p3d";
+		descriptionUse="<t color='#9cf953'>Use: </t>Toggle Night Vision";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		modelOptics="-";
+		class Library
+		{
+			libTextDesc="";
+		};
+		class ItemInfo
+		{
+			type=616;
+			uniformModel="\TIOW_SM\Marine\Model\TIOW_Helmet_Horn4.p3d";
+			modelOff="\TIOW_SM\Marine\Model\TIOW_Helmet_Horn4.p3d";
+			mass=10;
+		};
+	};
 };
 class CfgSounds
 {

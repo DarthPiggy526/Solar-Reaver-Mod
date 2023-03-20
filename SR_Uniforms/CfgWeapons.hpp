@@ -542,17 +542,7 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-	// 			class SR_MK2_Shoulders_CelestialLions : TIOW_MK2Limbs_UM
-	// {
-	// 	author="Strixus";
-	// 	displayName="MK 2 Pauldrons (TSR Celestial Lions)";
-	// 	hiddenSelectionsTextures[] =
-	// 	{
-	// 		"SR_Uniforms\Textures\CL_Armour1.paa",
-	// 		"SR_Uniforms\Textures\SR_Armour2.paa"
-	// 	};
-	// };
-					class SR_MK2_Shoulders_NightLords2 : TIOW_MK2Limbs_UM
+	class SR_MK2_Shoulders_NightLords2 : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
 		displayName="Sevatar";
@@ -562,7 +552,7 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-						class SR_MK2_Shoulders_Barbon : TIOW_MK2Limbs_UM
+	class SR_MK2_Shoulders_Barbon : TIOW_MK2Limbs_UM
 	{
 		author="Barbon";
 		displayName="Barbon";
@@ -572,13 +562,23 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-							class SR_MK2_Shoulders_Silver : TIOW_MK2Limbs_UM
+	class SR_MK2_Shoulders_Silver : TIOW_MK2Limbs_UM
 	{
 		author="Silver";
 		displayName="Silver";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Uniforms\Textures\Silver_Armour1.paa",
+			"SR_Uniforms\Textures\SR_Armour2.paa"
+		};
+	};
+	class SR_MK2_Shoulders_Rhys : TIOW_MK2Limbs_UM
+	{
+		author="Barbon";
+		displayName="MK 2 Pauldrons (TSR Black Dragons)";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Uniforms\Textures\BD_Armour1.paa",
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
