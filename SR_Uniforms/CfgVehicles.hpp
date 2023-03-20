@@ -618,4 +618,17 @@ class CfgVehicles
       "SR_Uniforms\Textures\BlackShield_PowerPack.paa"
     };
   };
+  class Steve_Recon_Pp_Blue1_1;
+  	class Steve_Recon_Pp_TSR_1: Steve_Recon_Pp_Blue1_1
+	{
+		displayName="Recon Power Pack (TSR)";
+		hiddenSelections[]=
+		{
+			"BackpackCamo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SR_Uniforms\Textures\TSR_Recon_Powerpack.paa"
+		};
+	};
 }; // End of CfgVechicle
