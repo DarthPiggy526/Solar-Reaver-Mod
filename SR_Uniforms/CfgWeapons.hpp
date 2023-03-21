@@ -572,14 +572,4 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-	class SR_MK2_Shoulders_Rhys : TIOW_MK2Limbs_UM
-	{
-		author="Barbon";
-		displayName="MK 2 Pauldrons (TSR Black Dragons)";
-		hiddenSelectionsTextures[] =
-		{
-			"SR_Uniforms\Textures\BD_Armour1.paa",
-			"SR_Uniforms\Textures\SR_Armour2.paa"
-		};
-	};
 }; // End of CfgWeapons
