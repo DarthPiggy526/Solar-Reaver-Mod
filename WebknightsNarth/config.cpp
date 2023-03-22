@@ -186,7 +186,7 @@ class CfgWeapons
 			};
 		};
 	};
-}
+};
 class CfgSounds
 {
 	sounds[]={};
