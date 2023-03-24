@@ -215,5 +215,24 @@ class CfgGlasses
 		identityTypes[]={};	
 		mass=0;
 	}
+	    class TSR_Seeker_Cloak: None
+	{
+		author="DaveSkywalker";
+		displayName="Seeker Cloak (TSR)";
+		showEmpty=0;
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		model="AV_Pack\models\acessories\av_cloak.p3d";
+			hiddenSelections[]=
+		{
+			"camo"
+		};
+			hiddenSelectionsTextures[]=
+		{
+			"\SR_Accessories\textures\TSR_Seeker_Cloak.paa"
+		};
+        identityTypes[]={};
+	};
 
 };

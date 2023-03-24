@@ -18,6 +18,48 @@ class Cfgweapons
 	class TIOW_MK7Helmet_UM;
 	class TIOW_MK7KnightHelmet_UM;
 
+		class SR_SkullHelmet_Black: TIOW_MK7Helmet_UM
+	{
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Chaplain Helmet (TSR)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		picture="\TIOW_SM\Icon\MK7Helmet_ca.paa";
+		model="\TIOW_SM\Marine\Model\TIOW_Skull_Helmet.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Helm\Textures\Blackshield_Helmet.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"TIOW_SM\Marine\Data\Materials\TIOW_Marine_Head.rvmat",
+			"a3\data_f\lights\car_panels.rvmat"
+		};
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel="\TIOW_SM\Marine\Model\TIOW_Skull_Helmet.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Helm\Textures\Blackshield_Helmet.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"TIOW_SM\Marine\Data\Materials\TIOW_Marine_Head.rvmat",
+				"a3\data_f\lights\car_panels.rvmat"
+			};
+		}
+	}
+
 	class SR_MK2_Helmet_Black : TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
