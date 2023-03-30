@@ -302,31 +302,22 @@ class Cfgweapons
 			uniformClass="TIOW_MK7_Tact_SR_WS"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
-				class SR_MK7_Armor_DeathStrike: TIOW_MK7PowerArmor_1_WS
-	{
-		author="Strixus";
-		displayName="MK 7 Power Armor (TSR Death Strike)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass="TIOW_MK7_Tact_SR_DeathStrike"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
-		};
-	};
-	// 				class SR_MK7_Armor_CelestialLions: TIOW_MK7PowerArmor_1_WS
-	// {
-	// 	author="Strixus";
-	// 	displayName="MK 7 Power Armor (TSR Celestial Lions)";
-	// 	class ItemInfo: ItemInfo
-	// 	{
-	// 		uniformClass="TIOW_MK7_Tact_SR_CelestialLions"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
-	// 	};
-	// };
-						class SR_MK7_Armor_NightLords2: TIOW_MK7PowerArmor_1_WS
+	class SR_MK7_Armor_NightLords2: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
 		displayName="Sevatar";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_NightLords2"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+	class SR_MK7_Armor_FleshTearers: TIOW_MK7PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="MK 7 Power Armor (TSR Flesh Tearers)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK7_Tact_SR_FleshTearers"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
 	
@@ -532,16 +523,6 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
-			class SR_MK2_Shoulders_DeathStrike : TIOW_MK2Limbs_UM
-	{
-		author="Strixus";
-		displayName="MK 2 Pauldrons (TSR Death Strike)";
-		hiddenSelectionsTextures[] =
-		{
-			"SR_Uniforms\Textures\DS_Armour1.paa",
-			"SR_Uniforms\Textures\SR_Armour2.paa"
-		};
-	};
 	class SR_MK2_Shoulders_NightLords2 : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
@@ -552,6 +533,19 @@ class Cfgweapons
 			"SR_Uniforms\Textures\SR_Armour2.paa"
 		};
 	};
+		class SR_MK2_Shoulders_FleshTearers : TIOW_MK2Limbs_UM
+	{
+		author="Strixus";
+		displayName="MK 2 Pauldrons (TSR Flesh Tearers)";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_Uniforms\Textures\FT_Armour1.paa",
+			"SR_Uniforms\Textures\SR_Armour2.paa"
+		};
+	};
+
+
+	// custom pieces
 	class SR_MK2_Shoulders_Barbon : TIOW_MK2Limbs_UM
 	{
 		author="Barbon";
