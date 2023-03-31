@@ -14,6 +14,7 @@ class CfgPatches
 		{
 			"A3_Data_F",
 			"TIOWSpaceMarines",
+			"Project_Primaris_Dos"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -27,17 +28,17 @@ class CfgPatches
 
 class CfgEditorCategories
 {
-	class EdCategory_TheAdeptusAstartes
+	class EdCategory_SR
 	{
-  	displayName = "Adeptus Astartes";
+  	displayName = "[TSR] Solar Reavers";
 	};
 };
 
 class CfgEditorSubcategories
 {
-	class EdSubcat_SR
+	class EdSubcat_SR_Primaris
 	{
-		displayName = "Solar Reavers";
+		displayName = "Primaris Marines";
 	};
 };
 
