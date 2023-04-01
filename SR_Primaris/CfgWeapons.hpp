@@ -10,7 +10,7 @@ class Cfgweapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		model="Project_Primaris_D_Main\Models\Base_Brother.p3d";
-		displayName="Primaris MK.10 (TSR Blackshield)";
+		displayName="[SR] Primaris MK.10 (TSR Blackshield)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SM_SR_1";
@@ -18,7 +18,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Armor_Lysander: SR_MK10_Armor_Blackshield
 	{
-	 	displayName="Primaris MK.10 (TSR Lysander)";
+	 	displayName="[SR] Primaris MK.10 (TSR Lysander)";
 	 	class ItemInfo: ItemInfo
 	 	{
 	 		uniformClass="Primaris_SM_Lysander";
@@ -33,7 +33,7 @@ class Cfgweapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		author="Strixus";
-		displayName="Primaris Mk.10 (TSR Blackshield)";
+		displayName="[SR] Primaris Mk.10 (TSR Blackshield)";
 		optreVarietys[] = {"","_dp","_broken"};
 		optreHUDStyle = "ODST_1";
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
@@ -73,7 +73,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Helmet_BlackshieldLT: SR_MK10_Helmet_Blackshield
 	{
-		displayName="Primaris Mk.10 (TSR Blackshield LT)";
+		displayName="[SR] Primaris Mk.10 (TSR Blackshield LT)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -85,7 +85,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Helmet_BlackshieldSer: SR_MK10_Helmet_Blackshield
 	{
-		displayName="Primaris Mk.10 (TSR Blackshield Ser)";
+		displayName="[SR] Primaris Mk.10 (TSR Blackshield Ser)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -97,7 +97,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Helmet_BlackshieldVet: SR_MK10_Helmet_Blackshield
 	{
-		displayName="Primaris Mk.10 (TSR Blackshield Vet)";
+		displayName="[SR] Primaris Mk.10 (TSR Blackshield Vet)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -109,7 +109,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Helmet_Marauder: SR_MK10_Helmet_Blackshield
 	{
-		displayName="Primaris Mk.10 (TSR Marauder)";
+		displayName="[SR] Primaris Mk.10 (TSR Marauder)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -121,7 +121,7 @@ class Cfgweapons
 	};
 	class SR_MK10_Helmet_MarauderChief: SR_MK10_Helmet_Blackshield
 	{
-		displayName="Primaris Mk.10 (TSR Marauder Chief)";
+		displayName="[SR] Primaris Mk.10 (TSR Marauder Chief)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -139,7 +139,7 @@ class Cfgweapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR Outcast)";
+		displayName="[SR] Primaris Mk.10 (TSR Outcast)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -167,7 +167,7 @@ class Cfgweapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="Primaris Mk.10 (TSR Blackshield)";
+		displayName="[SR] Primaris Mk.10 (TSR Blackshield)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

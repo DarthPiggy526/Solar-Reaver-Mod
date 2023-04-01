@@ -46,14 +46,14 @@ class CfgVehicles
 	class TIOW_Tactical_BT_3;
 	class Primaris_SM_SR_1: TIOW_Tactical_BT_3
 	{
-		scope=2;
+		scope=1;
 		scopeArsenal=2;
-		scopeCurator=2;
+		scopeCurator=1;
 		model="Project_Primaris_D_Main\Models\Base_Brother.p3d";
 		displayName="Primaris Brother (Mk.10)";
 		uniformClass="SR_MK10_Armor_Blackshield";
 		faction="SR_Faction";
-		editorSubcategory="EdSubcat_SR_Primaris";
+		editorSubcategory= "EdSubcat_SR_Primaris";
 		hiddenSelections[]=
 		{
 			"Camo2",
@@ -64,6 +64,14 @@ class CfgVehicles
 			"SR_Primaris\Textures\SR_PrimArmour.paa",
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
+		Items[]={};
+		RespawnItems[]={};
+		linkedItems[]={};
+		RespawnlinkedItems[]={};
+		weapons[]={};
+		magazines[]={};
+		respawnweapons[]={};
+		respawnMagazines[]={};
 	};
 	class Primaris_SM_Lysander: Primaris_SM_SR_1
 	{
