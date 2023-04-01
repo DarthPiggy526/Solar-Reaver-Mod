@@ -1,3 +1,13 @@
+class CfgFactionClasses
+{
+	class SR_Faction_bis
+	{
+		displayName="[SR] Solar Reavers";
+		side=1;
+		priority=2;
+	};
+};
+
 class CfgVehicles
 {
 
@@ -42,7 +52,7 @@ class CfgVehicles
 		model="Project_Primaris_D_Main\Models\Base_Brother.p3d";
 		displayName="Primaris Brother (Mk.10)";
 		uniformClass="SR_MK10_Armor_Blackshield";
-		faction="EdCategory_SR";
+		faction="SR_Faction";
 		editorSubcategory="EdSubcat_SR_Primaris";
 		hiddenSelections[]=
 		{

@@ -13,8 +13,11 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Data_F",
+			"A3_Characters_F",
+			"A3_Anims_F",
 			"TIOWSpaceMarines",
-			"Project_Primaris_Dos"
+			"Project_Primaris_Dos",
+			"SR_Core"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -23,14 +26,6 @@ class CfgPatches
 		weapons[]=
 		{
 		};
-	};
-};
-
-class CfgEditorCategories
-{
-	class EdCategory_SR
-	{
-  	displayName = "[TSR] Solar Reavers";
 	};
 };
 
