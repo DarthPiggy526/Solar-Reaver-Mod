@@ -83,7 +83,6 @@ class CfgWeapons
 			};
 		};
 	};
-	
 };
 class CfgGlasses
 {
@@ -117,5 +116,4 @@ class CfgGlasses
 		};
         identityTypes[]={};
 	};
-
 };
