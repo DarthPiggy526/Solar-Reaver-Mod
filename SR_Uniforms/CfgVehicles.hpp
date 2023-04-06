@@ -362,44 +362,7 @@ class CfgVehicles
       linkedItems[]={};
       RespawnlinkedItems[]={};
     };
-           class TIOW_MK7_Tact_SR_DeathStrike: TIOW_MK7_Tact_SR_AL
-    {
-      author="Strixus";
-      displayName="Tactical Marine (MK. VII)";
-	  scope=1;
-      editorCategory= "EdCategory_TheAdeptusAstartes";
-      editorSubcategory="EdSubCat_SR";
-      backpack="TIOW_MK5Powerpack_SR_BS";
-      uniformClass="TIOW_MK7_Tact_SR_WS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
-      hiddenSelectionsTextures[]=
-      {
-        "SR_Uniforms\Textures\DS_Armour1.paa",
-        "SR_Uniforms\Textures\SR_Armour2.paa"
-      };
-      Items[]={};
-	  RespawnItems[]={};
-      linkedItems[]={};
-      RespawnlinkedItems[]={};
-    };
-               class TIOW_MK7_Tact_SR_CelestialLions: TIOW_MK7_Tact_SR_AL
-    {
-      author="Strixus";
-      displayName="Tactical Marine (MK. VII)";
-	  scope=1;
-      editorCategory= "EdCategory_TheAdeptusAstartes";
-      editorSubcategory="EdSubCat_SR";
-      backpack="TIOW_MK5Powerpack_SR_BS";
-      uniformClass="TIOW_MK7_Tact_SR_WS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
-      hiddenSelectionsTextures[]=
-      {
-        "SR_Uniforms\Textures\CL_Armour1.paa",
-        "SR_Uniforms\Textures\SR_Armour2.paa"
-      };
-      Items[]={};
-	  RespawnItems[]={};
-      linkedItems[]={};
-      RespawnlinkedItems[]={};
-    };
+ 
                    class TIOW_MK7_Tact_SR_NightLords2: TIOW_MK7_Tact_SR_AL
     {
       author="Strixus";
@@ -412,6 +375,26 @@ class CfgVehicles
       hiddenSelectionsTextures[]=
       {
         "SR_Uniforms\Textures\NL2_Armour1.paa",
+        "SR_Uniforms\Textures\SR_Armour2.paa"
+      };
+      Items[]={};
+	  RespawnItems[]={};
+      linkedItems[]={};
+      RespawnlinkedItems[]={};
+    };
+
+    class TIOW_MK7_Tact_SR_FleshTearers: TIOW_MK7_Tact_SR_AL
+    {
+      author="Strixus";
+      displayName="Tactical Marine (MK. VII)";
+	  scope=1;
+      editorCategory= "EdCategory_TheAdeptusAstartes";
+      editorSubcategory="EdSubCat_SR";
+      backpack="TIOW_MK5Powerpack_SR_BS";
+      uniformClass="TIOW_MK7_Tact_SR_WS"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+      hiddenSelectionsTextures[]=
+      {
+        "SR_Uniforms\Textures\FT_Armour1.paa",
         "SR_Uniforms\Textures\SR_Armour2.paa"
       };
       Items[]={};

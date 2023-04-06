@@ -199,7 +199,7 @@ class TIOW_UM_Storm;
 		scopeCurator=2;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Land Speeder";
+		displayName="[TSR] Land Speeder Storm";
 		crew="TIOW_Tactical_IF_1";
 		hiddenSelections[]=
 		{
@@ -248,7 +248,7 @@ class TIOW_UM_Storm;
 		side=1;
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Planes";
-		displayName="[TSR] Razorback";
+		displayName="[TSR] Razorback (HB)";
 		crew="TIOW_Tactical_IF_1";
 		hiddenSelections[]=
 		{
