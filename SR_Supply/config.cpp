@@ -203,7 +203,7 @@ class box_NATO_Equip_F;
 		maximumLoad = 40000;
 		ACE_maxWeightCarry = 40000;
 		ACE_maxWeightDrag = 40000;
-		editorCategory = "SR_EditorCategory_Solar_Reavers";
+		editorCategory = "EdCat_Supplies"; // Can't be another category for it to be in zeus
 		editorSubcategory = "SR_EdSubcat_Supply";
 //		model = "Arma3 Mods\Harakoni\SupplyPod.p3d";
 		model = "\OPTRE_misc\crates\Supply_pod.p3d";

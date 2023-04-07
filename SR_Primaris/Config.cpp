@@ -13,7 +13,11 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"A3_Data_F",
+			"A3_Characters_F",
+			"A3_Anims_F",
 			"TIOWSpaceMarines",
+			"Project_Primaris_Dos",
+			"SR_Core"
 		};
 		requiredVersion=0.1;
 		units[]=
@@ -25,19 +29,11 @@ class CfgPatches
 	};
 };
 
-class CfgEditorCategories
-{
-	class EdCategory_TheAdeptusAstartes
-	{
-  	displayName = "Adeptus Astartes";
-	};
-};
-
 class CfgEditorSubcategories
 {
-	class EdSubcat_SR
+	class EdSubcat_SR_Primaris
 	{
-		displayName = "Solar Reavers";
+		displayName = "Primaris Marines";
 	};
 };
 
