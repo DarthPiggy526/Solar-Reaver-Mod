@@ -466,6 +466,16 @@ class CfgVehicles
 			"SR_Uniforms\Textures\SR_Armour1.paa"
 		};
 	}
+	class Primaris_SR_FleshTearers: Primaris_SM_SR_1
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris FT (Mk.10)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\FT_PrimArmour.paa",
+			"SR_Uniforms\Textures\SR_Armour1.paa"
+		};
+	}
 	class Primaris_SR_ImperialFists: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";

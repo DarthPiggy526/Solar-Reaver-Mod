@@ -56,6 +56,14 @@ class InventoryItem_Base_F;
 			uniformClass="Primaris_SR_DarkAngels";
 		};
 	};
+				class Primaris_SM_FleshTearers_W: SR_MK10_Armor_Blackshield
+	{
+		displayName="Primaris MK.10 (TSR Flesh Tearers)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="Primaris_SR_FleshTearers";
+		};
+	};
 					class Primaris_SM_ImperialFists_W: SR_MK10_Armor_Blackshield
 	{
 		displayName="Primaris MK.10 (TSR Imperial Fists)";
@@ -252,6 +260,19 @@ class InventoryItem_Base_F;
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\DA_PrimHelmet.paa"
+		};
+	}
+				class Primaris_Helm_Main_SR_FleshTearers: SR_MK10_Helmet_Blackshield
+	{
+		author="Hummus, Barbon";
+		displayName="Primaris Mk.10 (TSR Flesh Tearers)";
+	hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\FT_PrimHelmet.paa"
 		};
 	}
 				class Primaris_Helm_Main_SR_ImperialFists: SR_MK10_Helmet_Blackshield
@@ -466,6 +487,35 @@ class InventoryItem_Base_F;
 			hiddenSelectionsTextures[]=
 			{
 				"SR_Primaris\Textures\DA_PrimArmour.paa"
+			};
+		};
+	};
+		class Primaris_Vest_40K_SR_FleshTearers: DOS_Primaris_40k_Vest_Base 
+	{
+		author="Hummus, Barbon";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		displayName="Primaris Mk.10 (TSR Flesh Tearers)";
+		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Primaris\Textures\FT_PrimArmour.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\FT_PrimArmour.paa"
 			};
 		};
 	};
