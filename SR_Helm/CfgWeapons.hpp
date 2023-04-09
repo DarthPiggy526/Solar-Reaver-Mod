@@ -729,18 +729,6 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		     "SR_Helm\Textures\WS_Helmet.paa"
 		   };
 	  };
-	  
-	  	  	  	class SR_MK7_Helmet_DeathStrike : TIOW_MK7Helmet_UM
-	  {
-		author="Strixus";
-		displayName = "MK 7 Helmet (TSR Blue)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
-		hiddenSelectionsTextures[] =
-		   {
-		     "SR_Helm\Textures\DS_Helmet.paa"
-		   };
-	  };
 	  	  	  	  	class SR_MK7_Helmet_NightLord2 : TIOW_MK7Helmet_UM
 	  {
 		author="Strixus";
@@ -750,6 +738,17 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Helm\Textures\NLB_Helmet.paa"
+		   };
+	  };
+	  	  	  	  	class SR_MK7_Helmet_FleshTearers : TIOW_MK7Helmet_UM
+	  {
+		author="Strixus";
+		displayName = "MK 7 Helmet (TSR Flesh Tearers)";
+		optreVarietys[] = {"","_dp","_broken"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelectionsTextures[] =
+		   {
+		     "SR_Helm\Textures\FT_Helmet.paa"
 		   };
 	  };
 
