@@ -20,6 +20,7 @@ class CfgPatches
 		};
 		weapons[]=
 		{
+			"SR_Master_Crafted_Ragefire_PlasmaGun_1",
 			"SR_Master_Crafted_GodwynBoltgun_1",
 			"SR_EC_GodwynBoltgun",
 			"SR_Meltagun_1",
@@ -41,6 +42,7 @@ class CfgPatches
 		units[]={};
 	};
 };
+
 class CfgSoundSets
 {
 	class Rifle_Shot_Base_SoundSet;
@@ -102,6 +104,7 @@ class CfgSoundSets
 		};
 	};
 };
+
 class CfgSoundShaders
 {
 	class EC_BolterDeep_Closure_SoundShader
@@ -397,6 +400,25 @@ class CfgSoundShaders
 		limitation=1;
 	};
 };
+
+class CfgFunctions
+{
+	class SR
+	{
+		class Hack
+		{
+			file = "SR_Arsenal\functions";
+			class ragefire_burst_cd {
+				//file = "SR_Arsenal\functions\fn_ragefire_burst_cd.sqf";
+			};
+			class ragefire_burst_init {
+				postInit	= 1;
+				//file = "SR_Arsenal\functions\fn_ragefire_burst_init.sqf";
+			};
+		};
+	};
+};
+
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -425,14 +447,456 @@ class STEVE_LascutShield_1;
 class TIOW_SM_LasCan_01;
 class CfgWeapons
 {
+	class SR_Master_Crafted_Mars_HeavyBolter_1: TIOW_Mars_HeavyBolter
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		author="Waagheur";
+		baseWeapon="SR_Master_Crafted_Mars_HeavyBolter_1";
+		displayName="[SR] [Master Crafted] Mars Pattern Heavy Bolter";
+		hiddenSelectionsTextures[]=
+		{
+			"TIOW_SMWep\Data\Textures\TIOW_Mars_HeavyBolter_co.paa"
+		};
+		modes[]=
+		{
+			"Single",
+			"FullAuto",
+			"RapidFire",
+			"fullauto_medium"
+		};
+		class RapidFire: FullAuto
+		{
+			reloadTime=0.1;
+			dispersion=0.03;
+		};
+	};
+	class SR_Master_Crafted_Ragefire_PlasmaGun_1: TIOW_GodwynBoltgun_1
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		picture="\TIOW_SMWep\Icon\Ragefire_ca.paa";
+		magazineWell[]={};
+		baseWeapon="SR_Master_Crafted_Ragefire_PlasmaGun_1";
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag",
+			"TIOW_SM_Overcharge_Plasmagun_Mag"
+		};
+		author="Waagheur";
+		displayName="[SR] [Master Crafted] Ragefire Plasmagun";
+		model="\TIOW_SMWep\Boltgun\Model\TIOW_SM_Plasmagun_01.p3d";
+		rightHandIKCurve[]={1};
+		LeftHandIKCurve[]={1};
+		reloadAction="GestureReloadTIOW_GodwynBoltgun";
+		handAnim[]=
+		{
+			"SpaceMarine_ManSkeleton",
+			"\TIOW_SMWep\Anim\New_Boltgun.rtm"
+		};
+		modelOptics="\DKOK_Weapons\Type14_Optic.p3d";
+		selectionFireAnim="zasleh";
+		hiddenSelections[]=
+		{
+			"Camo",
+			"BolterCamo"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"TIOW_SMWep\Data\Textures\TIOW_SmPlasmaGun_co.paa",
+			"TIOW_SMWep\Data\Textures\TIOW_Godwyn_Checker_co.paa"
+		};
+		class OpticsModes
+		{
+			class TWS
+			{
+				opticsID=1;
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+				opticsZoomMin=0.039999999;
+				opticsZoomMax=0.0625;
+				opticsZoomInit=0.0625;
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600};
+				discreteDistanceInitIndex=2;
+				distanceZoomMin=100;
+				distanceZoomMax=1600;
+				discretefov[]={0.0625,0.025};
+				discreteInitIndex=0;
+				modelOptics[]=
+				{
+					"\A3\Weapons_f\acc\reticle_tws_mg",
+					"\A3\Weapons_f\acc\reticle_tws_mg_NFOW"
+				};
+				memoryPointCamera="opticView";
+				visionMode[]=
+				{
+					"Normal",
+					"TI",
+					"NVG"
+				};
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="";
+			};
+			class Iron: TWS
+			{
+				opticsID=2;
+				useModelOptics=0;
+				opticsPPEffects[]=
+				{
+					"",
+					""
+				};
+				opticsFlare=0;
+				opticsDisablePeripherialVision=0;
+				opticsZoomMin=0.15000001;
+				opticsZoomMax=0.40000001;
+				opticsZoomInit=0.5;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				discretefov[]={};
+				distanceZoomMin=200;
+				distanceZoomMax=200;
+				discreteDistance[]={200};
+				discreteDistanceInitIndex=0;
+			};
+		};
+		modes[]=
+		{
+			"Single",
+			"Burst",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime=1;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+		class Burst: Mode_Burst
+		{
+			reloadTime=0.33;
+			burst = 3;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			dispersion=0.002;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					1,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					1,
+					1.1,
+					10
+				};
+				soundClosure[]=
+				{
+					"closure1",
+					0.5,
+					"closure2",
+					0.5
+				};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					2.8183801,
+					1,
+					1200
+				};
+				begin2[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					2.8183801,
+					1,
+					1200
+				};
+				begin3[]=
+				{
+					"DKok_Weapons\sound\PlasmaGun1.wss",
+					2.8183801,
+					1,
+					1200
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin3",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1.58489,
+							1,
+							1200
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"DKok_Weapons\sound\PlasmaGun1.wss",
+							1,
+							1,
+							1200
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+			};
+			soundBurst=0;
+		};
+		class single_medium_optics1: Single
+		{
+			requiredOpticType=1;
+			showToPlayer=0;
+			minRange=2;
+			minRangeProbab=0.2;
+			midRange=450;
+			midRangeProbab=0.69999999;
+			maxRange=500;
+			maxRangeProbab=0.2;
+			aiRateOfFire=2.5999999;
+			aiRateOfFireDistance=500;
+		};
+		class single_far_optics2: single_medium_optics1
+		{
+			requiredOpticType=2;
+			showToPlayer=0;
+			minRange=500;
+			minRangeProbab=0.1;
+			midRange=750;
+			midRangeProbab=0.60000002;
+			maxRange=1000;
+			maxRangeProbab=0.050000001;
+			aiRateOfFire=3.75;
+			aiRateOfFireDistance=1000;
+		};
+		aiDispersionCoefY=3;
+		aiDispersionCoefX=2;
+	};
 	class SR_Master_Crafted_GodwynBoltgun_1: TIOW_GodwynBoltgun_1
 	{
 		displayName="[SR] [Master Crafted] Godwyn Boltgun";
 		baseWeapon="SR_Master_Crafted_GodwynBoltgun_1";
 		author="Tengu";
-		scope=0;
-		scopeCurator=0;
-		scopeArsenal=0;
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
 			"\SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
@@ -442,6 +906,7 @@ class CfgWeapons
 			"Single",
 			"Burst",
 			"FullAuto",
+			"RapidFire",
 			"single_medium_optics1",
 			"single_far_optics2"
 		};
@@ -582,6 +1047,11 @@ class CfgWeapons
 			recoil="recoil_pistol_light";
 			recoilProne="recoil_prone_pistol_light";
 			dispersion=0.00034999999;
+		};
+		class RapidFire: FullAuto
+		{
+			reloadTime=0.08;
+			dispersion=0.01;
 		};
 	};
 	class SR_EC_GodwynBoltgun: SR_Master_Crafted_GodwynBoltgun_1
