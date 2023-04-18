@@ -57,8 +57,8 @@ class Cfgweapons
 				"TIOW_SM\Marine\Data\Materials\TIOW_Marine_Head.rvmat",
 				"a3\data_f\lights\car_panels.rvmat"
 			};
-		}
-	}
+		};
+	};
 
 	class SR_MK2_Helmet_Black : TIOW_MK2Helmet_UM
 	{
@@ -751,5 +751,39 @@ class SR_MK2_Helmet_ChiefMarauder : TIOW_MK2Helmet_UM
 		     "SR_Helm\Textures\FT_Helmet.paa"
 		   };
 	  };
+
+//Inviisble Hlmemt
+	class ItemCore;
+	class SR_Invisible_Helmet: ItemCore
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		displayName = "[SR] Invisible Helmet";
+		picture = "\TIOW_SM\Icon\MK7Helmet_ca.paa";
+		model="\SR_Helm\Data\null.p3d";
+		hiddenSelections[] = {};
+		hiddenSelectionsTextures[]={"\SR_Helm\Data\null_CA.paa";};
+		hiddenSelectionsMaterials[] = {};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 5;
+			uniformModel = "\SR_Helm\Data\null.p3d";
+			allowedSlots[] = {"UNIFORM_SLOT","BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
+			modelSides[] = {6};
+			hiddenSelections[] = {};
+			hiddenSelectionsMaterials[] = {};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName = "HitHead";
+					armor = 35;
+					passThrough = 0.1;
+				};
+			};
+		};
+		subItems[] = {"Integrated_NVG_TI_1_F"};
+	};
 
 }; // End of CfgWeapons
