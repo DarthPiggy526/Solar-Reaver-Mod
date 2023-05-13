@@ -2,7 +2,7 @@ class CfgFactionClasses
 {
 	class SR_Faction_bis
 	{
-		displayName="[SR] Solar Reavers";
+		displayName="[TSR] Solar Reavers";
 		side=1;
 		priority=2;
 	};
@@ -62,7 +62,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\SR_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 		Items[]={};
 		RespawnItems[]={};
@@ -80,7 +80,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\Lysander_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	};
 }; // End of CfgVechicle

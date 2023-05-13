@@ -27,7 +27,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\WS_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	};
 };
@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_WhiteScars_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[SR] Primaris MK.10 (TSR White Scars)";
+		displayName="[TSR] Primaris MK.10 (TSR White Scars)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_WhiteScars";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_WhiteScars: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[SR] Primaris Mk.10 (TSR White Scars)";
+		displayName="[TSR] Primaris Mk.10 (TSR White Scars)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -64,7 +64,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[SR] Primaris Mk.10 (TSR White Scars)";
+		displayName="[TSR] Primaris Mk.10 (TSR White Scars)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

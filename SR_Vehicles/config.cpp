@@ -189,7 +189,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class SR_DropPod: TIOW_Drop_Pod_UM
+	class TSR_DropPod: TIOW_Drop_Pod_UM
 	{
 		side = 1;
 		scope = 2;
@@ -245,7 +245,7 @@ class TIOW_UM_Storm;
 		crew = "TIOW_Tactical_BT_1";
 		hiddenSelections[] = {"LS_Hull"};
 		hiddenSelectionsTextures[] = {"\SR_Vehicles\textures\SR_Speeder_Hull_CO.paa"};
-		magazines[] = {"TIOW_8Rnd_Frag_missiles","TIOW_3Rnd_Krak_missiles","168Rnd_CMFlare_Chaff_Magazine"};
+//		magazines[] = {"TIOW_8Rnd_Frag_missiles","TIOW_3Rnd_Krak_missiles","168Rnd_CMFlare_Chaff_Magazine"};
 		slingLoadMaxCargoMass = 200000;
 		maximumLoad = 200000;
 		class HitPoints
@@ -285,7 +285,7 @@ class TIOW_UM_Storm;
 class TIOW_UM_Temp;
 	class TSR_TempSpeeder: TIOW_UM_Temp
 	{
-		armor=75;
+		armor=100;
 		armorStructural=2;
 		side = 1;
 		scope = 2;
@@ -332,7 +332,7 @@ class TIOW_UM_Temp;
 class TIOW_UM_Typhoon;
 	class TSR_TyphoonSpeeder: TIOW_UM_Typhoon
 	{
-		armor=75;
+		armor=100;
 		armorStructural=2;
 		side = 1;
 		scope = 2;
@@ -348,7 +348,7 @@ class TIOW_UM_Typhoon;
 class TIOW_UM_Tornado;
 	class TSR_TornadoSpeeder: TIOW_UM_Tornado
 	{
-		armor=75;
+		armor=100;
 		armorStructural=2;
 		side = 1;
 		scope = 2;

@@ -27,7 +27,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\BA_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	};
 };
@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_BloodAngels_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[SR] Primaris MK.10 (TSR Blood Angels)";
+		displayName="[TSR] Primaris MK.10 (TSR Blood Angels)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_BloodAngels";
@@ -47,14 +47,34 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_BloodAngels: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[SR] Primaris Mk.10 (TSR Blood Angels)";
+		displayName="[TSR] Primaris Mk.10 (TSR Blood Angels)";
 		hiddenSelections[]=
 		{
-			"Camo1"
+			"Camo1",
+			"eyecamo"
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"SR_Primaris\Textures\BA_PrimHelmet.paa"
+			"SR_Primaris\Textures\BA_PrimHelmet.paa",
+			"SR_Primaris\Textures\Eyes_Green_CO.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"eyecamo"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"SR_Primaris\Textures\BA_PrimHelmet.paa",
+				"SR_Primaris\Textures\Eyes_Green_CO.paa"
+			};
+			hiddenSelectionsMaterials[]=
+			{
+				"Project_Primaris_D_Main\Textures\Prim_Helm.rvmat"
+			};
 		};
 	};
 	class DOS_Primaris_40k_Vest_Base;
@@ -64,7 +84,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[SR] Primaris Mk.10 (TSR Blood Angels)";
+		displayName="[TSR] Primaris Mk.10 (TSR Blood Angels)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

@@ -27,7 +27,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\IF_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	};
 };
@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_ImperialFists_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[SR] Primaris MK.10 (TSR Imperial Fists)";
+		displayName="[TSR] Primaris MK.10 (TSR Imperial Fists)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_ImperialFists";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_ImperialFists: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[SR] Primaris Mk.10 (TSR Imperial Fists)";
+		displayName="[TSR] Primaris Mk.10 (TSR Imperial Fists)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -64,7 +64,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[SR] Primaris Mk.10 (TSR Imperial Fists)";
+		displayName="[TSR] Primaris Mk.10 (TSR Imperial Fists)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{
