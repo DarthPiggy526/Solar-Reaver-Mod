@@ -12,4 +12,4 @@
 
 params ["_medic", "_patient"];
 
-({((_x select 0) == 20) or ((_x select 0) == 21) or ((_x select 0) == 22)} count (player getVariable "ace_medical_OpenWounds")) > 0;
+({((_x select 0) == 20) or ((_x select 0) == 21) or ((_x select 0) == 22)} count (_patient getVariable "ace_medical_OpenWounds")) > 0;
