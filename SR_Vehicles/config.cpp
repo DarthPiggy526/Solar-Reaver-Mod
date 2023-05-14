@@ -555,13 +555,7 @@ class CfgVehicles
 	class TIOW_Bike_Base;
 	class TSR_Ass_Bike_Bolter: TIOW_Bike_Base
 	{
-		class EventHandlers
-		{
-			class SlowMode
-			{
-				init = "[(_this select 0)] spawn {_bike = (_this select 0);	while {true} do {_speed = (speed _bike);if (_speed > 100) then {_vel = velocityModelSpace _bike;_norm = vectorNormalized _vel;_bike setVelocityModelSpace [(_vel select 0) - (_norm select 0) * (_speed-100),(_vel select 1) - (_norm select 1) * (_speed-100), (_vel select 2) - (_norm select 2) * (_speed-100)];	};	sleep 0.5;	};	}; ";
-			};
-		};
+		maxSpeed = 100;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -581,13 +575,7 @@ class CfgVehicles
 	};
 	class TSR_Ass_Bike_Plasma: TSR_Ass_Bike_Bolter
 	{
-		class EventHandlers
-		{
-			class SlowMode
-			{
-				init = "[(_this select 0)] spawn {_bike = (_this select 0);	while {true} do {_speed = (speed _bike);if (_speed > 100) then {_vel = velocityModelSpace _bike;_norm = vectorNormalized _vel;_bike setVelocityModelSpace [(_vel select 0) - (_norm select 0) * (_speed-100),(_vel select 1) - (_norm select 1) * (_speed-100), (_vel select 2) - (_norm select 2) * (_speed-100)];	};	sleep 0.5;	};	}; ";
-			};
-		};
+		maxSpeed = 100;
 		displayName="[TSR] Assault Bike (Plasma)";
 		model="\TIOW_SM_Fast_attack\Models\SM_Bike_Plasma.p3d";
 		weapons[]=
@@ -602,13 +590,7 @@ class CfgVehicles
 	class TIOW_Side_Car_Base;
 	class TSR_Atk_Bike_Bolt: TIOW_Side_Car_Base
 	{
-		class EventHandlers
-		{
-			class SlowMode
-			{
-				init = "[(_this select 0)] spawn {_bike = (_this select 0);	while {true} do {_speed = (speed _bike);if (_speed > 100) then {_vel = velocityModelSpace _bike;_norm = vectorNormalized _vel;_bike setVelocityModelSpace [(_vel select 0) - (_norm select 0) * (_speed-100),(_vel select 1) - (_norm select 1) * (_speed-100), (_vel select 2) - (_norm select 2) * (_speed-100)];	};	sleep 0.5;	};	}; ";
-			};
-		};
+		maxSpeed = 100;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
@@ -631,13 +613,7 @@ class CfgVehicles
 	class TIOW_Side_Car_Base_Melt;
 	class TSR_Atk_Bike_Melt: TIOW_Side_Car_Base_Melt
 	{
-		class EventHandlers
-		{
-			class SlowMode
-			{
-				init = "[(_this select 0)] spawn {_bike = (_this select 0);	while {true} do {_speed = (speed _bike);if (_speed > 100) then {_vel = velocityModelSpace _bike;_norm = vectorNormalized _vel;_bike setVelocityModelSpace [(_vel select 0) - (_norm select 0) * (_speed-100),(_vel select 1) - (_norm select 1) * (_speed-100), (_vel select 2) - (_norm select 2) * (_speed-100)];	};	sleep 0.5;	};	}; ";
-			};
-		};
+		maxSpeed = 100;
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
