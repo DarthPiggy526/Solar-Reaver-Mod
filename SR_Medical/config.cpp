@@ -64,8 +64,8 @@ class ace_medical_treatment
         {
             painReduce=1.0;
 			hrIncreaseLow[]={5,10};
-			hrIncreaseNormal[]={-25,-30};
-			hrIncreaseHigh[]={-30,-35};
+			hrIncreaseNormal[]={-20,-25};
+			hrIncreaseHigh[]={-20,-25};
 			timeInSystem=180;
 			timeTillMaxEffect=5;
 			maxDose=1;
@@ -78,8 +78,8 @@ class ace_medical_treatment
         {
             painReduce=1.0;
 			hrIncreaseLow[]={5,10};
-			hrIncreaseNormal[]={-25,-30};
-			hrIncreaseHigh[]={-30,-35};
+			hrIncreaseNormal[]={-20,-25};
+			hrIncreaseHigh[]={-20,-25};
 			timeInSystem=180;
 			timeTillMaxEffect=5;
 			maxDose=1;
