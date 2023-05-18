@@ -38,7 +38,7 @@ class CfgWeapons
 	class SR_MK7_Armor_DarkAngels: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Power Armor (TSR Dark Angels)";
+		displayName="[TSR] MK 7 Power Armor (Dark Angels)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_DA"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
@@ -48,7 +48,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_DarkAngels : SR_MK2_Shoulders_Blackshield
 	{
 		author="Strixus";
-		displayName="[SR] MK 2 Pauldrons (TSR Dark Angels)";
+		displayName="[TSR] MK 2 Pauldrons (Dark Angels)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\DA_Armour1.paa",
@@ -59,7 +59,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_DarkAngels: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Helmet (TSR Dark Angels)";
+		displayName="[TSR] MK 7 Helmet (Dark Angels)";
 		optreVarietys[]=
 		{
 			"",

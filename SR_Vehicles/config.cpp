@@ -19,6 +19,8 @@ class CfgPatches
 		{
 			"TSR_StormEagle",
 			"TSR_DropPod",
+			"TSR_Xiphon",
+			"TSR_Ass_Ram",
 			"TSR_StormSpeeder",
 			"TSR_TempSpeeder",
 			"TSR_TyphoonSpeeder",
@@ -29,6 +31,8 @@ class CfgPatches
 			"TSR_Razorback_AC",
 			"TSR_Predator",
 			"TSR_Vindicator",
+			"TSR_Whirlwind_Arty", 
+			"TSR_Whirlwind_AA",
 			"TSR_Ass_Bike_Bolter",
 			"TSR_Ass_Bike_Plasma",
 			"TSR_Atk_Bike_Bolt",
@@ -207,7 +211,36 @@ class CfgVehicles
 			"\SR_Vehicles\textures\SR_Drop_Pod_CO.paa"
 		};
 	};
-	class TIOW_UM_Storm;
+  class VTOL_XI_IN_1;
+	class TSR_Xiphon: VTOL_XI_IN_1
+	{
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Planes";
+		displayName = "[TSR] Xiphon Interceptor";
+		crew = "TIOW_Tactical_DA_HH_5";
+		hiddenSelections[] = {"30k_camo_1","30k_camo_2"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_XI_1_CO.paa","SR_Vehicles\textures\SR_XI_2_CO.paa"};
+		armor = 135;
+		armorStructural=2;
+	};
+  class Steve_Ass_Ram_UM_1;
+	class TSR_Ass_Ram: Steve_Ass_Ram_UM_1
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Helicopters";
+		displayName = "[TSR] Assault Ram";
+		crew = "TIOW_Tactical_BA_5";
+		hiddenSelections[] = {"ass_camo"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Ram_CO.paa"};
+		armor = 150;
+		armorStructural=2;
+	};
+
+
+class TIOW_UM_Storm;
 	class TSR_StormSpeeder: TIOW_UM_Storm
 	{
 		armor=100;
@@ -508,6 +541,8 @@ class CfgVehicles
 		};
 	};
 	class TIOW_SM_Whirlwind_Arty_UM;
+	class Turrets;
+	class MainTurret;
 	class TSR_Whirlwind_Arty: TIOW_SM_Whirlwind_Arty_UM
 	{
 		scope=2;
@@ -517,18 +552,20 @@ class CfgVehicles
 		faction="SR_Faction";
 		editorSubcategory="EdSubcat_Artillery";
 		displayName="[TSR] Whirlwind (Arty)";
-		crew="TIOW_Tactical_BA_1";
-		hiddenSelections[]=
+		crew = "TIOW_Tactical_BA_1";
+		hiddenSelections[] = {"CamoColor","CamoParts","CamoTracks"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Rhino_CO.paa","\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa","\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa"};
+		class Turrets: Turrets
 		{
-			"CamoColor",
-			"CamoParts",
-			"CamoTracks"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Vehicles\textures\SR_Rhino_CO.paa",
-			"\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa",
-			"\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa"
+			class MainTurret: MainTurret
+			{
+				magazines[] = {
+					"JCAS_Whirlwind_Vengeance_Missile_Mag","JCAS_Whirlwind_Vengeance_Missile_Mag","JCAS_Whirlwind_Vengeance_Missile_Mag","JCAS_Whirlwind_Vengeance_Missile_Mag","JCAS_Whirlwind_Vengeance_Missile_Mag",
+					"JCAS_Whirlwind_Hyperios_Missile_Mag","JCAS_Whirlwind_Hyperios_Missile_Mag","JCAS_Whirlwind_Hyperios_Missile_Mag","JCAS_Whirlwind_Hyperios_Missile_Mag","JCAS_Whirlwind_Hyperios_Missile_Mag",
+					"JCAS_Whirlwind_Krak_Missile_Mag","JCAS_Whirlwind_Krak_Missile_Mag","JCAS_Whirlwind_Krak_Missile_Mag",
+					"JCAS_Whirlwind_SuperKrak_Missile_Mag","JCAS_Whirlwind_SuperKrak_Missile_Mag","JCAS_Whirlwind_SuperKrak_Missile_Mag",
+					"JCAS_Whirlwind_Plasma_Missile_Mag","JCAS_Whirlwind_Plasma_Missile_Mag"};
+			};
 		};
 	};
 	class TIOW_SM_Whirlwind_AA_UM;
@@ -555,23 +592,17 @@ class CfgVehicles
 	class TIOW_Bike_Base;
 	class TSR_Ass_Bike_Bolter: TIOW_Bike_Base
 	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
 		maxSpeed = 100;
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		side=1;
-		displayName="[TSR] Assault Bike (Bolter)";
-		crew="TIOW_Tactical_DA_1";
-		faction="SR_Faction";
-		editorSubcategory="EdSubcat_Cars";
-		hiddenSelections[]=
-		{
-			"Bike_Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Vehicles\textures\SR_Bike_CO.paa"
-		};
+		displayName = "[TSR] Assault Bike (Bolter)";
+		crew = "TIOW_Tactical_DA_1";
+		faction = "SR_Faction";
+		editorSubcategory = "EdSubcat_Cars";
+		hiddenSelections[] = {"Bike_Camo"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa"};
 	};
 	class TSR_Ass_Bike_Plasma: TSR_Ass_Bike_Bolter
 	{
@@ -590,52 +621,33 @@ class CfgVehicles
 	class TIOW_Side_Car_Base;
 	class TSR_Atk_Bike_Bolt: TIOW_Side_Car_Base
 	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
 		maxSpeed = 100;
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		side=1;
-		displayName="[TSR] Attack Bike (Bolter)";
-		crew="TIOW_Tactical_DA_1";
-		faction="SR_Faction";
-		editorSubcategory="EdSubcat_Cars";
-		hiddenSelections[]=
-		{
-			"Bike_Camo",
-			"side_camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Vehicles\textures\SR_Bike_CO.paa",
-			"TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"
-		};
+		displayName = "[TSR] Attack Bike (Bolter)";
+		crew = "TIOW_Tactical_DA_1";
+		faction = "SR_Faction";
+		editorSubcategory = "EdSubcat_Cars";
+		hiddenSelections[] = {"Bike_Camo","side_camo"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa","TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"};
 	};
 	class TIOW_Side_Car_Base_Melt;
 	class TSR_Atk_Bike_Melt: TIOW_Side_Car_Base_Melt
 	{
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		side = 1;
 		maxSpeed = 100;
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		side=1;
-		crew="TIOW_Tactical_DA_1";
-		displayName="[TSR] Attack Bike (Melta)";
-		faction="SR_Faction";
-		editorSubcategory="EdSubcat_Cars";
-		hiddenSelections[]=
-		{
-			"Bike_Camo",
-			"side_camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"SR_Vehicles\textures\SR_Bike_CO.paa",
-			"TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"
-		};
+		slowSpeedForwardCoef = 30;
+		normalSpeedForwardCoef = 70;
+		crew = "TIOW_Tactical_DA_1";
+		displayName = "[TSR] Attack Bike (Melta)";
+		faction = "SR_Faction";
+		editorSubcategory = "EdSubcat_Cars";
+		hiddenSelections[] = {"Bike_Camo","side_camo"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa","TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"};
 	};
-};
-class cfgMods
-{
-	author="Tengu";
-	timepacked="1683935215";
 };

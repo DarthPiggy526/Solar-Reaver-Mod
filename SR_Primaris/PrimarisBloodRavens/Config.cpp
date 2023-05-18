@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_BloodRavens_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[TSR] Primaris MK.10 (TSR Blood Ravens)";
+		displayName="[TSR] Primaris MK.10 (Blood Ravens)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_BloodRavens";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_BloodRavens: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[TSR] Primaris Mk.10 (TSR Blood Ravens)";
+		displayName="[TSR] Primaris Mk.10 (Blood Ravens)";
 		hiddenSelections[]=
 		{
 			"Camo1",
@@ -84,7 +84,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[TSR] Primaris Mk.10 (TSR Blood Ravens)";
+		displayName="[TSR] Primaris Mk.10 (Blood Ravens)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_DarkAngels_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[TSR] Primaris MK.10 (TSR Dark Angels)";
+		displayName="[TSR] Primaris MK.10 (Dark Angels)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_DarkAngels";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_DarkAngels: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[TSR] Primaris Mk.10 (TSR Dark Angels)";
+		displayName="[TSR] Primaris Mk.10 (Dark Angels)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -64,7 +64,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[TSR] Primaris Mk.10 (TSR Dark Angels)";
+		displayName="[TSR] Primaris Mk.10 (Dark Angels)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

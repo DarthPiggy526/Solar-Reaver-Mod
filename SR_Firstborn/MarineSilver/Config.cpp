@@ -23,7 +23,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_Silver : SR_MK2_Shoulders_Blackshield
 	{
 		author="Silver";
-		displayName="[SR] Silver";
+		displayName="[TSR] Silver";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\Silver_Armour1.paa",

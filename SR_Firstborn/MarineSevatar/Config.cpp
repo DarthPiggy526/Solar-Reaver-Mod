@@ -38,7 +38,7 @@ class CfgWeapons
 	class SR_MK7_Armor_NightLords2: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[SR] Sevatar";
+		displayName="[TSR] Sevatar";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_NightLords2"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
@@ -48,7 +48,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_NightLords2 : SR_MK2_Shoulders_Blackshield
 	{
 		author="Strixus";
-		displayName="[SR] Sevatar";
+		displayName="[TSR] Sevatar";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\NL2_Armour1.paa",
@@ -59,7 +59,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_NightLord2: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[SR] Sevatar";
+		displayName="[TSR] Sevatar";
 		optreVarietys[]=
 		{
 			"",

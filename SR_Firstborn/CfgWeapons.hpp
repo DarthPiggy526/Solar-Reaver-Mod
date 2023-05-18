@@ -23,7 +23,7 @@ class Cfgweapons
 	class SR_MK2_Armor_Blackshield: TIOW_MK2PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 2 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -38,7 +38,7 @@ class Cfgweapons
 	class SR_MK3_Armor_Blackshield: TIOW_MK3PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 3 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -53,7 +53,7 @@ class Cfgweapons
 	class SR_MK4_Armor_Blackshield: TIOW_MK4PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 4 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -68,7 +68,7 @@ class Cfgweapons
 	class SR_MK5_Armor_Blackshield: TIOW_MK5PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 5 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -83,7 +83,7 @@ class Cfgweapons
 	class SR_MK6_Armor_Blackshield: TIOW_MK6PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 6 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -98,7 +98,7 @@ class Cfgweapons
 	class SR_MK7_Armor_Blackshield: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 7 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -112,7 +112,7 @@ class Cfgweapons
 	class SR_MK8_Armor_Blackshield: TIOW_MK8PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 8 Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 8 Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -126,7 +126,7 @@ class Cfgweapons
 	class SR_MK7_ImperialisArmor_Blackshield: TIOW_Mk7PowerArmorImperialis_1_WS
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Imperialis Power Armor (TSR Blackshield)";
+		displayName="[TSR] MK 7 Imperialis Power Armor (Blackshield)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -248,7 +248,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_Black: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Black)";
+		displayName="[TSR] MK 2 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -264,7 +264,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_Black: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Black)";
+		displayName="[TSR] MK 3 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -280,7 +280,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_Black: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Black)";
+		displayName="[TSR] MK 4 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -296,7 +296,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_Black: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Black)";
+		displayName="[TSR] MK 5 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -312,7 +312,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_Black: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Black)";
+		displayName="[TSR] MK 6 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -328,7 +328,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_Black: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Black)";
+		displayName="[TSR] MK 7K Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -344,7 +344,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_Black: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Black)";
+		displayName="[TSR] MK 7 Helmet (Black)";
 		optreVarietys[]=
 		{
 			"",
@@ -360,7 +360,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_BlackReaver: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -376,7 +376,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_BlackReaver: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -392,7 +392,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_BlackReaver: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -408,7 +408,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_BlackReaver: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -424,7 +424,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_BlackReaver: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -440,7 +440,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_BlackReaver: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -456,7 +456,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_BlackReaver: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Blackshield Reaver)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Reaver)";
 		optreVarietys[]=
 		{
 			"",
@@ -472,7 +472,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_BlackLT: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 2 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -488,7 +488,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_BlackLT: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 3 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -504,7 +504,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_BlackLT: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 4 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -520,7 +520,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_BlackLT: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 5 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -536,7 +536,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_BlackLT: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 6 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -552,7 +552,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_BlackLT: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 7K Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -568,7 +568,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_BlackLT: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Blackshield LT)";
+		displayName="[TSR] MK 7 Helmet (Blackshield LT)";
 		optreVarietys[]=
 		{
 			"",
@@ -584,7 +584,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_BlackSer: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -600,7 +600,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_BlackSer: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -616,7 +616,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_BlackSer: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -632,7 +632,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_BlackSer: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -648,7 +648,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_BlackSer: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -664,7 +664,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_BlackSer: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -680,7 +680,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_BlackSer: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Blackshield Ser)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Ser)";
 		optreVarietys[]=
 		{
 			"",
@@ -696,7 +696,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_BlackVet: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -712,7 +712,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_BlackVet: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -728,7 +728,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_BlackVet: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -744,7 +744,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_BlackVet: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -760,7 +760,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_BlackVet: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -776,7 +776,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_BlackVet: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -792,7 +792,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_BlackVet: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Blackshield Vet)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Vet)";
 		optreVarietys[]=
 		{
 			"",
@@ -808,7 +808,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_Marauder: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 2 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -824,7 +824,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_Marauder: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 3 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -840,7 +840,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_Marauder: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 4 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -856,7 +856,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_Marauder: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 5 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -872,7 +872,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_Marauder: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 6 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -888,7 +888,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_Marauder: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Marauder)";
+		displayName="[TSR] MK 7K Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -904,7 +904,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_Marauder: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Marauder)";
+		displayName="[TSR] MK 7 Helmet (Marauder)";
 		optreVarietys[]=
 		{
 			"",
@@ -920,7 +920,7 @@ class Cfgweapons
 	class SR_MK2_Helmet_ChiefMarauder: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 2 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -936,7 +936,7 @@ class Cfgweapons
 	class SR_MK3_Helmet_ChiefMarauder: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 3 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -952,7 +952,7 @@ class Cfgweapons
 	class SR_MK4_Helmet_ChiefMarauder: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 4 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -968,7 +968,7 @@ class Cfgweapons
 	class SR_MK5_Helmet_ChiefMarauder: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 5 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -984,7 +984,7 @@ class Cfgweapons
 	class SR_MK6_Helmet_ChiefMarauder: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 6 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -1000,7 +1000,7 @@ class Cfgweapons
 	class SR_MK7K_Helmet_ChiefMarauder: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 7K Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -1016,7 +1016,7 @@ class Cfgweapons
 	class SR_MK7_Helmet_ChiefMarauder: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (TSR Marauder Chief)";
+		displayName="[TSR] MK 7 Helmet (Marauder Chief)";
 		optreVarietys[]=
 		{
 			"",
@@ -1038,7 +1038,7 @@ class Cfgweapons
 	class SR_MK2_Shoulders_Conscript : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Pauldrons (TSR Conscript)";
+		displayName="[TSR] MK 2 Pauldrons (Conscript)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\SR_Armour1.paa",
@@ -1048,7 +1048,7 @@ class Cfgweapons
 	class SR_MK2_Shoulders_Blackshield : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Pauldrons (TSR Blackshield)";
+		displayName="[TSR] MK 2 Pauldrons (Blackshield)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\SRBS_Armour1.paa",
@@ -1058,7 +1058,7 @@ class Cfgweapons
 	class SR_MK2_Shoulders_Reaver : TIOW_MK2Limbs_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Pauldrons (TSR Reaver)";
+		displayName="[TSR] MK 2 Pauldrons (Reaver)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\SRReaver_Armour1.paa",

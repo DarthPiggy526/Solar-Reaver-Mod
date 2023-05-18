@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_Ultramarines_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[TSR] Primaris MK.10 (TSR Ultramarines)";
+		displayName="[TSR] Primaris MK.10 (Ultramarines)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_Ultramarines";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_Ultramarines: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[TSR] Primaris Mk.10 (TSR Ultramarines)";
+		displayName="[TSR] Primaris Mk.10 (Ultramarines)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -64,7 +64,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[TSR] Primaris Mk.10 (TSR Ultramarines)";
+		displayName="[TSR] Primaris Mk.10 (Ultramarines)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

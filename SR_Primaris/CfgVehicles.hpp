@@ -17,7 +17,7 @@ class CfgVehicles
 	class Primaris_Dos_PP_SR_1: TIOW_Mk4Powerpack_Ultra
 	{
 		scope=2;
-		displayName="Mk.10 Powerpack (TSR Blackshield)";
+		displayName="[TSR] Mk.10 Powerpack (Blackshield)";
 		model="Project_Primaris_D_Main\Models\Power_Pack_Main.p3d";
 		hiddenSelections[]=
 		{
@@ -50,7 +50,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		scopeCurator=1;
 		model="Project_Primaris_D_Main\Models\Base_Brother.p3d";
-		displayName="Primaris Brother (Mk.10)";
+		displayName="[TSR] Primaris Brother (Mk.10)";
 		uniformClass="SR_MK10_Armor_Blackshield";
 		faction="SR_Faction";
 		editorSubcategory= "EdSubcat_SR_Primaris";
@@ -75,7 +75,7 @@ class CfgVehicles
 	};
 	class Primaris_SM_Lysander: Primaris_SM_SR_1
 	{
-		displayName="Primaris Lysander (Mk.10)";
+		displayName="[TSR] Primaris Lysander (Mk.10)";
 		uniformClass="SR_MK10_Armor_Lysander";
 		hiddenSelectionsTextures[]=
 		{

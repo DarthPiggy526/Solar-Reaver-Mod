@@ -38,7 +38,7 @@ class CfgWeapons
 	class SR_MK7_Armor_EmperorsChildren: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Power Armor (TSR Emperor's Children)";
+		displayName="[TSR] MK 7 Power Armor (Emperor's Children)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_EC"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
@@ -48,7 +48,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_EmperorsChildren : SR_MK2_Shoulders_Blackshield
 	{
 		author="Strixus";
-		displayName="[SR] MK 2 Pauldrons (TSR Emperor's Children)";
+		displayName="[TSR] MK 2 Pauldrons (Emperor's Children)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\EC_Armour1.paa",
@@ -59,7 +59,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_EmperorsChildren: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Helmet (TSR Emperor's Children)";
+		displayName="[TSR] MK 7 Helmet (Emperor's Children)";
 		optreVarietys[]=
 		{
 			"",

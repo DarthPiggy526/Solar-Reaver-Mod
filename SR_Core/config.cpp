@@ -6,8 +6,10 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {};
-		requiredVersion = 1.6;
-		version = 0.2;
+		requiredVersion = 1.88;
+		version = "23.5.18.0";
+		versionStr = "23.5.18.0";
+		versionAr[] = {23,5,18,0};
 		requiredAddons[] = {"Extended_EventHandlers","cba_main","A3_UI_F"};
 		author = "Tengu";
 		fileName = "SR_Core.pbo";
@@ -121,7 +123,7 @@ class CfgFactionClasses
 {
 	class SR_Faction
 	{
-		displayName = "[SR] Solar Reavers";
+		displayName = "[TSR] Solar Reavers";
 		side = 1;
 		priority = 2;
 	};
@@ -130,17 +132,17 @@ class CfgEditorCategories
 {
 	class SR_EditorCategory_Solar_Reavers
 	{
-		displayName = "[SR] Solar Reavers";
+		displayName = "[TSR] Solar Reavers";
 	};
 	class SR_EditorCategory_Objects
 	{
-		displayName = "[SR] Objects";
+		displayName = "[TSR] Objects";
 	};
 };
 class CfgEditorSubcategories
 {
 	class SR_EdSubcat_Supply
 	{
-		displayName = "[SR] Supply Pods";
+		displayName = "[TSR] Supply Pods";
 	};
 };

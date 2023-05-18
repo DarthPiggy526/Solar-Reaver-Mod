@@ -200,7 +200,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeCurator=2;
-		displayName="[SR] Adrenal Stims";
+		displayName="[TSR] Adrenal Stims";
 		author="ACE Team + DaveSkywalker";
 		vehicleClass="Items";
 		class TransportItems
@@ -219,7 +219,7 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeCurator=2;
-		displayName="[SR] Narthecium";
+		displayName="[TSR] Narthecium";
 		author="ACE Team + DaveSkywalker";
 		vehicleClass="Items";
 		class TransportItems
@@ -238,7 +238,7 @@ class CfgVehicles
 	{
         scope = 2;
         scopeCurator = 2;
-        displayName = "[SR] Plasma Synthesizer";
+        displayName = "[TSR] Plasma Synthesizer";
         author = "Waagheur";
         vehicleClass = "Items";
 		class TransportItems
@@ -257,7 +257,7 @@ class CfgVehicles
 	{
         scope = 2;
         scopeCurator = 2;
-        displayName = "[SR] Coolant Injector";
+        displayName = "[TSR] Coolant Injector";
         author = "Waagheur";
         vehicleClass = "Items";
         class TransportItems {
@@ -283,7 +283,7 @@ class CfgWeapons
 		author="ACE Team + DaveSkywalker";
 		model="\z\ace\addons\medical_treatment\data\adenosine.p3d";
 		picture="\AV_Pack\textures\items\av_stims_ca.paa";
-		displayName="[SR] Adrenal Stims";
+		displayName="[TSR] Adrenal Stims";
 		descriptionShort="Adrenal Stims used to get the Space Marine ready to fight again";
 		descriptionUse="Adrenal Stims used to get the Space Marine ready to fight again";
 		class ItemInfo: CBA_MiscItem_ItemInfo
@@ -300,7 +300,7 @@ class CfgWeapons
 		author="ACE Team + DaveSkywalker";
 		model="\z\ace\addons\medical_treatment\data\adenosine.p3d";
 		picture="\AV_Pack\textures\items\av_narthecium_ca.paa";
-		displayName="[SR] Narthecium";
+		displayName="[TSR] Narthecium";
 		descriptionShort="Narthecium used to heal Space Marines";
 		descriptionUse="Narthecium used to heal Space Marines";
 		class ItemInfo: CBA_MiscItem_ItemInfo
@@ -315,7 +315,7 @@ class CfgWeapons
 	class SR_Item_InfiBlood: ACE_plasmaIV {
 		scope = 2;
 		author = "Waagheur";
-        displayName = "[SR] Plasma Synthesizer";
+        displayName = "[TSR] Plasma Synthesizer";
         model = "ACE3\addons\medical_treatment\data\surgical_kit.p3d";
         picture = "ACE3\addons\medical_treatment\ui\salineIV_ca.paa";
         descriptionShort = "Plasma Synthesizer used to fabricate plasma to replace lost blood in the field.";
@@ -330,7 +330,7 @@ class CfgWeapons
 	class SR_Item_TraumaClearer: ACE_ItemCore {
         scope = 2;
         author = "Waagheur";
-        displayName= "[SR] Coolant Injector";
+        displayName= "[TSR] Coolant Injector";
         model = "ACE3\addons\medical_treatment\data\surgical_kit.p3d";
         picture = "ACE3\addons\medical_treatment\ui\surgicalKit_ca.paa";
         descriptionShort = "Coolant Injector used to treat bruises on a soldier.";

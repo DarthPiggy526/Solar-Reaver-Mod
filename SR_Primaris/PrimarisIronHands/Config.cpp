@@ -37,7 +37,7 @@ class CfgWeapons
 	class SR_MK10_Armor_Blackshield;
 	class Primaris_SM_IronHands_W: SR_MK10_Armor_Blackshield
 	{
-		displayName="[TSR] Primaris MK.10 (TSR Iron Hands)";
+		displayName="[TSR] Primaris MK.10 (Iron Hands)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="Primaris_SR_IronHands";
@@ -47,7 +47,7 @@ class CfgWeapons
 	class Primaris_Helm_Main_SR_IronHands: SR_MK10_Helmet_Blackshield
 	{
 		author="Hummus, Barbon";
-		displayName="[TSR] Primaris Mk.10 (TSR Iron Hands)";
+		displayName="[TSR] Primaris Mk.10 (Iron Hands)";
 		hiddenSelections[]=
 		{
 			"Camo1"
@@ -64,7 +64,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[TSR] Primaris Mk.10 (TSR Iron Hands)";
+		displayName="[TSR] Primaris Mk.10 (Iron Hands)";
 		model="Project_Primaris_D_Main\Models\Shoulder_Main.p3d";
 		hiddenSelectionsTextures[]=
 		{

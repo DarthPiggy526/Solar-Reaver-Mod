@@ -38,7 +38,7 @@ class CfgWeapons
 	class SR_MK7_Armor_IronHands: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Power Armor (TSR Iron Hands)";
+		displayName="[TSR] MK 7 Power Armor (Iron Hands)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_IH"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
@@ -48,7 +48,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_IronHands : SR_MK2_Shoulders_Blackshield
 	{
 		author="Strixus";
-		displayName="[SR] MK 2 Pauldrons (TSR Iron Hands)";
+		displayName="[TSR] MK 2 Pauldrons (Iron Hands)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\IH_Armour1.paa",
@@ -59,7 +59,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_IronHands: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Helmet (TSR Iron Hands)";
+		displayName="[TSR] MK 7 Helmet (Iron Hands)";
 		optreVarietys[]=
 		{
 			"",

@@ -14,7 +14,7 @@ class CfgVehicles
 	class TIOW_MK2Powerpack_SR_BS : TIOW_MK2Powerpack_WS
 	{
 		author = "Strixus";
-		displayName = "[SR] MK 2 Powerpack (TSR Blackshield)";
+		displayName = "[TSR] MK 2 Powerpack (Blackshield)";
 		tf_range=50000;
 		hiddenSelectionsTextures[] =
 		{
@@ -25,7 +25,7 @@ class CfgVehicles
 	class TIOW_MK4Powerpack_SR_BS : TIOW_MK4Powerpack_WS
 	{
 		author = "Strixus";
-		displayName = "[SR] MK 4 Powerpack (TSR Blackshield)";
+		displayName = "[TSR] MK 4 Powerpack (Blackshield)";
 		tf_range=50000;
 		hiddenSelectionsTextures[] =
 		{
@@ -36,7 +36,7 @@ class CfgVehicles
 	class TIOW_MK5Powerpack_SR_BS : TIOW_MK5Powerpack_WS
 	{
 		author = "Strixus";
-		displayName = "[SR] MK 5 Powerpack (TSR Blackshield)";
+		displayName = "[TSR] MK 5 Powerpack (Blackshield)";
 		tf_range=50000;
 		hiddenSelectionsTextures[] =
 		{
@@ -46,7 +46,7 @@ class CfgVehicles
 	class Steve_Recon_Pp_Blue1_1;
 	class Steve_Recon_Pp_TSR_1: Steve_Recon_Pp_Blue1_1
 	{
-		displayName="Recon Power Pack (TSR)";
+		displayName="[TSR] Recon Power Pack";
 		hiddenSelections[]=
 		{
 			"BackpackCamo"

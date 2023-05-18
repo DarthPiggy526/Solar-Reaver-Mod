@@ -23,7 +23,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_Barbon : SR_MK2_Shoulders_Blackshield
 	{
 		author="Barbon";
-		displayName="[SR] Barbon";
+		displayName="[TSR] Barbon";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\Barbon_Armour1.paa",

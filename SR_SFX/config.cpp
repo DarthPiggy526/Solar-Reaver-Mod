@@ -42,7 +42,7 @@ class CfgSFX
 {
 	class sr_sfx_electronic_alert_sys
 	{
-		name="[SR] Electronic Alert System";
+		name="[TSR] Electronic Alert System";
 		sounds[]=
 		{
 			"sound1"
@@ -72,7 +72,7 @@ class CfgSFX
 	};
 	class sr_sfx_blue_alert
 	{
-		displayName="[SR] Blue Alert";
+		displayName="[TSR] Blue Alert";
 		sounds[]=
 		{
 			"sound1"
@@ -102,7 +102,7 @@ class CfgSFX
 	};
 	class sr_sfx_red_alert
 	{
-		displayName="[SR] Red Alert";
+		displayName="[TSR] Red Alert";
 		sounds[]=
 		{
 			"sound1"
@@ -132,7 +132,7 @@ class CfgSFX
 	};
 	class sr_sfx_intruder_alert
 	{
-		displayName="[SR] Intruder Alert";
+		displayName="[TSR] Intruder Alert";
 		sounds[]=
 		{
 			"sound1"
@@ -162,7 +162,7 @@ class CfgSFX
 	};
 	class sr_sfx_evacuation_klaxon
 	{
-		displayName="[SR] Evacuation Klaxon";
+		displayName="[TSR] Evacuation Klaxon";
 		sounds[]=
 		{
 			"sound1"
@@ -192,7 +192,7 @@ class CfgSFX
 	};
 	class sr_sfx_electrical_arcs
 	{
-		displayName="[SR] Electrical Arcs";
+		displayName="[TSR] Electrical Arcs";
 		sounds[]=
 		{
 			"sound1"
@@ -222,7 +222,7 @@ class CfgSFX
 	};
 	class sr_sfx_trench_whistle
 	{
-		displayName="[SR] Trench Whistle";
+		displayName="[TSR] Trench Whistle";
 		sounds[]=
 		{
 			"sound1"
@@ -252,7 +252,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_laugh
 	{
-		displayName="[SR] Nid Laugh";
+		displayName="[TSR] Nid Laugh";
 		sounds[]=
 		{
 			"sound1"
@@ -282,7 +282,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_speech_1
 	{
-		displayName="[SR] Nid Speech 1";
+		displayName="[TSR] Nid Speech 1";
 		sounds[]=
 		{
 			"sound1"
@@ -312,7 +312,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_speech_2
 	{
-		displayName="[SR] Nid Speech 2";
+		displayName="[TSR] Nid Speech 2";
 		sounds[]=
 		{
 			"sound1"
@@ -342,7 +342,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_roar_1
 	{
-		displayName="[SR] Nid Roar 1";
+		displayName="[TSR] Nid Roar 1";
 		sounds[]=
 		{
 			"sound1"
@@ -372,7 +372,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_roar_2
 	{
-		displayName="[SR] Nid Roar 2";
+		displayName="[TSR] Nid Roar 2";
 		sounds[]=
 		{
 			"sound1"
@@ -402,7 +402,7 @@ class CfgSFX
 	};
 	class sr_sfx_nid_wheeze
 	{
-		displayName="[SR] Nid Wheeze";
+		displayName="[TSR] Nid Wheeze";
 		sounds[]=
 		{
 			"sound1"
@@ -439,71 +439,66 @@ class CfgVehicles
 		author="Tengu";
 		scope=2;
 		sound="sr_sfx_electronic_alert_sys";
-		displayName="[SR] Electronic Alert System";
+		displayName="[TSR] Electronic Alert System";
 	};
 	class sr_sfx_blue_alert: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_blue_alert";
-		displayName="[SR] Blue Alert";
+		displayName="[TSR] Blue Alert";
 	};
 	class sr_sfx_red_alert: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_red_alert";
-		displayName="[SR] Red Alert";
+		displayName="[TSR] Red Alert";
 	};
 	class sr_sfx_intruder_alert: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_intruder_alert";
-		displayName="[SR] Intruder Alert";
+		displayName="[TSR] Intruder Alert";
 	};
 	class sr_sfx_evacuation_klaxon: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_evacuation_klaxon";
-		displayName="[SR] Evacuation Klaxon";
+		displayName="[TSR] Evacuation Klaxon";
 	};
 	class sr_sfx_electrical_arcs: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_electrical_arcs";
-		displayName="[SR] Electrical Arcs";
+		displayName="[TSR] Electrical Arcs";
 	};
 	class sr_sfx_trench_whistle: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_trench_whistle";
-		displayName="[SR] Trench Whistle";
+		displayName="[TSR] Trench Whistle";
 	};
 	class sr_sfx_nid_laugh: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_laugh";
-		displayName="[SR] Nid Laugh";
+		displayName="[TSR] Nid Laugh";
 	};
 	class sr_sfx_nid_speech_1: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_speech_1";
-		displayName="[SR] Nid Speech 1";
+		displayName="[TSR] Nid Speech 1";
 	};
 	class sr_sfx_nid_speech_2: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_speech_2";
-		displayName="[SR] Nid Speech 2";
+		displayName="[TSR] Nid Speech 2";
 	};
 	class sr_sfx_nid_roar_1: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_roar_1";
-		displayName="[SR] Nid Roar 1";
+		displayName="[TSR] Nid Roar 1";
 	};
 	class sr_sfx_nid_roar_2: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_roar_2";
-		displayName="[SR] Nid Roar 2";
+		displayName="[TSR] Nid Roar 2";
 	};
 	class sr_sfx_nid_wheeze: sr_sfx_electronic_alert_sys
 	{
 		sound="sr_sfx_nid_wheeze";
-		displayName="[SR] Nid Wheeze";
+		displayName="[TSR] Nid Wheeze";
 	};
-};
-class cfgMods
-{
-	author="Tengu";
-	timepacked="1675255067";
 };

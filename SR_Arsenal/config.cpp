@@ -454,10 +454,10 @@ class CfgWeapons
 		scopeArsenal=2;
 		author="Waagheur";
 		baseWeapon="SR_Master_Crafted_Mars_HeavyBolter_1";
-		displayName="[SR] [Master Crafted] Mars Pattern Heavy Bolter";
+		displayName="[TSR] [Master Crafted] Mars Pattern Heavy Bolter";
 		hiddenSelectionsTextures[]=
 		{
-			"TIOW_SMWep\Data\Textures\TIOW_Mars_HeavyBolter_co.paa"
+			"\SR_Arsenal\textures\SR_Master_Crafted_Mars_HeavyBolter.paa"
 		};
 		modes[]=
 		{
@@ -470,6 +470,7 @@ class CfgWeapons
 		{
 			reloadTime=0.1;
 			dispersion=0.03;
+			textureType="fastAuto";
 		};
 	};
 	class SR_Master_Crafted_Ragefire_PlasmaGun_1: TIOW_GodwynBoltgun_1
@@ -486,7 +487,7 @@ class CfgWeapons
 			"TIOW_SM_Overcharge_Plasmagun_Mag"
 		};
 		author="Waagheur";
-		displayName="[SR] [Master Crafted] Ragefire Plasmagun";
+		displayName="[TSR] [Master Crafted] Ragefire Plasmagun";
 		model="\TIOW_SMWep\Boltgun\Model\TIOW_SM_Plasmagun_01.p3d";
 		rightHandIKCurve[]={1};
 		LeftHandIKCurve[]={1};
@@ -502,10 +503,10 @@ class CfgWeapons
 		{
 			"Camo",
 			"BolterCamo"
-		};
+		}; 
 		hiddenSelectionsTextures[]=
 		{
-			"TIOW_SMWep\Data\Textures\TIOW_SmPlasmaGun_co.paa",
+			"SR_Arsenal\textures\SR_Master_Crafted_PlasmaGun.paa",
 			"TIOW_SMWep\Data\Textures\TIOW_Godwyn_Checker_co.paa"
 		};
 		class OpticsModes
@@ -858,7 +859,6 @@ class CfgWeapons
 					"Plasmagun_InteriorTail_SoundSet"
 				};
 			};
-			soundBurst=0;
 		};
 		class single_medium_optics1: Single
 		{
@@ -891,7 +891,7 @@ class CfgWeapons
 	};
 	class SR_Master_Crafted_GodwynBoltgun_1: TIOW_GodwynBoltgun_1
 	{
-		displayName="[SR] [Master Crafted] Godwyn Boltgun";
+		displayName="[TSR] [Master Crafted] Godwyn Boltgun";
 		baseWeapon="SR_Master_Crafted_GodwynBoltgun_1";
 		author="Tengu";
 		scope=2;
@@ -899,7 +899,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			"\SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
+			"SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
 		};
 		modes[]=
 		{
@@ -1052,6 +1052,7 @@ class CfgWeapons
 		{
 			reloadTime=0.08;
 			dispersion=0.01;
+			textureType="fastAuto";
 		};
 	};
 	class SR_EC_GodwynBoltgun: SR_Master_Crafted_GodwynBoltgun_1
@@ -1060,7 +1061,7 @@ class CfgWeapons
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[SR] Arkhona Boltgun";
+		displayName="[TSR] Arkhona Boltgun";
 		baseWeapon="SR_EC_GodwynBoltgun";
 		descriptionShort="Eternal Crusade Boltgun";
 		hiddenSelectionsTextures[]=
@@ -1481,7 +1482,7 @@ class CfgWeapons
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[SR] Meltagun";
+		displayName="[TSR] Meltagun";
 		baseWeapon="SR_Meltagun_1";
 		magazines[]=
 		{
@@ -1495,7 +1496,7 @@ class CfgWeapons
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[SR] MKIII Breacher Shield (Phobos)";
+		displayName="[TSR] MKIII Breacher Shield (Phobos)";
 		armor=1000;
 		passThrough=0.89999998;
 	};
@@ -1505,7 +1506,7 @@ class CfgWeapons
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		displayName="[SR] MKIII Breacher Shield (Tigrus)";
+		displayName="[TSR] MKIII Breacher Shield (Tigrus)";
 		armor=1000;
 		passThrough=0.89999998;
 		hiddenSelections[]=
@@ -1520,7 +1521,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[SR] MKIII Breacher Shield (Lascutter)";
+		displayName="[TSR] MKIII Breacher Shield (Lascutter)";
 		magazines[]=
 		{
 			"SR_Lascutter_Mag"
@@ -1533,7 +1534,7 @@ class CfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;
-		displayName="[SR] Lascutter";
+		displayName="[TSR] Lascutter";
 		baseWeapon="SR_Lascut";
 		model="Steve_30K_weps2\Shields\models\LC_Alone.p3d";
 		reloadAction="GestureReloadTIOW_GodwynBoltgun";
@@ -1560,7 +1561,7 @@ class CfgAmmo
 	};
 	class SR_Lascutter_Round: Steve_30k_Lascutter_Round
 	{
-		displayName="[SR] lascutter Round";
+		displayName="[TSR] lascutter Round";
 		timeToLive=0.079999998;
 	};
 };
@@ -1572,18 +1573,18 @@ class CfgMagazines
 {
 	class SR_Master_Crafted_Phobos_BoltPistol_Mag: Steve_Phob_BoltPistolMag
 	{
-		displayName="[SR] Master Crafted Phobos Bolt Pistol Magazine 30 Rnd.";
+		displayName="[TSR] Master Crafted Phobos Bolt Pistol Magazine 30 Rnd.";
 		count=30;
 		mass=15;
-		descriptionShort="[SR] Master Crafted Phobos Bolt Pistol Magazine 30 Rnd.";
+		descriptionShort="[TSR] Master Crafted Phobos Bolt Pistol Magazine 30 Rnd.";
 		modelSpecialIsProxy=1;
 	};
 	class SR_Master_Crafted_Tigrus_BoltPistol_Mag: Steve_Trig_BoltPistolMag
 	{
-		displayName="[SR] Master Crafted Tigrus Bolt Pistol Magazine 30 Rnd.";
+		displayName="[TSR] Master Crafted Tigrus Bolt Pistol Magazine 30 Rnd.";
 		count=30;
 		mass=15;
-		descriptionShort="[SR] Master Crafted Tigrus Bolt Pistol Magazine 30 Rnd.";
+		descriptionShort="[TSR] Master Crafted Tigrus Bolt Pistol Magazine 30 Rnd.";
 		modelSpecialIsProxy=1;
 	};
 	class SR_Meltagun_Mag: TIOW_Meltagun_Mag
@@ -1593,7 +1594,7 @@ class CfgMagazines
 		scopeCurator=2;
 		scopeArsenal=2;
 		ammo="SR_Meltagun_Ammo";
-		displayName="[SR] Meltagun Ammo";
+		displayName="[TSR] Meltagun Ammo";
 		initSpeed=1500;
 		count=5;
 		mass=40;
@@ -1601,12 +1602,12 @@ class CfgMagazines
 	class SR_Master_Crafted_Meltagun_Mag: SR_Meltagun_Mag
 	{
 		ammo="SR_Master_Crafted_Meltagun_Ammo";
-		displayName="[SR] [Master Crafted] Meltagun Ammo";
+		displayName="[TSR] [Master Crafted] Meltagun Ammo";
 	};
 	class SR_Lascutter_Mag: Steve_30k_lascutter_Mag
 	{
-		displayName="[SR] Lasscutter Core";
-		descriptionShort="[SR] Lasscutter Core";
+		displayName="[TSR] Lasscutter Core";
+		descriptionShort="[TSR] Lasscutter Core";
 		ammo="SR_Lascutter_Round";
 		initSpeed=1500;
 		count=10;

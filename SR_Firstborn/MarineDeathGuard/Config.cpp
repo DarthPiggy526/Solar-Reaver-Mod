@@ -38,7 +38,7 @@ class CfgWeapons
 	class SR_MK7_Armor_DeathGuard: TIOW_MK7PowerArmor_1_WS
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Power Armor (TSR Death Guard)";
+		displayName="[TSR] MK 7 Power Armor (Death Guard)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass="TIOW_MK7_Tact_SR_DG"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
@@ -48,7 +48,7 @@ class CfgWeapons
 	class SR_MK2_Shoulders_DeathGuard : SR_MK2_Shoulders_Blackshield
 	{
 		author="Strixus";
-		displayName="[SR] MK 2 Pauldrons (TSR Death Guard)";
+		displayName="[TSR] MK 2 Pauldrons (Death Guard)";
 		hiddenSelectionsTextures[] =
 		{
 			"SR_FirstBorn\Textures\DG_Armour1.paa",
@@ -59,7 +59,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_DeathGuard: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[SR] MK 7 Helmet (TSR Death Guard)";
+		displayName="[TSR] MK 7 Helmet (Death Guard)";
 		optreVarietys[]=
 		{
 			"",

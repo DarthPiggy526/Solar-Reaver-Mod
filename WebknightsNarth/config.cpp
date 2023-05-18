@@ -190,7 +190,7 @@ class CfgWeapons
 	{
 		descriptionShort="A Narthecium is a tool of a Space Marine Apothecary's trade, containing implements specially designed for treating the Astartes' genetically-engineered physiology and for performing first aid without having to remove the patient's power armour.";
 		IMS_isNarthecium="true";
-		displayName="Narthecium II (TSR Black)";
+		displayName="[TSR] Narthecium II (Black)";
 		picture="WebknightsNarth\NartheciumIcon.paa";
 		visionMode[]=
 		{

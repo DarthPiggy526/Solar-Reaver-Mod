@@ -198,7 +198,7 @@ class box_NATO_Equip_F;
 //class OPTRE_Ammo_SupplyPod_Empty;
 	class SR_SupplyPod_Empty: box_NATO_Equip_F
 	{
-		displayName = "[SR] Empty Resupply";
+		displayName = "[TSR] Empty Resupply";
 		author = "Tengu";
 		maximumLoad = 40000;
 		ACE_maxWeightCarry = 40000;
@@ -235,7 +235,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Recon: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Recon Resupply";
+		displayName = "[TSR] Recon Resupply";
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag
@@ -344,7 +344,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Tactical: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Tactical Resupply";
+		displayName = "[TSR] Tactical Resupply";
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag
@@ -432,7 +432,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Devastator: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Devastator Resupply";
+		displayName = "[TSR] Devastator Resupply";
 		class TransportMagazines
 		{
 			class xx_TIOW_Mars_HeavyBolterMag_85rnd
@@ -540,7 +540,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Assault: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Assault Resupply";
+		displayName = "[TSR] Assault Resupply";
 		class TransportMagazines
 		{
 			class xx_Steve_Phob_BoltPistolMag
@@ -630,7 +630,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Command: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Command Resupply";
+		displayName = "[TSR] Command Resupply";
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag
@@ -718,7 +718,7 @@ class box_NATO_Equip_F;
 
 	class SR_SupplyPod_Medical: SR_SupplyPod_Empty
 	{
-		displayName = "[SR] Medical Resupply";
+		displayName = "[TSR] Medical Resupply";
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag

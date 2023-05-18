@@ -90,7 +90,7 @@ class CfgGlasses
 	class NL_Batwings_Face: None
 	{
 		author="TIOW";
-		displayname="[Night Lords] Bat Wings";
+		displayname="[TSR] [Night Lords] Bat Wings";
 		model="TIOW_SM\Marine\Model\NL_Helmet_Wings.p3d";
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
@@ -100,7 +100,7 @@ class CfgGlasses
 	    class TSR_Seeker_Cloak: None
 	{
 		author="DaveSkywalker";
-		displayName="Seeker Cloak (TSR)";
+		displayName="[TSR] Seeker Cloak (TSR)";
 		showEmpty=0;
 		scope=2;
 		scopeCurator=2;
