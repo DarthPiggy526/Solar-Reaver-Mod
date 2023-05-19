@@ -349,7 +349,7 @@ class CfgVehicles
       hiddenSelectionsTextures[]=
       {
         "SR_Specialists\Textures\Recon_Armour1.paa",
-        "SR_Uniforms\Textures\SR_Armour2.paa"
+        "SR_Firstborn\Textures\SR_Armour2.paa"
       };
       Items[]={};
 	  RespawnItems[]={};
@@ -397,7 +397,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\SR_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 		weapons[]=
 		{
@@ -441,7 +441,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Specialists\Textures\Tech_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	}
       class Primaris_SM_SR_Apoth: Primaris_SM_SR_1
@@ -450,7 +450,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Specialists\Textures\Apoth_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	}
         class Primaris_SM_SR_Recon: Primaris_SM_SAL_6
@@ -460,7 +460,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Specialists\Textures\Recon_PrimArmour.paa",
-			"SR_Uniforms\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
 	}
 }; // End of CfgVechicle

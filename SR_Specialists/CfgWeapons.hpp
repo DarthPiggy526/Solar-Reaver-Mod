@@ -887,7 +887,7 @@ class Primaris_Vest_40k_SW_1;
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\Recon_Armour1.paa",
-			"SR_Uniforms\Textures\SR_Armour2.paa"
+			"SR_Firstborn\Textures\SR_Armour2.paa"
 		};
 	};
 
