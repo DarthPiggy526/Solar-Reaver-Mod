@@ -17,7 +17,125 @@ class CfgPatches
 };
 
 
+class CfgMarkerClasses 
+{
+	class TSR_Addtional_Markers{
+		displayName = "[TSR] Additional 40k Markers";
+	}
+};
 
+class CfgMarkers
+{
+	class TSR_Marker_Adeptus_Astartes
+	{
+		name="Adeptus Astartes";
+		icon="SR_Core\Markers\Adeptus-Astartes.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Aquila
+	{
+		name="Aquila";
+		icon="SR_Core\Markers\Aquila.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Cadian
+	{
+		name="Cadian";
+		icon="SR_Core\Markers\Cadian.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Chaos
+	{
+		name="Chaos";
+		icon="SR_Core\Markers\Chaos.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Genestealer
+	{
+		name="Genestealer";
+		icon="SR_Core\Markers\Genestealer.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Inquisition
+	{
+		name="Inquisition";
+		icon="SR_Core\Markers\Inquisition.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Mechanicus
+	{
+		name="Mechanicus";
+		icon="SR_Core\Markers\Mechanicus.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Orks
+	{
+		name="Orks";
+		icon="SR_Core\Markers\Orks.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Solar_Reavers
+	{
+		name="Solar Reavers";
+		icon="SR_Core\Markers\Solar-Reavers.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+
+	class TSR_Marker_Tau
+	{
+		name="Tau";
+		icon="SR_Core\Markers\Tau.paa";
+		color[]={1,1,1,1};
+		size=32;
+		shadow = 0;
+		scope = 1;
+		markerClass = "TSR_Addtional_Markers";
+	};
+};
 
 
 class Default;
