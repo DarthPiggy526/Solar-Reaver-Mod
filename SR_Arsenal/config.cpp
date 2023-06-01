@@ -14,6 +14,7 @@ class CfgPatches
 			"Steve_30k_weps3",
 			"Seb_SM_Melee_Mod",
 			"TIOW_IQ_40k_weapons",
+			"TIOW_Dos_Weps",
 			"A3_Data_F",
 			"A3_Characters_F",
 			"A3_Anims_F"
@@ -27,17 +28,20 @@ class CfgPatches
 			"SR_Phobos_Shield",
 			"SR_Tigrus_Shield",
 			"SR_Lascut_Shield",
-			"SR_Lascut"
+			"SR_Lascut",
+			"SR_LasFusil"
 		};
 		magazines[]=
 		{
 			"SR_Meltagun_Mag",
-			"Steve_30k_lascutter_Mag"
+			"Steve_30k_lascutter_Mag",
+			"SR_LasFusil_Mag"
 		};
 		ammo[]=
 		{
 			"SR_Meltagun_Ammo",
-			"SR_Lascutter_Round"
+			"SR_Lascutter_Round",
+			"SR_LasFusil_Rnd"
 		};
 		units[]={};
 	};
@@ -103,6 +107,27 @@ class CfgSoundSets
 			"EC_BolterDeep_silencerTailInterior_SoundShader"
 		};
 	};
+	
+
+	class SR_LasFusil_Shot_SoundSet: Rifle_Shot_Base_SoundSet
+	{
+		soundShaders[] = {"SR_LasFusil_Closure_SoundShader","SR_LasFusil_closeShot_SoundShader","SR_LasFusil_midShot_SoundShader","SR_LasFusil_distShot_SoundShader"};
+	};
+	class SR_LasFusil_Tail_SoundSet: Rifle_Tail_Base_SoundSet
+	{
+		soundShaders[] = {"SR_LasFusil_tailTrees_SoundShader","SR_LasFusil_tailForest_SoundShader","SR_LasFusil_tailMeadows_SoundShader","SR_LasFusil_tailHouses_SoundShader"};
+	};
+	class SR_LasFusil_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
+	{
+		soundShaders[] = {"SR_LasFusil_tailInterior_SoundShader"};
+	};
+
+
+
+
+
+
+
 };
 
 class CfgSoundShaders
@@ -399,7 +424,129 @@ class CfgSoundShaders
 		};
 		limitation=1;
 	};
+
+		class SR_LasFusil_Closure_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = 0.446684;
+		range = 5;
+	};
+	class SR_LasFusil_closeShot_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = 1;
+		range = 50;
+		rangeCurve = "closeShotCurve";
+	};
+	class SR_LasFusil_midShot_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = 0.794328;
+		range = 1800;
+		rangeCurve[] = {{0,0.2},{50,1},{300,0},{1800,0}};
+	};
+	class SR_LasFusil_distShot_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1},{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = 1;
+		range = 1800;
+		rangeCurve[] = {{0,0},{50,0},{300,1},{1800,1}};
+	};
+	class SR_LasFusil_tailInterior_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = "interior";
+		range = 500;
+		limitation = 0;
+	};
+	class SR_LasFusil_tailTrees_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = "(1-interior/1.4)*trees/3";
+		range = 1800;
+		limitation = 1;
+	};
+	class SR_LasFusil_tailForest_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = "(1-interior/1.4)*forest/3";
+		range = 1800;
+		limitation = 1;
+	};
+	class SR_LasFusil_tailMeadows_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = "(1-interior/1.4)*(meadows/2 max sea/2)/3";
+		range = 1800;
+		limitation = 1;
+	};
+	class SR_LasFusil_tailHouses_SoundShader
+	{
+		samples[] = {{"\SR_Arsenal\sound\LasFusil.wss",1}};
+		volume = "(1-interior/1.4)*houses/3";
+		range = 1200;
+		limitation = 1;
+	};
 };
+
+class TIOW_LascannonBeam_flametrail;
+class CfgCloudlets
+{
+		//	color[] = {{0.15,0.5,0,1},{0,1,0.2,1},{0,0.34,0.04,1}};
+		//	emissiveColor[] = {{100,100,100,255},{0,0,0,0}};
+		//	colorCoef[] = {1.2,1.2,1.2,1.2};
+
+	class SR_LasFusil_Beam: TIOW_LascannonBeam_flametrail
+	{
+		interval = 8e-05;
+		lifeTime = 0.17000002;
+		color[] = {{0.15,0.5,0,1},{0,1,0.2,1},{0,0.34,0.04,1}};
+		emissiveColor[] = {{100,100,100,255},{0,0,0,0}};
+		colorCoef[] = {1.2,1.2,1.2,1.2};
+		size[] = {0.06,0.06,0.06};
+		sizeCoef = 1.5;
+
+
+
+//		color[] = {{0.15,0.5,0,1},{0,1,0.2,1},{0,0.34,0.04,1}};
+//		emissiveColor[] = {{100,100,100,255},{0,0,0,0}};
+//		colorCoef[] = {1.2,1.2,1.2,1.2};
+	};
+
+
+};
+
+class SR_LasFusil_Beam
+{
+	class Light1
+	{
+		simulation = "light";
+		type = "FiredLightMed";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = -1;
+	};
+	class SR_LasFusil_Beam_Light
+	{
+		simulation = "light";
+		type = "SmallFireLight";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = 10;
+	};
+	class SR_LasFusil_Beam
+	{
+		simulation = "particles";
+		type = "SR_LasFusil_Beam";
+		position[] = {0,0,0};
+		intensity = 1;
+		interval = 1;
+		lifeTime = -1;
+	};
+};
+
 
 class CfgFunctions
 {
@@ -1544,9 +1691,253 @@ class CfgWeapons
 			"\TIOW_SMWep\Anim\New_Boltgun.rtm"
 		};
 	};
+
+
+
+
+//	class SR_LasFusil: TIOW_GodwynBoltgun_1
+//	{
+//		scope = 2;
+//		scopecurator = 2;
+//		scopearsenal = 2;
+//		author = "Tengu";
+//		displayName = "[TSR] LasFusil";
+//		picture = "TIOW_Dos_Weps\Textures\Las_icon_ca.paa";
+//		model = "TIOW_Dos_Weps\Models\SM_Las.p3d";
+//		descriptionShort = "LasFusil Sniper Rifle";
+//		hiddenSelections[] = {"camo"};
+//		hiddenSelectionsTextures[] = {"SR_Arsenal\textures\SR_LasFusil.paa"};
+//		reloadAction = "WH_Bolter_reload_SM";
+//		reloadMagazineSound[] = {"WBK_Improved40KWeapons\sounds\Bolter_reload.wav",2.51189,1,25};
+//		reloadSound[] = {"WBK_Improved40KWeapons\sounds\Bolter_reload.wav",2.51189,1,25};
+//		rightHandIKCurve[] = {1};
+//		LeftHandIKCurve[] = {1};
+//		handAnim[] = {"SpaceMarine_ManSkeleton","TIOW_Dos_Weps\anim\LasCan.rtm"};
+//		magazines[] = {"SR_LasFusil_Mag"};
+//		class GunParticles
+//		{
+//			class FirstEffect
+//			{
+//				effectName = "MachineGunCloud";
+//				positionName = "nabojnicestart";
+//				directionName = "nabojniceend";
+//			};
+//		};
+//		modes[] = {"Single","single_medium_optics1","single_far_optics2"};
+//		class Single: Mode_SemiAuto
+//		{
+//			reloadTime = 3;
+//			recoil = "recoil_pistol_light";
+//			recoilProne = "recoil_prone_pistol_light";
+//			dispersion = 0.00035;
+//			minRange = 2;
+//			minRangeProbab = 0.5;
+//			midRange = 200;
+//			midRangeProbab = 0.7;
+//			maxRange = 400;
+//			maxRangeProbab = 0.3;
+//			soundContinuous = 0;
+//			soundBurst = 0;
+//			sounds[] = {"StandardSound"};
+//			class BaseSoundModeType
+//			{
+//				closure1[] = {"\SR_Arsenal\sound\LasFusil.wss",0.316228,1,10};
+//				closure2[] = {"\SR_Arsenal\sound\LasFusil.wss",0.316228,1.1,10};
+//				soundClosure[] = {};
+//			};
+//			class StandardSound: BaseSoundModeType
+//			{
+//				soundSetShot[] = {"SR_LasFusil_Shot_SoundSet"};
+//				begin1[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+//				begin2[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+//				begin3[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+//				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
+//				class SoundTails
+//				{
+//					class TailInterior
+//					{
+//						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",2.23872,1,1800};
+//						frequency = 1;
+//						volume = "interior";
+//					};
+//					class TailTrees
+//					{
+//						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+//						frequency = 1;
+//						volume = "(1-interior/1.4)*trees";
+//					};
+//					class TailForest
+//					{
+//						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+//						frequency = 1;
+//						volume = "(1-interior/1.4)*forest";
+//					};
+//					class TailMeadows
+//					{
+//						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+//						frequency = 1;
+//						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+//					};
+//					class TailHouses
+//					{
+//						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+//						frequency = 1;
+//						volume = "(1-interior/1.4)*houses";
+//					};
+//				};
+//			};
+//		};
+//		class single_medium_optics1: Single
+//		{
+//			requiredOpticType = 1;
+//			showToPlayer = 0;
+//			minRange = 2;
+//			minRangeProbab = 0.2;
+//			midRange = 450;
+//			midRangeProbab = 0.7;
+//			maxRange = 500;
+//			maxRangeProbab = 0.2;
+//			aiRateOfFire = 2.6;
+//			aiRateOfFireDistance = 500;
+//		};
+//		class single_far_optics2: single_medium_optics1
+//		{
+//			requiredOpticType = 2;
+//			showToPlayer = 0;
+//			minRange = 500;
+//			minRangeProbab = 0.1;
+//			midRange = 750;
+//			midRangeProbab = 0.6;
+//			maxRange = 1000;
+//			maxRangeProbab = 0.05;
+//			aiRateOfFire = 3.75;
+//			aiRateOfFireDistance = 1000;
+//		};
+//		aiDispersionCoefY = 3;
+//		aiDispersionCoefX = 2;
+//	};
+
+
+	class SR_LasFusil: TIOW_GodwynBoltgun_1
+	{
+		scope = 2;
+		scopecurator = 2;
+		scopearsenal = 2;
+		displayName = "[TSR] LasFusil";
+		//picture = "Steve_30K_weps\Icons\Las_Can_Icon.paa";
+		//model = "Steve_30K_weps\Cannons\Models\Las_Cannon.p3d";
+		picture = "TIOW_Dos_Weps\Textures\Las_icon_ca.paa";
+		model = "TIOW_Dos_Weps\Models\SM_Las.p3d";
+		baseWeapon = "SR_LasFusil";
+		descriptionShort = "[TSR] LasFusil Sniper";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Arsenal\textures\SR_LasFusil.paa"};
+		magazines[] = {"SR_LasFusil_Mag"};
+		modes[] = {"Single","single_medium_optics1","single_far_optics2"};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime = 3;
+			recoil = "recoil_pistol_light";
+			recoilProne = "recoil_prone_pistol_light";
+			dispersion = 0.00035;
+			minRange = 2;
+			minRangeProbab = 0.5;
+			midRange = 200;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.3;
+			soundContinuous = 0;
+			soundBurst = 0;
+			sounds[] = {"StandardSound"};
+			class BaseSoundModeType
+			{
+				closure1[] = {"\SR_Arsenal\sound\LasFusil.wss",0.316228,1,10};
+				closure2[] = {"\SR_Arsenal\sound\LasFusil.wss",0.316228,1.1,10};
+				soundClosure[] = {};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[] = {"SR_LasFusil_Shot_SoundSet","SR_LasFusil_Tail_SoundSet","SR_LasFusil_InteriorTail_SoundSet"};
+				begin1[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+				begin2[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+				begin3[] = {"\SR_Arsenal\sound\LasFusil.wss",3.16228,1,1800};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",2.23872,1,1800};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"\SR_Arsenal\sound\LasFusil.wss",1,1,1800};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+		class single_medium_optics1: Single
+		{
+			requiredOpticType = 1;
+			showToPlayer = 0;
+			minRange = 2;
+			minRangeProbab = 0.2;
+			midRange = 450;
+			midRangeProbab = 0.7;
+			maxRange = 500;
+			maxRangeProbab = 0.2;
+			aiRateOfFire = 2.6;
+			aiRateOfFireDistance = 500;
+		};
+		class single_far_optics2: single_medium_optics1
+		{
+			requiredOpticType = 2;
+			showToPlayer = 0;
+			minRange = 500;
+			minRangeProbab = 0.1;
+			midRange = 750;
+			midRangeProbab = 0.6;
+			maxRange = 1000;
+			maxRangeProbab = 0.05;
+			aiRateOfFire = 3.75;
+			aiRateOfFireDistance = 1000;
+		};
+		aiDispersionCoefY = 3;
+		aiDispersionCoefX = 2;
+	};
+
+
+
+
+
+
+
+	
 };
 class TIOW_Melta_Ammo;
 class Steve_30k_Lascutter_Round;
+class TIOW_LemanRuss_Lascannon_Rnd;
 class CfgAmmo
 {
 	class SR_Meltagun_Ammo: TIOW_Melta_Ammo
@@ -1564,11 +1955,21 @@ class CfgAmmo
 		displayName="[TSR] lascutter Round";
 		timeToLive=0.079999998;
 	};
+	class SR_LasFusil_Rnd: TIOW_LemanRuss_Lascannon_Rnd
+	{
+		hit = 100;
+		explosionEffects = "TIOW_BoltRoundRoundExplosion";
+		effectFly = "SR_LasFusil_Beam";
+		indirectHit = 1;
+		indirectHitRange = 0.4;
+		caliber = 3;
+	};
 };
 class TIOW_Meltagun_Mag;
 class Steve_Trig_BoltPistolMag;
 class Steve_Phob_BoltPistolMag;
 class Steve_30k_lascutter_Mag;
+class TIOW_30rnd_GodwynBoltgunMag;
 class CfgMagazines
 {
 	class SR_Master_Crafted_Phobos_BoltPistol_Mag: Steve_Phob_BoltPistolMag
@@ -1612,6 +2013,21 @@ class CfgMagazines
 		initSpeed=1500;
 		count=10;
 		mass=20;
+	};
+	class SR_LasFusil_Mag: TIOW_30rnd_GodwynBoltgunMag
+	{
+		scope = 2;
+		scopecurator = 2;
+		scopearsenal = 2;
+		displayName = "[TSR] LasFusil Flask";
+		count = 15;
+		mass = 25;
+		descriptionShort = "[TSR] LasFusil Flask";
+		picture = "\TIOW_SMWep\Icon\RagefireMag_ca.paa";
+		ammo = "SR_LasFusil_Rnd";
+		initSpeed = 1000;
+		maxLeadSpeed = 150;
+		tracersEvery = 1;
 	};
 };
 class cfgMods
