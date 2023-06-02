@@ -10,7 +10,8 @@ class CfgPatches
 			"SR_Core",
 			"Steve_Ass_Ram",
 			"TIOW_Razorback",
-			"TIOW_SM_Fast_attack"
+			"TIOW_SM_Fast_attack",
+			"TIOW_Thunderhawk"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -21,6 +22,7 @@ class CfgPatches
 			"TSR_DropPod",
 			"TSR_Xiphon",
 			"TSR_Ass_Ram",
+			"TSR_Thunderhawk",
 			"TSR_StormSpeeder",
 			"TSR_TempSpeeder",
 			"TSR_TyphoonSpeeder",
@@ -239,6 +241,21 @@ class CfgVehicles
 		armorStructural=2;
 	};
 
+	class Thunderhawk_1_UM_TIOW;
+	class TSR_Thunderhawk: Thunderhawk_1_UM_TIOW
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		armor = 500;
+		faction="SR_Faction";
+		editorSubcategory="EdSubcat_Planes";
+		displayName = "[TSR] Thunderhawk Gunship";
+		crew = "TIOW_Tactical_SW_1";
+		hiddenSelections[] = {"Hull_Camo"};
+		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Thunderhawk_CO.paa"};
+	};
 
 class TIOW_UM_Storm;
 	class TSR_StormSpeeder: TIOW_UM_Storm
