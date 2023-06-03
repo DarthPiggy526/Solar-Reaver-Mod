@@ -22,7 +22,6 @@
 
 if (not(isDedicated)) then {
 
-	/**
 	_plasma_weapons = [
 		"SR_Master_Crafted_Ragefire_PlasmaGun_1", 
 		"SR_Ragefire_Plasma_Gun", 
@@ -45,7 +44,6 @@ if (not(isDedicated)) then {
 	_plasma_pistol_weapons = [
 		"SR_Ryza_Plasma_Pistol"
 	];
-	*/
 	
 	{
 		missionNamespace setVariable [format ["%1_heat",_x], 0];

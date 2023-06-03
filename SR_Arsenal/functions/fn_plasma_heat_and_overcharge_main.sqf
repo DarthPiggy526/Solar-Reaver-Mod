@@ -54,58 +54,54 @@ if (not(isDedicated)) then {
 				if (_weapon == "SR_Master_Crafted_Ragefire_PlasmaGun_1") then {
 					_ammo = player ammo _weapon;
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [_weapon, _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'SR_Master_Crafted_Ragefire_PlasmaGun_1' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Master_Crafted_Ragefire_PlasmaGun_1"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -156,58 +152,54 @@ if (not(isDedicated)) then {
 				if (_weapon == "SR_Ragefire_Plasma_Gun") then {
 					_ammo = player ammo _weapon;
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Ragefire_Plasma_Gun"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [_weapon, _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Ragefire_Plasma_Gun"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Ragefire_Plasma_Gun"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'SR_Ragefire_Plasma_Gun' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Ragefire_Plasma_Gun"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -258,58 +250,54 @@ if (not(isDedicated)) then {
 				if (_weapon == "SR_Ryza_Plasma_Gun") then {
 					_ammo = player ammo _weapon;
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Ryza_Plasma_Gun"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [_weapon, _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Ryza_Plasma_Gun"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Ryza_Plasma_Gun"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'SR_Ryza_Plasma_Gun' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Gun"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -360,58 +348,54 @@ if (not(isDedicated)) then {
 				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
 					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_1"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [(_this select 2), _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [(_this select 2), _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_1"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [(_this select 2), _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_1"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_1"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_1"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_1"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [(_this select 2), _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_1"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'TIOW_SM_Under_Plas_1' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_1"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -462,58 +446,54 @@ if (not(isDedicated)) then {
 				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
 					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_2"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [(_this select 2), _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [(_this select 2), _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_2"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [(_this select 2), _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_2"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_2"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_2"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_2"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [(_this select 2), _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_2"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'TIOW_SM_Under_Plas_1' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_2"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -564,58 +544,54 @@ if (not(isDedicated)) then {
 				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
 					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_3"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [(_this select 2), _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [(_this select 2), _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_3"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [(_this select 2), _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_3"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_3"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_3"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Combi_Bolter_3"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [(_this select 2), _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Combi_Bolter_3"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'TIOW_SM_Under_Plas_1' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Combi_Bolter_3"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -666,58 +642,54 @@ if (not(isDedicated)) then {
 				if ((_this select 2) == "Steve_30k_Under_Plasma") then {
 					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Tig_Combi_Bolter"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 10 shots
+						if (_ammo > 8) then {
+							player setAmmo [(_this select 2), _ammo - 9];
 							
-							//Overcharge consummes 10 shots
-							if (_ammo > 8) then {
-								player setAmmo [(_this select 2), _ammo - 9];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Tig_Combi_Bolter"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) 
-									+ ([30, 50] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [(_this select 2), _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Tig_Combi_Bolter"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) 
+								+ ([30, 50] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Tig_Combi_Bolter"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) 
 								+ ([2, 5] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Tig_Combi_Bolter"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Tig_Combi_Bolter"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [(_this select 2), _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Tig_Combi_Bolter"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) 
+							+ ([2, 5] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'Steve_30k_Under_Plasma' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Tig_Combi_Bolter"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -769,58 +741,54 @@ if (not(isDedicated)) then {
 				if (_weapon == "SR_Ryza_Plasma_Pistol") then {
 					_ammo = player ammo _weapon;
 					_projectile = (_this select 6);
-					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Ryza_Plasma_Pistol"], false]);
-					if (not(_overheat)) then {
-						_mode = (_this select 3);
-						if (_mode == "Overcharge") then {
+					_mode = (_this select 3);
+					if (_mode == "Overcharge") then {
+						
+						//Overcharge consummes 7 shots
+						if (_ammo > 5) then {
+							player setAmmo [_weapon, _ammo - 6];
 							
-							//Overcharge consummes 7 shots
-							if (_ammo > 5) then {
-								player setAmmo [_weapon, _ammo - 6];
-								
-								_position = getPosWorld _projectile;
-								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-								_velocity = velocity _projectile;
-								
-								deleteVehicle _projectile;
-								
-								_projectile = "SR_Overcharge_PlasmapistolRound" createVehicle [0,0,0];
-								_projectile setPosWorld _position;
-								_projectile setVectorDirAndUp _dirAndUp;
-								_projectile setVelocityModelSpace [0, 1140, 0];
-								
-								missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"], 
-									(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) 
-									+ ([40, 60] call BIS_fnc_randomInt)];
-								
-							}
-							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
-								deleteVehicle _projectile;
-							};
+							_position = getPosWorld _projectile;
+							_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+							_velocity = velocity _projectile;
+							
+							deleteVehicle _projectile;
+							
+							_projectile = "SR_Overcharge_PlasmapistolRound" createVehicle [0,0,0];
+							_projectile setPosWorld _position;
+							_projectile setVectorDirAndUp _dirAndUp;
+							_projectile setVelocityModelSpace [0, 1140, 0];
+							
+							missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"], 
+								(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) 
+								+ ([40, 60] call BIS_fnc_randomInt)];
+							
 						}
-						else {
+						else { // Not enough ammo for overcharge, fire normally
 							// Regular shot, increase heat
 							missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"], 
 								(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) 
 								+ ([4, 8] call BIS_fnc_randomInt)];
 						};
-						
-						// Check for overheat
-						if ((missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) > 100) then {
-							missionNamespace setVariable [format ["%1_overheat","SR_Ryza_Plasma_Pistol"], true];
-							[] spawn {
-								while {(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) > 0} do {
-									sleep 1;
-								};
-								missionNamespace setVariable [format ["%1_overheat","SR_Ryza_Plasma_Pistol"], false];
-							};
-						};
-						
 					}
-					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
-						deleteVehicle _projectile;
+					else {
+						// Regular shot, increase heat
+						missionNamespace setVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"], 
+							(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) 
+							+ ([4, 8] call BIS_fnc_randomInt)];
+					};
+					
+					// Check for overheat
+					if ((missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) > 100) then {
+						[] spawn {
+							overheat = player addAction ["Weapon lock on", 
+								{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+								"'SR_Ryza_Plasma_Pistol' == (currentMuzzle player)"];
+							while {(missionNamespace getVariable [format ["%1_heat","SR_Ryza_Plasma_Pistol"],0]) > 0} do {
+								sleep 1;
+							};
+							player removeAction overheat;
+						};
 					};
 				};
 				
@@ -873,66 +841,57 @@ if (not(isDedicated)) then {
 				missionNamespace setVariable [format ["%1_handler",_x], player addEventHandler ["FiredMan", {
 					// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 					_weapon = (_this select 1);
-					hint _x;
 					if (_weapon == _x) then {
-						hint"heu";
 						_ammo = player ammo _weapon;
 						_projectile = (_this select 6);
-						_overheat = (missionNamespace getVariable [format ["%1_overheat",_x], false]);
-						if (not(_overheat)) then {
-							_mode = (_this select 3);
-							if (_mode == "Overcharge") then {
+						_mode = (_this select 3);
+						if (_mode == "Overcharge") then {
+							
+							//Overcharge consummes 10 shots
+							if (_ammo > 8) then {
+								player setAmmo [_weapon, _ammo - 9];
 								
-								//Overcharge consummes 10 shots
-								if (_ammo > 8) then {
-									player setAmmo [_weapon, _ammo - 9];
-									
-									_position = getPosWorld _projectile;
-									_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-									_velocity = velocity _projectile;
-									
-									deleteVehicle _projectile;
-									
-									_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
-									_projectile setPosWorld _position;
-									_projectile setVectorDirAndUp _dirAndUp;
-									_projectile setVelocityModelSpace [0, 1140, 0];
-									
-									missionNamespace setVariable [format ["%1_heat",_x], 
-										(missionNamespace getVariable [format ["%1_heat",_x],0]) 
-										+ ([30, 50] call BIS_fnc_randomInt)];
-									
-								}
-								else { // Not enough ammo for overcharge, cancel shot
-									player setAmmo [_weapon, _ammo + 1];
-									deleteVehicle _projectile;
-								};
+								_position = getPosWorld _projectile;
+								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+								_velocity = velocity _projectile;
+								
+								deleteVehicle _projectile;
+								
+								_projectile = "SR_Overcharge_PlasmagunRound" createVehicle [0,0,0];
+								_projectile setPosWorld _position;
+								_projectile setVectorDirAndUp _dirAndUp;
+								_projectile setVelocityModelSpace [0, 1140, 0];
+								
+								missionNamespace setVariable [format ["%1_heat",_x], 
+									(missionNamespace getVariable [format ["%1_heat",_x],0]) 
+									+ ([30, 50] call BIS_fnc_randomInt)];
+								
 							}
-							else {
-								hint"kwa";
+							else { // Not enough ammo for overcharge, fire normally
 								// Regular shot, increase heat
 								missionNamespace setVariable [format ["%1_heat",_x], 
 									(missionNamespace getVariable [format ["%1_heat",_x],0]) 
 									+ ([2, 5] call BIS_fnc_randomInt)];
 							};
-							
-							// Check for overheat
-							if ((missionNamespace getVariable [format ["%1_heat",_x],0]) > 100) then {
-								missionNamespace setVariable [format ["%1_overheat",_x], true];
-								[_x] spawn {
-									_x = (_this select 0);
-									hint"overheat";
-									while {(missionNamespace getVariable [format ["%1_heat",_x],0]) > 0} do {
-										sleep 1;
-									};
-									missionNamespace setVariable [format ["%1_overheat",_x], false];
-								};
-							};
-							
 						}
-						else { // Overheating, cancel shot
-							player setAmmo [_weapon, _ammo + 1];
-							deleteVehicle _projectile;
+						else {
+							// Regular shot, increase heat
+							missionNamespace setVariable [format ["%1_heat",_x], 
+								(missionNamespace getVariable [format ["%1_heat",_x],0]) 
+								+ ([2, 5] call BIS_fnc_randomInt)];
+						};
+						
+						// Check for overheat
+						if ((missionNamespace getVariable [format ["%1_heat",_x],0]) > 100) then {
+							[] spawn {
+								overheat = player addAction ["Weapon lock on", 
+									{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+									"'_x' == (currentMuzzle player)"];
+								while {(missionNamespace getVariable [format ["%1_heat","_x"],0]) > 0} do {
+									sleep 1;
+								};
+								player removeAction overheat;
+							};
 						};
 					};
 					
@@ -987,59 +946,54 @@ if (not(isDedicated)) then {
 					if (_weapon == _x) then {
 						_ammo = player ammo _weapon;
 						_projectile = (_this select 6);
-						_overheat = (missionNamespace getVariable [format ["%1_overheat",_x], false]);
-						if (not(_overheat)) then {
-							_mode = (_this select 3);
-							if (_mode == "Overcharge") then {
+						_mode = (_this select 3);
+						if (_mode == "Overcharge") then {
+							
+							//Overcharge consummes 7 shots
+							if (_ammo > 5) then {
+								player setAmmo [_weapon, _ammo - 6];
 								
-								//Overcharge consummes 7 shots
-								if (_ammo > 5) then {
-									player setAmmo [_weapon, _ammo - 6];
-									
-									_position = getPosWorld _projectile;
-									_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
-									_velocity = velocity _projectile;
-									
-									deleteVehicle _projectile;
-									
-									_projectile = "SR_Overcharge_PlasmapistolRound" createVehicle [0,0,0];
-									_projectile setPosWorld _position;
-									_projectile setVectorDirAndUp _dirAndUp;
-									_projectile setVelocityModelSpace [0, 1140, 0];
-									
-									missionNamespace setVariable [format ["%1_heat",_x], 
-										(missionNamespace getVariable [format ["%1_heat",_x],0]) 
-										+ ([40, 60] call BIS_fnc_randomInt)];
-									
-								}
-								else { // Not enough ammo for overcharge, cancel shot
-									player setAmmo [_weapon, _ammo + 1];
-									deleteVehicle _projectile;
-								};
+								_position = getPosWorld _projectile;
+								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
+								_velocity = velocity _projectile;
+								
+								deleteVehicle _projectile;
+								
+								_projectile = "SR_Overcharge_PlasmapistolRound" createVehicle [0,0,0];
+								_projectile setPosWorld _position;
+								_projectile setVectorDirAndUp _dirAndUp;
+								_projectile setVelocityModelSpace [0, 1140, 0];
+								
+								missionNamespace setVariable [format ["%1_heat",_x], 
+									(missionNamespace getVariable [format ["%1_heat",_x],0]) 
+									+ ([40, 60] call BIS_fnc_randomInt)];
+								
 							}
-							else {
+							else { // Not enough ammo for overcharge, fire normally
 								// Regular shot, increase heat
 								missionNamespace setVariable [format ["%1_heat",_x], 
 									(missionNamespace getVariable [format ["%1_heat",_x],0]) 
 									+ ([4, 8] call BIS_fnc_randomInt)];
 							};
-							
-							// Check for overheat
-							if ((missionNamespace getVariable [format ["%1_heat",_x],0]) > 100) then {
-								missionNamespace setVariable [format ["%1_overheat",_x], true];
-								[_x] spawn {
-									_x = (_this select 0);
-									while {(missionNamespace getVariable [format ["%1_heat",_x],0]) > 0} do {
-										sleep 1;
-									};
-									missionNamespace setVariable [format ["%1_overheat",_x], false];
-								};
-							};
-							
 						}
-						else { // Overheating, cancel shot
-							player setAmmo [_weapon, _ammo + 1];
-							deleteVehicle _projectile;
+						else {
+							// Regular shot, increase heat
+							missionNamespace setVariable [format ["%1_heat",_x], 
+								(missionNamespace getVariable [format ["%1_heat",_x],0]) 
+								+ ([4, 8] call BIS_fnc_randomInt)];
+						};
+						
+						// Check for overheat
+						if ((missionNamespace getVariable [format ["%1_heat",_x],0]) > 100) then {
+							[] spawn {
+								overheat = player addAction ["Weapon lock on", 
+									{hintSilent "Weapon overheating";}, [], 0, false, false, "DefaultAction", 
+									"'_x' == (currentMuzzle player)"];
+								while {(missionNamespace getVariable [format ["%1_heat","_x"],0]) > 0} do {
+									sleep 1;
+								};
+								player removeAction overheat;
+							};
 						};
 					};
 					

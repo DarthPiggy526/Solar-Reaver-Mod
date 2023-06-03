@@ -22,7 +22,7 @@
 params [];
 
 if (not(isDedicated)) then {
-	if (((currentWeapon player) == "SR_Master_Crafted_Ragefire_PlasmaGun_1") and (SR_Arsenal_Ragefire_Take_Handler == -1)) then {
+	if (("SR_Master_Crafted_Ragefire_PlasmaGun_1" in (weapons player)) and (SR_Arsenal_Ragefire_Take_Handler == -1)) then {
 		SR_Arsenal_Ragefire_Take_Handler = player addEventHandler ["FiredMan", {
 			// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 			_weapon = (_this select 1);
