@@ -32,6 +32,15 @@ if (not(isDedicated)) then {
 		"STEVE_TigComb_Plasma_1"
 	];
 
+	_plasma_muzzles = [
+		"SR_Master_Crafted_Ragefire_PlasmaGun_1", 
+		"SR_Ragefire_Plasma_Gun", 
+		"SR_Ryza_Plasma_Gun", 
+		"SR_Ryza_Plasma_Pistol",
+		"TIOW_SM_Under_Plas_1",
+		"Steve_30k_Under_Plasma"
+	];
+
 	_plasma_pistol_weapons = [
 		"SR_Ryza_Plasma_Pistol"
 	];
@@ -348,8 +357,8 @@ if (not(isDedicated)) then {
 			missionNamespace setVariable [format ["%1_handler","SR_Combi_Bolter_1"], player addEventHandler ["FiredMan", {
 				// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 				_weapon = (_this select 1);
-				if (_weapon == "SR_Combi_Bolter_1") then {
-					_ammo = player ammo _weapon;
+				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
+					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
 					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_1"], false]);
 					if (not(_overheat)) then {
@@ -358,7 +367,7 @@ if (not(isDedicated)) then {
 							
 							//Overcharge consummes 10 shots
 							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
+								player setAmmo [(_this select 2), _ammo - 9];
 								
 								_position = getPosWorld _projectile;
 								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
@@ -377,7 +386,7 @@ if (not(isDedicated)) then {
 								
 							}
 							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
+								player setAmmo [(_this select 2), _ammo + 1];
 								deleteVehicle _projectile;
 							};
 						}
@@ -401,7 +410,7 @@ if (not(isDedicated)) then {
 						
 					}
 					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
+						player setAmmo [(_this select 2), _ammo + 1];
 						deleteVehicle _projectile;
 					};
 				};
@@ -450,8 +459,8 @@ if (not(isDedicated)) then {
 			missionNamespace setVariable [format ["%1_handler","SR_Combi_Bolter_2"], player addEventHandler ["FiredMan", {
 				// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 				_weapon = (_this select 1);
-				if (_weapon == "SR_Combi_Bolter_2") then {
-					_ammo = player ammo _weapon;
+				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
+					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
 					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_2"], false]);
 					if (not(_overheat)) then {
@@ -460,7 +469,7 @@ if (not(isDedicated)) then {
 							
 							//Overcharge consummes 10 shots
 							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
+								player setAmmo [(_this select 2), _ammo - 9];
 								
 								_position = getPosWorld _projectile;
 								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
@@ -479,7 +488,7 @@ if (not(isDedicated)) then {
 								
 							}
 							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
+								player setAmmo [(_this select 2), _ammo + 1];
 								deleteVehicle _projectile;
 							};
 						}
@@ -503,7 +512,7 @@ if (not(isDedicated)) then {
 						
 					}
 					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
+						player setAmmo [(_this select 2), _ammo + 1];
 						deleteVehicle _projectile;
 					};
 				};
@@ -552,8 +561,8 @@ if (not(isDedicated)) then {
 			missionNamespace setVariable [format ["%1_handler","SR_Combi_Bolter_3"], player addEventHandler ["FiredMan", {
 				// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 				_weapon = (_this select 1);
-				if (_weapon == "SR_Combi_Bolter_3") then {
-					_ammo = player ammo _weapon;
+				if ((_this select 2) == "TIOW_SM_Under_Plas_1") then {
+					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
 					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Combi_Bolter_3"], false]);
 					if (not(_overheat)) then {
@@ -562,7 +571,7 @@ if (not(isDedicated)) then {
 							
 							//Overcharge consummes 10 shots
 							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
+								player setAmmo [(_this select 2), _ammo - 9];
 								
 								_position = getPosWorld _projectile;
 								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
@@ -581,7 +590,7 @@ if (not(isDedicated)) then {
 								
 							}
 							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
+								player setAmmo [(_this select 2), _ammo + 1];
 								deleteVehicle _projectile;
 							};
 						}
@@ -605,7 +614,7 @@ if (not(isDedicated)) then {
 						
 					}
 					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
+						player setAmmo [(_this select 2), _ammo + 1];
 						deleteVehicle _projectile;
 					};
 				};
@@ -654,8 +663,8 @@ if (not(isDedicated)) then {
 			missionNamespace setVariable [format ["%1_handler","SR_Tig_Combi_Bolter"], player addEventHandler ["FiredMan", {
 				// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
 				_weapon = (_this select 1);
-				if (_weapon == "SR_Tig_Combi_Bolter") then {
-					_ammo = player ammo _weapon;
+				if ((_this select 2) == "Steve_30k_Under_Plasma") then {
+					_ammo = player ammo (_this select 2);
 					_projectile = (_this select 6);
 					_overheat = (missionNamespace getVariable [format ["%1_overheat","SR_Tig_Combi_Bolter"], false]);
 					if (not(_overheat)) then {
@@ -664,7 +673,7 @@ if (not(isDedicated)) then {
 							
 							//Overcharge consummes 10 shots
 							if (_ammo > 8) then {
-								player setAmmo [_weapon, _ammo - 9];
+								player setAmmo [(_this select 2), _ammo - 9];
 								
 								_position = getPosWorld _projectile;
 								_dirAndUp = [vectorDir _projectile, vectorUp _projectile];
@@ -683,7 +692,7 @@ if (not(isDedicated)) then {
 								
 							}
 							else { // Not enough ammo for overcharge, cancel shot
-								player setAmmo [_weapon, _ammo + 1];
+								player setAmmo [(_this select 2), _ammo + 1];
 								deleteVehicle _projectile;
 							};
 						}
@@ -707,7 +716,7 @@ if (not(isDedicated)) then {
 						
 					}
 					else { // Overheating, cancel shot
-						player setAmmo [_weapon, _ammo + 1];
+						player setAmmo [(_this select 2), _ammo + 1];
 						deleteVehicle _projectile;
 					};
 				};
