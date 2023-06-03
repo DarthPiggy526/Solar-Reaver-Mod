@@ -21,6 +21,7 @@ class CfgPatches
 		};
 		weapons[]=
 		{
+			"SR_Master_Crafted_Mars_HeavyBolter_1",
 			"SR_Master_Crafted_Ragefire_PlasmaGun_1",
 			"SR_Master_Crafted_GodwynBoltgun_1",
 			"SR_EC_GodwynBoltgun",
@@ -604,7 +605,8 @@ class CfgWeapons
 		displayName="[TSR] [Master Crafted] Mars Pattern Heavy Bolter";
 		hiddenSelectionsTextures[]=
 		{
-			"\SR_Arsenal\textures\SR_Master_Crafted_Mars_HeavyBolter.paa"
+//			"\SR_Arsenal\textures\SR_Master_Crafted_Mars_HeavyBolter.paa"
+			"\SR_Arsenal\textures\DOS_Relic_Heavy_Co.paa.paa"
 		};
 		modes[]=
 		{
@@ -653,7 +655,8 @@ class CfgWeapons
 		}; 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_Arsenal\textures\SR_Master_Crafted_PlasmaGun.paa",
+//			"SR_Arsenal\textures\SR_Master_Crafted_PlasmaGun.paa",
+			"SR_Arsenal\textures\Dos_Relic_Plas_OR.paa",
 			"TIOW_SMWep\Data\Textures\TIOW_Godwyn_Checker_co.paa"
 		};
 		class OpticsModes
@@ -1046,7 +1049,8 @@ class CfgWeapons
 		scopeArsenal=2;
 		hiddenSelectionsTextures[]=
 		{
-			"SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
+//			"SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
+			"SR_Arsenal\textures\DOS_Relic_B_Co.paa.paa"
 		};
 		modes[]=
 		{
