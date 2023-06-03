@@ -2092,6 +2092,7 @@ class CfgWeapons
 	class SR_Ragefire_Plasma_Gun : TIOW_SM_Ragefire_PlasmaGun
 	{
 		displayName = "[TSR] Ragefire Plasma Gun";
+		baseWeapon = "SR_Ragefire_Plasma_Gun";
 		plasmaCoolingMult = 1;
 		magazines[]=
 		{
