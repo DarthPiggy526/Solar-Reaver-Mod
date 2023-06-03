@@ -1062,6 +1062,7 @@ class CfgWeapons
 			reloadTime=2;
 			recoil="recoil_pistol_light";
 			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
 			dispersion=0.00034999999;
 			minRange=2;
 			minRangeProbab=0.5;
