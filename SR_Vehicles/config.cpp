@@ -22,6 +22,7 @@ class CfgPatches
 			"TSR_DropPod",
 			"TSR_Xiphon",
 			"TSR_Ass_Ram",
+			"TSR_Cinerous",
 			"TSR_Thunderhawk",
 			"TSR_StormSpeeder",
 			"TSR_TempSpeeder",
@@ -239,6 +240,34 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Ram_CO.paa"};
 		armor = 150;
 		armorStructural=2;
+	};
+
+	class REFORT_Helicoptor_Base;
+	class TSR_Cinerous: REFORT_Helicoptor_Base
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		faction = "Reinforcments";
+		displayName = "[TSR] Cinereous Transport";
+		class VehicleTransport
+		{
+			class Carrier
+			{				
+                cargoBayDimensions[] = { {-6,6,-4}, {6,-6,7} };
+//				cargoBayDimensions[] = {"VTV_limit1","VTV_limit2"};
+				disableHeightLimit = 1;
+				maxLoadMass = 2000000;
+				cargoAlignment[] = {"front","left"};
+				cargoSpacing[] = {1,0.15,0};
+				exits[] = {"VTV_exit"};
+				unloadingInterval = 2;
+				loadingDistance = 10;
+				loadingAngle = 60;
+				parachuteClassDefault = "B_Parachute_02_F";
+				parachuteHeightLimitDefault = 50;
+			};
+		};
 	};
 
 	class Thunderhawk_1_UM_TIOW;

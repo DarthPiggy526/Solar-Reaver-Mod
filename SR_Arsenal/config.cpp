@@ -606,7 +606,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 //			"\SR_Arsenal\textures\SR_Master_Crafted_Mars_HeavyBolter.paa"
-			"\SR_Arsenal\textures\DOS_Relic_Heavy_Co.paa.paa"
+			"\SR_Arsenal\textures\DOS_Relic_Heavy_Co.paa"
 		};
 		modes[]=
 		{
@@ -1050,7 +1050,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 //			"SR_Arsenal\textures\SR_Master_Crafted_GodwynBoltgun_1_co.paa"
-			"SR_Arsenal\textures\DOS_Relic_B_Co.paa.paa"
+			"SR_Arsenal\textures\DOS_Relic_B_Co.paa"
 		};
 		modes[]=
 		{
