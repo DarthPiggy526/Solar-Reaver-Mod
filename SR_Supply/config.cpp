@@ -23,7 +23,7 @@ class CfgPatches
 			"SR_SupplyPod_Breacher",
 			"SR_SupplyPod_Tactical",
 			"SR_SupplyPod_Devastator",
-			"SR_SupplyPod_Assualt",
+			"SR_SupplyPod_Assault",
 			"SR_SupplyPod_Medical"
 		};
 	};
@@ -351,7 +351,7 @@ class OPTRE_Ammo_Rack_Weapons;
 		editorSubcategory = "SR_EdSubcat_Supply";
 		model = "\OPTRE_misc\crates\Supply_pod.p3d";
 		transportMaxMagazines = 10000;
-		hiddenSelections[] = {'camo'};
+		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Misc\Crates\data\SupplyPod_co.paa"};
 		icon = "\A3\Supplies_F_Exp\Ammoboxes\Data\UI\icon_equipment_box_ca.paa";
 		scope = 2;
@@ -368,8 +368,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Seeker: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Seeker Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Seeker_CO.paa"};
+		hiddenselections[] = {"camo"};
+		hiddenselectionstextures[] = {"SR_Supply\Textures\SupplyPod_Seeker_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_Steve_Trig_Exitus_BoltgunMag
@@ -479,8 +479,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Marauder: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Marauder Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Marauder_CO.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Marauder_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_SR_Lascutter_Mag
@@ -613,8 +613,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Tactical: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Tactical Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Tactical_CO.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Tactical_CO.paa"};
 		class TransportMagazines
 		{
 
@@ -818,8 +818,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Devastator: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Devastator Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Devastator_CO.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Devastator_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_Steve_30k_MultiMelta_Mag
@@ -937,8 +937,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Breacher: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Breacher Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Breacher_CO.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Breacher_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_SR_Lascutter_Mag
@@ -1053,8 +1053,8 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Assault: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Assault Resupply";
-		hiddenSelections[] = {'camo'};
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Assault_CO.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Assault_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_Steve_Phob_BoltPistolMag
@@ -1149,7 +1149,7 @@ class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Medical: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Medical Resupply";
-		hiddenSelectionsTextures[] = {"\SR_Supply\Textures\SupplyPod_Medical_CO.paa"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Medical_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag
@@ -1230,13 +1230,4 @@ class OPTRE_Ammo_Rack_Weapons;
 			};
 		};
 	};
-
-
-
-
-
-
-
-
-
 };

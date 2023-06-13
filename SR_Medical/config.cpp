@@ -6,14 +6,23 @@ class CfgPatches
 		name="SR Medical";
 		requiredAddons[]=
 		{
-			"ace_medical"
+			"ace_medical",
+			"ace_medical_treatment"
 		};
 		requiredVersion=0.1;
 		units[]=
 		{
+			"SR_StimItem", 
+			"SR_NartheciumItem", 
+			"SR_InfiBloodItem", 
+			"SR_TraumaClearerItem"
 		};
 		weapons[]=
 		{
+			"SR_StimItem", 
+			"SR_NartheciumItem", 
+			"SR_InfiBloodItem", 
+			"SR_TraumaClearerItem"
 		};
 		worlds[]={};
 	};
@@ -214,7 +223,7 @@ class CfgVehicles
 	};
 	
 	// Narthecium
-	
+
     class SR_NartheciumItem: Item_Base_F
 	{
 		scope=2;
@@ -233,7 +242,7 @@ class CfgVehicles
 	};
 	
 	// Blood source
-	
+		
 	class SR_InfiBloodItem: Item_Base_F 
 	{
         scope = 2;
