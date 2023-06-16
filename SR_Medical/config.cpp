@@ -12,17 +12,17 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
-			"SR_StimItem", 
-			"SR_NartheciumItem", 
-			"SR_InfiBloodItem", 
-			"SR_TraumaClearerItem"
+			"SR_AdrenalStims", 
+			"SR_Narthecium", 
+			"SR_Item_InfiBlood", 
+			"SR_Item_TraumaClearer"
 		};
 		weapons[]=
 		{
-			"SR_StimItem", 
-			"SR_NartheciumItem", 
-			"SR_InfiBloodItem", 
-			"SR_TraumaClearerItem"
+			"SR_AdrenalStims", 
+			"SR_Narthecium", 
+			"SR_Item_InfiBlood", 
+			"SR_Item_TraumaClearer"
 		};
 		worlds[]={};
 	};

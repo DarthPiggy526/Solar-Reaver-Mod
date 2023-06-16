@@ -165,7 +165,7 @@ class CfgPatches
 //				name = "SR_AdrenalStims";
 //				count = 16;
 //			};
-//			class xx_SR_Item_TraumaClearer{
+//			class xx_SR_TraumaClearer{
 //				name = "SR_Item_TraumaClearer";
 //				count = 16;
 //			};
@@ -468,7 +468,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
@@ -594,19 +594,13 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
 		};
 	};
 
-
-
-
-
-
-//[Astartes] Bolter-Plasma Combi
 
 
 
@@ -705,7 +699,7 @@ class OPTRE_Ammo_Rack_Weapons;
 			};
 			class xx_Steve_30k_Meltagun_Mag // Primus Meltagun
 			{
-				magazine = "Steve_Steve_30k_Meltagun_Mag";
+				magazine = "Steve_30k_Meltagun_Mag";
 				count = 20;
 			};
 			class xx_TIOW_SM_Storm_Box_Mag // Storm Bolter Box
@@ -808,7 +802,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
@@ -913,7 +907,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
@@ -1022,7 +1016,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
@@ -1133,7 +1127,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
@@ -1162,7 +1156,7 @@ class OPTRE_Ammo_Rack_Weapons;
 		{
 			class xx_TIOW_GodwynBoltgun_6
 			{
-				magazine = "TIOW_GodwynBoltgun_6";
+				weapon = "TIOW_GodwynBoltgun_6";
 				count = 5;
 			};
 		};
@@ -1224,7 +1218,7 @@ class OPTRE_Ammo_Rack_Weapons;
 				name = "SR_AdrenalStims";
 				count = 40;
 			};
-			class xx_SR_Item_TraumaClearer{
+			class xx_SR_TraumaClearer{
 				name = "SR_Item_TraumaClearer";
 				count = 40;
 			};
