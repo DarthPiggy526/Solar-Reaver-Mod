@@ -38,6 +38,19 @@ class CfgPatches
 		};
 	};
 };
+class CfgMusic
+{
+	#include "FileListWithMusicTracks.hpp"
+};
+class CfgMusicClasses
+{
+	class SR_SFX
+	{
+		displayName = "SR_SFX";
+	};
+};
+
+
 class CfgSFX
 {
 	class sr_sfx_electronic_alert_sys
