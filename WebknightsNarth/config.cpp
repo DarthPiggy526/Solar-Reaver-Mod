@@ -75,9 +75,10 @@ class CfgWeapons
 		visionMode[]=
 		{
 			"Normal",
-			"NVG"
+			"NVG",
+			"TI"
 		};
-		thermalMode[]={2,3};
+		thermalMode[]={1,7};
 		modelOptics="-";
 		hiddenSelections[]=
 		{
@@ -118,9 +119,10 @@ class CfgWeapons
 		visionMode[]=
 		{
 			"Normal",
-			"NVG"
+			"NVG",
+			"TI"
 		};
-		thermalMode[]={2,3};
+		thermalMode[]={1,7};
 		modelOptics="-";
 		hiddenSelections[]=
 		{
@@ -156,9 +158,11 @@ class CfgWeapons
 		picture="WebknightsNarth\NartheciumIcon.paa";
 		visionMode[]=
 		{
-			"Normal"
+			"Normal",
+			"NVG",
+			"TI"
 		};
-		thermalMode[]={2,3};
+		thermalMode[]={1,7};
 		modelOptics="-";
 		hiddenSelections[]=
 		{
@@ -195,9 +199,10 @@ class CfgWeapons
 		visionMode[]=
 		{
 			"Normal",
-			"NVG"
+			"NVG",
+			"TI"
 		};
-		thermalMode[]={2,3};
+		thermalMode[]={1,7};
 		modelOptics="-";
 		hiddenSelections[]=
 		{
