@@ -7,14 +7,35 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 1.88;
-		version = "23.6.25.0";
-		versionStr = "23.6.25.0";
-		versionAr[] = {23,6,25,0};
+		version = "30.6.25.0";
+		versionStr = "30.6.25.0";
+		versionAr[] = {30,6,25,0};
 		requiredAddons[] = {"Extended_EventHandlers","cba_main","A3_UI_F"};
 		author = "Tengu";
 		fileName = "SR_Core.pbo";
 	};
 };
+
+
+
+
+
+class CfgFunctions
+{
+	class TSR_Scripts
+	{
+		class functions
+		{
+			class shield_script
+			{
+				file = "\SR_Core\Functions\fn_shield_kandosii.sqf";
+			};
+		};
+	};
+};
+
+
+
 
 
 class CfgMarkerClasses 
