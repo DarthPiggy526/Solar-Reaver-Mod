@@ -16,13 +16,15 @@ class CfgPatches
 		ammo[] = {};
 		units[] = 
 		{
+			"SR_Vehicle_Service",
 			"SR_SupplyPod_Empty",
-			"SR_SupplyPod_Recon",
+			"SR_SupplyPod_Seeker",
+			"SR_SupplyPod_Marauder",
+			"SR_SupplyPod_Breacher",
 			"SR_SupplyPod_Tactical",
 			"SR_SupplyPod_Devastator",
-			"SR_SupplyPod_Assualt",
-			"SR_SupplyPod_Medical",
-			"SR_SupplyPod_Command"
+			"SR_SupplyPod_Assault",
+			"SR_SupplyPod_Medical"
 		};
 	};
 };
@@ -111,6 +113,7 @@ class CfgPatches
 
 
 
+
 //Medical Template
 //		class TransportItems
 //		{
@@ -132,11 +135,11 @@ class CfgPatches
 //			};
 //			class xx_ACE_elasticBandage{
 //				name = "ACE_elasticBandage";
-//				count = 25;
+//				count = 40;
 //			};
 //			class xx_ACE_bloodIV_500{
 //				name = "ACE_bloodIV_500";
-//				count = 6;
+//				count = 8;
 //			};
 //			class xx_ACE_adenosine{
 //				name = "ACE_adenosine";
@@ -156,6 +159,14 @@ class CfgPatches
 //			};
 //			class xx_ACE_tourniquet{
 //				name = "ACE_tourniquet";
+//				count = 16;
+//			};
+//			class xx_SR_AdrenalStims{
+//				name = "SR_AdrenalStims";
+//				count = 16;
+//			};
+//			class xx_SR_TraumaClearer{
+//				name = "SR_Item_TraumaClearer";
 //				count = 16;
 //			};
 //		};
@@ -182,6 +193,38 @@ class ACEX_Fortify_Presets
 };
 
 
+class CfgFunctions {
+	class SR_Servicing
+	{
+		class SR_ServicingBox
+		{
+			class canService
+			{
+				file = "\SR_Supply\Scripts\fn_canService.sqf";
+			};
+			class service
+			{
+				file = "\SR_Supply\Scripts\fn_service.sqf";
+			};
+		};
+	};
+};
+//	class Bones
+//	{
+//		class Servicing
+//		{
+//			class canService
+//			{
+//				file = "\SR_Supply\Scripts\fn_canService.sqf";
+//			};
+//			class service
+//			{
+//				file = "\SR_Supply\Scripts\fn_service.sqf";
+//			};
+//		};
+//	};
+//};
+
 class Extended_InitPost_EventHandlers {
     class SR_SupplyPod_Empty {
         class SR_initCarry {
@@ -194,1017 +237,275 @@ class Extended_InitPost_EventHandlers {
 };
 
 class CfgVehicles{
-class box_NATO_Equip_F;
-//class OPTRE_Ammo_SupplyPod_Empty;
-	class SR_SupplyPod_Empty: box_NATO_Equip_F
+
+
+
+
+	class LandVehicle;
+	class Tank: LandVehicle
+	{
+		class ACE_Actions
+		{
+			class ACE_MainActions
+			{
+				class arca_aircraft_service
+				{
+					displayName = "Service Vehicle";
+					condition = "_this call SR_Servicing_fnc_canService";
+					statement = "_this call SR_Servicing_fnc_service";
+					icon = "";
+				};
+			};
+		};
+	};
+	class Car: LandVehicle
+	{
+		class ACE_Actions
+		{
+			class ACE_MainActions
+			{
+				class arca_aircraft_service
+				{
+					displayName = "Service Vehicle";
+					condition = "_this call SR_Servicing_fnc_canService";
+					statement = "_this call SR_Servicing_fnc_service";
+					icon = "";
+				};
+			};
+		};
+	};
+	class Air;
+	class Helicopter: Air
+	{
+		class ACE_Actions
+		{
+			class ACE_MainActions
+			{
+				class arca_aircraft_service
+				{
+					displayName = "Service Vehicle";
+					condition = "_this call SR_Servicing_fnc_canService";
+					statement = "_this call SR_Servicing_fnc_service";
+					icon = "";
+				};
+			};
+		};
+	};
+	class Plane: Air
+	{
+		class ACE_Actions
+		{
+			class ACE_MainActions
+			{
+				class arca_aircraft_service
+				{
+					displayName = "Service Vehicle";
+					condition = "_this call SR_Servicing_fnc_canService";
+					statement = "_this call SR_Servicing_fnc_service";
+					icon = "";
+				};
+			};
+		};
+	};
+
+
+
+
+
+
+
+
+
+	class Box_NATO_Wps_F;
+	class SR_Vehicle_Service: Box_NATO_Wps_F
+	{
+		author = "Mokka";
+		displayName = "[TSR] Vehicle Servicing Kit";
+		arca_aircraft_canService = 1;
+		arca_aircraft_service_repairOnly = 0;
+		maximumLoad = 100;
+		class TransportBackpacks{};
+		class TransportItems{};
+		class TransportMagazines{};
+		class TransportWeapons{};
+	};
+
+
+
+
+
+
+
+
+
+class NATO_Box_Base;
+class OPTRE_Ammo_Rack_Weapons;
+	class SR_SupplyPod_Empty: NATO_Box_Base
 	{
 		displayName = "[TSR] Empty Resupply";
 		author = "Tengu";
-		maximumLoad = 40000;
-		ACE_maxWeightCarry = 40000;
-		ACE_maxWeightDrag = 40000;
-		editorCategory = "EdCat_Supplies"; // Can't be another category for it to be in zeus
+		maximumLoad = 400000;
+		ACE_maxWeightCarry = 400000;
+		ACE_maxWeightDrag = 400000;
+		editorCategory = "EdCat_Supplies";
 		editorSubcategory = "SR_EdSubcat_Supply";
-//		model = "Arma3 Mods\Harakoni\SupplyPod.p3d";
 		model = "\OPTRE_misc\crates\Supply_pod.p3d";
-		hiddenSelections[] = {'camo'};
+		transportMaxMagazines = 10000;
+		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\OPTRE_Misc\Crates\data\SupplyPod_co.paa"};
 		icon = "\A3\Supplies_F_Exp\Ammoboxes\Data\UI\icon_equipment_box_ca.paa";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		supplyRadius = 2.5;
-		armor = 1000;
-//		class DestructionEffects
-//		{
-//			class HouseDestr
-//			{
-//				simulation = "destroy";
-//				type = "DelayedDestructionAmmoBox";
-//				position = "";
-//				intensity = 1;
-//				interval = 1;
-//				lifeTime = 6;
-//			};
-//		};
+		armor = 10000;
 		class TransportMagazines{};
 		class TransportWeapons{};
 		class TransportItems{};
 	};
 
 
-	class SR_SupplyPod_Recon: SR_SupplyPod_Empty
+	class SR_SupplyPod_Seeker: SR_SupplyPod_Empty
 	{
-		displayName = "[TSR] Recon Resupply";
+		displayName = "[TSR] Seeker Resupply";
+		hiddenselections[] = {"camo"};
+		hiddenselectionstextures[] = {"SR_Supply\Textures\SupplyPod_Seeker_CO.paa"};
 		class TransportMagazines
 		{
-			class xx_TIOW_30rnd_GodwynBoltgunMag
-			{
-				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 120;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 120;
-			};
 			class xx_Steve_Trig_Exitus_BoltgunMag
 			{
-				magazin = "Steve_Trig_Exitus_BoltgunMag";
-				count = 160;
+				magazine = "Steve_Trig_Exitus_BoltgunMag";
+				count = 70;
 			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_K
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_K";
-				count = 40;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_DF
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_DF";
-				count = 40;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_INF
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_INF";
-				count = 40;
-			};
-			class xx_Primaris_Dos_S_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_S_Bolt_RifleMag";
-				count = 120;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag";
-				count = 100;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_K
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_K";
-				count = 20;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_DF
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_DF";
-				count = 20;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_INF
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_INF";
-				count = 20;
-			};
+            class xx_Primaris_Dos_S_Bolt_RifleMag
+            {
+                magazine = "Primaris_Dos_S_Bolt_RifleMag";
+                count = 70;
+            }
 			class xx_Steve_Phob_Atrox_BoltgunMag
 			{
 				magazine = "Steve_Phob_Atrox_BoltgunMag";
-				count = 100;
-			};
-			class xx_Steve_Phob_Atrox_BoltgunMag_K
-			{
-				magazine = "Steve_Phob_Atrox_BoltgunMag_K";
-				count = 20;
-			};
-			class xx_Steve_Phob_Atrox_BoltgunMag_DF
-			{
-				magazine = "Steve_Phob_Atrox_BoltgunMag_DF";
-				count = 20;
-			};
-			class xx_TIOW_SM_Rocket_Frag_Mag
-			{
-				magazine = "TIOW_SM_Rocket_Frag_Mag";
-				count = 20;
-			};
-			class xx_TIOW_SM_Rocket_Krak_Mag
-			{
-				magazine = "TIOW_SM_Rocket_Krak_Mag";
-				count = 20;
-			};
-		};
-		class TransportWeapons
-		{
-			class xx_TIOW_GodwynBoltgun_2
-			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
-				count = 5;
-			};
-			class xx_Steve_NewExitus_1
-			{
-				weapon = "Steve_NewExitus_1";
-				cout = 5;
-			};
-			class xx_TIOW_SM_Rocket_1
-			{
-				weapon = "TIOW_SM_Rocket_1";
-				count = 1;
-			};
-		};
-		class TransportItems
-		{
-			class xx_AV_MeltaBomb_Mag
-			{
-				name = "AV_MeltaBomb_Mag";
-				count = 10;
-			};
-			class xx_ML700_melta_bomb_magazine
-			{
-				name = "ML700_melta_bomb_magazine";
-				count = 10;
-			};
-			class xx_AV_Servo_UAV_Packed
-			{
-				name = "AV_Servo_UAV_Packed";
-				count = 2;
-			};
-			class xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 10;
-			};
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 16;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
-				count = 8;
-			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 16;
-			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 16;
-			};
-			class xx_ACE_elasticBandage{
-				name = "ACE_elasticBandage";
-				count = 40;
-			};
-			class xx_SR_AdrenalStims{
-				name = "SR_AdrenalStims";
-				count = 16;
-			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 16;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
-			class xx_TIOW_sm_frag_grenade_mag{
-				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_krak_grenade_mag{
-				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_smoke_grenade_mag{
-				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
-			};
-			class xx_SmokeShellPurple{
-				name = "SmokeShellPurple";
-				count = 16;
-			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
-			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
-				count = 16;
-			};
-		};
-	};
-
-	class SR_SupplyPod_Tactical: SR_SupplyPod_Empty
-	{
-		displayName = "[TSR] Tactical Resupply";
-		class TransportMagazines
-		{
-			class xx_TIOW_30rnd_GodwynBoltgunMag
-			{
-				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 200;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 200;
-			};
-			class xx_TIOW_SM_Rocket_Frag_Mag
-			{
-				magazine = "TIOW_SM_Rocket_Frag_Mag";
-				count = 20;
-			};
-			class xx_TIOW_SM_Rocket_Krak_Mag
-			{
-				magazine = "TIOW_SM_Rocket_Krak_Mag";
-				count = 20;
-			};
-			class xx_Steve_Sm_Solid
-			{
-				magazine = "Steve_Sm_Solid";
-				count = 50;
-			};
-			class xx_Steve_Sm_Pellet
-			{
-				magazine = "Steve_Sm_Pellet";
-				count = 50;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag
-			{
-				magazin = "Steve_Trig_Exitus_BoltgunMag";
-				count = 50;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_K
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_K";
-				count = 20;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_DF
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_DF";
-				count = 20;
-			};
-			class xx_Steve_Trig_Exitus_BoltgunMag_INF
-			{
-				magazine = "Steve_Trig_Exitus_BoltgunMag_INF";
-				count = 20;
-			};
-			class xx_Primaris_Dos_S_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_S_Bolt_RifleMag";
-				count = 50;
-			};
-			class xx_SR_Lascutter_Mag
-			{
-				magazine = "SR_Lascutter_Mag";
-				count = 50;
-			};
-			class xx_Steve_Phob_BoltgunMag
-			{
-				magazine = "Steve_Phob_BoltgunMag";
-				count = 100;
-			};
-			class xx_Steve_Phob_BoltgunMag_K
-			{
-				magazine = "Steve_Phob_BoltgunMag_K";
-				count = 100;
-			};
-			class xx_Steve_Phob_BoltgunMag_DF
-			{
-				magazine = "Steve_Phob_BoltgunMag_DF";
-				count = 100;
-			};
-			class xx_Primaris_Dos_H_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_H_Bolt_RifleMag";
-				count = 100;
-			};
-			class xx_Primaris_Dos_C_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_C_Bolt_RifleMag";
-				count = 100;
-			};
-			class xx_SR_Meltagun_Mag
-			{
-				magazine = "SR_Meltagun_Mag";
-				count = 50;
-			};
-			class xx_TIOW_SM_Plasmagun_Mag
-			{
-				magazine = "TIOW_SM_Plasmagun_Mag";
-				count = 50;
-			};
-			class xx_TIOW_SM_Overcharge_Plasmagun_Mag
-			{
-				magazine = "TIOW_SM_Overcharge_Plasmagun_Mag";
 				count = 30;
 			};
-			class xx_TIOW_SM_Storm_Clip_Mag
+			class xx_Steve_30k_combi_seek_Mag
 			{
-				magazine = "TIOW_SM_Storm_Clip_Mag";
-				count = 80;
-			};
-			class xx_TIOW_SM_Storm_Box_Mag
-			{
-				magazine = "TIOW_SM_Storm_Box_Mag";
-				count = 50;
-			};
-			class xx_Steve_SM_Plasmagun_Mag
-			{
-				magazine = "Steve_SM_Plasmagun_Mag";
-				count = 50;
-			};
-			class xx_Steve_SM_Overcharge_Plasmagun_Mag
-			{
-				magazine = "Steve_SM_Overcharge_Plasmagun_Mag";
+				magazine = "Steve_30k_combi_seek_Mag";
 				count = 30;
-			};
-			class xx_Steve_Trig_BoltgunMag
-			{
-				magazine = "Steve_Trig_BoltgunMag";
-				count = 100;
-			};
-			class xx_Steve_Trig_BoltgunMag_K
-			{
-				magazine = "Steve_Trig_BoltgunMag_K";
-				count = 100;
-			};
-			class xx_Steve_Trig_BoltgunMag_DF
-			{
-				magazine = "Steve_Trig_BoltgunMag_DF";
-				count = 100;
-			};
-			class xx_Steve_Trig_BoltgunMag_INF
-			{
-				magazine = "Steve_Trig_BoltgunMag_INF";
-				count = 100;
-			};
-			class xx_Steve_30k_Meltagun_Mag
-			{
-				magazine = "Steve_30k_Meltagun_Mag";
-				count = 50;
-			};
-			class xx_TIOW_CombiPlas_Mag
-			{
-				magazine = "TIOW_CombiPlas_Mag";
-				count = 20;
-			};
-			class xx_TIOW_CombiPlas_OVER_Mag
-			{
-				magazine = "TIOW_CombiPlas_OVER_Mag";
-				count = 10;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag";
-				count = 100;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_K
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_K";
-				count = 20;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_DF
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_DF";
-				count = 20;
-			};
-			class xx_Steve_Trig_NewCombiBoltgunMag_INF
-			{
-				magazine = "Steve_Trig_NewCombiBoltgunMag_INF";
-				count = 20;
 			};
 			class xx_Steve_30k_Tig_Combi_Mag
 			{
 				magazine = "Steve_30k_Tig_Combi_Mag";
-				count = 50;
+				count = 30;
 			};
-			class xx_Steve_30k_CombiPlas_Mag
+			class xx_SR_LasFusil_Mag
 			{
-				magazine = "Steve_30k_CombiPlas_Mag";
-				count = 20;
-			};
-			class xx_Steve_30k_CombiPlasOVER_Mag
-			{
-				magazine = "Steve_30k_CombiPlasOVER_Mag";
-				count = 10;
-			};
-			class xx_Steve_30k_CombiMelta_Mag
-			{
-				magazine = "Steve_30k_CombiMelta_Mag";
-				count = 20;
-			};
-		};
-		class TransportWeapons
-		{
-			class xx_TIOW_GodwynBoltgun_2
-			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
-				count = 5;
-			};
-			class xx_TIOW_SM_Rocket_1
-			{
-				weapon = "TIOW_SM_Rocket_1";
-				count = 1;
-			};
-			class xx_Steve_Shotgun_1
-			{
-				weapon = "Steve_Shotgun_1";
-				count = 2;
-			};
-			class xx_Steve_NewExitus_1
-			{
-				weapon = "Steve_NewExitus_1";
-				cout = 1;
-			};
-			class xx_SR_Lascut
-			{
-				weapon = "SR_Lascut";
-				count = 1;
-			};
-			class xx_SR_Meltagun_1
-			{
-				weapon = "SR_Meltagun_1";
-				count = 1;
-			};
-			class xx_TIOW_SM_Ragefire_PlasmaGun
-			{
-				weapon = "TIOW_SM_Ragefire_PlasmaGun";
-				count = 1;
-			};
-			class xx_TIOW_SM_Storm_Bolt_1
-			{
-				weapon = "TIOW_SM_Storm_Bolt_1";
-				count = 1;
-			};
-		};
-		class TransportItems
-		{
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 16;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
-				count = 8;
-			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 16;
-			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 16;
-			};
-			class xx_ACE_elasticBandage{
-				name = "ACE_elasticBandage";
+				magazine = "SR_LasFusil_Mag";
 				count = 40;
-			};
-			class xx_SR_AdrenalStims{
-				name = "SR_AdrenalStims";
-				count = 16;
-			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 16;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
-			class xx_TIOW_sm_frag_grenade_mag{
-				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_krak_grenade_mag{
-				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_smoke_grenade_mag{
-				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
-			};
-			class xx_SmokeShellPurple{
-				name = "SmokeShellPurple";
-				count = 16;
-			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
-			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
-				count = 16;
-			};
-		};
-	};
-
-	class SR_SupplyPod_Devastator: SR_SupplyPod_Empty
-	{
-		displayName = "[TSR] Devastator Resupply";
-		class TransportMagazines
-		{
-			class xx_TIOW_30rnd_GodwynBoltgunMag
-			{
-				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 100;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 100;
 			};
 			class xx_TIOW_SM_Rocket_Frag_Mag
 			{
 				magazine = "TIOW_SM_Rocket_Frag_Mag";
-				count = 30;
+				count = 15;
 			};
 			class xx_TIOW_SM_Rocket_Krak_Mag
 			{
 				magazine = "TIOW_SM_Rocket_Krak_Mag";
-				count = 30;
+				count = 10;
 			};
-			class xx_STEVE_30k_Rocket_Frag_Mag
-			{
-				magazine = "STEVE_30k_Rocket_Frag_Mag";
-				count = 30;
+
+		};
+		class TransportWeapons
+		{
+
+		};
+		class TransportItems
+		{
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
+				count = 8;
 			};
-			class xx_STEVE_30k_Rocket_Krak_Mag
-			{
-				magazine = "STEVE_30k_Rocket_Krak_Mag";
-				count = 30;
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
 			};
-			class xx_TIOW_Mars_HeavyBolterMag_85rnd
-			{
-				magazine = "TIOW_Mars_HeavyBolterMag_85rnd";
-				count = 200;
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
 			};
-			class xx_Steve_SM_Lascannon_Mag
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
+			};
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 16;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 16;
+			};
+		};
+	};
+
+
+	class SR_SupplyPod_Marauder: SR_SupplyPod_Empty
+	{
+		displayName = "[TSR] Marauder Resupply";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Marauder_CO.paa"};
+		class TransportMagazines
+		{
+			class xx_SR_Lascutter_Mag
 			{
-				magazine = "Steve_SM_Lascannon_Mag";
-				count = 50;
+				magazine = "SR_Lascutter_Mag";
+				count = 70;
+			};
+			class xx_Primaris_Dos_H_Bolt_RifleMag
+			{
+				magazine = "Primaris_Dos_H_Bolt_RifleMag";
+				count = 20;
 			};
 			class xx_Steve_Rotor_Cannon_Mag
 			{
 				magazine = "Steve_Rotor_Cannon_Mag";
-				count = 80;
-			};
-			class xx_Steve_30k_MultiMelta_Mag
-			{
-				magazine = "Steve_30k_MultiMelta_Mag";
-				count = 80;
-			};
-			class xx_TIOW_SM_PlasmaCannon_Mag
-			{
-				magazine = "TIOW_SM_PlasmaCannon_Mag";
-				count = 80;
-			};
-			class xx_TIOW_SM_PlasmaCannon_Mag_OC
-			{
-				magazine = "TIOW_SM_PlasmaCannon_Mag_OC";
-				count = 50;
-			};
-			class xx_STEVE_30k_PlasmaCannon_Mag
-			{
-				magazine = "STEVE_30k_PlasmaCannon_Mag";
-				count = 80;
-			};
-			class xx_STEVE_30k_PlasmaCannon_OC_Mag
-			{
-				magazine = "STEVE_30k_PlasmaCannon_OC_Mag";
-				count = 50;
-			};
-			class xx_STEVE_Autocannon12RndHEMag
-			{
-				magazine = "STEVE_Autocannon12RndHEMag";
-				count = 120;
-			};
-		};
-		class TransportWeapons
-		{
-			class xx_TIOW_GodwynBoltgun_2
-			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
-				count = 5;
-			};
-			class xx_TIOW_SM_Rocket_1
-			{
-				weapon = "TIOW_SM_Rocket_1";
-				count = 1;
-			};
-			class xx_TIOW_Mars_HeavyBolter
-			{
-				weapon = "TIOW_Mars_HeavyBolter";
-				count = 3;
-			};
-			class xx_Steve_SM_Lascan_01
-			{
-				weapon = "Steve_SM_Lascan_01";
-				count = 1;
-			};
-		};
-		class TransportItems
-		{
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 16;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
-				count = 8;
-			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 16;
-			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 16;
-			};
-			class xx_ACE_elasticBandage{
-				name = "ACE_elasticBandage";
-				count = 40;
-			};
-			class xx_SR_AdrenalStims{
-				name = "SR_AdrenalStims";
-				count = 16;
-			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 16;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
-			class xx_TIOW_sm_frag_grenade_mag{
-				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_krak_grenade_mag{
-				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_smoke_grenade_mag{
-				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
-			};
-			class xx_SmokeShellPurple{
-				name = "SmokeShellPurple";
-				count = 16;
-			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
-			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
-				count = 16;
-			};
-		};
-	};
-
-	class SR_SupplyPod_Assault: SR_SupplyPod_Empty
-	{
-		displayName = "[TSR] Assault Resupply";
-		class TransportMagazines
-		{
-			class xx_TIOW_30rnd_GodwynBoltgunMag
-			{
-				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 100;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 100;
-			};
-			class xx_Steve_Trig_BoltPistolMag
-			{
-				magazine = "Steve_Trig_BoltPistolMag";
-				count = 100;
-			};
-			class xx_Steve_Trig_BoltPistolMag_K
-			{
-				magazine = "Steve_Trig_BoltPistolMag_K";
 				count = 20;
-			};
-			class xx_Steve_Trig_BoltPistolMag_DF
-			{
-				magazine = "Steve_Trig_BoltPistolMag_DF";
-				count = 20;
-			};
-			class xx_Steve_Phob_BoltPistolMag
-			{
-				magazine = "Steve_Phob_BoltPistolMag";
-				count = 100;
-			};
-			class xx_Steve_Phob_BoltPistolMag_K
-			{
-				magazine = "Steve_Phob_BoltPistolMag_K";
-				count = 20;
-			};
-			class xx_Steve_Phob_BoltPistolMag_DF
-			{
-				magazine = "Steve_Phob_BoltPistolMag_DF";
-				count = 20;
-			};
-			class xx_Steve_SM_PlasmaPistol_Mag
-			{
-				magazine = "Steve_SM_PlasmaPistol_Mag";
-				count = 50;
-			};
-			class xx_Steve_SM_Overcharge_PlasmaPistol_Mag
-			{
-				magazine = "Steve_SM_Overcharge_PlasmaPistol_Mag";
-				count = 30;
-			};
-		};
-		class TransportWeapons
-		{
-			class xx_TIOW_GodwynBoltgun_2
-			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
-				count = 5;
-			};
-			class xx_STEVE_30k_Tig_Pistol
-			{
-				weapon = "STEVE_30k_Tig_Pistol";
-				count = 5;
-			};
-			class xx_Web_Melee_Chain_Test
-			{
-				weapon = "Web_Melee_Chain_Test";
-				count = 5;
-			};
-			class xx_Web_Melee_PowerFists
-			{
-				weapon = "Web_Melee_PowerFists";
-				count = 1;
-			};
-		};
-		class TransportItems
-		{
-			class xx_30k_Steve_Jump_Pack_5_5
-			{
-				name = "30k_Steve_Jump_Pack_5_5";
-				count = 12;
-			};
-			class xx_AOD_L_GravFuel{
-				name = "AOD_L_GravFuel";
-				count = 64;
-			};
-			class xx_AOD_M_GravFuel{
-				name = "AOD_M_GravFuel";
-				count = 64;
-			};
-			class xx_Steve_30k_Combat_S_1_NVG
-			{
-				name = "Steve_30k_Combat_S_1_NVG";
-				count = 5;
-			};
-			class xx_Web_SM_Storm_S_6_NVG
-			{
-				name = "Web_SM_Storm_S_6_NVG";
-				count = 2;
-			};
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 16;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
-				count = 8;
-			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 16;
-			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 16;
-			};
-			class xx_ACE_elasticBandage{
-				name = "ACE_elasticBandage";
-				count = 40;
-			};
-			class xx_SR_AdrenalStims{
-				name = "SR_AdrenalStims";
-				count = 16;
-			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 16;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
-			class xx_TIOW_sm_frag_grenade_mag{
-				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_krak_grenade_mag{
-				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_smoke_grenade_mag{
-				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
-			};
-			class xx_SmokeShellPurple{
-				name = "SmokeShellPurple";
-				count = 16;
-			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
-			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
-				count = 16;
-			};
-		};
-	};
-
-	class SR_SupplyPod_Command: SR_SupplyPod_Empty
-	{
-		displayName = "[TSR] Command Resupply";
-		class TransportMagazines
-		{
-			class xx_TIOW_30rnd_GodwynBoltgunMag
-			{
-				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 100;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 100;
 			};
 			class xx_TIOW_SM_Storm_Box_Mag
 			{
 				magazine = "TIOW_SM_Storm_Box_Mag";
+				count = 20;
+			};
+			class xx_TIOW_SM_Storm_Clip_Mag
+			{
+				magazine = "TIOW_SM_Storm_Clip_Mag";
 				count = 20;
 			};
 			class xx_Steve_Trig_BoltgunMag
@@ -1227,246 +528,699 @@ class box_NATO_Equip_F;
 				magazine = "Steve_30k_CombiPlas_Mag";
 				count = 40;
 			};
+			class xx_TIOW_SM_Rocket_Frag_Mag
+			{
+				magazine = "TIOW_SM_Rocket_Frag_Mag";
+				count = 15;
+			};
+			class xx_TIOW_SM_Rocket_Krak_Mag
+			{
+				magazine = "TIOW_SM_Rocket_Krak_Mag";
+				count = 10;
+			};
 
 		};
 		class TransportWeapons
 		{
-			class xx_TIOW_GodwynBoltgun_2
-			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
-				count = 5;
-			};
+
 		};
 		class TransportItems
 		{
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 16;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 16;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
 				count = 8;
 			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 16;
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
 			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 16;
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
+			};
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
 			};
 			class xx_ACE_elasticBandage{
 				name = "ACE_elasticBandage";
 				count = 40;
 			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
 			class xx_SR_AdrenalStims{
 				name = "SR_AdrenalStims";
 				count = 16;
 			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 16;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
-			class xx_TIOW_sm_frag_grenade_mag{
-				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_krak_grenade_mag{
-				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
-			};
-			class xx_TIOW_sm_smoke_grenade_mag{
-				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
-			};
-			class xx_SmokeShellPurple{
-				name = "SmokeShellPurple";
-				count = 16;
-			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
-			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
 				count = 16;
 			};
 		};
 	};
 
+
+
+
+	class SR_SupplyPod_Tactical: SR_SupplyPod_Empty
+	{
+		displayName = "[TSR] Tactical Resupply";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Tactical_CO.paa"};
+		class TransportMagazines
+		{
+
+			class xx_TIOW_30rnd_GodwynBoltgunMag // Godwyn Boltgun
+			{
+				magazine = "TIOW_30rnd_GodwynBoltgunMag";
+				count = 100;
+			};
+			class xx_Steve_Phob_BoltgunMag // Phobos Boltgun
+			{
+				magazine = "Steve_Phob_BoltgunMag";
+				count = 40;
+			};
+			class xx_Steve_Trig_BoltgunMag // Tigrus Boltgun
+			{
+				magazine = "Steve_Trig_BoltgunMag";
+				count = 70;
+			};
+			class xx_Steve_30k_combi_seek_Mag // Tigrus Seeker Ammo.
+			{
+				magazine = "Steve_30k_combi_seek_Mag";
+				count = 30;
+			};
+			class xx_Steve_30k_Tig_Combi_Mag // Tigrus Combi Boltgun
+			{
+				magazine = "Steve_30k_Tig_Combi_Mag";
+				count = 30;
+			};
+			class xx_Steve_Trig_Exitus_BoltgunMag // Tigrus Exitus Boltgun
+			{
+				magazine = "Steve_Trig_Exitus_BoltgunMag";
+				count = 70;
+			};
+			class xx_TIOW_Mars_HeavyBolterMag_85rnd // Heavy Bolter
+			{
+				magazine = "TIOW_Mars_HeavyBolterMag_85rnd";
+				count = 20;
+			};
+			class xx_Steve_Rotor_Cannon_Mag // Rotor Cannon
+			{
+				magazine = "Steve_Rotor_Cannon_Mag";
+				count = 20;
+			};
+			class xx_SR_Meltagun_Mag // Meltagun
+			{
+				magazine = "SR_Meltagun_Mag";
+				count = 20;
+			};
+			class xx_SR_Lascutter_Mag // Lascutter
+			{
+				magazine = "SR_Lascutter_Mag";
+				count = 70;
+			};
+			class xx_TIOW_SM_Plasmagun_Mag // Ragefire Plasma Gun
+			{
+				magazine = "TIOW_SM_Plasmagun_Mag";
+				count = 60;
+			};
+			class xx_TIOW_CombiPlas_Mag // Ragefire Plasma Gun
+			{
+				magazine = "TIOW_CombiPlas_Mag";
+				count = 60;
+			};
+			class xx_Steve_SM_Plasmagun_Mag // Ryza Thunderbolt Plasma Gun
+			{
+				magazine = "Steve_SM_Plasmagun_Mag";
+				count = 60;
+			};
+			class xx_Steve_Sm_Pellet // Shotgun Buckshot
+			{
+				magazine = "Steve_Sm_Pellet";
+				count = 40;
+			};
+			class xx_Steve_Sm_Solid // Shotgun Slugs
+			{
+				magazine = "Steve_Sm_Solid";
+				count = 40;
+			};
+			class xx_TIOW_SM_Rocket_Frag_Mag // Missile Frag
+			{
+				magazine = "TIOW_SM_Rocket_Frag_Mag";
+				count = 15;
+			};
+			class xx_TIOW_SM_Rocket_Krak_Mag // Missile Krak
+			{
+				magazine = "TIOW_SM_Rocket_Krak_Mag";
+				count = 10;
+			};
+			class xx_Steve_30k_Meltagun_Mag // Primus Meltagun
+			{
+				magazine = "Steve_30k_Meltagun_Mag";
+				count = 20;
+			};
+			class xx_TIOW_SM_Storm_Box_Mag // Storm Bolter Box
+			{
+				magazine = "TIOW_SM_Storm_Box_Mag";
+				count = 20;
+			};
+			class xx_TIOW_SM_Storm_Clip_Mag // Storm Bolter Clip
+			{
+				magazine = "TIOW_SM_Storm_Clip_Mag";
+				count = 20;
+			};
+			class xx_Primaris_Dos_Bolt_RifleMag // BoltRifle
+			{
+				magazine = "Primaris_Dos_Bolt_RifleMag";
+				count = 100;
+			};
+			class xx_Primaris_Dos_H_Bolt_RifleMag // Auto BoltRifle
+			{
+				magazine = "Primaris_Dos_H_Bolt_RifleMag";
+				count = 100;
+			};
+			class xx_Primaris_Dos_C_Bolt_RifleMag // Carbine BoltRifle
+			{
+				magazine = "Primaris_Dos_C_Bolt_RifleMag";
+				count = 100;
+			};
+            class xx_Primaris_Dos_S_Bolt_RifleMag // Stalker BoltRifle
+            {
+                magazine = "Primaris_Dos_S_Bolt_RifleMag";
+                count = 70;
+            }
+			class xx_Steve_Phob_BoltPistolMag // Phobos Pistol
+			{
+				magazine = "Steve_Phob_BoltPistolMag";
+				count = 50;
+			};
+			class xx_Steve_Trig_BoltPistolMag // Tigrus Pistol
+			{
+				magazine = "Steve_Trig_BoltPistolMag";
+				count = 50;
+			};
+			class xx_Steve_SM_PlasmaPistol_Mag // Plasma Pistol
+			{
+				magazine = "Steve_SM_PlasmaPistol_Mag";
+				count = 20;
+			};
+		};
+		class TransportWeapons
+		{
+
+		};
+		class TransportItems
+		{
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
+			};
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
+			};
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 16;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 16;
+			};
+		};
+	};
+
+	class SR_SupplyPod_Devastator: SR_SupplyPod_Empty
+	{
+		displayName = "[TSR] Devastator Resupply";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Devastator_CO.paa"};
+		class TransportMagazines
+		{
+			class xx_Steve_30k_MultiMelta_Mag
+			{
+				magazine = "Steve_30k_MultiMelta_Mag";
+				count = 70;
+			};
+			class xx_Steve_30k_PlasmaCannon_Mag
+			{
+				magazine = "Steve_30k_PlasmaCannon_Mag";
+				count = 70;
+			};
+			class xx_TIOW_SM_PlasmaCannon_Mag
+			{
+				magazine = "TIOW_SM_PlasmaCannon_Mag";
+				count = 70;
+			};
+			class xx_Steve_Autocannon12RndHEMag
+			{
+				magazine = "Steve_Autocannon12RndHEMag";
+				count = 70;
+			};
+			class xx_Steve_SM_Lascannon_Mag
+			{
+				magazine = "Steve_SM_Lascannon_Mag";
+				count = 70;
+			};
+			class xx_Steve_30k_Rocket_Krak_Mag
+			{
+				magazine = "Steve_30k_Rocket_Krak_Mag";
+				count = 70;
+			};
+			class xx_Steve_30k_Rocket_Frag_Mag
+			{
+				magazine = "Steve_30k_Rocket_Frag_Mag";
+				count = 70;
+			};
+
+		};
+		class TransportWeapons
+		{
+
+		};
+		class TransportItems
+		{
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
+			};
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
+			};
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 16;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 16;
+			};
+		};
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	class SR_SupplyPod_Breacher: SR_SupplyPod_Empty
+	{
+		displayName = "[TSR] Breacher Resupply";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Breacher_CO.paa"};
+		class TransportMagazines
+		{
+			class xx_SR_Lascutter_Mag
+			{
+				magazine = "SR_Lascutter_Mag";
+				count = 70;
+			};
+			class xx_Steve_Phob_BoltgunMag
+			{
+				magazine = "Steve_Phob_BoltgunMag";
+				count = 70;
+			};
+			class xx_Steve_Trig_BoltgunMag
+			{
+				magazine = "Steve_Trig_BoltgunMag";
+				count = 70;
+			};
+
+			class xx_Steve_Sm_Pellet
+			{
+				magazine = "Steve_Sm_Pellet";
+				count = 40;
+			};
+			class xx_Steve_Sm_Solid
+			{
+				magazine = "Steve_Sm_Solid";
+				count = 40;
+			};
+		};
+		class TransportWeapons
+		{
+
+		};
+		class TransportItems
+		{
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
+			};
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
+			};
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 16;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 16;
+			};
+		};
+	};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	class SR_SupplyPod_Assault: SR_SupplyPod_Empty
+	{
+		displayName = "[TSR] Assault Resupply";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Assault_CO.paa"};
+		class TransportMagazines
+		{
+			class xx_Steve_Phob_BoltPistolMag
+			{
+				magazine = "Steve_Phob_BoltPistolMag";
+				count = 50;
+			};
+			class xx_Steve_Trig_BoltPistolMag
+			{
+				magazine = "Steve_Trig_BoltPistolMag";
+				count = 50;
+			};
+			class xx_Steve_SM_PlasmaPistol_Mag
+			{
+				magazine = "Steve_SM_PlasmaPistol_Mag";
+				count = 20;
+			};
+		};
+		class TransportWeapons
+		{};
+		class TransportItems
+		{
+			class xx_AOD_L_GravFuel{
+				name = "AOD_L_GravFuel";
+				count = 20;
+			};
+			class xx_AOD_M_GravFuel{
+				name = "AOD_M_GravFuel";
+				count = 40;
+			};
+			class xx_TIOW_sm_frag_grenade_mag{
+				name = "TIOW_sm_frag_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_krak_grenade_mag{
+				name = "TIOW_sm_krak_grenade_mag";
+				count = 8;
+			};
+			class xx_TIOW_sm_smoke_grenade_mag{
+				name = "TIOW_sm_smoke_grenade_mag";
+				count = 8;
+			};
+			class xx_SmokeShellPurple{
+				name = "SmokeShellPurple";
+				count = 2;
+			};
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 40;
+			};
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 8;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 8;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 8;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 8;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 16;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 16;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 16;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 16;
+			};
+		};
+	};
+
+
+
+
+
+
+
 	class SR_SupplyPod_Medical: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Medical Resupply";
+		hiddenSelectionsTextures[] = {"SR_Supply\Textures\SupplyPod_Medical_CO.paa"};
 		class TransportMagazines
 		{
 			class xx_TIOW_30rnd_GodwynBoltgunMag
 			{
 				magazine = "TIOW_30rnd_GodwynBoltgunMag";
-				count = 100;
-			};
-			class xx_Primaris_Dos_Bolt_RifleMag
-			{
-				magazine = "Primaris_Dos_Bolt_RifleMag";
-				count = 100;
+				count = 50;
 			};
 		};
 		class TransportWeapons
 		{
-			class xx_TIOW_GodwynBoltgun_2
+			class xx_TIOW_GodwynBoltgun_6
 			{
-				weapon = "TIOW_GodwynBoltgun_2";
-				count = 5;
-			};
-			class xx_Primaris_Dos_Bolt_Rifle
-			{
-				weapon = "Primaris_Dos_Bolt_Rifle";
-				count = 5;
-			};
-			class xx_Web_Melee_KnifeSM
-			{
-				weapon = "Web_Melee_KnifeSM";
+				weapon = "TIOW_GodwynBoltgun_6";
 				count = 5;
 			};
 		};
 		class TransportItems
 		{
-			class xx_ACE_morphine{
-				name = "ACE_morphine";
-				count = 80;
-			};
-			class xx_ACE_epinephrine{
-				name = "ACE_epinephrine";
-				count = 80;
-			};
-			class xx_ACE_bloodIV{
-				name = "ACE_bloodIV";
-				count = 32;
-			};
-			class xx_ACE_bloodIV_500{
-				name = "ACE_bloodIV_500";
-				count = 64;
-			};
-			class xx_ACE_bloodIV_250{
-				name = "ACE_bloodIV_250";
-				count = 32;
-			};
-			class xx_ACE_splint{
-				name = "ACE_splint";
-				count = 80;
-			};
-			class xx_ACE_tourniquet{
-				name = "ACE_tourniquet";
-				count = 80;
-			};
-			class xx_ACE_elasticBandage{
-				name = "ACE_elasticBandage";
-				count = 160;
-			};
-			class xx_SR_AdrenalStims{
-				name = "SR_AdrenalStims";
-				count = 80;
-			};
-			class xx_AV_AdrenalStims{
-				name = "AV_AdrenalStims";
-				count = 80;
-			};
-			class xx_adv_aceCPR_AED{
-				name = "adv_aceCPR_AED";
-				count = 80;
-			};
-			class xx_SR_Item_TraumaClearer{
-				name = "SR_Item_TraumaClearer";
-				count = 80;
-			};
-			class xx_SR_Item_InfiBlood{
-				name = "SR_Item_InfiBlood";
-				count = 80;
-			};
-			class xx_ACE_CableTie{
-				name = "ACE_CableTie";
-				count = 8;
-			};
-			class xx_ACE_EntrenchingTool{
-				name = "ACE_EntrenchingTool";
-				count = 4;
-			};
-			class xx_ACE_Fortify{
-				name = "ACE_Fortify";
-				count = 2;
-			};
 			class xx_TIOW_sm_frag_grenade_mag{
 				name = "TIOW_sm_frag_grenade_mag";
-				count = 32;
+				count = 8;
 			};
 			class xx_TIOW_sm_krak_grenade_mag{
 				name = "TIOW_sm_krak_grenade_mag";
-				count = 32;
+				count = 8;
 			};
 			class xx_TIOW_sm_smoke_grenade_mag{
 				name = "TIOW_sm_smoke_grenade_mag";
-				count = 32;
-			};
-			class xx_SmokeShellBlue{
-				name = "SmokeShellBlue";
-				count = 16;
-			};
-			class xx_SmokeShellGreen{
-				name = "SmokeShellGreen";
-				count = 16;
-			};
-			class xx_SmokeShellOrange{
-				name = "SmokeShellOrange";
-				count = 16;
+				count = 8;
 			};
 			class xx_SmokeShellPurple{
 				name = "SmokeShellPurple";
-				count = 16;
+				count = 20;
 			};
-			class xx_SmokeShellRed{
-				name = "SmokeShellRed";
-				count = 16;
+			class xx_ACE_elasticBandage{
+				name = "ACE_elasticBandage";
+				count = 100;
 			};
-			class xx_SmokeShellYellow{
-				name = "SmokeShellYellow";
-				count = 16;
+			class xx_ACE_bloodIV_500{
+				name = "ACE_bloodIV_500";
+				count = 40;
+			};
+			class xx_ACE_bloodIV{
+				name = "ACE_bloodIV";
+				count = 20;
+			};
+			class xx_WBK_NarthBlood{
+				name = "WBK_NarthBlood";
+				count = 9;
+			};
+			class xx_ACE_adenosine{
+				name = "ACE_adenosine";
+				count = 20;
+			};
+			class xx_ACE_morphine{
+				name = "ACE_morphine";
+				count = 20;
+			};
+			class xx_ACE_epinephrine{
+				name = "ACE_epinephrine";
+				count = 20;
+			};
+			class xx_ACE_splint{
+				name = "ACE_splint";
+				count = 40;
+			};
+			class xx_ACE_tourniquet{
+				name = "ACE_tourniquet";
+				count = 40;
+			};
+			class xx_SR_AdrenalStims{
+				name = "SR_AdrenalStims";
+				count = 40;
+			};
+			class xx_SR_TraumaClearer{
+				name = "SR_Item_TraumaClearer";
+				count = 40;
 			};
 		};
 	};
