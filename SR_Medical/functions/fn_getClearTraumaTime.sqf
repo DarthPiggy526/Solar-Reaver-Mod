@@ -13,4 +13,4 @@
 
 params ["_medic", "_patient"];
 
-({((_x select 0) == 20) or ((_x select 0) == 21) or ((_x select 0) == 22)} count (_patient getVariable "ace_medical_OpenWounds")) * 5;
+({((_x select 0) == 20) or ((_x select 0) == 21) or ((_x select 0) == 22)} count (_patient getVariable "ace_medical_OpenWounds")) * 2.5;
