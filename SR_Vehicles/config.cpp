@@ -43,6 +43,490 @@ class CfgPatches
 		};
 	};
 };
+// Regular joe cargoing and driving
+class CfgMovesBasic
+{
+	class DefaultDie;
+	class FFV_BaseActions;
+	class ManActions
+	{
+		TIOW_SM_RhinoDriver1="TIOW_SM_RhinoDriver1";
+		TIOW_SM_RhinoDriver1Dead="TIOW_SM_RhinoDriver1Dead";
+		TIOW_SM_RhinoGunner1="TIOW_SM_RhinoGunner1";
+		TIOW_SM_RhinoGunner1Dead="TIOW_SM_RhinoGunner1Dead";
+		TIOW_SM_RhinoPintleGunner_Turnout="TIOW_SM_RhinoPintleGunner_Turnout";
+		TIOW_SM_RhinoPintleGunner_Turnout_Dead="TIOW_SM_RhinoPintleGunner_Turnout_Dead";
+		TIOW_SM_RhinoCargo1="TIOW_SM_RhinoCargo1";
+		TIOW_SM_RhinoCargo1Dead="TIOW_SM_RhinoCargo1Dead";
+		TIOW_SM_RhinoCargo2="TIOW_SM_RhinoCargo2";
+		TIOW_SM_RhinoCargo2Dead="TIOW_SM_RhinoCargo2Dead";
+		TIOW_SM_RhinoCargo3="TIOW_SM_RhinoCargo3";
+		TIOW_SM_RhinoCargo3Dead="TIOW_SM_RhinoCargo3Dead";
+		TIOW_SM_RhinoCargo4="TIOW_SM_RhinoCargo4";
+		TIOW_SM_RhinoCargo4Dead="TIOW_SM_RhinoCargo4Dead";
+		TIOW_SM_RhinoCargo5="TIOW_SM_RhinoCargo5";
+		TIOW_SM_RhinoCargo5Dead="TIOW_SM_RhinoCargo5Dead";
+		TIOW_SM_RhinoCargo6="TIOW_SM_RhinoCargo6";
+		TIOW_SM_RhinoCargo6Dead="TIOW_SM_RhinoCargo6Dead";
+		TIOW_SM_RhinoCargo7="TIOW_SM_RhinoCargo7";
+		TIOW_SM_RhinoCargo7Dead="TIOW_SM_RhinoCargo7Dead";
+		TIOW_SM_RhinoCargo8="TIOW_SM_RhinoCargo8";
+		TIOW_SM_RhinoCargo8Dead="TIOW_SM_RhinoCargo8Dead";
+		TIOW_SM_RhinoCargo9="TIOW_SM_RhinoCargo9";
+		TIOW_SM_RhinoCargo9Dead="TIOW_SM_RhinoCargo9Dead";
+		TIOW_SM_RhinoCargo10="TIOW_SM_RhinoCargo10";
+		TIOW_SM_RhinoCargo10Dead="TIOW_SM_RhinoCargo10Dead";
+		
+		Steve_SM_AssGargo1="Steve_SM_AssGargo1";
+	};
+};
+class CfgMovesMaleSdr: CfgMovesBasic
+{
+	skeletonName="OFP2_ManSkeleton";
+	gestures="CfgGesturesMale";
+	class vehicle_turnout_1_Aim;
+	class cargo_base;
+	class AmovPercMstpSlowWrflDnon;
+	class cargo_basebinoc;
+	class States
+	{
+		class Crew;
+		class TIOW_SM_RhinoDriver1: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoDriver1.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoDriver1Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoDriver1Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoDriver1Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoDriverDead1.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoGunner1: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoGunner1.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoGunner1Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoGunner1Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoGunner1Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoGunnerDead1.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoPintleGunner_Turnout: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoPintleGunner_Turnout.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoPintleGunner_Turnout_Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoPintleGunner_Turnout_Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoPintleGunner_Turnout_Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoPintleGunner_Turnout_Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo1: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo1.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo1Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo1Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo1Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo1Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo2: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo2.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo2Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo2Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo2Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo2Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo3: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo3.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo3Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo3Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo3Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo3Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo4: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo4.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo4Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo4Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo4Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo4Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo5: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo5.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo5Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo5Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo5Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo5Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo6: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo6.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo6Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo6Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo6Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo6Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo7: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo7.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo7Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo7Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo7Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo7Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo8: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo8.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo8Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo8Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo8Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo8Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo9: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo9.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo9Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo9Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo9Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo9Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo10: Crew
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo10.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo10Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo10Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+		class TIOW_SM_RhinoCargo10Dead: DefaultDie
+		{
+			file="\TIOW_SM_Vehs\Anim\TIOW_SM_RhinoCargo10Dead.rtm";
+			actions="DeadActions";
+			leftHandIKCurve[]={0};
+			rightHandIKCurve[]={0};
+			terminal="true";
+			ConnectTo[]=
+			{
+				"Unconscious",
+				1
+			};
+			InterpolateTo[]={};
+			speed=1e+010;
+		};
+		
+		class Steve_SM_AssGargo1: Crew
+		{
+			file="Steve_AssRam\Anim\Steve_Ass_Cargo.rtm";
+			interpolateTo[]=
+			{
+				"TIOW_SM_RhinoCargo1Dead",
+				1
+			};
+			ConnectTo[]=
+			{
+				"TIOW_SM_RhinoCargo1Dead",
+				1
+			};
+			leftHandIKCurve[]={1};
+			rightHandIKCurve[]={1};
+			speed=1e+010;
+		};
+	};
+};
 class CfgVehicles
 {
 	class VTOL_SE_1;
