@@ -27,7 +27,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"SR_Primaris\Textures\WS_PrimArmour.paa",
-			"SR_Firstborn\Textures\SR_Armour1.paa"
+			"SR_Firstborn\Textures\WS_Armour1.paa"
 		};
 	};
 };

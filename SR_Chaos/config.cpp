@@ -48,7 +48,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_WBearers_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		armor = 200;
 		class TransportMagazines{};
@@ -120,7 +120,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_IWarriors_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -190,7 +190,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_Black_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -260,7 +260,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_WEaters_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -330,7 +330,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_EChildren_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -400,7 +400,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_ALegion_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -470,7 +470,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_TSons_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -540,7 +540,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_Mk4Powerpack_NL_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -610,7 +610,7 @@ class B_AssaultPack_Base;
 		model = "\TIOW_Sm\Marine\Model\MK4_Powerpack.p3d";
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_DGuard_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 500;
 		mass = 5;
 		class TransportMagazines{};
 		class TransportItems{};
@@ -671,4 +671,19 @@ class B_AssaultPack_Base;
 		hiddenSelections[] = {"Camo1","Camo2"};
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_DGuard_co.paa"};
 	};
+
+
+class TIOW_MK7Helmet_AL;
+class TIOW_MK4Helmet_AL: TIOW_MK7Helmet_AL
+{
+	optreVarietys[]=
+	{
+		"",
+		"_dp",
+		"_broken"
+	};
+	optreHUDStyle="ODST_1";
+};
+
+
 };
