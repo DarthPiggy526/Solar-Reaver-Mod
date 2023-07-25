@@ -63,7 +63,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_Lamenters: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 HeLAMet (Lamenters)";
+		displayName="[TSR] MK 7 Helamet (Lamenters)";
 		optreVarietys[]=
 		{
 			"",
