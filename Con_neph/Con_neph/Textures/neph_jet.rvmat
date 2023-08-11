@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Textures\neph_jet.rvmat
+//Produced from mikero's Dos Tools Dll version 9.10
+//https://mikero.bytex.digital/Downloads
+//'now' is Mon Aug 07 19:38:32 2023 : 'file' last modified on Fri Aug 12 16:31:57 2022
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+ambient[] = {0.49999994,0.49999994,0.49999994,1};
+diffuse[] = {0.49999994,0.49999994,0.49999994,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {8.4646047e-07,8.4646047e-07,8.4646047e-07,0};
+specular[] = {0.032000016,0.032000016,0.032000016,1};
+specularPower = 100;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "Con_neph\Textures\Neph_Jet_NOHQ.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource = "none";
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage4
+{
+	texture = "Con_neph\Textures\Neph_Jet_AS.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage5
+{
+	texture = "Con_neph\Textures\Neph_Jet_SMDI.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,1};
+		pos[] = {0,0,0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,32,128,1)fresnel(4.47,1.16)";
+	uvSource = "none";
+};
+class Stage7
+{
+	texture = "a3\data_f\env_land_co.paa";
+	uvSource = "none";
+};
