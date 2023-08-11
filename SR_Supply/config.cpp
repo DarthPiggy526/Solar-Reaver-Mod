@@ -9,7 +9,8 @@ class CfgPatches
 		requiredVersion = 0.002;
 		requiredAddons[] = 
 		{
-			"SR_Core";
+			"SR_Core",
+			"ace_arsenal";
 		};
 		weapons[] = {};
 		magazines[] = {};
@@ -336,10 +337,27 @@ class CfgVehicles{
 
 
 
-
-
-class NATO_Box_Base;
-class OPTRE_Ammo_Rack_Weapons;
+	class land_tiow_weapons_rack_noanimate;
+	class SR_Limited_Arsenal: land_tiow_weapons_rack_noanimate
+	{
+		displayName = "[TSR] Limited Arsenal";
+		editorCategory = "EdCat_Supplies";
+		editorSubcategory = "SR_EdSubcat_Supply";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		armor = 10000;
+		class EventHandlers
+		{
+			class limited_arsenal_init
+			{
+				postInit = "(_this select 0) execVM 'SR_Supply\functions\fn_limited_arsenal_init.sqf'";
+			};
+		};
+	};
+	
+	class NATO_Box_Base;
+	class OPTRE_Ammo_Rack_Weapons;
 	class SR_SupplyPod_Empty: NATO_Box_Base
 	{
 		displayName = "[TSR] Empty Resupply";

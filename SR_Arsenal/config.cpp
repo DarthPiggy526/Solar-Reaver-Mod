@@ -75,6 +75,7 @@ class CfgSoundSets
 			"EC_BolterDeep_midShot_SoundShader",
 			"EC_BolterDeep_distShot_SoundShader"
 		};
+		volumeFactor = 1;
 	};
 	class EC_BolterDeep_Tail_SoundSet: Rifle_Tail_Base_SoundSet
 	{
@@ -85,6 +86,7 @@ class CfgSoundSets
 			"EC_BolterDeep_tailMeadows_SoundShader",
 			"EC_BolterDeep_tailHouses_SoundShader"
 		};
+		volumeFactor = 0.6;
 	};
 	class EC_BolterDeep_InteriorTail_SoundSet: Rifle_InteriorTail_Base_SoundSet
 	{
@@ -92,6 +94,7 @@ class CfgSoundSets
 		{
 			"EC_BolterDeep_tailInterior_SoundShader"
 		};
+		volumeFactor = 0.6;
 	};
 	class EC_BolterDeep_silencerShot_SoundSet: Rifle_silencerShot_Base_SoundSet
 	{
@@ -100,6 +103,7 @@ class CfgSoundSets
 			"EC_BolterDeep_Closure_SoundShader",
 			"EC_BolterDeep_silencerShot_SoundShader"
 		};
+		volumeFactor = 0.6;
 	};
 	class EC_BolterDeep_silencerTail_SoundSet: Rifle_silencerTail_Base_SoundSet
 	{
@@ -110,6 +114,7 @@ class CfgSoundSets
 			"EC_BolterDeep_silencerTailMeadows_SoundShader",
 			"EC_BolterDeep_silencerTailHouses_SoundShader"
 		};
+		volumeFactor = 0.4;
 	};
 	class EC_BolterDeep_silencerInteriorTail_SoundSet: Rifle_silencerInteriorTail_Base_SoundSet
 	{
@@ -117,6 +122,7 @@ class CfgSoundSets
 		{
 			"EC_BolterDeep_silencerTailInterior_SoundShader"
 		};
+		volumeFactor = 0.4;
 	};
 	
 

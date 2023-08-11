@@ -20,6 +20,7 @@ class CfgVehicles
 		{
 			"SR_FirstBorn\Textures\BlackShield_PowerPack.paa"
 		};
+		maximumLoad = 500;
 	};
 
 	class TIOW_MK4Powerpack_SR_BS : TIOW_MK4Powerpack_WS
@@ -31,6 +32,7 @@ class CfgVehicles
 		{
 			"SR_FirstBorn\Textures\BlackShield_PowerPack.paa"
 		};
+		maximumLoad = 500;
 	};
 
 	class TIOW_MK5Powerpack_SR_BS : TIOW_MK5Powerpack_WS
@@ -42,6 +44,7 @@ class CfgVehicles
 		{
 			"SR_FirstBorn\Textures\BlackShield_PowerPack.paa"
 		};
+		maximumLoad = 500;
 	};
 	class Steve_Recon_Pp_Blue1_1;
 	class Steve_Recon_Pp_TSR_1: Steve_Recon_Pp_Blue1_1
@@ -55,7 +58,71 @@ class CfgVehicles
 		{
 			"\SR_FirstBorn\Textures\TSR_Recon_Powerpack.paa"
 		};
+		maximumLoad = 640;
 	};
+
+	//			# Devastator Backpacks #
+	class Dos_HB_PP_BL_1;
+	class Dos_LC_PP_BL_1;
+	class Dos_HB_PP_UM_1;
+	class Dos_LC_PP_UM_1;
+	class Dos_HB_PP_GR_1;
+	class Dos_LC_PP_GR_1;
+	class Dos_HB_PP_RD_1;
+	class Dos_LC_PP_RD_1;
+	class Dos_HB_PP_YL_1;
+	class Dos_LC_PP_YL_1;	
+	
+	class Dos_HB_PP_BL_1_SR : Dos_HB_PP_BL_1
+	{
+		displayName="[TSR] Black Devastator Powerpack (HB)";
+		maximumLoad = 920;
+	}
+	class Dos_LC_PP_BL_1_SR : Dos_LC_PP_BL_1
+	{
+		displayName="[TSR] Black Devastator Powerpack (LC)";
+		maximumLoad = 920;
+	}
+	class Dos_HB_PP_UM_1_SR : Dos_HB_PP_UM_1
+	{
+		displayName="[TSR] Blue Devastator Powerpack (HB)";
+		maximumLoad = 920;
+	}
+	class Dos_LC_PP_UM_1_SR : Dos_LC_PP_UM_1
+	{
+		displayName="[TSR] Blue Devastator Powerpack (LC)";
+		maximumLoad = 920;
+	}
+	class Dos_HB_PP_GR_1_SR : Dos_HB_PP_GR_1
+	{
+		displayName="[TSR] Green Devastator Powerpack (HB)";
+		maximumLoad = 920;
+	}
+	class Dos_LC_PP_GR_1_SR : Dos_LC_PP_GR_1
+	{
+		displayName="[TSR] Green Devastator Powerpack (LC)";
+		maximumLoad = 920;
+	}
+	class Dos_HB_PP_RD_1_SR : Dos_HB_PP_RD_1
+	{
+		displayName="[TSR] Red Devastator Powerpack (HB)";
+		maximumLoad = 920;
+	}
+	class Dos_LC_PP_RD_1_SR : Dos_LC_PP_RD_1
+	{
+		displayName="[TSR] Red Devastator Powerpack (LC)";
+		maximumLoad = 920;
+	}
+	class Dos_HB_PP_YL_1_SR : Dos_HB_PP_YL_1
+	{
+		displayName="[TSR] Yellow Devastator Powerpack (HB)";
+		maximumLoad = 920;
+	}
+	class Dos_LC_PP_YL_1_SR : Dos_LC_PP_YL_1
+	{
+		displayName="[TSR] Yellow Devastator Powerpack (LC)";
+		maximumLoad = 920;
+	}
 
 	//
 	// # Tactical Marines #
