@@ -25,7 +25,11 @@ class CfgPatches
 			"SR_SupplyPod_Tactical",
 			"SR_SupplyPod_Devastator",
 			"SR_SupplyPod_Assault",
-			"SR_SupplyPod_Medical"
+			"SR_SupplyPod_Medical",
+            "SR_ATMine",
+            "SR_UBERMine",
+            "SR_Zeus_ATMine",
+            "SR_Zeus_UBERMine"
 		};
 	};
 };
@@ -238,7 +242,6 @@ class Extended_InitPost_EventHandlers {
 };
 
 class CfgVehicles{
-
 
 
 
@@ -493,7 +496,6 @@ class CfgVehicles{
 		};
 	};
 
-
 	class SR_SupplyPod_Marauder: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Marauder Resupply";
@@ -618,9 +620,6 @@ class CfgVehicles{
 			};
 		};
 	};
-
-
-
 
 	class SR_SupplyPod_Tactical: SR_SupplyPod_Empty
 	{
@@ -932,20 +931,6 @@ class CfgVehicles{
 		};
 	};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	class SR_SupplyPod_Breacher: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Breacher Resupply";
@@ -1041,27 +1026,6 @@ class CfgVehicles{
 		};
 	};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	class SR_SupplyPod_Assault: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Assault Resupply";
@@ -1152,12 +1116,6 @@ class CfgVehicles{
 		};
 	};
 
-
-
-
-
-
-
 	class SR_SupplyPod_Medical: SR_SupplyPod_Empty
 	{
 		displayName = "[TSR] Medical Resupply";
@@ -1242,4 +1200,46 @@ class CfgVehicles{
 			};
 		};
 	};
+    
+    class ATMine;
+    class SR_ATMine: ATMine {
+        displayName = "[TSR] ATMine";
+        scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        ammo = "SR_ATMine_Range_Ammo";
+    };
+    class SR_UBERMine: ATMine {
+        displayName = "[TSR] UBERMine";
+        scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        ammo = "SR_UBERMine_Range_Ammo";
+    };
+    
+    class ACE_ModuleExplosive_IEDUrbanBig_Range;
+    class SR_Zeus_ATMine: ACE_ModuleExplosive_IEDUrbanBig_Range {
+        displayName  = "[TSR] ATMine";
+        explosive = "SR_ATMine_Range_Ammo"; //Same as ammo of the magazine 
+    };
+    class SR_Zeus_UBERMine: ACE_ModuleExplosive_IEDUrbanBig_Range {
+        displayName  = "[TSR] UBERMine";
+        explosive = "SR_UBERMine_Range_Ammo"; //Same as ammo of the magazine 
+    };
+};
+
+class CfgAmmo {
+    class ATMine_Range_Ammo;
+    class SR_ATMine_Range_Ammo: ATMine_Range_Ammo {
+        hit = 5000;
+        indirectHit = 5000;
+        indirectHitRange = 3;
+        defaultMagazine = "SR_ATMine_Range_Mag";
+    };
+    class SR_UBERMine_Range_Ammo: ATMine_Range_Ammo {
+        hit = 20000;
+        indirectHit = 20000;
+        indirectHitRange = 3;
+        defaultMagazine = "SR_UBERMine_Range_Mag";
+    };
 };
