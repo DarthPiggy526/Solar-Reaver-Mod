@@ -22,6 +22,7 @@
 if (not(isDedicated)) then {
 	SR_Arsenal_Ragefire_Take_Handler = -1;
 	SR_Arsenal_Ragefire_Clock = 0;
+    execVM "SR_Arsenal\functions\fn_ragefire_burst_cd.sqf";
 	player addEventHandler ["Take", {
 		// params ["_unit", "_container", "_item"];
 		

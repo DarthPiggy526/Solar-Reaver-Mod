@@ -33,8 +33,17 @@ class CfgPatches
 			"SR_Lascut",
 			"SR_LasFusil",
 			"SR_Ragefire_PlasmaGun_1",
-			"SR_Ryza_Plasma_Gun",
+            "SR_Relic_Plasma_Gun_1",
+            "SR_Relic_Plasma_Gun_2",
+            "SR_Relic_Plasma_Gun_3",
+            "SR_Relic_Plasma_Gun_4",
+            "SR_Relic_Plasma_Gun_5",
+			"SR_Ryza_Plasma_Gun_01",
+			"SR_Ryza_Plasma_Gun_02",
+			"SR_Ryza_Plasma_Gun_03",
+			"SR_Ryza_Plasma_Gun_04",
 			"SR_Ryza_Plasma_Pistol",
+            "SR_Ryza_Plasma_Pistol_Banner",
 			"SR_Combi_Bolter_1",
 			"SR_Combi_Bolter_2",
 			"SR_Combi_Bolter_3"
@@ -598,8 +607,17 @@ class Burst;
 class FullAuto;
 class TIOW_GodwynBoltgun_1;
 class TIOW_SM_Ragefire_PlasmaGun;
+class Dos_Reli_Plas_1;
+class Dos_Reli_Plas_2;
+class Dos_Reli_Plas_3;
+class Dos_Reli_Plas_4;
+class Dos_Reli_Plas_5;
 class Steve_Ryza_Plasma_01;
+class Steve_Ryza_Plasma_02;
+class Steve_Ryza_Plasma_03;
+class Steve_Ryza_Plasma_04;
 class Steve_Ryza_Pistol;
+class Steve_Ryza_Pistol_Banner;
 class TIOW_SM_Combi_Bolter_1;
 class TIOW_SM_Combi_Bolter_2;
 class TIOW_SM_Combi_Bolter_3;
@@ -2100,7 +2118,7 @@ class CfgWeapons
 		aiDispersionCoefY = 3;
 		aiDispersionCoefX = 2;
 	};
-	class SR_Ragefire_Plasma_Gun : TIOW_SM_Ragefire_PlasmaGun
+	class SR_Ragefire_Plasma_Gun: TIOW_SM_Ragefire_PlasmaGun
 	{
 		displayName = "[TSR] Ragefire Plasma Gun";
 		baseWeapon = "SR_Ragefire_Plasma_Gun";
@@ -2257,10 +2275,1266 @@ class CfgWeapons
 			};
 		};
 	};
-	class SR_Ryza_Plasma_Gun : Steve_Ryza_Plasma_01
+    class SR_Relic_Plasma_Gun_1: Dos_Reli_Plas_1
 	{
-		displayName = "[TSR] Ryza Thunderbolt Plasmagun";
-		baseWeapon = "SR_Ryza_Plasma_Gun";
+		displayName = "[TSR] Relic Plasmagun (Purple)";
+		baseWeapon = "SR_Relic_Plasma_Gun_1";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Relic_Plasma_Gun_2: Dos_Reli_Plas_2
+	{
+		displayName = "[TSR] Relic Plasmagun (Orange)";
+		baseWeapon = "SR_Relic_Plasma_Gun_2";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Relic_Plasma_Gun_3: Dos_Reli_Plas_3
+	{
+		displayName = "[TSR] Relic Plasmagun (Blue)";
+		baseWeapon = "SR_Relic_Plasma_Gun_3";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Relic_Plasma_Gun_4: Dos_Reli_Plas_4
+	{
+		displayName = "[TSR] Relic Plasmagun (Green)";
+		baseWeapon = "SR_Relic_Plasma_Gun_4";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Relic_Plasma_Gun_5: Dos_Reli_Plas_5
+	{
+		displayName = "[TSR] Relic Plasmagun (Red)";
+		baseWeapon = "SR_Relic_Plasma_Gun_5";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+	class SR_Ryza_Plasma_Gun_01 : Steve_Ryza_Plasma_01
+	{
+		displayName = "[TSR] Ryza Thunderbolt Plasmagun (Black)";
+		baseWeapon = "SR_Ryza_Plasma_Gun_01";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Ryza_Plasma_Gun_02 : Steve_Ryza_Plasma_02
+	{
+		displayName = "[TSR] Ryza Thunderbolt Plasmagun (Red)";
+		baseWeapon = "SR_Ryza_Plasma_Gun_02";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Ryza_Plasma_Gun_03 : Steve_Ryza_Plasma_03
+	{
+		displayName = "[TSR] Ryza Thunderbolt Plasmagun (White)";
+		baseWeapon = "SR_Ryza_Plasma_Gun_03";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"TIOW_SM_Plasmagun_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Ryza_Plasma_Gun_04 : Steve_Ryza_Plasma_04
+	{
+		displayName = "[TSR] Ryza Thunderbolt Plasmagun (Stripes)";
+		baseWeapon = "SR_Ryza_Plasma_Gun_04";
 		plasmaCoolingMult = 1;
 		magazines[]=
 		{
@@ -2416,8 +3690,165 @@ class CfgWeapons
 	};
 	class SR_Ryza_Plasma_Pistol : Steve_Ryza_Pistol
 	{
-		displayName = "[TSR] Ryza Plasma Pistol (Banner/Shield)";
+		displayName = "[TSR] Ryza Plasma Pistol (Shield)";
 		baseWeapon = "SR_Ryza_Plasma_Pistol";
+		plasmaCoolingMult = 1;
+		magazines[]=
+		{
+			"Steve_SM_PlasmaPistol_Mag"
+		};
+		modes[]=
+		{
+			"Single",
+			"Overcharge",
+			"single_medium_optics1",
+			"single_far_optics2"
+		};
+		class Overcharge: Mode_SemiAuto
+		{
+			reloadTime=2;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			textureType="fastAuto";
+			dispersion=0.00034999999;
+			minRange=2;
+			minRangeProbab=0.5;
+			midRange=200;
+			midRangeProbab=0.69999999;
+			maxRange=400;
+			maxRangeProbab=0.30000001;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"Plasmagun_Shot_SoundSet",
+					"Plasmagun_Tail_SoundSet",
+					"Plasmagun_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"SR_Arsenal\sound\Overcharge.wss",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							2.2387199,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"SR_Arsenal\sound\Overcharge.wss",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
+	};
+    class SR_Ryza_Plasma_Pistol_Banner : Steve_Ryza_Pistol_Banner
+	{
+		displayName = "[TSR] Ryza Plasma Pistol (Banner)";
+		baseWeapon = "SR_Ryza_Plasma_Pistol_Banner";
 		plasmaCoolingMult = 1;
 		magazines[]=
 		{
@@ -2642,7 +4073,7 @@ class CfgWeapons
 		displayName = "[TSR] Tigrus Pattern Combi-Plasma";
 		baseWeapon = "SR_Tig_Combi_Bolter";
 		plasmaCoolingMult = 0.8;
-		class Steve_30k_Under_Plasma: SR_Ryza_Plasma_Gun
+		class Steve_30k_Under_Plasma: SR_Ryza_Plasma_Gun_01
 		{
 			displayName="Combi-Plasma";
 			scope=1;
