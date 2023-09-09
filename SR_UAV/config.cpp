@@ -7,8 +7,22 @@ class CfgPatches {
 			"AmbientLife" // Skull Probe Addon
 		};
 		requiredversion = 1.0;
-		units[] = {"SR_B_UAV_AR2i","SR_O_UAV_AR2i","SR_I_UAV_AR2i"};
-		weapons[] = {"SR_B_AR2i_Packed","SR_O_AR2i_Packed","SR_I_AR2i_Packed"};
+		units[] = {
+            "SR_B_UAV_AR2i",
+            "SR_O_UAV_AR2i",
+            "SR_I_UAV_AR2i", 
+            "SR_B_Tarantula_Sentry", 
+            "SR_O_Tarantula_Sentry", 
+            "SR_I_Tarantula_Sentry"
+        };
+		weapons[] = {
+            "SR_B_AR2i_Packed",
+            "SR_O_AR2i_Packed",
+            "SR_I_AR2i_Packed", 
+            "SR_B_Tarantula_Sentry_Packed",
+            "SR_O_Tarantula_Sentry_Packed",
+            "SR_I_Tarantula_Sentry_Packed",
+        };
 		magazines[] = {};
 	};
 };

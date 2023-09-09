@@ -10,6 +10,7 @@ class CfgVehicles {
             exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
             showDisabled = 0;
             priority = 0;
+            // Skull Probes
             class SR_Unpack_AR2i_B {
               displayName = "Skull Probe [NATO]";
               condition = "'SR_B_AR2i_Packed' in (items _player)";
@@ -29,10 +30,41 @@ class CfgVehicles {
               condition = "'SR_I_AR2i_Packed' in (items _player)";
               statement = "['SR_I_AR2i_Packed',_player] call SR_UAV_fnc_unPack";
             };
+            
+            // Tarantula Turrets
+            class SR_Unpack_Tarantula_B {
+              displayName = "Tarantula Turret [NATO]";
+              condition = "'SR_B_Tarantula_Sentry_Packed' in (items _player)";
+              statement = "['SR_B_Tarantula_Sentry_Packed',_player] call SR_UAV_fnc_unPack";
+			  priority = 1;
+              showDisabled = 1;
+              exceptions[] = {"isNotInside","isNotSitting"};
+              enableInside = 0;
+            };
+            class SR_Unpack_Tarantula_O {
+              displayName = "Tarantula Turret [CSAT]";
+              condition = "'SR_O_Tarantula_Sentry_Packed' in (items _player)";
+              statement = "['SR_O_Tarantula_Sentry_Packed',_player] call SR_UAV_fnc_unPack";
+			  priority = 1;
+              showDisabled = 1;
+              exceptions[] = {"isNotInside","isNotSitting"};
+              enableInside = 0;
+            };
+            class SR_Unpack_Tarantula_I {
+              displayName = "Tarantula Turret [AAF]";
+              condition = "'SR_I_Tarantula_Sentry_Packed' in (items _player)";
+              statement = "['SR_I_Tarantula_Sentry_Packed',_player] call SR_UAV_fnc_unPack";
+			  priority = 1;
+              showDisabled = 1;
+              exceptions[] = {"isNotInside","isNotSitting"};
+              enableInside = 0;
+            };
           };
         };
       };
     };
+    
+    // Skull Probes
     class Air;
     class Helicopter: Air {
         class ACE_Actions {
@@ -69,7 +101,7 @@ class CfgVehicles {
     };
 	class SR_B_UAV_AR2i: SR_UAV_AR2i_base {
 		author = "Toadball";
-		displayName = "Skull Probe";
+		displayName = "Skull Probe [NATO]";
 		itc_land_PacksTo = "SR_B_AR2i_Packed";
 		class SimpleObject {
 			eden = 1;
@@ -108,7 +140,7 @@ class CfgVehicles {
 	};
 	class SR_O_UAV_AR2i: SR_UAV_AR2i_base {
 		author = "Toadball";
-		displayName = "Skull Probe";
+		displayName = "Skull Probe [CSAT]";
 		itc_land_PacksTo = "SR_O_AR2i_Packed";
 		class SimpleObject {
 			eden = 1;
@@ -147,7 +179,7 @@ class CfgVehicles {
 	};
 	class SR_I_UAV_AR2i: SR_UAV_AR2i_base {
 		author = "Toadball";
-		displayName = "Skull Probe";
+		displayName = "Skull Probe [AFF]";
 		itc_land_PacksTo = "SR_I_AR2i_Packed";
 		class SimpleObject {
 			eden = 1;
@@ -184,4 +216,99 @@ class CfgVehicles {
 		};
 
 	};
+    
+    
+    
+    // Tarantula Turrets
+    class TarantulaSentry;
+    class SR_B_Tarantula_Sentry: TarantulaSentry {
+        author = "Waagheur";
+		displayName = "Tarantula Turret [NATO]";
+		itc_land_PacksTo = "SR_B_Tarantula_Sentry_Packed";
+        
+        scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "BLU_F";
+		crew = "B_UAV_AI";
+		typicalCargo[] = {"B_UAV_AI"};
+		accuracy = 0.5;
+		class assembleInfo {
+			primary = 1;
+			base = "";
+			assembleTo = "";
+			displayName = "";
+			dissasembleTo[] = {};
+		};
+		// class ACE_Actions: ACE_Actions {
+			// class ACE_MainActions: ACE_MainActions {
+				// class ITC_Land_PackDarter {
+					// displayName = "Repack UAV";
+					// condition = "((alive _target) && ( ACE_Player distance _target ) < 5) && ( count (( UAVControl _target) select 1 ) < 1 )";
+					// statement = "[_target,_player] call SR_UAV_fnc_Pack";
+				// };
+
+			// };
+		// };
+    };
+    class SR_O_Tarantula_Sentry: TarantulaSentry {
+        author = "Waagheur";
+		displayName = "Tarantula Turret [CSAT]";
+		itc_land_PacksTo = "SR_O_Tarantula_Sentry_Packed";
+        
+        scope = 2;
+		scopeCurator = 2;
+		side = 0;
+		faction = "OPF_F";
+		crew = "O_UAV_AI";
+		typicalCargo[] = {"O_UAV_AI"};
+		accuracy = 0.5;
+		class assembleInfo {
+			primary = 1;
+			base = "";
+			assembleTo = "";
+			displayName = "";
+			dissasembleTo[] = {};
+		};
+		// class ACE_Actions: ACE_Actions {
+			// class ACE_MainActions: ACE_MainActions {
+				// class ITC_Land_PackDarter {
+					// displayName = "Repack UAV";
+					// condition = "((alive _target) && ( ACE_Player distance _target ) < 5) && ( count (( UAVControl _target) select 1 ) < 1 )";
+					// statement = "[_target,_player] call SR_UAV_fnc_Pack";
+				// };
+
+			// };
+		// };
+    };
+    class SR_I_Tarantula_Sentry: TarantulaSentry {
+        author = "Waagheur";
+		displayName = "Tarantula Turret [AAF]";
+		itc_land_PacksTo = "SR_I_Tarantula_Sentry_Packed";
+        
+        scope = 2;
+		scopeCurator = 2;
+		side = 2;
+		faction = "IND_F";
+		crew = "I_UAV_AI";
+		typicalCargo[] = {"I_UAV_AI"};
+		accuracy = 0.5;
+		class assembleInfo {
+			primary = 1;
+			base = "";
+			assembleTo = "";
+			displayName = "";
+			dissasembleTo[] = {};
+		};
+		// class ACE_Actions: ACE_Actions {
+			// class ACE_MainActions: ACE_MainActions {
+				// class ITC_Land_PackDarter {
+					// displayName = "Repack UAV";
+					// condition = "((alive _target) && ( ACE_Player distance _target ) < 5) && ( count (( UAVControl _target) select 1 ) < 1 )";
+					// statement = "[_target,_player] call SR_UAV_fnc_Pack";
+				// };
+
+			// };
+		// };
+    };
 };

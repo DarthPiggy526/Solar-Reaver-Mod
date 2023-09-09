@@ -18,3 +18,12 @@
     //Restore sight display
     [_sightEvent, []] call CBA_fnc_localEvent;
 }, true] call CBA_fnc_addPlayerEventHandler;
+
+
+// Adds actions to pack tarantulas.
+_action = ["PackTarantulaB", "Repack Tarantula", "", {[_target,_player] call SR_UAV_fnc_Pack}, {true}] call ace_interact_menu_fnc_createAction;
+["SR_B_Tarantula_Sentry", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+_action = ["PackTarantulaO", "Repack Tarantula", "", {[_target,_player] call SR_UAV_fnc_Pack}, {true}] call ace_interact_menu_fnc_createAction;
+["SR_O_Tarantula_Sentry", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
+_action = ["PackTarantulaI", "Repack Tarantula", "", {[_target,_player] call SR_UAV_fnc_Pack}, {true}] call ace_interact_menu_fnc_createAction;
+["SR_I_Tarantula_Sentry", 0, ["ACE_MainActions"], _action, true] call ace_interact_menu_fnc_addActionToClass;
