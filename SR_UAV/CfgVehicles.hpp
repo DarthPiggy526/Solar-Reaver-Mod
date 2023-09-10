@@ -221,6 +221,8 @@ class CfgVehicles {
     
     // Tarantula Turrets
     class TarantulaSentry;
+    class Turrets;
+    class MainTurret;
     class SR_B_Tarantula_Sentry: TarantulaSentry {
         author = "Waagheur";
 		displayName = "Tarantula Turret [NATO]";
@@ -250,6 +252,16 @@ class CfgVehicles {
 
 			// };
 		// };
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+                weapons[]=
+				{
+					"SR_Low_Range_IG_HeavyBolter"
+				};
+            };
+        };
     };
     class SR_O_Tarantula_Sentry: TarantulaSentry {
         author = "Waagheur";
@@ -280,6 +292,16 @@ class CfgVehicles {
 
 			// };
 		// };
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+                weapons[]=
+				{
+					"SR_Low_Range_IG_HeavyBolter"
+				};
+            };
+        };
     };
     class SR_I_Tarantula_Sentry: TarantulaSentry {
         author = "Waagheur";
@@ -310,5 +332,15 @@ class CfgVehicles {
 
 			// };
 		// };
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+                weapons[]=
+				{
+					"SR_Low_Range_IG_HeavyBolter"
+				};
+            };
+        };
     };
 };
