@@ -672,18 +672,4 @@ class B_AssaultPack_Base;
 		hiddenSelectionsTextures[] = {"TIOW_SM\Marine\Data\Textures\TIOW_SM_Powerpack_DGuard_co.paa"};
 	};
 
-
-class TIOW_MK7Helmet_AL;
-class TIOW_MK4Helmet_AL: TIOW_MK7Helmet_AL
-{
-	optreVarietys[]=
-	{
-		"",
-		"_dp",
-		"_broken"
-	};
-	optreHUDStyle="ODST_1";
-};
-
-
 };

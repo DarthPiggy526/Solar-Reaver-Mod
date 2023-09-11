@@ -34,8 +34,6 @@ class Cfgweapons
 		scopeCurator=2;
 		author="Strixus";
 		displayName="[TSR] Primaris Mk.10 (Blackshield)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=

@@ -60,13 +60,6 @@ class CfgWeapons
 	{
 		author="Strixus";
 		displayName="[TSR] Sevatar";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\NLB_Helmet.paa"

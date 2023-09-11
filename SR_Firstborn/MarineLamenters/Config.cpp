@@ -64,13 +64,6 @@ class CfgWeapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helamet (Lamenters)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\LAM_Helmet.paa"

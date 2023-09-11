@@ -91,49 +91,49 @@ class cfgVehicles{
     	};
 
 
-class O_ScorpiusDisintegrator_base;
-class O_ScorpiusBelleros_base;
-class Archaeopter;
-class ArchaeopterFusilave;
-	class O_ScorpiusDisintegrator_base_O: O_ScorpiusDisintegrator_base
-	{
-        scope = 2;
-		scopeCurator = 2;
-		accuracy = 1000;
-		side = 0;
-		faction = "TSR_AdMech_O";
-		crew = "TIOW_AM_Techpriest_O";
-		typicalCargo[] = {"TIOW_AM_Techpriest_O"};
-	};
-	class O_ScorpiusBelleros_base_O: O_ScorpiusBelleros_base
-	{
-        scope = 2;
-		scopeCurator = 2;
-		accuracy = 0.5;
-		side = 0;
-		faction = "TSR_AdMech_O";
-		crew = "TIOW_AM_Techpriest_O";
-		typicalCargo[] = {"TIOW_AM_Techpriest_O"};
-	};
-	class Archaeopter_O: Archaeopter
-	{
-        scope = 2;
-		scopeCurator = 2;
-		accuracy = 0.5;
-		side = 0;
-		faction = "TSR_AdMech_O";
-		crew = "TIOW_AM_Techpriest_O";
-	};
-	class ArchaeopterFusilave_O: ArchaeopterFusilave
-	{
-        scope = 2;
-		scopeCurator = 2;
-		accuracy = 0.5;
-		side = 0;
-		faction = "TSR_AdMech_O";
-		crew = "TIOW_AM_Techpriest_O";
-	};
-};
+//class O_ScorpiusDisintegrator_base;
+//class O_ScorpiusBelleros_base;
+//class Archaeopter;
+//class ArchaeopterFusilave;
+//	class O_ScorpiusDisintegrator_base_O: O_ScorpiusDisintegrator_base
+//	{
+//        scope = 2;
+//		scopeCurator = 2;
+//		accuracy = 1000;
+//		side = 0;
+//		faction = "TSR_AdMech_O";
+//		crew = "TIOW_AM_Techpriest_O";
+//		typicalCargo[] = {"TIOW_AM_Techpriest_O"};
+//	};
+//	class O_ScorpiusBelleros_base_O: O_ScorpiusBelleros_base
+//	{
+//        scope = 2;
+//		scopeCurator = 2;
+//		accuracy = 0.5;
+//		side = 0;
+//		faction = "TSR_AdMech_O";
+//		crew = "TIOW_AM_Techpriest_O";
+//		typicalCargo[] = {"TIOW_AM_Techpriest_O"};
+//	};
+//	class Archaeopter_O: Archaeopter
+//	{
+//        scope = 2;
+//		scopeCurator = 2;
+//		accuracy = 0.5;
+//		side = 0;
+//		faction = "TSR_AdMech_O";
+//		crew = "TIOW_AM_Techpriest_O";
+//	};
+//	class ArchaeopterFusilave_O: ArchaeopterFusilave
+//	{
+//        scope = 2;
+//		scopeCurator = 2;
+//		accuracy = 0.5;
+//		side = 0;
+//		faction = "TSR_AdMech_O";
+//		crew = "TIOW_AM_Techpriest_O";
+//	};
+//};
 
 
 

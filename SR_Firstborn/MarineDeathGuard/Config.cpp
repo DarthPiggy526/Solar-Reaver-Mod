@@ -60,13 +60,6 @@ class CfgWeapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Death Guard)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\DG_Helmet.paa"

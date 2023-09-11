@@ -22,8 +22,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK2 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -33,8 +32,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK3 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Specialists\Textures\SR_Helmet_Apoth.paa",
@@ -44,8 +42,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK4 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -55,8 +52,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK5 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -66,8 +62,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK6 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -77,8 +72,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK7K Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -88,8 +82,7 @@ class Cfgweapons
 	  {
 		author="Strixus";
 		displayName = "[TSR] MK7 Helmet (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Specialists\Textures\SR_Helmet_Apoth.paa"
@@ -100,8 +93,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK2 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -111,8 +103,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK3 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -122,8 +113,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK4 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -133,8 +123,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK5 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -144,8 +133,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK6 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -155,8 +143,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK7K Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -166,8 +153,7 @@ class Cfgweapons
 	  {
 		author="Strixus";
 		displayName = "[TSR] MK7 Helmet (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Specialists\Textures\SR_Helmet_Tech.paa"
@@ -178,8 +164,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK2 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -189,8 +174,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK3 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	  {
 	    "SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -200,8 +184,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK4 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -211,8 +194,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK5 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -222,8 +204,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK6 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		{
 			"SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -233,8 +214,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName = "[TSR] MK7K Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 	    {
 	      "SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -244,8 +224,7 @@ class Cfgweapons
 	  {
 		author="Strixus";
 		displayName = "[TSR] MK7 Helmet (Recon)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		hiddenSelectionsTextures[] =
 		   {
 		     "SR_Specialists\Textures\SR_Helmet_Recon.paa"
@@ -259,8 +238,7 @@ class Cfgweapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="[TSR] Primaris Mk.10 (Techmarine)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=
@@ -306,8 +284,7 @@ class Cfgweapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="[TSR] Primaris Mk.10 (Apothecary)";
-		optreVarietys[] = {"","_dp","_broken"};
-		optreHUDStyle = "ODST_1";
+
 		picture="\TIOW_SM\Icon\MK4Helmet_ca.paa";
 		model="Project_Primaris_D_Main\Models\Helmet_Main.p3d";
 		hiddenSelections[]=

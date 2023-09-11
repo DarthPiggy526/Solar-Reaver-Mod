@@ -60,13 +60,6 @@ class CfgWeapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Raven Guard)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\RG_Helmet.paa"

@@ -155,8 +155,6 @@ class Cfgweapons
 		// scopeArsenal=2;
 		// scopeCurator=2;
 		// displayName="[TSR] Invisible helmet (TSR)";
-		// optreVarietys[] = {"","_dp","_broken"};
-		// optreHUDStyle = "ODST_1";
 		// picture="\TIOW_SM\Icon\MK7Helmet_ca.paa";
 		// model="\A3\Weapons_f\dummyweapon.p3d";
 		// class ItemInfo: HeadgearItem
@@ -205,13 +203,6 @@ class Cfgweapons
 		scopeArsenal=2;
 		scopeCurator=2;
 		displayName="[TSR] Chaplain Helmet (TSR)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
 		picture="\TIOW_SM\Icon\MK7Helmet_ca.paa";
 		model="\TIOW_SM\Marine\Model\TIOW_Skull_Helmet.p3d";
 		hiddenSelections[]=
@@ -249,13 +240,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -265,13 +250,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -281,13 +260,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -297,13 +270,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -313,13 +280,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -329,13 +290,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -345,13 +300,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Black)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
@@ -361,13 +310,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -377,13 +320,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -393,13 +330,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -409,13 +340,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -425,13 +350,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -441,13 +360,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -457,13 +370,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Blackshield Reaver)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
@@ -473,13 +380,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -489,13 +390,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -505,13 +400,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -521,13 +410,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -537,13 +420,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -553,13 +430,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -569,13 +440,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Blackshield LT)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
@@ -585,13 +450,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -601,13 +460,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -617,13 +470,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -633,13 +480,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -649,13 +490,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -665,13 +500,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -681,13 +510,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Blackshield Ser)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
@@ -697,13 +520,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -713,13 +530,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -729,13 +540,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -745,13 +550,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -761,13 +560,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -777,13 +570,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -793,13 +580,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Blackshield Vet)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Blackshield_Helmet_Vet.paa"
@@ -809,13 +590,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -825,13 +600,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -841,13 +610,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -857,13 +620,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -873,13 +630,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -889,13 +640,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -905,13 +650,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Marauder)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet.paa"
@@ -921,13 +660,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 2 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -937,13 +670,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 3 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -953,13 +680,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 4 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -969,13 +690,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 5 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -985,13 +700,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 6 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -1001,13 +710,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7K Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"
@@ -1017,13 +720,7 @@ class Cfgweapons
 	{
 		author="Strixus";
 		displayName="[TSR] MK 7 Helmet (Marauder Chief)";
-		optreVarietys[]=
-		{
-			"",
-			"_dp",
-			"_broken"
-		};
-		optreHUDStyle="ODST_1";
+
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\Marauder_Helmet_Chief.paa"

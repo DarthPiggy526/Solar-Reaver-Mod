@@ -22,7 +22,7 @@ class CfgVehicles
 	class Primaris_SR_FleshTearers: Primaris_SM_SR_1
 	{
 		author="Hummus, Barbon";
-		displayName="Primaris SW (Mk.10)";
+		displayName="Primaris FT (Mk.10)";
 		uniformClass="Primaris_SM_FleshTearers_W";
 		hiddenSelectionsTextures[]=
 		{
