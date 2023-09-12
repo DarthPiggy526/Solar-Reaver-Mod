@@ -17,11 +17,7 @@ class CfgPatches
             "TIOW_AM_Vanguard_O",
             "TIOW_AM_Vanguard_Plasma_O",
             "TIOW_AM_Vanguard_Rifle_O",
-            "TIOW_AM_Vanguard_Alpha_O",
-            "O_ScorpiusDisintegrator_base_O",
-            "O_ScorpiusBelleros_base_O",
-            "Archaeopter_O",
-            "ArchaeopterFusilave_O"
+            "TIOW_AM_Vanguard_Alpha_O"
 		};
 		weapons[]=
 		{
@@ -89,6 +85,7 @@ class cfgVehicles{
     		side = 0;
     		faction = "TSR_AdMech_O";
     	};
+};
 
 
 //class O_ScorpiusDisintegrator_base;
@@ -299,21 +296,6 @@ class cfgGroups
           };
         };
       };
-      class Motorized
-      {
-        name="Motorized";
-
-      };
-      class Mechanized
-      {
-        name="Mechanized";
-
-      };
-      class Armored
-      {
-        name="Armored";
-
-      };
       class SpecOps
       {
         name="Special Forces";
@@ -378,7 +360,6 @@ class cfgGroups
       class Support
       {
         name="Support Infantry";
-
         class TSR_MOD_O_Plasma_Squad
         {
           name="Plasma Squad";
@@ -450,17 +431,6 @@ class cfgGroups
           };
         };
       };
-      class Airborne
-      {
-        name="Airborne";
-
-      };
-      class Air
-      {
-        name="Air";
-
-      };
     };
   };
 };
-

@@ -39,27 +39,27 @@ class CfgPatches
       "STEVE_30k_MK3_Sgt_EC_I";
       "STEVE_30k_MK3_Tact_EC_I";
       "STEVE_30k_MK3_Tact2_EC_I";
-      "TIOW_SM_Rhino_EC";
-      "TIOW_SM_Vindicator_EC";
-      "TIOW_SM_Predator_EC";
-      "TIOW_EC_Tornado";
-      "TIOW_EC_Typhoon";
-      "TIOW_EC_Storm";
-      "TIOW_SM_Razorback_EC";
-      "TIOW_SM_Razorback_LC_EC";
-      "TIOW_SM_Razorback_AC_EC";
-      "TIOW_SM_Whirlwind_Arty_EC";
-      "TIOW_Bike_EC_1";
-      "TIOW_Bike_EC_2";
-      "TIOW_Bike_EC_3";
-      "TIOW_Bike_EC_4";
-      "VTOL_XI_IN_EC";
-      "Steve_Ass_Ram_EC_1";
-      "VTOL_SE_7";
-      "Steve_EC_Jetbike_HB";
-      "Steve_EC_Jetbike_MM";
-      "Steve_EC_Jetbike_PC";
-      "Steve_EC_Jetbike_VLK";
+      "TIOW_SM_Rhino_EC_I";
+      "TIOW_SM_Vindicator_EC_I";
+      "TIOW_SM_Predator_EC_I";
+      "TIOW_EC_Tornado_I";
+      "TIOW_EC_Typhoon_I";
+      "TIOW_EC_Storm_I";
+      "TIOW_SM_Razorback_EC_I";
+      "TIOW_SM_Razorback_LC_EC_I";
+      "TIOW_SM_Razorback_AC_EC_I";
+      "TIOW_SM_Whirlwind_Arty_EC_I";
+      "TIOW_Bike_EC_1_I";
+      "TIOW_Bike_EC_2_I";
+      "TIOW_Bike_EC_3_I";
+      "TIOW_Bike_EC_4_I";
+      "VTOL_XI_IN_EC_I";
+      "Steve_Ass_Ram_EC_1_I";
+      "VTOL_SE_7_I";
+      "Steve_EC_Jetbike_HB_I";
+      "Steve_EC_Jetbike_MM_I";
+      "Steve_EC_Jetbike_PC_I";
+      "Steve_EC_Jetbike_VLK_I";
       "Tengu_WBKMelee_EC_Hammer",
       "Tengu_WBKMelee_EC_CSwordShd",
       "Tengu_WBKMelee_EC_CSword",
@@ -1587,6 +1587,7 @@ class Steve_EC_Jetbike_MM;
 class Steve_EC_Jetbike_PC;
 class Steve_EC_Jetbike_VLK;
 class TIOW_Drop_Pod_EC;
+class WBK_melee_chaos_chaplain;
 class cfgVehicles {
 class TIOW_Tactical_EC_1_I: TIOW_Tactical_EC_1
     	{
@@ -1729,162 +1730,140 @@ class STEVE_30k_MK3_Tact2_EC_I: STEVE_30k_MK3_Tact2_EC
     		faction = "TIOW_ChaosSpaceMarines_I";
     	};
 class TIOW_SM_Rhino_EC_I: TIOW_SM_Rhino_EC
-	{
-    	side = 2;
-    	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
-		crew = "TIOW_Tactical_EC_5_I";
+    	{
+    		side = 2;
+    		faction = "TIOW_ChaosSpaceMarines_I";
+    		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Vindicator_EC_I: TIOW_SM_Vindicator_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Predator_EC_I: TIOW_SM_Predator_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_EC_Tornado_I: TIOW_EC_Tornado
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_EC_Typhoon_I: TIOW_EC_Typhoon
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_EC_Storm_I: TIOW_EC_Storm
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Razorback_EC_I: TIOW_SM_Razorback_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Razorback_LC_EC_I: TIOW_SM_Razorback_LC_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Razorback_AC_EC_I: TIOW_SM_Razorback_AC_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_SM_Whirlwind_Arty_EC_I: TIOW_SM_Whirlwind_Arty_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_Bike_EC_1_I: TIOW_Bike_EC_1
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_Bike_EC_2_I: TIOW_Bike_EC_2
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_Bike_EC_3_I: TIOW_Bike_EC_3
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class TIOW_Bike_EC_4_I: TIOW_Bike_EC_4
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class VTOL_XI_IN_EC_I: VTOL_XI_IN_EC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class Steve_Ass_Ram_EC_1_I: Steve_Ass_Ram_EC_1
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class VTOL_SE_7_I: VTOL_SE_7
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class Steve_EC_Jetbike_HB_I: Steve_EC_Jetbike_HB
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class Steve_EC_Jetbike_MM_I: Steve_EC_Jetbike_MM
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class Steve_EC_Jetbike_PC_I: Steve_EC_Jetbike_PC
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
 class Steve_EC_Jetbike_VLK_I: Steve_EC_Jetbike_VLK
 	{
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
     };
     class TIOW_Drop_Pod_EC_I: TIOW_Drop_Pod_EC
     {
     	side = 2;
     	faction = "TIOW_ChaosSpaceMarines_I";
-		editorSubcategory = "EdSubcat_EmperorsChildren";
 		crew = "TIOW_Tactical_EC_5_I";
 
     }
 
-	class Tengu_WBKMelee_EC_Hammer: TIOW_Tactical_EC_5
+	class Tengu_WBKMelee_EC_Hammer: WBK_melee_chaos_chaplain
 	{
 		faction = "TIOW_ChaosSpaceMarines";
 		editorSubcategory = "WBK_MeleeAi_SPACE_MARINES";

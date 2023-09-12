@@ -659,9 +659,9 @@ class cfgGroups
 };
 
 
-class TIOW_Tactical_AL_5;
+class WBK_melee_chaos_chaplain;
 class cfgVehicles {
-	class Tengu_WBKMelee_AL_Hammer: TIOW_Tactical_AL_5
+	class Tengu_WBKMelee_AL_Hammer: WBK_melee_chaos_chaplain
 	{
 		faction = "TIOW_ChaosSpaceMarines";
 		editorSubcategory = "WBK_MeleeAi_SPACE_MARINES";
