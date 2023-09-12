@@ -36,7 +36,30 @@ class CfgPatches
 	};
 };
 
+class CfgModels
+{
+	class Default
+	{
+		sectionsInherit="";
+		sections[] = {};
+		skeletonName = "";
+	};
 
+    class av_cloak: Default
+    {
+        htMin = 20;          // Minimum half-cooling time (in seconds)
+		htMax = 300;        // Maximum half-cooling time (in seconds)
+		afMax = 25;          // Maximum temperature in case the model is alive (in celsius)
+		mfMax = 15;           // Maximum temperature when the model is moving (in celsius)
+		mFact = 0;           // Metabolism factor - number from interval <0, 1> (0 - metabolism has no influence, 1 - metabolism has full influence (no other temperature source will be considered)).
+		tBody = 20;
+        sections[] =
+		{
+			"camo","spine2","LeftShoulder","RightShoulder"
+		};
+		skeletonName = "SpaceMarine_ManSkeleton";
+    };
+};
 
 class CfgVehicles{
 class Steve_Loyal_Flags_1;
@@ -201,7 +224,7 @@ class CfgGlasses
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		model="AV_Pack\models\acessories\av_cloak.p3d";
+		model="\SR_Accessories\models\AV_cloak.p3d";
 			hiddenSelections[]=
 		{
 			"camo"

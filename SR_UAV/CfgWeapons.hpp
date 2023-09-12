@@ -22,7 +22,7 @@ class CfgWeapons {
         displayName = "Skull Probe (Packed)";
         descriptionShort = "Skull Probe packed for carriage";
         model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
-        //picture = "\A3\Drones_F\Air_F_Gamma\UAV_01\Data\UI\UAV_01_CA.paa";
+        picture = "\SR_UAV\ui\servoskull.paa";
         class ItemInfo: ItemInfo {
 			      mass = 75;
             allowedSlots[] = {901};
@@ -40,7 +40,7 @@ class CfgWeapons {
         displayName = "Tarantula Turret (Packed)";
         descriptionShort = "Tarantula Turret packed for carriage";
         model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
-        //picture = "\A3\Drones_F\Air_F_Gamma\UAV_01\Data\UI\UAV_01_CA.paa";
+        picture = "\SR_UAV\ui\tarantula.paa";
         class ItemInfo: ItemInfo {
 			      mass = 200;
             allowedSlots[] = {901};

@@ -212,6 +212,7 @@ class CfgVehicles
 		displayName="[TSR] Adrenal Stims";
 		author="ACE Team + DaveSkywalker";
 		vehicleClass="Items";
+		picture = "\SR_Medical\UI\stims.paa";
 		class TransportItems
 		{
 			class _xx_SR_AdrenalStims
@@ -231,6 +232,7 @@ class CfgVehicles
 		displayName="[TSR] Narthecium";
 		author="ACE Team + DaveSkywalker";
 		vehicleClass="Items";
+		picture = "\SR_Medical\UI\narth.paa";
 		class TransportItems
 		{
 			class _xx_SR_Narthecium
@@ -250,6 +252,7 @@ class CfgVehicles
         displayName = "[TSR] Plasma Synthesizer";
         author = "Waagheur";
         vehicleClass = "Items";
+		picture = "\SR_Medical\UI\plasma.paa";
 		class TransportItems
 		{
 			class _xx_SR_InfiBlood
@@ -269,6 +272,7 @@ class CfgVehicles
         displayName = "[TSR] Coolant Injector";
         author = "Waagheur";
         vehicleClass = "Items";
+		picture = "\SR_Medical\UI\coolant.paa";
         class TransportItems {
 			class _xx_SR_TraumaClearer
 			{
