@@ -45,7 +45,7 @@ class CfgModels
 		skeletonName = "";
 	};
 
-    class av_cloak: Default
+    class tsr_cloak: Default
     {
         htMin = 20;          // Minimum half-cooling time (in seconds)
 		htMax = 300;        // Maximum half-cooling time (in seconds)
@@ -215,25 +215,25 @@ class CfgGlasses
 		hiddenSelectionsTextures[]={};
 		identityTypes[]={};	
 		mass=0;
-	}
-	    class TSR_Seeker_Cloak: None
+	};
+
+	class TSR_Cloak: None
 	{
 		author="DaveSkywalker";
-		displayName="[TSR] Seeker Cloak (TSR)";
+		displayName="[TSR] Cloak";
 		showEmpty=0;
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
-		model="\SR_Accessories\models\AV_cloak.p3d";
-			hiddenSelections[]=
-		{
-			"camo"
-		};
-			hiddenSelectionsTextures[]=
-		{
-			"\SR_Accessories\textures\TSR_Seeker_Cloak.paa"
-		};
+		model="\SR_Accessories\models\tsr_cloak.p3d";
         identityTypes[]={};
+	};
+
+	class TSR_Seeker_Cloak: TSR_Cloak
+	{
+			displayName="[TSR] Seeker Cloak";
+			hiddenSelections[]={"camo"};
+			hiddenSelectionsTextures[]={"\SR_Accessories\textures\TSR_Seeker_Cloak.paa"};
 	};
 
 
