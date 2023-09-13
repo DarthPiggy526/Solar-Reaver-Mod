@@ -1,18 +1,18 @@
 ////////////////////////////////////////////////////////////////////
-//DeRap: Textures\neph_button_glass.rvmat
+//DeRap: Textures\inside_neph.rvmat
 //Produced from mikero's Dos Tools Dll version 9.10
 //https://mikero.bytex.digital/Downloads
-//'now' is Mon Aug 07 19:38:32 2023 : 'file' last modified on Fri Aug 12 16:31:57 2022
+//'now' is Wed Sep 13 01:44:58 2023 : 'file' last modified on Fri Aug 12 16:31:57 2022
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
 
-ambient[] = {1,1,1,1};
-diffuse[] = {1,1,1,1};
+ambient[] = {0.49999994,0.49999994,0.49999994,1};
+diffuse[] = {0.49999994,0.49999994,0.49999994,1};
 forcedDiffuse[] = {0,0,0,0};
-emmisive[] = {200,40,40,2};
-specular[] = {0.75,0.75,0.75,15};
-specularPower = 150;
+emmisive[] = {8.4646047e-07,8.4646047e-07,8.4646047e-07,0};
+specular[] = {0.032000016,0.032000016,0.032000016,1};
+specularPower = 100;
 PixelShaderID = "Super";
 VertexShaderID = "Super";
 class Stage1
@@ -23,43 +23,36 @@ class Stage1
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,0};
+		dir[] = {0,0,1};
 		pos[] = {0,0,0};
 	};
 };
 class Stage2
 {
 	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {0,9,0};
-		up[] = {4.5,0,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
-	};
+	uvSource = "none";
 };
 class Stage3
 {
-	texture = "#(argb,8,8,3)color(0,0,0,0)";
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
 	uvSource = "tex";
 	class uvTransform
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,0};
+		dir[] = {0,0,1};
 		pos[] = {0,0,0};
 	};
 };
 class Stage4
 {
-	texture = "Con_neph\Textures\inside_Neph_as.paa";
+	texture = "Con_neph\Textures\inside_Neph_AS.paa";
 	uvSource = "tex";
 	class uvTransform
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,0};
+		dir[] = {0,0,1};
 		pos[] = {0,0,0};
 	};
 };
@@ -71,31 +64,17 @@ class Stage5
 	{
 		aside[] = {1,0,0};
 		up[] = {0,1,0};
-		dir[] = {0,0,0};
+		dir[] = {0,0,1};
 		pos[] = {0,0,0};
 	};
 };
 class Stage6
 {
-	texture = "#(ai,64,64,1)fresnel(1.4,2.3)";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,1};
-		pos[] = {0,0,0};
-	};
+	texture = "#(ai,32,128,1)fresnel(4.47,1.16)";
+	uvSource = "none";
 };
 class Stage7
 {
 	texture = "a3\data_f\env_land_co.paa";
-	uvSource = "tex";
-	class uvTransform
-	{
-		aside[] = {1,0,0};
-		up[] = {0,1,0};
-		dir[] = {0,0,0};
-		pos[] = {0,0,0};
-	};
+	uvSource = "none";
 };

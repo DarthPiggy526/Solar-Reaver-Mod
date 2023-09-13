@@ -1,3 +1,10 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: config.bin
+//Produced from mikero's Dos Tools Dll version 9.10
+//https://mikero.bytex.digital/Downloads
+//'now' is Wed Sep 13 01:44:58 2023 : 'file' last modified on Fri Aug 12 16:31:44 2022
+////////////////////////////////////////////////////////////////////
+
 #define _ARMA_
 
 class CfgPatches
@@ -94,7 +101,7 @@ class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
 		class Crew;
 		class Neph_Pilot_Cons_1: Crew
 		{
-			file = "\Con_neph\Anim\Neph_Pilot.rtm";
+			file = "Con_neph\Anim\Neph_Pilot.rtm";
 			interpolateTo[] = {"TIOW_SM_RhinoCargo1Dead",1};
 			ConnectTo[] = {"TIOW_SM_RhinoCargo1Dead",1};
 			leftHandIKCurve[] = {1};
@@ -147,7 +154,7 @@ class CfgVehicles
 		scope = 0;
 		scopeCurator = 0;
 		displayName = "Test";
-		model = "\Con_neph\models\Neph_1.p3d";
+		model = "Con_neph\models\Neph_1.p3d";
 		icon = "\A3\Air_F_Exp\VTOL_02\Data\UI\Map_VTOL_02_vehicle_CA.paa";
 		picture = "\A3\Air_F_Exp\VTOL_02\Data\UI\VTOL_02_vehicle_CA.paa";
 		overviewPicture = "\A3\Data_F_Exp\Images\VehicleXian_ca.paa";
@@ -187,7 +194,7 @@ class CfgVehicles
 		accuracy = 0.5;
 		fuelCapacity = 1350;
 		fuelConsumptionRate = 0.0322;
-		armor = 300;
+		armor = 1200;
 		explosionShielding = 0.1;
 		armorStructural = 6;
 		damageResistance = 0.015;

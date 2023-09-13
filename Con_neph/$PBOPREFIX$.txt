@@ -1,0 +1,4 @@
+//<'Con_neph.pbo' properties via Mikero's dos tools, dll version 9.10>
+prefix=Con_neph;
+//PboType=Arma Addon;
+//</properties>
