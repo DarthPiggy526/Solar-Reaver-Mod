@@ -1,10 +1,3 @@
-////////////////////////////////////////////////////////////////////
-//DeRap: config.bin
-//Produced from mikero's Dos Tools Dll version 9.10
-//https://mikero.bytex.digital/Downloads
-//'now' is Wed Sep 13 01:44:58 2023 : 'file' last modified on Fri Aug 12 16:31:44 2022
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 class CfgPatches
@@ -194,7 +187,7 @@ class CfgVehicles
 		accuracy = 0.5;
 		fuelCapacity = 1350;
 		fuelConsumptionRate = 0.0322;
-		armor = 1200;
+		armor = 350;
 		explosionShielding = 0.1;
 		armorStructural = 6;
 		damageResistance = 0.015;
