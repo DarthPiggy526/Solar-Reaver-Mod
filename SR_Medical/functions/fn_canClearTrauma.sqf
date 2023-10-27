@@ -12,4 +12,10 @@
 
 params ["_medic", "_patient"];
 
-({((_x select 0) == 20) or ((_x select 0) == 21) or ((_x select 0) == 22)} count (_patient getVariable "ace_medical_OpenWounds")) > 0;
+private _bruisesWounds = [];
+
+{ { _bruisesWounds pushBack _x} forEach _x }
+forEach ((toArray (_patient getVariable "ace_medical_OpenWounds")) select 1);
+_bruisesWounds = _bruisesWounds select {(((_x select 0)) == 20) or (((_x select 0)) == 21) or (((_x select 0)) == 22)};
+
+count (_bruisesWounds) > 0;
