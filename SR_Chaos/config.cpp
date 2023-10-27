@@ -10,7 +10,7 @@ class CfgPatches
 		requiredAddons[] = 
 		{
 			"SR_Core",
-			"TIOWSpaceMarines";
+			"TIOWSpaceMarines"
 		};
 		weapons[] = {};
 		magazines[] = {};
