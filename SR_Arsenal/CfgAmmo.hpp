@@ -5,6 +5,11 @@ class Steve_30k_CombiPlas_Mag;
 class TIOW_Melta_Ammo;
 class Steve_30k_Lascutter_Round;
 class TIOW_LemanRuss_Lascannon_Rnd;
+class Steve_SM_Grav_Mag_Rnd;
+class Steve_Volkite_Cav_Rnd;
+class Steve_Volkite_Charger_Rnd;
+class Steve_Volkite_Culv_Rnd;
+
 class CfgAmmo
 {
 	class SR_Meltagun_Ammo: TIOW_Melta_Ammo
@@ -99,5 +104,65 @@ class CfgAmmo
 		ACE_dragModel = 1;
 		ACE_muzzleVelocities[] = {1140};
 		ACE_barrelLengths[] = {728.98};
+	};
+	class SR_SM_Grav_Mag_Rnd : Steve_SM_Grav_Mag_Rnd
+	{
+		ACE_bulletLength = 102;
+		ACE_bulletMass = 80.4;
+		ACE_caliber = 16;
+		caliber = 1.4;
+		dangerRadiusBulletClose = -1;
+		dangerRadiusHit = 160;
+		deflectionDirDistribution = 0.39;
+		deflectionSlowDown = 0.8;
+		directionalExplosion = 0;
+		explosionAngle = 60;
+		explosionForceCoef = 1;
+		explosive = 0.65;
+		hit = 65;
+		indirectHit = 20;
+		indirectHitRange = 3;
+		typicalSpeed = 1050;
+	};
+	class SR_Volkite_Cav_Rnd : Steve_Volkite_Cav_Rnd
+	{
+		hit = 60;
+		typicalSpeed = 1050;
+		caliber = 1.4;
+		explosive = 0;
+		ACE_caliber = 16;
+		ACE_bulletLength = 102;
+		ACE_bulletMass = 75.4;
+		ACE_ammoTempMuzzleVelocityShifts[] = {-26.55, -25.47, -22.85, -20.12, -16.98, -12.8, -7.64, -1.53, 5.96, 15.17, 26.19};
+		ACE_ballisticCoefficients[] = {0.63};
+		ACE_velocityBoundaries[] = {};
+		ACE_standardAtmosphere = "ASM";
+		ACE_dragModel = 1;
+		ACE_muzzleVelocities[] = {1050};
+		ACE_barrelLengths[] = {728.98};
+	};
+	class SR_Volkite_Charger_Rnd : Steve_Volkite_Charger_Rnd
+	{
+		hit = 80;
+		typicalSpeed = 1050;
+		caliber = 1.4;
+		explosive = 0;
+		ACE_caliber = 20;
+		ACE_bulletLength = 102;
+		ACE_bulletMass = 102.4;
+		ACE_ammoTempMuzzleVelocityShifts[] = {-26.55, -25.47, -22.85, -20.12, -16.98, -12.8, -7.64, -1.53, 5.96, 15.17, 26.19};
+		ACE_ballisticCoefficients[] = {0.63};
+		ACE_velocityBoundaries[] = {};
+		ACE_standardAtmosphere = "ASM";
+		ACE_dragModel = 1;
+		ACE_muzzleVelocities[] = {1050};
+		ACE_barrelLengths[] = {728.98};
+	};
+	class SR_Volkite_Culv_Rnd : Steve_Volkite_Culv_Rnd
+	{	
+		hit = 450;
+		indirectHit = 25;
+		indirectHitRange = 0.4;
+		typicalSpeed = 1000;
 	};
 };

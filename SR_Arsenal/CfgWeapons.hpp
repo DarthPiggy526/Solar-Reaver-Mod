@@ -4136,6 +4136,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Grav_1";
 		displayName="[TSR] [AoD] Autotellurian Pattern Graviton Rifle";
+		magazines[] = {"SR_SM_Grav_Mag"};
 	};
 
 
@@ -4179,6 +4180,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_Volkite_Cav_New_1";
 		displayName="[TSR] [AOD] Volkite Caliver";
+		magazines[] = {"SR_Volkite_Cav_Mag"};
 	};
 	
 	class SR_STEVE_Volkite_Charger_New_1 : STEVE_Volkite_Charger_New_1
@@ -4189,6 +4191,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_Volkite_Charger_New_1";
 		displayName="[TSR] [AOD] Volkite Charger";
+		magazines[] = {"SR_Volkite_Charger_Mag"};
 	};
 	
 	class SR_Steve_Volkite_Can_1 : Steve_Volkite_Can_1
@@ -4199,6 +4202,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Volkite_Can_1";
 		displayName="[TSR] [AOD] Volkite Culevrin";
+		magazines[] = {"SR_Volkite_Can_Mag_1"};
 	};
 
 	
@@ -4309,6 +4313,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Volkite_Pistol";
 		displayName="[TSR] [AOD] Volkite Serpenta (Shield)";
+		magazines[] = {"SR_Volkite_PistolMag"};
 	};
 	
 	class SR_STEVE_30k_Volkite_Pistol_Banner : STEVE_30k_Volkite_Pistol_Banner
@@ -4319,6 +4324,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Volkite_Pistol_Banner";
 		displayName="[TSR] [AOD] Volkite Serpenta (Banner)";
+		magazines[] = {"SR_Volkite_PistolMag"};
 	};
 
 

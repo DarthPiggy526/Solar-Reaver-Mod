@@ -2,7 +2,9 @@
 	Author: Waagheur
 
 	Description:
-		Help! I am missing!
+		Checks if the player is carrying a recorded plasma weapon.
+		If so activates the FiredMan event handler to handle its overcharge and heat aswell as a heat display and reduction loop
+		If not removes the FiredMan event handler (the heat display and reduction loop will remove itself)
 		
 	Parameter(s):
 		None
