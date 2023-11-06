@@ -17,6 +17,7 @@ class CfgPatches
 		ammo[] = {};
 		units[] = 
 		{
+			"SR_Limited_Arsenal",
 			"SR_Vehicle_Service",
 			"SR_SupplyPod_Empty",
 			"SR_SupplyPod_Seeker",
