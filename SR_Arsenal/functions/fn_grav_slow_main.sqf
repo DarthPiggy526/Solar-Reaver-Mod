@@ -41,11 +41,11 @@ if (not(isDedicated)) then {
 					_projectile addEventHandler ["HitExplosion", {
 						// params ["_projectile", "_hitEntity", "_projectileOwner", "_hitSelections"];
 						[_this select 1] spawn {
-							(_this select 0) setAnimSpeedCoef ((getAnimSpeedCoef (_this select 0)) * 0.5);
+							[(_this select 0), ((getAnimSpeedCoef (_this select 0)) * 0.5)] remoteExec ["setAnimSpeedCoef", 0];
 							
 							sleep 15;
 							
-							(_this select 0) setAnimSpeedCoef ((getAnimSpeedCoef (_this select 0)) * 2);
+							[(_this select 0), ((getAnimSpeedCoef (_this select 0)) * 2)] remoteExec ["setAnimSpeedCoef", 0];
 						};
 						
 					}];
