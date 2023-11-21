@@ -19,7 +19,8 @@ class CfgPatches
 			"A3_Data_F",
 			"A3_Characters_F",
 			"A3_Anims_F",
-			"Project_Primaris_Dos_Weapons"
+			"Project_Primaris_Dos_Weapons",
+			"TIOW_Launchers"
 		};
 		weapons[]=
 		{
@@ -47,13 +48,27 @@ class CfgPatches
             "SR_Ryza_Plasma_Pistol_Banner",
 			"SR_Combi_Bolter_1",
 			"SR_Combi_Bolter_2",
-			"SR_Combi_Bolter_3"
+			"SR_Combi_Bolter_3",
+			
+			"Throw"
 		};
 		magazines[]=
 		{
 			"SR_Meltagun_Mag",
 			"Steve_30k_lascutter_Mag",
-			"SR_LasFusil_Mag"
+			"SR_LasFusil_Mag",
+			
+			"SR_SM_Grav_Mag",
+			"SR_Volkite_Cav_Mag",
+			"SR_Volkite_Charger_Mag",
+			"SR_Volkite_Can_Mag_1",
+			"SR_Volkite_PistolMag",
+			
+			"SR_Mag_Rad_Grenade",
+			"SR_Mag_Stasis_Grenade",
+			"SR_Mag_Tanglefoot_Grenade",
+			"SR_Mag_Antigrav_Grenade",
+			"SR_Mag_Vortex_Grenade"
 		};
 		ammo[]=
 		{
@@ -62,7 +77,18 @@ class CfgPatches
 			"SR_LasFusil_Rnd",
 			"SR_PlasmagunRound",
 			"SR_Overcharge_PlasmagunRound",
-			"SR_Overcharge_PlasmapistolRound"
+			"SR_Overcharge_PlasmapistolRound",
+			
+			"SR_SM_Grav_Mag_Rnd",
+			"SR_Volkite_Cav_Rnd",
+			"SR_Volkite_Charger_Rnd",
+			"SR_Volkite_Culv_Rnd",
+			
+			"SR_Ammo_Rad_Grenade",
+			"SR_Ammo_Stasis_Grenade",
+			"SR_Ammo_Tanglefoot_Grenade",
+			"SR_Ammo_Antigrav_Grenade",
+			"SR_Ammo_Vortex_Grenade"
 		};
 		units[]={};
 	};
@@ -602,6 +628,13 @@ class CfgFunctions
 			class grav_slow_init {
 				postInit 	= 1;
 				//file = "SR_Arsenal\functions\fn_grav_slow_init.sqf";
+			};
+			class grenades_main {
+				//file = "SR_Arsenal\functions\fn_grenades_main.sqf";
+			};
+			class grenades_init {
+				postInit 	= 1;
+				//file = "SR_Arsenal\functions\fn_grenades_init.sqf";
 			};
 		};
 	};

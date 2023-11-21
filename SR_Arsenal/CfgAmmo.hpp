@@ -10,6 +10,8 @@ class Steve_Volkite_Cav_Rnd;
 class Steve_Volkite_Charger_Rnd;
 class Steve_Volkite_Culv_Rnd;
 
+class Grenade;
+
 class CfgAmmo
 {
 	class SR_Meltagun_Ammo: TIOW_Melta_Ammo
@@ -164,5 +166,66 @@ class CfgAmmo
 		indirectHit = 25;
 		indirectHitRange = 0.4;
 		typicalSpeed = 1000;
+	};
+	
+	
+	
+	class SR_Ammo_Rad_Grenade: Grenade
+	{
+		hit=1;
+		indirectHit=0.5;
+		indirectHitRange=12;
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_throw.p3d";
+		deflectionSlowDown=0.001;
+		soundHit[] = {"",1,1};
+	};
+	class SR_Ammo_Stasis_Grenade: Grenade
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=10;
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_throw.p3d";
+		deflectionSlowDown=0.001;
+		CraterEffects = "";
+		explosionEffects = "";
+		soundHit[] = {"",1,1};
+		timeToLive = 300;
+		explosionTime = 9600;
+	};
+	class SR_Ammo_Tanglefoot_Grenade: Grenade
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=10;
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_throw.p3d";
+		deflectionSlowDown=0.001;
+		CraterEffects = "";
+		explosionEffects = "";
+		soundHit[] = {"",1,1};
+		timeToLive = 300;
+		explosionTime = 9600;
+	};
+	class SR_Ammo_Antigrav_Grenade: Grenade
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=10;
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_throw.p3d";
+		deflectionSlowDown=0.001;
+		CraterEffects = "";
+		explosionEffects = "";
+		soundHit[] = {"",1,1};
+		timeToLive = 300;
+		explosionTime = 9600;
+	};
+	class SR_Ammo_Vortex_Grenade: Grenade
+	{
+		hit=0;
+		indirectHit=0;
+		indirectHitRange=8;
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_throw.p3d";
+		deflectionSlowDown=0.001;
+		timeToLive = 300;
+		explosionTime = 8;
 	};
 };

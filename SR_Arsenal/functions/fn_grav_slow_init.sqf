@@ -3,7 +3,7 @@
 
 	Description:
 		Adds a Take event handler and an ace arsenal close event handler to client
-		The event handlers adds a HitPart event handler upon picking up an SR grav gun
+		The event handlers add a FiredMan event handler upon picking up an SR grav gun
 		(used function : fn_grav_slow_main.sqf)
 
 	Parameter(s):

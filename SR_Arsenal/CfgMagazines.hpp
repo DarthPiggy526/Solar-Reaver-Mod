@@ -9,6 +9,8 @@ class Steve_Volkite_Charger_Mag;
 class Steve_Volkite_Can_Mag_1;
 class Steve_Volkite_PistolMag;
 
+class HandGrenade_Stone;
+
 class CfgMagazines
 {
 	class SR_Master_Crafted_Phobos_BoltPistol_Mag: Steve_Phob_BoltPistolMag
@@ -68,6 +70,9 @@ class CfgMagazines
 		maxLeadSpeed = 150;
 		tracersEvery = 1;
 	};
+	
+	
+	
 	class SR_SM_Grav_Mag : Steve_SM_Grav_Mag
 	{
 		ammo = "SR_SM_Grav_Mag_Rnd";
@@ -99,5 +104,83 @@ class CfgMagazines
 		ammo = "SR_Volkite_Charger_Rnd";
 		count = 15;
 		initSpeed = 1050;
+	};
+	
+	
+	
+	class SR_Mag_Rad_Grenade: HandGrenade_Stone
+	{
+		author = "Waagheur";
+		scope = 2;        
+        scopeArsenal = 2;       
+		displayName = "[SR] Rad Grenade";
+		displayNameShort = "[SR] Rad Grenade";
+		value = 0.1;
+		ammo = "SR_Ammo_Rad_Grenade";
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_mag.p3d";
+		picture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		initSpeed=25;
+		mass=10;
+	};
+	class SR_Mag_Stasis_Grenade: HandGrenade_Stone
+	{
+		author = "Waagheur";
+		scope = 2;        
+        scopeArsenal = 2;        
+		displayName = "[SR] Stasis Grenade";
+		displayNameShort = "[SR] Stasis Grenade";
+		value = 0.1;
+		ammo = "SR_Ammo_Stasis_Grenade";
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_mag.p3d";
+		picture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		initSpeed=25;
+		mass=10;
+	};
+	class SR_Mag_Tanglefoot_Grenade: HandGrenade_Stone
+	{
+		author = "Waagheur";
+		scope = 2;        
+        scopeArsenal = 2;        
+		displayName = "[SR] Tanglefoot Grenade";
+		displayNameShort = "[SR] Tanglefoot Grenade";
+		value = 0.1;
+		ammo = "SR_Ammo_Tanglefoot_Grenade";
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_mag.p3d";
+		picture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		initSpeed=25;
+		mass=10;
+	};
+	class SR_Mag_Antigrav_Grenade: HandGrenade_Stone
+	{
+		author = "Waagheur";
+		scope = 2;        
+        scopeArsenal = 2;        
+		displayName = "[SR] Antigrav Grenade";
+		displayNameShort = "[SR] Antigrav Grenade";
+		value = 0.1;
+		ammo = "SR_Ammo_Antigrav_Grenade";
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_mag.p3d";
+		picture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		initSpeed=25;
+		mass=10;
+	};
+	class SR_Mag_Vortex_Grenade: HandGrenade_Stone
+	{
+		author = "Waagheur";
+		scope = 2;        
+        scopeArsenal = 2;        
+		displayName = "[SR] Vortex Grenade";
+		displayNameShort = "[SR] Vortex Grenade";
+		value = 0.1;
+		ammo = "SR_Ammo_Vortex_Grenade";
+		model="TIOW_IG_Explosives\TIOW_ig_frag_grenade\sm_frag_grenade_mag.p3d";
+		picture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
+		initSpeed=25;
+		mass=100;
 	};
 };

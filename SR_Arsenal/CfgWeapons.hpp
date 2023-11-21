@@ -5052,4 +5052,52 @@ class Cfgweapons
 	
 	
 	
+	class GrenadeLauncher;
+	class Throw: GrenadeLauncher
+	{
+		muzzles[]+=
+		{
+			"SR_Rad_Grenade_Muzzle",
+			"SR_Stasis_Grenade_Muzzle",
+			"SR_Tanglefoot_Grenade_Muzzle",
+			"SR_Antigrav_Grenade_Muzzle",
+			"SR_Vortex_Grenade_Muzzle"
+		};
+		class ThrowMuzzle;
+		class SR_Rad_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Rad_Grenade"
+			};
+		};
+		class SR_Stasis_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Stasis_Grenade"
+			};
+		};
+		class SR_Tanglefoot_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Tanglefoot_Grenade"
+			};
+		};
+		class SR_Antigrav_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Antigrav_Grenade"
+			};
+		};
+		class SR_Vortex_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Vortex_Grenade"
+			};
+		};
+	};
 };
