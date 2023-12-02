@@ -8,19 +8,17 @@ class CfgPatches
 		requiredAddons[]=
 		{
 			"TIOWSpaceMarines",
-			"Seb_SM_Melee_Mod",
 			"Steve_30K_weps",
 			"Steve_30K_weps_New",
 			"Steve_30K_weps2",
 			"Steve_30k_weps3",
-			"Seb_SM_Melee_Mod",
 			"TIOW_IQ_40k_weapons",
 			"TIOW_Dos_Weps",
 			"A3_Data_F",
 			"A3_Characters_F",
 			"A3_Anims_F",
 			"Project_Primaris_Dos_Weapons",
-			"TIOW_Launchers"
+			"Seb_SM_Melee_Mod"
 		};
 		weapons[]=
 		{
@@ -636,6 +634,17 @@ class CfgFunctions
 				postInit 	= 1;
 				//file = "SR_Arsenal\functions\fn_grenades_init.sqf";
 			};
+			class dragonfire_main {
+				//file = "SR_Arsenal\functions\fn_dragonfire_main.sqf";
+			};
+			class dragonfire_init {
+				postInit 	= 1;
+				//file = "SR_Arsenal\functions\fn_dragonfire_init.sqf";
+			};
+			class wbk_injector {
+				postInit    = 1;
+				//file = "SR_Arsenal\functions\fn_wbk_injector.sqf";
+			}
 		};
 	};
 };

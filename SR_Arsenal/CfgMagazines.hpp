@@ -11,6 +11,14 @@ class Steve_Volkite_PistolMag;
 
 class HandGrenade_Stone;
 
+class Steve_Trig_BoltgunMag_DF;
+class Steve_Trig_Exitus_BoltgunMag_DF;
+class Steve_Trig_BoltPistolMag_DF;
+class Steve_Phob_BoltgunMag_DF;
+class Steve_Phob_BoltPistolMag_DF;
+class Steve_Phob_CombiBoltgunMag_DF;
+class Steve_Phob_Atrox_BoltgunMag_DF;
+
 class CfgMagazines
 {
 	class SR_Master_Crafted_Phobos_BoltPistol_Mag: Steve_Phob_BoltPistolMag
@@ -112,7 +120,7 @@ class CfgMagazines
 	{
 		author = "Waagheur";
 		scope = 2;        
-        scopeArsenal = 2;       
+		scopeArsenal = 2;       
 		displayName = "[SR] Rad Grenade";
 		displayNameShort = "[SR] Rad Grenade";
 		value = 0.1;
@@ -127,7 +135,7 @@ class CfgMagazines
 	{
 		author = "Waagheur";
 		scope = 2;        
-        scopeArsenal = 2;        
+		scopeArsenal = 2;        
 		displayName = "[SR] Stasis Grenade";
 		displayNameShort = "[SR] Stasis Grenade";
 		value = 0.1;
@@ -142,7 +150,7 @@ class CfgMagazines
 	{
 		author = "Waagheur";
 		scope = 2;        
-        scopeArsenal = 2;        
+		scopeArsenal = 2;        
 		displayName = "[SR] Tanglefoot Grenade";
 		displayNameShort = "[SR] Tanglefoot Grenade";
 		value = 0.1;
@@ -157,7 +165,7 @@ class CfgMagazines
 	{
 		author = "Waagheur";
 		scope = 2;        
-        scopeArsenal = 2;        
+		scopeArsenal = 2;        
 		displayName = "[SR] Antigrav Grenade";
 		displayNameShort = "[SR] Antigrav Grenade";
 		value = 0.1;
@@ -172,7 +180,7 @@ class CfgMagazines
 	{
 		author = "Waagheur";
 		scope = 2;        
-        scopeArsenal = 2;        
+		scopeArsenal = 2;        
 		displayName = "[SR] Vortex Grenade";
 		displayNameShort = "[SR] Vortex Grenade";
 		value = 0.1;
@@ -182,5 +190,42 @@ class CfgMagazines
 		UIpicture="\TIOW_IG_Explosives\TIOW_ig_frag_grenade\data\frag_icon.paa";
 		initSpeed=25;
 		mass=100;
+	};
+	
+	
+	
+	class SR_Trig_BoltgunMag_DF: Steve_Trig_BoltgunMag_DF
+	{
+		
+	};
+	
+	class SR_Trig_Exitus_BoltgunMag_DF: Steve_Trig_Exitus_BoltgunMag_DF
+	{
+		
+	};
+	
+	class SR_Trig_BoltPistolMag_DF: Steve_Trig_BoltPistolMag_DF
+	{
+		
+	};
+	
+	class SR_Phob_BoltgunMag_DF: Steve_Phob_BoltgunMag_DF
+	{
+		
+	};
+	
+	class SR_Phob_BoltPistolMag_DF: Steve_Phob_BoltPistolMag_DF
+	{
+		
+	};
+	
+	class SR_Phob_CombiBoltgunMag_DF: Steve_Phob_CombiBoltgunMag_DF
+	{
+		
+	};
+	
+	class SR_Phob_Atrox_BoltgunMag_DF: Steve_Phob_Atrox_BoltgunMag_DF
+	{
+		
 	};
 };
