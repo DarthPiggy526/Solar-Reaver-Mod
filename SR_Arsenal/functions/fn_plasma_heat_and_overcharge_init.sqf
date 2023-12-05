@@ -4,7 +4,7 @@
 	Description:
 		Adds a Take event handler and an ace arsenal close event handler to client
 		The event handlers adds a FiredMan event handler upon picking up an SR plasma gun or pistol
-		aswell a a display and heat reduction loop
+		aswell as a heat display and reduction loop
 		(used function : fn_plasma_heat_and_overcharge_main.sqf)
 
 	Parameter(s):
@@ -70,4 +70,5 @@ if (not(isDedicated)) then {
 		execVM "SR_Arsenal\functions\fn_plasma_heat_and_overcharge_main.sqf";
 	}];
 	["ace_arsenal_displayClosed", {execVM "SR_Arsenal\functions\fn_ragefire_burst_cd.sqf";}] call CBA_fnc_addEventHandler;
+	
 };

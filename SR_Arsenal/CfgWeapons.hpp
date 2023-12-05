@@ -15,6 +15,7 @@ class SR_fullAutoFast;
 class Dos_Melee_PS_Dos;
 class Web_Melee_KnifeSM;
 class Web_Melee_MOA;
+class Web_Melee_LC;
 
 // Boltguns
 class TIOW_IQBoltgun_1;
@@ -214,6 +215,17 @@ class Steve_SM_LasCan_02_New;
 class Cfgweapons
 {
 	
+	// Melee
+	
+	
+	
+	class SR_Magma_Claw : Web_Melee_LC
+	{
+		displayName="[TSR] Magma Claw";
+		baseWeapon="SR_Magma_Claw";
+		model="SR_Arsenal\models\thunder_Claw.p3d";
+	};
+	
 	
 	
 	// Boltguns
@@ -372,6 +384,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_New_PhobosBoltgun_1";
 		displayName="[TSR] [AOD] Phobos Boltgun";
+		magazines[] += {
+			"SR_Phob_BoltgunMag_DF"
+		};
 	};
 	
 	class SR_Steve_NewTigrus_1 : Steve_NewTigrus_1
@@ -382,6 +397,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_NewTigrus_1";
 		displayName="[TSR] [AOD] Tigrus Boltgun";
+		magazines[] += {
+			"SR_Trig_BoltgunMag_DF"
+		};
 	};
 	
 	
@@ -1322,6 +1340,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_New_PhobosCombiBolt_1";
 		displayName="[TSR] [AOD] Phobos Combi-Bolter";
+		magazines[] += {
+			"SR_Phob_CombiBoltgunMag_DF"
+		};
 	};
 	
 	class SR_STEVE_TigComb_bolt_1 : STEVE_TigComb_bolt_1
@@ -1382,6 +1403,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_New_Phobos_Atrox_1";
 		displayName="[TSR] [AOD] Phobos Atrox Boltgun";
+		magazines[] += {
+			"SR_Phob_Atrox_BoltgunMag_DF"
+		};
 	};
 	
 	class SR_STEVE_TigrusExitusBoltgun_1 : STEVE_TigrusExitusBoltgun_1
@@ -1392,6 +1416,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_TigrusExitusBoltgun_1";
 		displayName="[TSR] [AOD] Tigrus Exitus Boltgun";
+		magazines[] += {
+			"SR_Trig_Exitus_BoltgunMag_DF"
+		};
 	};
 
 
@@ -4136,6 +4163,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Grav_1";
 		displayName="[TSR] [AoD] Autotellurian Pattern Graviton Rifle";
+		magazines[] = {"SR_SM_Grav_Mag"};
 	};
 
 
@@ -4179,6 +4207,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_Volkite_Cav_New_1";
 		displayName="[TSR] [AOD] Volkite Caliver";
+		magazines[] = {"SR_Volkite_Cav_Mag"};
 	};
 	
 	class SR_STEVE_Volkite_Charger_New_1 : STEVE_Volkite_Charger_New_1
@@ -4189,6 +4218,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_Volkite_Charger_New_1";
 		displayName="[TSR] [AOD] Volkite Charger";
+		magazines[] = {"SR_Volkite_Charger_Mag"};
 	};
 	
 	class SR_Steve_Volkite_Can_1 : Steve_Volkite_Can_1
@@ -4199,6 +4229,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Volkite_Can_1";
 		displayName="[TSR] [AOD] Volkite Culevrin";
+		magazines[] = {"SR_Volkite_Can_Mag_1"};
 	};
 
 	
@@ -4243,6 +4274,9 @@ class Cfgweapons
 		displayName="[TSR] MKIII Breacher Shield (Phobos)";
 		armor=1000;
 		passThrough=0.89999998;
+		magazines[] += {
+			"SR_Phob_BoltgunMag_DF"
+		};
 	};
 	
 	class SR_Tigrus_Shield: STEVE_TigrusShield_1
@@ -4259,6 +4293,9 @@ class Cfgweapons
 			"30k_Camo",
 			"Shield2_Camo"
 		};
+		magazines[] += {
+			"SR_Trig_BoltgunMag_DF"
+		};
 	};
 	
 	class SR_Steve_Phobos_Pistol : Steve_Phobos_Pistol
@@ -4269,6 +4306,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Phobos_Pistol";
 		displayName="[TSR] [AOD] Phobos Pattern Pistol (Shield)";
+		magazines[] += {
+			"SR_Phob_BoltPistolMag_DF"
+		};
 	};
 	
 	class SR_Steve_Phobos_Pistol_Banner : Steve_Phobos_Pistol_Banner
@@ -4279,6 +4319,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_Steve_Phobos_Pistol_Banner";
 		displayName="[TSR] [AOD] Phobos Pattern Pistol (Banner)";
+		magazines[] += {
+			"SR_Phob_BoltPistolMag_DF"
+		};
 	};
 	
 	class SR_STEVE_30k_Tig_Pistol : STEVE_30k_Tig_Pistol
@@ -4289,6 +4332,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Tig_Pistol";
 		displayName="[TSR] [AOD] Tigrus Bolt Pistol (Shield)";
+		magazines[] += {
+			"SR_Trig_BoltPistolMag_DF"
+		};
 	};
 	
 	class SR_STEVE_30k_Tig_Pistol_Banner : STEVE_30k_Tig_Pistol_Banner
@@ -4299,6 +4345,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Tig_Pistol_Banner";
 		displayName="[TSR] [AOD] Tigrus Bolt Pistol (Banner)";
+		magazines[] += {
+			"SR_Trig_BoltPistolMag_DF"
+		};
 	};
 	
 	class SR_STEVE_30k_Volkite_Pistol : STEVE_30k_Volkite_Pistol
@@ -4309,6 +4358,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Volkite_Pistol";
 		displayName="[TSR] [AOD] Volkite Serpenta (Shield)";
+		magazines[] = {"SR_Volkite_PistolMag"};
 	};
 	
 	class SR_STEVE_30k_Volkite_Pistol_Banner : STEVE_30k_Volkite_Pistol_Banner
@@ -4319,6 +4369,7 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_STEVE_30k_Volkite_Pistol_Banner";
 		displayName="[TSR] [AOD] Volkite Serpenta (Banner)";
+		magazines[] = {"SR_Volkite_PistolMag"};
 	};
 
 
@@ -5046,4 +5097,52 @@ class Cfgweapons
 	
 	
 	
+	class GrenadeLauncher;
+	class Throw: GrenadeLauncher
+	{
+		muzzles[]+=
+		{
+			"SR_Rad_Grenade_Muzzle",
+			"SR_Stasis_Grenade_Muzzle",
+			"SR_Tanglefoot_Grenade_Muzzle",
+			"SR_Antigrav_Grenade_Muzzle",
+			"SR_Vortex_Grenade_Muzzle"
+		};
+		class ThrowMuzzle;
+		class SR_Rad_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Rad_Grenade"
+			};
+		};
+		class SR_Stasis_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Stasis_Grenade"
+			};
+		};
+		class SR_Tanglefoot_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Tanglefoot_Grenade"
+			};
+		};
+		class SR_Antigrav_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Antigrav_Grenade"
+			};
+		};
+		class SR_Vortex_Grenade_Muzzle: ThrowMuzzle
+		{
+			magazines[]=
+			{
+				"SR_Mag_Vortex_Grenade"
+			};
+		};
+	};
 };
