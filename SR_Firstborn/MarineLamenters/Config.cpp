@@ -63,7 +63,7 @@ class CfgWeapons
 	class SR_MK7_Helmet_Lamenters: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helamet (Lamenters)";
+		displayName="[TSR] MK 7 Helmet (Lamenters)";
 		hiddenSelectionsTextures[]=
 		{
 			"SR_FirstBorn\Textures\LAM_Helmet.paa"
