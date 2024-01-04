@@ -219,12 +219,7 @@ class Cfgweapons
 	
 	
 	
-	class SR_Magma_Claw : Web_Melee_LC
-	{
-		displayName="[TSR] Magma Claw";
-		baseWeapon="SR_Magma_Claw";
-		model="SR_Arsenal\models\thunder_Claw.p3d";
-	};
+
 	
 	
 	
