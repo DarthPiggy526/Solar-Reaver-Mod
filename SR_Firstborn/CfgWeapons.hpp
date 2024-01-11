@@ -306,214 +306,424 @@ class Cfgweapons
 			"SR_FirstBorn\Textures\Blackshield_Helmet.paa"
 		};
 	};
-	class SR_MK2_Helmet_BlackReaver: TIOW_MK2Helmet_UM
+	class SR_MK2_Helmet_BlackSgt_Sec: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK3_Helmet_BlackReaver: TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackSgt_Sec: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK4_Helmet_BlackReaver: TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackSgt_Sec: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK5_Helmet_BlackReaver: TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackSgt_Sec: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK6_Helmet_BlackReaver: TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackSgt_Sec: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK7K_Helmet_BlackReaver: TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackSgt_Sec: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK7_Helmet_BlackReaver: TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackSgt_Sec: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (Blackshield Reaver)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Sgt Sec)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Reaver.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Sec.paa"
 		};
 	};
-	class SR_MK2_Helmet_BlackLT: TIOW_MK2Helmet_UM
+	class SR_MK2_Helmet_BlackSgt_Pr: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK3_Helmet_BlackLT: TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackSgt_Pr: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK4_Helmet_BlackLT: TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackSgt_Pr: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK5_Helmet_BlackLT: TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackSgt_Pr: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK6_Helmet_BlackLT: TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackSgt_Pr: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK7K_Helmet_BlackLT: TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackSgt_Pr: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (Blackshield LT)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK7_Helmet_BlackLT: TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackSgt_Pr: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (Blackshield LT)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Sgt Pr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_LT.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Pr.paa"
 		};
 	};
-	class SR_MK2_Helmet_BlackSer: TIOW_MK2Helmet_UM
+	class SR_MK2_Helmet_BlackSgt_Snr: TIOW_MK2Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 2 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 2 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK3_Helmet_BlackSer: TIOW_MK3Helmet_UM
+	class SR_MK3_Helmet_BlackSgt_Snr: TIOW_MK3Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 3 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 3 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK4_Helmet_BlackSer: TIOW_MK4Helmet_UM
+	class SR_MK4_Helmet_BlackSgt_Snr: TIOW_MK4Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 4 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 4 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK5_Helmet_BlackSer: TIOW_MK5Helmet_UM
+	class SR_MK5_Helmet_BlackSgt_Snr: TIOW_MK5Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 5 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 5 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK6_Helmet_BlackSer: TIOW_MK6Helmet_UM
+	class SR_MK6_Helmet_BlackSgt_Snr: TIOW_MK6Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 6 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 6 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK7K_Helmet_BlackSer: TIOW_MK7KnightHelmet_UM
+	class SR_MK7K_Helmet_BlackSgt_Snr: TIOW_MK7KnightHelmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7K Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 7K Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
 		};
 	};
-	class SR_MK7_Helmet_BlackSer: TIOW_MK7Helmet_UM
+	class SR_MK7_Helmet_BlackSgt_Snr: TIOW_MK7Helmet_UM
 	{
 		author="Strixus";
-		displayName="[TSR] MK 7 Helmet (Blackshield Ser)";
+		displayName="[TSR] MK 7 Helmet (Blackshield Sgt Snr)";
 
 		hiddenSelectionsTextures[]=
 		{
-			"SR_FirstBorn\Textures\Blackshield_Helmet_Ser.paa"
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Sgt_Snr.paa"
+		};
+	};
+	class SR_MK2_Helmet_BlackLt_Sec: TIOW_MK2Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK3_Helmet_BlackLt_Sec: TIOW_MK3Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 3 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK4_Helmet_BlackLt_Sec: TIOW_MK4Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 4 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK5_Helmet_BlackLt_Sec: TIOW_MK5Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 5 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK6_Helmet_BlackLt_Sec: TIOW_MK6Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 6 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK7K_Helmet_BlackLt_Sec: TIOW_MK7KnightHelmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7K Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK7_Helmet_BlackLt_Sec: TIOW_MK7Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7 Helmet (Blackshield Lt Sec)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Sec.paa"
+		};
+	};
+	class SR_MK2_Helmet_BlackLt_Pr: TIOW_MK2Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK3_Helmet_BlackLt_Pr: TIOW_MK3Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 3 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK4_Helmet_BlackLt_Pr: TIOW_MK4Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 4 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK5_Helmet_BlackLt_Pr: TIOW_MK5Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 5 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK6_Helmet_BlackLt_Pr: TIOW_MK6Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 6 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK7K_Helmet_BlackLt_Pr: TIOW_MK7KnightHelmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7K Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK7_Helmet_BlackLt_Pr: TIOW_MK7Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7 Helmet (Blackshield Lt Pr)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Lt_Pr.paa"
+		};
+	};
+	class SR_MK2_Helmet_BlackCpt: TIOW_MK2Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK3_Helmet_BlackCpt: TIOW_MK3Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 3 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK4_Helmet_BlackCpt: TIOW_MK4Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 4 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK5_Helmet_BlackCpt: TIOW_MK5Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 5 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK6_Helmet_BlackCpt: TIOW_MK6Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 6 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK7K_Helmet_BlackCpt: TIOW_MK7KnightHelmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7K Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
+		};
+	};
+	class SR_MK7_Helmet_BlackCpt: TIOW_MK7Helmet_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7 Helmet (Blackshield Cpt)";
+
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Blackshield_Helmet_Cpt.paa"
 		};
 	};
 	class SR_MK2_Helmet_BlackVet: TIOW_MK2Helmet_UM
