@@ -138,6 +138,124 @@ class Cfgweapons
 		};
 	};
 
+	class SR_MK2_Armor_Marauder: TIOW_MK2PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK2_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
+	class SR_MK3_Armor_Marauder: TIOW_MK3PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 3 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK3_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
+	class SR_MK4_Armor_Marauder: TIOW_MK4PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 4 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK4_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
+	class SR_MK5_Armor_Marauder: TIOW_MK5PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 5 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK5_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
+	class SR_MK6_Armor_Marauder: TIOW_MK6PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 6 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK6_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
+	class SR_MK7_Armor_Marauder: TIOW_MK7PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK7_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+	class SR_MK8_Armor_Marauder: TIOW_MK8PowerArmor_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 8 Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK8_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+	class SR_MK7_ImperialisArmor_Marauder: TIOW_Mk7PowerArmorImperialis_1_WS
+	{
+		author="Strixus";
+		displayName="[TSR] MK 7 Imperialis Power Armor (Marauder)";
+		hiddenSelectionsTextures[]=
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformClass="TIOW_MK7Imp_Tact_SR_Marauder"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
+		};
+	};
+
 	// Helmets
 	class HeadgearItem;
 	class TIOW_MK2Helmet_UM;
@@ -760,6 +878,16 @@ class Cfgweapons
 		{
 			"SR_FirstBorn\Textures\SRReaver_Armour1.paa",
 			"SR_FirstBorn\Textures\SR_Armour2.paa"
+		};
+	};
+	class SR_MK2_Shoulders_Marauder : TIOW_MK2Limbs_UM
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Pauldrons (Marauder)";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+			"SR_FirstBorn\Textures\Marauder_Armour2.paa"
 		};
 	};
 

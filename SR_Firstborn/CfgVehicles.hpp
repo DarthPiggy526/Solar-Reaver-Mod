@@ -335,5 +335,205 @@ class CfgVehicles
 		magazines[]={};
 		respawnweapons[]={};
 		respawnMagazines[]={};
-	}; 
+	};
+
+//Marauder Armor
+
+	class TIOW_MK2_Tact_SR_Marauder: TIOW_Tactical_SL_7
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. II)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK2_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+
+class TIOW_MK3_Tact_SR_Marauder: TIOW_Tactical_SL_6
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. III)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK3_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+
+class TIOW_MK4_Tact_SR_Marauder: TIOW_Tactical_SL_5
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. IV)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK4_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+
+class TIOW_MK5_Tact_SR_Marauder: TIOW_Tactical_SL_4
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. V)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK5_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+
+class TIOW_MK6_Tact_SR_Marauder: TIOW_Tactical_SL_3
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. VI)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK6_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+
+class TIOW_MK7_Tact_SR_Marauder: TIOW_Tactical_SL_1
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. VII)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK7_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+class TIOW_MK8_Tact_SR_Marauder: TIOW_Tactical_SL_2
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. VIII)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK8_Armor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+};
+class TIOW_MK7Imp_Tact_SR_Marauder: TIOW_Tactical_SL_1_Imperialis
+{
+	author="Strixus";
+	displayName="Tactical Marine (MK. VII Imperialis)";
+	scope=1;
+	scopeArsenal=2;
+	scopeCurator=1;
+	faction="SR_Faction";
+	editorSubcategory="EdSubcat_SR_Marines";
+	uniformClass="SR_MK7_ImperialisArmor_Marauder"; // This will be the classname of the PowerArmor, as seen in Weapons.HPP
+	hiddenSelectionsTextures[]=
+	{
+		"SR_FirstBorn\Textures\Marauder_Armour1.paa",
+		"SR_FirstBorn\Textures\Marauder_Armour2.paa"
+	};
+	Items[]={};
+	RespawnItems[]={};
+	linkedItems[]={};
+	RespawnlinkedItems[]={};
+	weapons[]={};
+	magazines[]={};
+	respawnweapons[]={};
+	respawnMagazines[]={};
+}; 
 }; // End of CfgVechicle
