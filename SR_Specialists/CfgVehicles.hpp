@@ -464,7 +464,26 @@ class CfgVehicles
 		};
 	}
 	
-	
+	// Specialist Powerpack Alternatives
+ 	class Dos_AP_PP_2;
+	class TSR_AP_PP_2: Dos_AP_PP_2
+	{
+		author="Sepshal";
+		scope=2;
+		displayName="[TSR] Grand Apothecary Powerpack";
+		hiddenSelections[]=
+		{
+			"BackpackCamo",
+			"BackpackCamo_ApLight"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"SR_Specialists\Textures\Ap_PowerPack_1_GA_CO_BLK.paa",
+			"SR_Specialists\Textures\Ap_PowerPack_1_2_GA_CO_BLK.paa"
+		};
+	};
+
+
 	
 	// SL UNIT
 	class TIOW_Tactical_IF_1;
