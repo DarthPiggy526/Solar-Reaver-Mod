@@ -462,10 +462,9 @@ class CfgVehicles
 			"SR_Specialists\Textures\Recon_PrimArmour.paa",
 			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
-	}
-	
-	// Specialist Powerpack Alternatives
- 	class Dos_AP_PP_2;
+
+  // Specialist Powerpack Alternatives
+  class Dos_AP_PP_2;
 	class TSR_AP_PP_2: Dos_AP_PP_2
 	{
 		author="Sepshal";
@@ -482,6 +481,7 @@ class CfgVehicles
 			"SR_Specialists\Textures\Ap_PowerPack_1_2_GA_CO_BLK.paa"
 		};
 	};
+
 
 
 	
@@ -507,4 +507,5 @@ class CfgVehicles
 	
 	
 	
+
 }; // End of CfgVechicle
