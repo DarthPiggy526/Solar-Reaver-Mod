@@ -12,13 +12,10 @@ class CfgPatches
 			"Steve_30K_weps_New",
 			"Steve_30K_weps2",
 			"Steve_30k_weps3",
-			"TIOW_IQ_40k_weapons",
 			"TIOW_Dos_Weps",
 			"A3_Data_F",
 			"A3_Characters_F",
-			"A3_Anims_F",
-			"Project_Primaris_Dos_Weapons",
-			"Seb_SM_Melee_Mod"
+			"A3_Anims_F"
 		};
 		weapons[]=
 		{
@@ -33,11 +30,6 @@ class CfgPatches
 			"SR_Lascut",
 			"SR_LasFusil",
 			"SR_Ragefire_PlasmaGun_1",
-            "SR_Relic_Plasma_Gun_1",
-            "SR_Relic_Plasma_Gun_2",
-            "SR_Relic_Plasma_Gun_3",
-            "SR_Relic_Plasma_Gun_4",
-            "SR_Relic_Plasma_Gun_5",
 			"SR_Ryza_Plasma_Gun_01",
 			"SR_Ryza_Plasma_Gun_02",
 			"SR_Ryza_Plasma_Gun_03",
@@ -66,7 +58,15 @@ class CfgPatches
 			"SR_Mag_Stasis_Grenade",
 			"SR_Mag_Tanglefoot_Grenade",
 			"SR_Mag_Antigrav_Grenade",
-			"SR_Mag_Vortex_Grenade"
+			"SR_Mag_Vortex_Grenade",
+			
+			"SR_Trig_BoltgunMag_DF",
+			"SR_Trig_Exitus_BoltgunMag_DF",
+			"SR_Trig_BoltPistolMag_DF",
+			"SR_Phob_BoltgunMag_DF",
+			"SR_Phob_BoltPistolMag_DF",
+			"SR_Phob_CombiBoltgunMag_DF",
+			"SR_Phob_Atrox_BoltgunMag_DF"
 		};
 		ammo[]=
 		{
@@ -644,7 +644,7 @@ class CfgFunctions
 			class wbk_injector {
 				postInit    = 1;
 				//file = "SR_Arsenal\functions\fn_wbk_injector.sqf";
-			}
+			};
 		};
 	};
 };
