@@ -645,6 +645,10 @@ class CfgFunctions
 				postInit    = 1;
 				//file = "SR_Arsenal\functions\fn_wbk_injector.sqf";
 			};
+			class no_grenade_stack {
+				postInit 	= 1;
+				//file = "SR_Arsenal\functions\fn_no_grenade_stack.sqf";
+			};
 		};
 	};
 };
