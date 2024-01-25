@@ -70,7 +70,7 @@ class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
 	class States
 	{
 		class Crew;
-		Kart_driver : Crew
+		class Kart_driver : Crew
 		{
 			actions = "CargoActions";
 			file = "a3\Soft_F_Kart\Kart_01\data\Anim\Kart_driver.rtm";
@@ -83,7 +83,7 @@ class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
 			leaning = "crewShake_shoulders";
 			looped = 1;
 		};
-		Kart_driver_KIA : DefaultDie
+		class Kart_driver_KIA : DefaultDie
 		{
 			actions = "DeadActions";
 			file = "a3\Soft_F_Kart\Kart_01\data\Anim\Kart_driver.rtm";
