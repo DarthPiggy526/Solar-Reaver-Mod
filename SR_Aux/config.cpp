@@ -10,6 +10,8 @@ class CfgPatches
 		version = 0.2;
 		requiredAddons[] = {"A3_Characters_F","A3_Data_F_Mark","IC_weapons_base","Ork_Gubbinz_full"};
 		author = "Tengu";
+
+		skipWhenMissingDependencies = 1;
 	};
 };
 

@@ -26,6 +26,8 @@ class CfgPatches
 		weapons[]=
 		{
 		};
+
+		skipWhenMissingDependencies = 1;
 	};
 };
 

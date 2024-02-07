@@ -558,14 +558,14 @@ if (not(isDedicated)) then {
 							[_projectile] spawn {
 								sleep 7.5;
 								_targ = getPos (_this select 0);
-								_targs = (nearestObjects [_targ, ["AllVehicles"], 20]);
+								_targs = (_targ nearObjects ["AllVehicles", 20]);
 								[_targ, _targs] spawn{
 									sleep 0.5;
 									_targ = (_this select 0);
 									_targs = (_this select 1);
-									_i = 60;
+									_i = 120;
 									while {_i > 0} do {
-										_targs = (nearestObjects [_targ, ["AllVehicles"], 20]);
+										_targs = (_targ nearObjects ["AllVehicles", 20]);
 										{
 											_vectdir = (getPosASL _x) vectorFromTo (AGLtoASL _targ);
 											if ((getMass _x) == 0) then {
@@ -576,10 +576,10 @@ if (not(isDedicated)) then {
 											};
 											_x setUnconscious false;
 										}forEach _targs;
-										sleep 0.2;
+										sleep 0.1;
 										_i = _i - 1;
 									};
-									_targs = (nearestObjects [_targ, ["AllVehicles"], 20]); 
+									_targs = (_targ nearObjects ["AllVehicles", 20]); 
 									{
 										_vectdir = (AGLtoASL _targ) vectorFromTo (getPosASL _x);
 										if ((getMass _x) == 0) then {

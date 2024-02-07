@@ -22,47 +22,51 @@
 params [];
 
 if (not(isDedicated)) then {
-	if (("SR_Master_Crafted_Ragefire_PlasmaGun_1" in (weapons player)) and (SR_Arsenal_Ragefire_Take_Handler == -1)) then {
-		SR_Arsenal_Ragefire_Take_Handler = player addEventHandler ["FiredMan", {
-			// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
-			_weapon = (_this select 1);
-			_mode = (_this select 3);
-			_magazine = (_this select 5);
-			
-			if ((_weapon == "SR_Master_Crafted_Ragefire_PlasmaGun_1") and (_mode == "Burst")) then {
-				if (SR_Arsenal_Ragefire_Clock >= 2) then {
-					_ammo = player ammo _weapon;
-					
-					player setAmmo [_weapon, 0];
-					
-					[_ammo, _magazine] spawn {
-						sleep 1.5;
+	if ("SR_Master_Crafted_Ragefire_PlasmaGun_1" in (weapons player)) then {
+		if (SR_Arsenal_Ragefire_Take_Handler == -1) then {
+			SR_Arsenal_Ragefire_Take_Handler = player addEventHandler ["FiredMan", {
+				// params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_vehicle"];
+				_weapon = (_this select 1);
+				_mode = (_this select 3);
+				_magazine = (_this select 5);
+				
+				if ((_weapon == "SR_Master_Crafted_Ragefire_PlasmaGun_1") and (_mode == "Burst")) then {
+					if (SR_Arsenal_Ragefire_Clock >= 2) then {
+						_ammo = player ammo _weapon;
 						
-						_weapon = currentWeapon player;
-						if ((_weapon == "SR_Master_Crafted_Ragefire_PlasmaGun_1") and ((player ammo _weapon) == 0) and ((currentMagazine player) == (_this select 1))) then {
-							player setAmmo [_weapon, (_this select 0)];
-						}
-						else {
-							player addMagazine [(_this select 1), (_this select 0)];
+						player setAmmo [_weapon, 0];
+						
+						[_ammo, _magazine] spawn {
+							sleep 1.5;
+							
+							_weapon = currentWeapon player;
+							if ((_weapon == "SR_Master_Crafted_Ragefire_PlasmaGun_1") and ((player ammo _weapon) == 0) and ((currentMagazine player) == (_this select 1))) then {
+								player setAmmo [_weapon, (_this select 0)];
+							}
+							else {
+								player addMagazine [(_this select 1), (_this select 0)];
+							};
 						};
+						
+						SR_Arsenal_Ragefire_Clock = 0;
+					}
+					else {
+						SR_Arsenal_Ragefire_Clock = SR_Arsenal_Ragefire_Clock + 1;
 					};
 					
-					SR_Arsenal_Ragefire_Clock = 0;
-				}
-				else {
-					SR_Arsenal_Ragefire_Clock = SR_Arsenal_Ragefire_Clock + 1;
+					//If we emptied the mag, reset the clock
+					_ammo = player ammo _weapon;
+					if (_ammo == 0) then {
+						SR_Arsenal_Ragefire_Clock = 0;
+					};
 				};
-				
-				//If we emptied the mag, reset the clock
-				_ammo = player ammo _weapon;
-				if (_ammo == 0) then {
-					SR_Arsenal_Ragefire_Clock = 0;
-				};
-			};
-		}];
+			}];
+		};
 	}
 	else {
-		SR_Arsenal_Ragefire_Take_Handler = -1;
-		player removeEventHandler ["FiredMan", SR_Arsenal_Ragefire_Take_Handler];
+		if (SR_Arsenal_Ragefire_Take_Handler != -1) then {
+			player removeEventHandler ["FiredMan", SR_Arsenal_Ragefire_Take_Handler];
+			SR_Arsenal_Ragefire_Take_Handler = -1;
+		};
 	};
 };

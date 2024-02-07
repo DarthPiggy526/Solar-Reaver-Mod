@@ -25,11 +25,6 @@ if (not(isDedicated)) then {
 	_plasma_weapons = [
 		"SR_Master_Crafted_Ragefire_PlasmaGun_1", 
 		"SR_Ragefire_Plasma_Gun",
-        "SR_Relic_Plasma_Gun_1",
-        "SR_Relic_Plasma_Gun_2",
-        "SR_Relic_Plasma_Gun_3",
-        "SR_Relic_Plasma_Gun_4",
-        "SR_Relic_Plasma_Gun_5",
 		"SR_Ryza_Plasma_Gun_01", 
 		"SR_Ryza_Plasma_Gun_02", 
 		"SR_Ryza_Plasma_Gun_03", 
@@ -39,6 +34,23 @@ if (not(isDedicated)) then {
 		"TIOW_SM_Combi_Bolter_3",
 		"STEVE_TigComb_Plasma_1"
 	];
+
+	if ("tiow_dos_ssw" in activatedAddons) then {
+		_plasma_weapons = _plasma_weapons + [
+			"SR_Relic_Plasma_Gun_1",
+			"SR_Relic_Plasma_Gun_2",
+			"SR_Relic_Plasma_Gun_3",
+			"SR_Relic_Plasma_Gun_4",
+			"SR_Relic_Plasma_Gun_5"
+		];
+	};
+	
+	if ("avpack" in activatedAddons) then {
+		_plasma_weapons = _plasma_weapons + [
+			"SR_AV_RagefirePlasmaGun",
+			"SR_AV_RagefirePlasmaGun_Relic"
+		];
+	};
 
 	_plasma_muzzles = [
 		"SR_Master_Crafted_Ragefire_PlasmaGun_1", 
@@ -69,6 +81,6 @@ if (not(isDedicated)) then {
 		
 		execVM "SR_Arsenal\functions\fn_plasma_heat_and_overcharge_main.sqf";
 	}];
-	["ace_arsenal_displayClosed", {execVM "SR_Arsenal\functions\fn_ragefire_burst_cd.sqf";}] call CBA_fnc_addEventHandler;
+	["ace_arsenal_displayClosed", {execVM "SR_Arsenal\functions\fn_plasma_heat_and_overcharge_main.sqf";}] call CBA_fnc_addEventHandler;
 	
 };

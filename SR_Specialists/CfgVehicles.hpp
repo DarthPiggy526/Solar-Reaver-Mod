@@ -462,7 +462,6 @@ class CfgVehicles
 			"SR_Specialists\Textures\Recon_PrimArmour.paa",
 			"SR_Firstborn\Textures\SR_Armour1.paa"
 		};
-	}
 
   // Specialist Powerpack Alternatives
   class Dos_AP_PP_2;
@@ -482,4 +481,31 @@ class CfgVehicles
 			"SR_Specialists\Textures\Ap_PowerPack_1_2_GA_CO_BLK.paa"
 		};
 	};
+
+
+
+	
+	// SL UNIT
+	class TIOW_Tactical_IF_1;
+	class SR_SL : TIOW_Tactical_IF_1
+	{
+		displayName="[TSR] Squad Leader";
+		editorCategory= "EdCategory_TheAdeptusAstartes";
+		editorSubcategory="EdSubCat_SR";
+		scope = 2;
+		Items[]={};
+		RespawnItems[]={};
+		linkedItems[]={};
+		RespawnlinkedItems[]={};
+		
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_fnc_sl_buffs_init; _entity addEventHandler ['Respawn',{(_this select 0) call SR_fnc_sl_buffs_init;}];";
+		};
+		
+	};
+	
+	
+	
+
 }; // End of CfgVechicle
