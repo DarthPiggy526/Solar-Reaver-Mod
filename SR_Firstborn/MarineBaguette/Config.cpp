@@ -40,4 +40,16 @@ class CfgWeapons
 			uniformClass = "TIOW_MK7_Tact_SR_Baguette"; // This will be the classname of a placeable unit, as seen in Vehicles.HPP
 		};
 	};
+
+	class SR_MK2_Shoulders_Blackshield;
+	class SR_MK2_Shoulders_Baguette : SR_MK2_Shoulders_Blackshield
+	{
+		author="Strixus";
+		displayName="[TSR] MK 2 Pauldrons (Baguette)";
+		hiddenSelectionsTextures[] =
+		{
+			"SR_FirstBorn\Textures\Baguette_Armour1.paa",
+			"SR_FirstBorn\Textures\SR_Armour2.paa"
+		};
+	};
 };
