@@ -18,6 +18,7 @@ class CfgPatches
 		requiredVersion=0.1;
 		units[]=
 		{
+			"SR_SL"
 		};
 		weapons[]=
 		{
@@ -38,6 +39,29 @@ class CfgEditorSubcategories
 	class EdSubcat_SR
 	{
 		displayName = "Solar Reavers";
+	};
+};
+
+class CfgFunctions
+{
+	class SR
+	{
+		class SL
+		{
+			file = "SR_Specialists\functions";
+			class sl_buffs_init {
+				//file = "SR_Specialists\functions\fn_sl_buffs_init.sqf";
+			};
+			class sl_buffs_move {
+				//file = "SR_Specialists\functions\fn_sl_buffs_move.sqf";
+			};
+			class sl_buffs_resist {
+				//file = "SR_Specialists\functions\fn_sl_buffs_resist.sqf";
+			};
+			class sl_buffs_fire {
+				//file = "SR_Specialists\functions\fn_sl_buffs_fire.sqf";
+			};
+		};
 	};
 };
 

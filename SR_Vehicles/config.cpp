@@ -43,6 +43,68 @@ class CfgPatches
 		};
 	};
 };
+
+
+
+
+
+// Marines in karts
+class CfgMovesBasicSpaceMarine
+{
+	class DefaultDie;
+	class FFV_BaseActions;
+	class ManActions
+	{
+		Kart_driver = "Kart_driver";
+	};
+};
+
+class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
+{
+	skeletonName="SpaceMarine_ManSkeleton";
+	gestures="CfgGesturesSpaceMarine";
+	class vehicle_turnout_1_Aim;
+	class cargo_base;
+	class AmovPercMstpSlowWrflDnon;
+	class cargo_basebinoc;
+	class States
+	{
+		class Crew;
+		class Kart_driver : Crew
+		{
+			actions = "CargoActions";
+			file = "a3\Soft_F_Kart\Kart_01\data\Anim\Kart_driver.rtm";
+			interpolateTo[] = 
+			{
+				"Kart_driver_KIA",
+				1
+			};
+			speed=1e+010;
+			leaning = "crewShake_shoulders";
+			looped = 1;
+		};
+		class Kart_driver_KIA : DefaultDie
+		{
+			actions = "DeadActions";
+			file = "a3\Soft_F_Kart\Kart_01\data\Anim\Kart_driver.rtm";
+			InterpolateTo[] = 
+			{
+				"Unconscious",
+				0.02
+			};
+			connectTo[] = 
+			{
+				"Unconscious",
+				0.1
+			};
+			leaning = "crewShake";
+			looped = 0;
+		};
+	};
+};
+
+
+
 // Regular joe cargoing and driving
 class CfgMovesBasic
 {
@@ -80,6 +142,7 @@ class CfgMovesBasic
 		Steve_SM_AssGargo1="Steve_SM_AssGargo1";
 	};
 };
+
 class CfgMovesMaleSdr: CfgMovesBasic
 {
 	skeletonName="OFP2_ManSkeleton";
@@ -527,6 +590,11 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 	};
 };
+
+
+
+
+
 class CfgVehicles
 {
 	class VTOL_SE_1;
