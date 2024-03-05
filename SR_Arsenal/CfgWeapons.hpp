@@ -3433,6 +3433,9 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_TIOW_SM_Rocket_1";
 		displayName="[TSR] [Astartes] Missile Launcher";
+		magazines[] += {
+			"SR_Light_Frag_Missile"
+		};
 	};
 	
 	class SR_TIOW_SM_LasCan_01 : TIOW_SM_LasCan_01

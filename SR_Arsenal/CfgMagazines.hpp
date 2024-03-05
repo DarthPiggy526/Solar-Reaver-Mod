@@ -3,6 +3,9 @@ class Steve_Trig_BoltPistolMag;
 class Steve_Phob_BoltPistolMag;
 class Steve_30k_lascutter_Mag;
 class TIOW_30rnd_GodwynBoltgunMag;
+
+class TIOW_SM_Rocket_Frag_Mag;
+
 class Steve_SM_Grav_Mag;
 class Steve_Volkite_Cav_Mag;
 class Steve_Volkite_Charger_Mag;
@@ -80,6 +83,14 @@ class CfgMagazines
 	};
 	
 	
+	
+	class SR_Light_Frag_Missile: TIOW_SM_Rocket_Frag_Mag
+	{
+		displayName = "[TSR] Light Frag Missile";
+		descriptionShort = "[TSR] Light Frag Missile";
+		mass = 20;
+		ammo = "SR_Light_Frag_Missile_Round";
+	};
 	
 	
 	
