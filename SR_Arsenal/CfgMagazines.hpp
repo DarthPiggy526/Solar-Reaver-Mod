@@ -81,6 +81,9 @@ class CfgMagazines
 	
 	
 	
+	
+	
+	// Grav
 	class SR_SM_Grav_Mag : Steve_SM_Grav_Mag
 	{
 		ammo = "SR_SM_Grav_Mag_Rnd";
@@ -88,6 +91,8 @@ class CfgMagazines
 		initSpeed = 1050;
 		mass = 60;
 	};
+	
+	// Volkite
 	class SR_Volkite_Cav_Mag : Steve_Volkite_Cav_Mag
 	{
 		ammo = "SR_Volkite_Cav_Rnd";
@@ -115,6 +120,9 @@ class CfgMagazines
 	};
 	
 	
+	
+	
+	// Special Issue Grenades
 	
 	class SR_Mag_Rad_Grenade: HandGrenade_Stone
 	{
@@ -193,6 +201,8 @@ class CfgMagazines
 	};
 	
 	
+	
+	// DragonFire Magazines (fire aoe)
 	
 	class SR_Trig_BoltgunMag_DF: Steve_Trig_BoltgunMag_DF
 	{
