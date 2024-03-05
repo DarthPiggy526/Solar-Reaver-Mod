@@ -2964,6 +2964,157 @@ class Cfgweapons
 		author="Waagheur";
 		baseWeapon="SR_TIOW_SM_Flamer";
 		displayName="[TSR] [Astartes] Space Marine Flamer";
+		modes[]=
+		{
+			"Single"
+		};
+		class Single: Mode_SemiAuto
+		{
+			reloadTime=1;
+			dispersion=0.00034999999;
+			recoil="recoil_pistol_light";
+			recoilProne="recoil_prone_pistol_light";
+			minRange=0;
+			minRangeProbab=0.89999998;
+			midRange=15;
+			midRangeProbab=0.69999999;
+			maxRange=30;
+			maxRangeProbab=0.1;
+			aiRateOfFire=1e-006;
+			soundContinuous=0;
+			soundBurst=0;
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+					0.316228,
+					1,
+					10
+				};
+				closure2[]=
+				{
+					"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+					0.316228,
+					1.1,
+					10
+				};
+				soundClosure[]=
+				{
+					"closure1",
+					0.5,
+					"closure2",
+					0.5
+				};
+				soundSet="";
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"TIOW_KriegFlamer_Shot_SoundSet",
+					"TIOW_KriegFlamer_Tail_SoundSet",
+					"TIOW_KriegFlamer_InteriorTail_SoundSet"
+				};
+				begin1[]=
+				{
+					"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+					3.1622801,
+					1,
+					1800
+				};
+				begin2[]=
+				{
+					"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+					3.1622801,
+					1,
+					1800
+				};
+				begin3[]=
+				{
+					"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+					3.1622801,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001,
+					"begin2",
+					0.33000001,
+					"begin1",
+					0.34
+				};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[]=
+						{
+							"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+							1.58489,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="interior";
+					};
+					class TailTrees
+					{
+						sound[]=
+						{
+							"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[]=
+						{
+							"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[]=
+						{
+							"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[]=
+						{
+							"\a40k_wepbase\Sounds\Flamerv5_40k.ogg",
+							1,
+							1,
+							1800
+						};
+						frequency=1;
+						volume="(1-interior/1.4)*houses";
+					};
+				};
+			};
+		};
 	};
 	class SR_Steve_Phaestos_Flamer_1_mk2 : Steve_Phaestos_Flamer_1_mk2
 	{

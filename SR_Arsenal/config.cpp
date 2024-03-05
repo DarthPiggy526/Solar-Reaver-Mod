@@ -620,6 +620,13 @@ class CfgFunctions
 				postInit 	= 1;
 				//file = "SR_Arsenal\functions\fn_plasma_heat_and_overcharge_init.sqf";
 			};
+			class flamer_main {
+				//file = "SR_Arsenal\functions\fn_flamer_main.sqf";
+			};
+			class flamer_init {
+				postInit 	= 1;
+				//file = "SR_Arsenal\functions\fn_flamer_init.sqf";
+			};
 			class grav_slow_main {
 				//file = "SR_Arsenal\functions\fn_grav_slow_main.sqf";
 			};
