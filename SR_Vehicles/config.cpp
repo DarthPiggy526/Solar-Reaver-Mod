@@ -939,7 +939,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Thunderhawk_CO.paa"};
 	};
 
-class TIOW_UM_Storm;
+	class TIOW_UM_Storm;
 	class TSR_StormSpeeder: TIOW_UM_Storm
 	{
 		armor=100;
@@ -1089,6 +1089,11 @@ class TIOW_UM_Storm;
 			"\SR_Vehicles\textures\SR_Speeder_Hull_CO.paa"
 		};
 	};
+	
+	
+	
+	
+	
 	class TIOW_SM_Rhino_UM;
 	class TSR_Rhino: TIOW_SM_Rhino_UM
 	{
