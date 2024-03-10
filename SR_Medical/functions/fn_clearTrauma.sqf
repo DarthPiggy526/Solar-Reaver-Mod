@@ -38,7 +38,7 @@ private _damage = 0;
 		// If the wound is a bruise
 		if ((((_x select 0)) == 20) or (((_x select 0)) == 21) or (((_x select 0)) == 22)) then {
 			// Store the damage to remove it from the limb
-			_damage = (_x select 3);
+			_damage = (_x select 3) * (_x select 1);
 			// Remove the wound, it seems to update the patient's variable automatically?
 			_y deleteAt _forEachIndex;
 			break;
