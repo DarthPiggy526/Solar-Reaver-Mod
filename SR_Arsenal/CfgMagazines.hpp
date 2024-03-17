@@ -3,6 +3,9 @@ class Steve_Trig_BoltPistolMag;
 class Steve_Phob_BoltPistolMag;
 class Steve_30k_lascutter_Mag;
 class TIOW_30rnd_GodwynBoltgunMag;
+
+class TIOW_SM_Rocket_Frag_Mag;
+
 class Steve_SM_Grav_Mag;
 class Steve_Volkite_Cav_Mag;
 class Steve_Volkite_Charger_Mag;
@@ -81,6 +84,17 @@ class CfgMagazines
 	
 	
 	
+	class SR_Light_Frag_Missile: TIOW_SM_Rocket_Frag_Mag
+	{
+		displayName = "[TSR] Light Frag Missile";
+		descriptionShort = "[TSR] Light Frag Missile";
+		mass = 20;
+		ammo = "SR_Light_Frag_Missile_Round";
+	};
+	
+	
+	
+	// Grav
 	class SR_SM_Grav_Mag : Steve_SM_Grav_Mag
 	{
 		ammo = "SR_SM_Grav_Mag_Rnd";
@@ -88,6 +102,8 @@ class CfgMagazines
 		initSpeed = 1050;
 		mass = 60;
 	};
+	
+	// Volkite
 	class SR_Volkite_Cav_Mag : Steve_Volkite_Cav_Mag
 	{
 		ammo = "SR_Volkite_Cav_Rnd";
@@ -115,6 +131,9 @@ class CfgMagazines
 	};
 	
 	
+	
+	
+	// Special Issue Grenades
 	
 	class SR_Mag_Rad_Grenade: HandGrenade_Stone
 	{
@@ -193,6 +212,8 @@ class CfgMagazines
 	};
 	
 	
+	
+	// DragonFire Magazines (fire aoe)
 	
 	class SR_Trig_BoltgunMag_DF: Steve_Trig_BoltgunMag_DF
 	{

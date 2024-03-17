@@ -5,6 +5,9 @@ class Steve_30k_CombiPlas_Mag;
 class TIOW_Melta_Ammo;
 class Steve_30k_Lascutter_Round;
 class TIOW_LemanRuss_Lascannon_Rnd;
+
+class TIOW_SM_Rocket_Frag_Round;
+
 class Steve_SM_Grav_Mag_Rnd;
 class Steve_Volkite_Cav_Rnd;
 class Steve_Volkite_Charger_Rnd;
@@ -107,6 +110,18 @@ class CfgAmmo
 		ACE_muzzleVelocities[] = {1140};
 		ACE_barrelLengths[] = {728.98};
 	};
+	
+	
+	
+	class SR_Light_Frag_Missile_Round: TIOW_SM_Rocket_Frag_Round
+	{
+		hit = 120;
+		indirectHit = 60;
+		indirectHitRange = 40;
+	};
+	
+	
+	
 	class SR_SM_Grav_Mag_Rnd : Steve_SM_Grav_Mag_Rnd
 	{
 		ACE_bulletLength = 102;

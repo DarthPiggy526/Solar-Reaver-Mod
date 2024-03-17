@@ -11,7 +11,9 @@ class CfgPatches
 			"Steve_Ass_Ram",
 			"TIOW_Razorback",
 			"TIOW_SM_Fast_attack",
-			"TIOW_Thunderhawk"
+			"TIOW_Thunderhawk",
+			"WHturret",
+			"SR_UAV"
 		};
 		weapons[]={};
 		magazines[]={};
@@ -48,7 +50,25 @@ class CfgPatches
 
 
 
-// Marines in karts
+class CfgFunctions {
+	class SR_Vehicles {
+		class functions {
+			class init {
+				postInit = 1;
+				file = "SR_Vehicles\functions\init.sqf";
+			};
+			class addSmokeScreen {
+				file = "SR_Vehicles\functions\addSmokeScreen.sqf";
+			};
+		};
+	};
+};
+
+
+
+
+
+// Marines in karts and in mortars
 class CfgMovesBasicSpaceMarine
 {
 	class DefaultDie;
@@ -56,6 +76,14 @@ class CfgMovesBasicSpaceMarine
 	class ManActions
 	{
 		Kart_driver = "Kart_driver";
+		
+		// Static Mortar
+		// GetInMortar="GetInMortar";
+		// Mortar_Gunner="Mortar_Gunner"
+		// Mortar_01_F_Turret="Mortar_01_F_Turret";
+		
+		// Static TIOW Mortar
+		pilot_TIOW_IG_Mortar="pilot_TIOW_IG_Mortar";
 	};
 };
 
@@ -70,6 +98,7 @@ class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
 	class States
 	{
 		class Crew;
+		// Kart
 		class Kart_driver : Crew
 		{
 			actions = "CargoActions";
@@ -99,6 +128,78 @@ class CfgMovesMaleSpaceMarine: CfgMovesBasicSpaceMarine
 			};
 			leaning = "crewShake";
 			looped = 0;
+		};
+		
+		// Static Mortar
+		// class AmovPercMstpSnonWnonDnon;
+		// class Mortar_01_F_Turret: Crew
+		// {
+			// file="\A3\cargoposes_F\anim\gunner_static_low01.rtm";
+			// interpolateTo[]=
+			// {
+				// "Mortar_01_F_Dead",
+				// 1
+			// };
+		// };
+		// class Mortar_01_F_Dead: DefaultDie
+		// {
+			// actions="DeadActions";
+			// file="\A3\cargoposes_F\anim\gunner_static_low01_KIA.rtm";
+			// speed=1e+010;
+			// terminal=1;
+			// soundEnabled=0;
+			// connectTo[]=
+			// {
+				// "DeadState",
+				// 1
+			// };
+		// };
+		
+		// class GetInMortar: AmovPercMstpSnonWnonDnon
+		// {
+			// actions = "MortarActions";
+			// file = "\A3\cargoposes_F\Anim\mk6_get_in.rtm";
+			// speed = "0,7142857142857143";
+			// InterpolateTo[] = {
+				// "Unconscious",
+				// 0.1
+			// };
+			// ConnectTo[] = {
+				// "AmovPercMstpSnonWnonDnon",
+				// 0.02
+			// };
+			// looped = 0;
+			// limitGunMovement = 0.3;
+		// };
+		
+		// class Mortar_gunner: GetInMortar
+		// {
+			// actions = "MortarActions";
+			// file = "\A3\cargoposes_F\Anim\mk6_idle.rtm";
+			// speed = 0.205479;
+			// InterpolateTo[] = {
+				// "AmovPercMstpSnonWnonDnon",
+				// 0.1,
+				// "AmovPercMstpSrasWrflDnon",
+				// 0.1,
+				// "AmovPercMstpSrasWpstDnon",
+				// 0.1,
+				// "Unconscious",
+				// 0.1
+			// };
+			// ConnectTo[] = {
+				// "AmovPercMstpSnonWnonDnon",
+				// 0.02
+			// };
+			// looped = 1;
+		// };
+		
+		// Static TIOW Mortar
+		class pilot_plane_cas_01;
+		class pilot_TIOW_IG_Mortar: pilot_plane_cas_01
+		{
+			file="\WHTurret\IG\Anim\TIOW_IG_Mortar.rtm";
+			speed=0.33000001;
 		};
 	};
 };
@@ -838,7 +939,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Thunderhawk_CO.paa"};
 	};
 
-class TIOW_UM_Storm;
+	class TIOW_UM_Storm;
 	class TSR_StormSpeeder: TIOW_UM_Storm
 	{
 		armor=100;
@@ -988,6 +1089,11 @@ class TIOW_UM_Storm;
 			"\SR_Vehicles\textures\SR_Speeder_Hull_CO.paa"
 		};
 	};
+	
+	
+	
+	
+	
 	class TIOW_SM_Rhino_UM;
 	class TSR_Rhino: TIOW_SM_Rhino_UM
 	{
@@ -1010,6 +1116,10 @@ class TIOW_UM_Storm;
 			"SR_Vehicles\textures\SR_Rhino_CO.paa",
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhino_Int_co.paa",
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_rhinotracks_co.paa"
+		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
 		};
 	};
 	class TIOW_SM_Razorback_UM;
@@ -1034,6 +1144,10 @@ class TIOW_UM_Storm;
 			"SR_Vehicles\textures\SR_Rhino_CO.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa"
+		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
 		};
 	};
 	class TIOW_SM_Razorback_LC_UM;
@@ -1060,6 +1174,10 @@ class TIOW_UM_Storm;
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_RB_Las_co.paa"
+		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
 		};
 	};
 	class TIOW_SM_Razorback_AC_UM;
@@ -1089,6 +1207,10 @@ class TIOW_UM_Storm;
 			"\TIOW_Razorback\Data\Textures\AssaultCannon_co.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_RB_Las_co.paa"
 		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TIOW_SM_Predator_UM;
 	class TSR_Predator: TIOW_SM_Predator_UM
@@ -1113,6 +1235,10 @@ class TIOW_UM_Storm;
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhino_Int_co.paa",
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhinotracks_co.paa"
 		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TIOW_SM_Vindicator_UM;
 	class TSR_Vindicator: TIOW_SM_Vindicator_UM
@@ -1136,6 +1262,10 @@ class TIOW_UM_Storm;
 			"SR_Vehicles\textures\SR_Rhino_CO.paa",
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhino_Int_co.paa",
 			"\TIOW_SM_Vehs\Data\Textures\TIOW_Rhinotracks_co.paa"
+		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
 		};
 	};
 	class TIOW_SM_Whirlwind_Arty_UM;
@@ -1165,6 +1295,10 @@ class TIOW_UM_Storm;
 					"JCAS_Whirlwind_Plasma_Missile_Mag","JCAS_Whirlwind_Plasma_Missile_Mag"};
 			};
 		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TIOW_SM_Whirlwind_AA_UM;
 	class TSR_Whirlwind_AA: TIOW_SM_Whirlwind_AA_UM
@@ -1186,6 +1320,10 @@ class TIOW_UM_Storm;
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhino_Int_Co.paa",
 			"\TIOW_Razorback\Data\Textures\TIOW_Rhinotracks_co.paa"
 		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TIOW_Bike_Base;
 	class TSR_Ass_Bike_Bolter: TIOW_Bike_Base
@@ -1201,6 +1339,10 @@ class TIOW_UM_Storm;
 		editorSubcategory = "EdSubcat_Cars";
 		hiddenSelections[] = {"Bike_Camo"};
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa"};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TSR_Ass_Bike_Plasma: TSR_Ass_Bike_Bolter
 	{
@@ -1214,6 +1356,10 @@ class TIOW_UM_Storm;
 		magazines[]=
 		{
 			"TIOW_SM_Bike_Plasma_Mag"
+		};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
 		};
 	};
 	class TIOW_Side_Car_Base;
@@ -1230,6 +1376,10 @@ class TIOW_UM_Storm;
 		editorSubcategory = "EdSubcat_Cars";
 		hiddenSelections[] = {"Bike_Camo","side_camo"};
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa","TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
 	class TIOW_Side_Car_Base_Melt;
 	class TSR_Atk_Bike_Melt: TIOW_Side_Car_Base_Melt
@@ -1247,5 +1397,130 @@ class TIOW_UM_Storm;
 		editorSubcategory = "EdSubcat_Cars";
 		hiddenSelections[] = {"Bike_Camo","side_camo"};
 		hiddenSelectionsTextures[] = {"SR_Vehicles\textures\SR_Bike_CO.paa","TIOW_SM_Fast_attack\Textures\Side_Car_Black_CO.paa"};
+		class EventHandlers
+		{
+			postInit = "params ['_entity']; [_entity] call SR_Vehicles_fnc_addSmokeScreen;";
+		};
 	};
+	
+	
+	
+	// Space Marine deployable mortar
+	class Man;
+    class CAManBase: Man {
+      class ACE_SelfActions {
+        class ACE_Equipment {
+          class ITC_Land_Unpack {
+			displayName = "Unpack";
+            condition = "[ACE_player] call SR_UAV_fnc_canunpack";
+            statement = "";
+            exceptions[] = {"isNotDragging", "notOnMap", "isNotInside", "isNotSitting"};
+            showDisabled = 0;
+            priority = 0;
+            // Skull Probes
+            class SR_Unpack_TSR_Mortar {
+              displayName = "Mortar Emplacement";
+              condition = "'TSR_Mortar_Packed' in (items _player)";
+              statement = "['TSR_Mortar_Packed',_player] call SR_UAV_fnc_unPack";
+			  priority = 1;
+              showDisabled = 1;
+              exceptions[] = {"isNotInside","isNotSitting"};
+              enableInside = 0;
+            };
+          };
+        };
+      };
+    };
+	
+	class TIOW_IG_Mortar_836_Blu;
+	class TSR_Mortar: TIOW_IG_Mortar_836_Blu
+	{
+		author="Sokolonko+E_50_Panzer+Waagheur";
+		itc_land_PacksTo = "TSR_Mortar_Packed";
+		scope=2;
+		scopecurator=2;
+		scopearsenal=2;
+		Faction="SR_Faction";
+		side=1;
+		displayName="Mortar Emplacement";
+		model="WHTurret\IG\Model\TIOW_IG_Mortar.p3d";
+		editorSubcategory="EdSubcat_Turrets";
+		crew="";
+		class assembleInfo {
+			primary = 1;
+			base = "";
+			assembleTo = "";
+			displayName = "";
+			dissasembleTo[] = {};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				minelev=-45;
+				maxelev=45;
+				initElev=0;
+				minTurn=-360;
+				maxTurn=360;
+				elevationMode=1;
+				discreteDistance[]={100,200,300,400,500,700,1000,1600,2000,2400,2800};
+				discreteDistanceInitIndex=1;
+				turretInfoType="RscWeaponRangeArtillery";
+				weapons[]=
+				{
+					"mortar_82mm"
+				};
+				magazines[]=
+				{
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_shells",
+					"8Rnd_82mm_Mo_Flare_white",
+					"8Rnd_82mm_Mo_Flare_white",
+					"8Rnd_82mm_Mo_Flare_white",
+					"8Rnd_82mm_Mo_Flare_white",
+					"8Rnd_82mm_Mo_Smoke_white",
+					"8Rnd_82mm_Mo_Smoke_white",
+					"8Rnd_82mm_Mo_Smoke_white",
+					"8Rnd_82mm_Mo_Smoke_white"
+				};
+				gunnerAction="pilot_TIOW_IG_Mortar";
+				ejectDeadGunner=1;
+				gunnerRightHandAnimName="";
+				gunnerLeftHandAnimName="";
+			};
+		};
+	};
+	
+	
+	
+};
+
+class CfgWeapons 
+{
+	
+	// Space Marine deployable mortar
+	class itc_land_packableItem;
+	class ItemInfo;
+	class TSR_Mortar_Packed: itc_land_packableItem {
+		scope = 2; 
+		scopeCurator = 2;
+        author = "Toadball";
+        displayName = "Mortar Emplacement (Packed)";
+        descriptionShort = "Mortar Emplacement packed for carriage";
+        model = "\A3\Structures_F_Heli\Items\Luggage\PlasticCase_01_small_F.p3d";
+        picture = "";
+        class ItemInfo: ItemInfo {
+			      mass = 200;
+            allowedSlots[] = {901};
+            scope = 0;
+        };
+		itc_land_unPacksTo = "TSR_Mortar";
+    };
+	
 };
